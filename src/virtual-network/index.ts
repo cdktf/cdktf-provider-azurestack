@@ -77,10 +77,10 @@ export function virtualNetworkSubnetToTerraform(struct?: VirtualNetworkSubnet | 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_prefix: cdktf.stringToTerraform(struct!.addressPrefix),
-    id: cdktf.stringToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
-    security_group: cdktf.stringToTerraform(struct!.securityGroup),
+    address_prefix: struct!.addressPrefix === undefined ? null : cdktf.stringToTerraform(struct!.addressPrefix),
+    id: struct!.id === undefined ? null : cdktf.stringToTerraform(struct!.id),
+    name: struct!.name === undefined ? null : cdktf.stringToTerraform(struct!.name),
+    security_group: struct!.securityGroup === undefined ? null : cdktf.stringToTerraform(struct!.securityGroup),
   }
 }
 

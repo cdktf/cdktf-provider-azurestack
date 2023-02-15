@@ -108,13 +108,13 @@ export function keyVaultAccessPolicyToTerraform(struct?: KeyVaultAccessPolicy | 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    application_id: cdktf.stringToTerraform(struct!.applicationId),
-    certificate_permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificatePermissions),
-    key_permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keyPermissions),
-    object_id: cdktf.stringToTerraform(struct!.objectId),
-    secret_permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.secretPermissions),
-    storage_permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.storagePermissions),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    application_id: struct!.applicationId === undefined ? null : cdktf.stringToTerraform(struct!.applicationId),
+    certificate_permissions: struct!.certificatePermissions === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificatePermissions),
+    key_permissions: struct!.keyPermissions === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keyPermissions),
+    object_id: struct!.objectId === undefined ? null : cdktf.stringToTerraform(struct!.objectId),
+    secret_permissions: struct!.secretPermissions === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.secretPermissions),
+    storage_permissions: struct!.storagePermissions === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.storagePermissions),
+    tenant_id: struct!.tenantId === undefined ? null : cdktf.stringToTerraform(struct!.tenantId),
   }
 }
 
