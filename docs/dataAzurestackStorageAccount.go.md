@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/storage
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackStorageAccount.DataAzurestackStorageAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackstorageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstorageaccount"
 
 dataazurestackstorageaccount.NewDataAzurestackStorageAccount(scope Construct, id *string, config DataAzurestackStorageAccountConfig) DataAzurestackStorageAccount
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackStorageAccount.DataAzurestackStorageAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackstorageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstorageaccount"
 
 dataazurestackstorageaccount.DataAzurestackStorageAccount_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackStorageAccount.DataAzurestackStorageAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackstorageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstorageaccount"
 
 dataazurestackstorageaccount.DataAzurestackStorageAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ dataazurestackstorageaccount.DataAzurestackStorageAccount_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackStorageAccount.DataAzurestackStorageAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackstorageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstorageaccount"
 
 dataazurestackstorageaccount.DataAzurestackStorageAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackStorageAccount.DataAzurestackStorageAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackstorageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstorageaccount"
 
 &dataazurestackstorageaccount.DataAzurestackStorageAccountConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazuresta
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3.dataAzurestackStorageAccount.DataAzurestackStorageAccountTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackStorageAccount.DataAzurestackStorageAccountTimeouts,
 }
 ```
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackStorageAccount.DataAzurestackStorageAccountCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackstorageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstorageaccount"
 
 &dataazurestackstorageaccount.DataAzurestackStorageAccountCustomDomain {
 
@@ -1044,7 +1044,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazuresta
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackStorageAccount.DataAzurestackStorageAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackstorageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstorageaccount"
 
 &dataazurestackstorageaccount.DataAzurestackStorageAccountTimeouts {
 	Read: *string,
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackStorageAccount.DataAzurestackStorageAccountCustomDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackstorageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstorageaccount"
 
 dataazurestackstorageaccount.NewDataAzurestackStorageAccountCustomDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackStorageAccountCustomDomainList
 ```
@@ -1210,7 +1210,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackStorageAccount.DataAzurestackStorageAccountCustomDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackstorageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstorageaccount"
 
 dataazurestackstorageaccount.NewDataAzurestackStorageAccountCustomDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackStorageAccountCustomDomainOutputReference
 ```
@@ -1488,7 +1488,7 @@ func InternalValue() DataAzurestackStorageAccountCustomDomain
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackStorageAccount.DataAzurestackStorageAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackstorageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstorageaccount"
 
 dataazurestackstorageaccount.NewDataAzurestackStorageAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackStorageAccountTimeoutsOutputReference
 ```
