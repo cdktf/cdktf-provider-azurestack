@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/local_n
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
 
 localnetworkgateway.NewLocalNetworkGateway(scope Construct, id *string, config LocalNetworkGatewayConfig) LocalNetworkGateway
 ```
@@ -327,7 +327,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
 
 localnetworkgateway.LocalNetworkGateway_IsConstruct(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
 
 localnetworkgateway.LocalNetworkGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ localnetworkgateway.LocalNetworkGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
 
 localnetworkgateway.LocalNetworkGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
 
 &localnetworkgateway.LocalNetworkGatewayBgpSettings {
 	Asn: *f64,
@@ -830,7 +830,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
 
 &localnetworkgateway.LocalNetworkGatewayConfig {
 	Connection: interface{},
@@ -845,10 +845,10 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgat
 	Name: *string,
 	ResourceGroupName: *string,
 	AddressSpace: *[]*string,
-	BgpSettings: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings,
+	BgpSettings: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.localNetworkGateway.LocalNetworkGatewayBgpSettings,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.localNetworkGateway.LocalNetworkGatewayTimeouts,
 }
 ```
 
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
 
 &localnetworkgateway.LocalNetworkGatewayTimeouts {
 	Create: *string,
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
 
 localnetworkgateway.NewLocalNetworkGatewayBgpSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LocalNetworkGatewayBgpSettingsOutputReference
 ```
@@ -1463,7 +1463,7 @@ func InternalValue() LocalNetworkGatewayBgpSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
 
 localnetworkgateway.NewLocalNetworkGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LocalNetworkGatewayTimeoutsOutputReference
 ```
