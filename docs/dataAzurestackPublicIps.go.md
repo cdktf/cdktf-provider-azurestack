@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/public_
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
 
 dataazurestackpublicips.NewDataAzurestackPublicIps(scope Construct, id *string, config DataAzurestackPublicIpsConfig) DataAzurestackPublicIps
 ```
@@ -321,7 +321,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
 
 dataazurestackpublicips.DataAzurestackPublicIps_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
 
 dataazurestackpublicips.DataAzurestackPublicIps_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ dataazurestackpublicips.DataAzurestackPublicIps_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
 
 dataazurestackpublicips.DataAzurestackPublicIps_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -709,7 +709,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
 
 &dataazurestackpublicips.DataAzurestackPublicIpsConfig {
 	Connection: interface{},
@@ -725,7 +725,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazuresta
 	AttachmentStatus: *string,
 	Id: *string,
 	NamePrefix: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3.dataAzurestackPublicIps.DataAzurestackPublicIpsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.dataAzurestackPublicIps.DataAzurestackPublicIpsTimeouts,
 }
 ```
 
@@ -914,7 +914,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsPublicIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
 
 &dataazurestackpublicips.DataAzurestackPublicIpsPublicIps {
 
@@ -927,7 +927,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazuresta
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
 
 &dataazurestackpublicips.DataAzurestackPublicIpsTimeouts {
 	Read: *string,
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsPublicIpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
 
 dataazurestackpublicips.NewDataAzurestackPublicIpsPublicIpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackPublicIpsPublicIpsList
 ```
@@ -1093,7 +1093,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsPublicIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
 
 dataazurestackpublicips.NewDataAzurestackPublicIpsPublicIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackPublicIpsPublicIpsOutputReference
 ```
@@ -1415,7 +1415,7 @@ func InternalValue() DataAzurestackPublicIpsPublicIps
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
 
 dataazurestackpublicips.NewDataAzurestackPublicIpsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackPublicIpsTimeoutsOutputReference
 ```

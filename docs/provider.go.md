@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azurestack azurestac
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/provider"
 
 provider.NewAzurestackProvider(scope Construct, id *string, config AzurestackProviderConfig) AzurestackProvider
 ```
@@ -241,7 +241,7 @@ func ResetUseMsi()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.provider.AzurestackProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/provider"
 
 provider.AzurestackProvider_IsConstruct(x interface{}) *bool
 ```
@@ -273,7 +273,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.provider.AzurestackProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/provider"
 
 provider.AzurestackProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -287,7 +287,7 @@ provider.AzurestackProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-azurestack.provider.AzurestackProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/provider"
 
 provider.AzurestackProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -772,10 +772,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.provider.AzurestackProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/provider"
 
 &provider.AzurestackProviderConfig {
-	Features: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3.provider.AzurestackProviderFeatures,
+	Features: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.provider.AzurestackProviderFeatures,
 	Alias: *string,
 	ArmEndpoint: *string,
 	AuxiliaryTenantIds: *[]*string,
@@ -1044,12 +1044,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/provider"
 
 &provider.AzurestackProviderFeatures {
-	ResourceGroup: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3.provider.AzurestackProviderFeaturesResourceGroup,
-	VirtualMachine: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3.provider.AzurestackProviderFeaturesVirtualMachine,
-	VirtualMachineScaleSet: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3.provider.AzurestackProviderFeaturesVirtualMachineScaleSet,
+	ResourceGroup: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.provider.AzurestackProviderFeaturesResourceGroup,
+	VirtualMachine: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.provider.AzurestackProviderFeaturesVirtualMachine,
+	VirtualMachineScaleSet: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.provider.AzurestackProviderFeaturesVirtualMachineScaleSet,
 }
 ```
 
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesResourceGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/provider"
 
 &provider.AzurestackProviderFeaturesResourceGroup {
 	PreventDeletionIfContainsResources: interface{},
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/provider"
 
 &provider.AzurestackProviderFeaturesVirtualMachine {
 	DeleteOsDiskOnDeletion: interface{},
@@ -1202,7 +1202,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/provider"
 
 &provider.AzurestackProviderFeaturesVirtualMachineScaleSet {
 	RollInstancesWhenRequired: interface{},

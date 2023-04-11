@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/lb_back
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackLbBackendAddressPool.DataAzurestackLbBackendAddressPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestacklbbackendaddresspool"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestacklbbackendaddresspool"
 
 dataazurestacklbbackendaddresspool.NewDataAzurestackLbBackendAddressPool(scope Construct, id *string, config DataAzurestackLbBackendAddressPoolConfig) DataAzurestackLbBackendAddressPool
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackLbBackendAddressPool.DataAzurestackLbBackendAddressPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestacklbbackendaddresspool"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestacklbbackendaddresspool"
 
 dataazurestacklbbackendaddresspool.DataAzurestackLbBackendAddressPool_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackLbBackendAddressPool.DataAzurestackLbBackendAddressPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestacklbbackendaddresspool"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestacklbbackendaddresspool"
 
 dataazurestacklbbackendaddresspool.DataAzurestackLbBackendAddressPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ dataazurestacklbbackendaddresspool.DataAzurestackLbBackendAddressPool_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackLbBackendAddressPool.DataAzurestackLbBackendAddressPool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestacklbbackendaddresspool"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestacklbbackendaddresspool"
 
 dataazurestacklbbackendaddresspool.DataAzurestackLbBackendAddressPool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackLbBackendAddressPool.DataAzurestackLbBackendAddressPoolBackendIpConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestacklbbackendaddresspool"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestacklbbackendaddresspool"
 
 &dataazurestacklbbackendaddresspool.DataAzurestackLbBackendAddressPoolBackendIpConfigurations {
 
@@ -639,7 +639,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazuresta
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackLbBackendAddressPool.DataAzurestackLbBackendAddressPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestacklbbackendaddresspool"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestacklbbackendaddresspool"
 
 &dataazurestacklbbackendaddresspool.DataAzurestackLbBackendAddressPoolConfig {
 	Connection: interface{},
@@ -652,7 +652,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazuresta
 	LoadbalancerId: *string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3.dataAzurestackLbBackendAddressPool.DataAzurestackLbBackendAddressPoolTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.dataAzurestackLbBackendAddressPool.DataAzurestackLbBackendAddressPoolTimeouts,
 }
 ```
 
@@ -802,7 +802,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackLbBackendAddressPool.DataAzurestackLbBackendAddressPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestacklbbackendaddresspool"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestacklbbackendaddresspool"
 
 &dataazurestacklbbackendaddresspool.DataAzurestackLbBackendAddressPoolTimeouts {
 	Read: *string,
@@ -836,7 +836,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackLbBackendAddressPool.DataAzurestackLbBackendAddressPoolBackendIpConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestacklbbackendaddresspool"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestacklbbackendaddresspool"
 
 dataazurestacklbbackendaddresspool.NewDataAzurestackLbBackendAddressPoolBackendIpConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackLbBackendAddressPoolBackendIpConfigurationsList
 ```
@@ -968,7 +968,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackLbBackendAddressPool.DataAzurestackLbBackendAddressPoolBackendIpConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestacklbbackendaddresspool"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestacklbbackendaddresspool"
 
 dataazurestacklbbackendaddresspool.NewDataAzurestackLbBackendAddressPoolBackendIpConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackLbBackendAddressPoolBackendIpConfigurationsOutputReference
 ```
@@ -1246,7 +1246,7 @@ func InternalValue() DataAzurestackLbBackendAddressPoolBackendIpConfigurations
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackLbBackendAddressPool.DataAzurestackLbBackendAddressPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestacklbbackendaddresspool"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestacklbbackendaddresspool"
 
 dataazurestacklbbackendaddresspool.NewDataAzurestackLbBackendAddressPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackLbBackendAddressPoolTimeoutsOutputReference
 ```
