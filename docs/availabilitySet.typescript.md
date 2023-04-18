@@ -1,3 +1,7 @@
+# `azurestack_availability_set`
+
+Refer to the Terraform Registory for docs: [`azurestack_availability_set`](https://www.terraform.io/docs/providers/azurestack/r/availability_set).
+
 # `availabilitySet` Submodule <a name="`availabilitySet` Submodule" id="@cdktf/provider-azurestack.availabilitySet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

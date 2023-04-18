@@ -1,3 +1,7 @@
+# `data_azurestack_resources`
+
+Refer to the Terraform Registory for docs: [`data_azurestack_resources`](https://www.terraform.io/docs/providers/azurestack/d/resources).
+
 # `dataAzurestackResources` Submodule <a name="`dataAzurestackResources` Submodule" id="@cdktf/provider-azurestack.dataAzurestackResources"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

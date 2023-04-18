@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`azurestack`](https://www.terraform.io/docs/providers/azurestack).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-azurestack.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

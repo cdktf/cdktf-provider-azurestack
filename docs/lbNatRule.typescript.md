@@ -1,3 +1,7 @@
+# `azurestack_lb_nat_rule`
+
+Refer to the Terraform Registory for docs: [`azurestack_lb_nat_rule`](https://www.terraform.io/docs/providers/azurestack/r/lb_nat_rule).
+
 # `lbNatRule` Submodule <a name="`lbNatRule` Submodule" id="@cdktf/provider-azurestack.lbNatRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
