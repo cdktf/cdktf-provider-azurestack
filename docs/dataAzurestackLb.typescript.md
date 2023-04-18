@@ -1,3 +1,7 @@
+# `data_azurestack_lb`
+
+Refer to the Terraform Registory for docs: [`data_azurestack_lb`](https://www.terraform.io/docs/providers/azurestack/d/lb).
+
 # `dataAzurestackLb` Submodule <a name="`dataAzurestackLb` Submodule" id="@cdktf/provider-azurestack.dataAzurestackLb"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

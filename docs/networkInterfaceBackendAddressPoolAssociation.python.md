@@ -1,3 +1,7 @@
+# `azurestack_network_interface_backend_address_pool_association`
+
+Refer to the Terraform Registory for docs: [`azurestack_network_interface_backend_address_pool_association`](https://www.terraform.io/docs/providers/azurestack/r/network_interface_backend_address_pool_association).
+
 # `networkInterfaceBackendAddressPoolAssociation` Submodule <a name="`networkInterfaceBackendAddressPoolAssociation` Submodule" id="@cdktf/provider-azurestack.networkInterfaceBackendAddressPoolAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

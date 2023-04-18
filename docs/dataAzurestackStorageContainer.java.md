@@ -1,3 +1,7 @@
+# `data_azurestack_storage_container`
+
+Refer to the Terraform Registory for docs: [`data_azurestack_storage_container`](https://www.terraform.io/docs/providers/azurestack/d/storage_container).
+
 # `dataAzurestackStorageContainer` Submodule <a name="`dataAzurestackStorageContainer` Submodule" id="@cdktf/provider-azurestack.dataAzurestackStorageContainer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

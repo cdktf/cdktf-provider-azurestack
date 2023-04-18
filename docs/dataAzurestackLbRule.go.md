@@ -1,3 +1,7 @@
+# `data_azurestack_lb_rule`
+
+Refer to the Terraform Registory for docs: [`data_azurestack_lb_rule`](https://www.terraform.io/docs/providers/azurestack/d/lb_rule).
+
 # `dataAzurestackLbRule` Submodule <a name="`dataAzurestackLbRule` Submodule" id="@cdktf/provider-azurestack.dataAzurestackLbRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

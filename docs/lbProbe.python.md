@@ -1,3 +1,7 @@
+# `azurestack_lb_probe`
+
+Refer to the Terraform Registory for docs: [`azurestack_lb_probe`](https://www.terraform.io/docs/providers/azurestack/r/lb_probe).
+
 # `lbProbe` Submodule <a name="`lbProbe` Submodule" id="@cdktf/provider-azurestack.lbProbe"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_azurestack_virtual_network`
+
+Refer to the Terraform Registory for docs: [`data_azurestack_virtual_network`](https://www.terraform.io/docs/providers/azurestack/d/virtual_network).
+
 # `dataAzurestackVirtualNetwork` Submodule <a name="`dataAzurestackVirtualNetwork` Submodule" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

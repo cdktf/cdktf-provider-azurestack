@@ -1,3 +1,7 @@
+# `data_azurestack_network_interface`
+
+Refer to the Terraform Registory for docs: [`data_azurestack_network_interface`](https://www.terraform.io/docs/providers/azurestack/d/network_interface).
+
 # `dataAzurestackNetworkInterface` Submodule <a name="`dataAzurestackNetworkInterface` Submodule" id="@cdktf/provider-azurestack.dataAzurestackNetworkInterface"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

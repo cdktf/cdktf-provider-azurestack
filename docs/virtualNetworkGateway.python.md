@@ -1,3 +1,7 @@
+# `azurestack_virtual_network_gateway`
+
+Refer to the Terraform Registory for docs: [`azurestack_virtual_network_gateway`](https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway).
+
 # `virtualNetworkGateway` Submodule <a name="`virtualNetworkGateway` Submodule" id="@cdktf/provider-azurestack.virtualNetworkGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

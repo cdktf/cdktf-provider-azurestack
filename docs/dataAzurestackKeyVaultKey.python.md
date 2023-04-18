@@ -1,3 +1,7 @@
+# `data_azurestack_key_vault_key`
+
+Refer to the Terraform Registory for docs: [`data_azurestack_key_vault_key`](https://www.terraform.io/docs/providers/azurestack/d/key_vault_key).
+
 # `dataAzurestackKeyVaultKey` Submodule <a name="`dataAzurestackKeyVaultKey` Submodule" id="@cdktf/provider-azurestack.dataAzurestackKeyVaultKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `azurestack_image`
+
+Refer to the Terraform Registory for docs: [`azurestack_image`](https://www.terraform.io/docs/providers/azurestack/r/image).
+
 # `image` Submodule <a name="`image` Submodule" id="@cdktf/provider-azurestack.image"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

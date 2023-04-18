@@ -1,3 +1,7 @@
+# `azurestack_virtual_machine`
+
+Refer to the Terraform Registory for docs: [`azurestack_virtual_machine`](https://www.terraform.io/docs/providers/azurestack/r/virtual_machine).
+
 # `virtualMachine` Submodule <a name="`virtualMachine` Submodule" id="@cdktf/provider-azurestack.virtualMachine"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
