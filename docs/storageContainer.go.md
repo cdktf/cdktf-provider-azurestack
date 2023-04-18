@@ -1,6 +1,6 @@
 # `azurestack_storage_container`
 
-Refer to the Terraform Registory for docs: [`azurestack_storage_container`](https://www.terraform.io/docs/providers/azurestack/r/storage_container).
+Refer to the Terraform Registory for docs: [`azurestack_storage_container`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container).
 
 # `storageContainer` Submodule <a name="`storageContainer` Submodule" id="@cdktf/provider-azurestack.storageContainer"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_storage_container`](http
 
 ### StorageContainer <a name="StorageContainer" id="@cdktf/provider-azurestack.storageContainer.StorageContainer"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container azurestack_storage_container}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container azurestack_storage_container}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.storageContainer.StorageContainer.Initializer"></a>
 
@@ -380,7 +380,7 @@ storagecontainer.StorageContainer_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainer.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainer.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainer.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainer.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainer.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainer.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainer.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainer.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -488,10 +488,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.storageContainer.StorageContainer.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -714,7 +714,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/storageconta
 
 &storagecontainer.StorageContainerConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -734,17 +734,17 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/storageconta
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#name StorageContainer#name}. |
-| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.storageAccountName">StorageAccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#storage_account_name StorageContainer#storage_account_name}. |
-| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.containerAccessType">ContainerAccessType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#container_access_type StorageContainer#container_access_type}. |
-| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#id StorageContainer#id}. |
-| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.metadata">Metadata</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#metadata StorageContainer#metadata}. |
+| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#name StorageContainer#name}. |
+| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.storageAccountName">StorageAccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#storage_account_name StorageContainer#storage_account_name}. |
+| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.containerAccessType">ContainerAccessType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#container_access_type StorageContainer#container_access_type}. |
+| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#id StorageContainer#id}. |
+| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.metadata">Metadata</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#metadata StorageContainer#metadata}. |
 | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerTimeouts">StorageContainerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -762,10 +762,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.storageContainer.StorageContainerConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -827,7 +827,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#name StorageContainer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#name StorageContainer#name}.
 
 ---
 
@@ -839,7 +839,7 @@ StorageAccountName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#storage_account_name StorageContainer#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#storage_account_name StorageContainer#storage_account_name}.
 
 ---
 
@@ -851,7 +851,7 @@ ContainerAccessType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#container_access_type StorageContainer#container_access_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#container_access_type StorageContainer#container_access_type}.
 
 ---
 
@@ -863,7 +863,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#id StorageContainer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#id StorageContainer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -878,7 +878,7 @@ Metadata *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#metadata StorageContainer#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#metadata StorageContainer#metadata}.
 
 ---
 
@@ -892,7 +892,7 @@ Timeouts StorageContainerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#timeouts StorageContainer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#timeouts StorageContainer#timeouts}
 
 ---
 
@@ -915,10 +915,10 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/storageconta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#create StorageContainer#create}. |
-| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#delete StorageContainer#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#read StorageContainer#read}. |
-| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#update StorageContainer#update}. |
+| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#create StorageContainer#create}. |
+| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#delete StorageContainer#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#read StorageContainer#read}. |
+| <code><a href="#@cdktf/provider-azurestack.storageContainer.StorageContainerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#update StorageContainer#update}. |
 
 ---
 
@@ -930,7 +930,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#create StorageContainer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#create StorageContainer#create}.
 
 ---
 
@@ -942,7 +942,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#delete StorageContainer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#delete StorageContainer#delete}.
 
 ---
 
@@ -954,7 +954,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#read StorageContainer#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#read StorageContainer#read}.
 
 ---
 
@@ -966,7 +966,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_container#update StorageContainer#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_container#update StorageContainer#update}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `azurestack_local_network_gateway`
 
-Refer to the Terraform Registory for docs: [`azurestack_local_network_gateway`](https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway).
+Refer to the Terraform Registory for docs: [`azurestack_local_network_gateway`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway).
 
 # `localNetworkGateway` Submodule <a name="`localNetworkGateway` Submodule" id="@cdktf/provider-azurestack.localNetworkGateway"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_local_network_gateway`](
 
 ### LocalNetworkGateway <a name="LocalNetworkGateway" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway azurestack_local_network_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway azurestack_local_network_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.Initializer"></a>
 
@@ -400,7 +400,7 @@ localNetworkGateway.LocalNetworkGateway.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -512,10 +512,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -783,9 +783,9 @@ const localNetworkGatewayBgpSettings: localNetworkGateway.LocalNetworkGatewayBgp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.property.asn">asn</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#asn LocalNetworkGateway#asn}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.property.bgpPeeringAddress">bgpPeeringAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#bgp_peering_address LocalNetworkGateway#bgp_peering_address}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.property.peerWeight">peerWeight</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#peer_weight LocalNetworkGateway#peer_weight}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.property.asn">asn</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#asn LocalNetworkGateway#asn}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.property.bgpPeeringAddress">bgpPeeringAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#bgp_peering_address LocalNetworkGateway#bgp_peering_address}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.property.peerWeight">peerWeight</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#peer_weight LocalNetworkGateway#peer_weight}. |
 
 ---
 
@@ -797,7 +797,7 @@ public readonly asn: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#asn LocalNetworkGateway#asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#asn LocalNetworkGateway#asn}.
 
 ---
 
@@ -809,7 +809,7 @@ public readonly bgpPeeringAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#bgp_peering_address LocalNetworkGateway#bgp_peering_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#bgp_peering_address LocalNetworkGateway#bgp_peering_address}.
 
 ---
 
@@ -821,7 +821,7 @@ public readonly peerWeight: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#peer_weight LocalNetworkGateway#peer_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#peer_weight LocalNetworkGateway#peer_weight}.
 
 ---
 
@@ -840,20 +840,20 @@ const localNetworkGatewayConfig: localNetworkGateway.LocalNetworkGatewayConfig =
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.gatewayAddress">gatewayAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#gateway_address LocalNetworkGateway#gateway_address}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#location LocalNetworkGateway#location}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#name LocalNetworkGateway#name}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#resource_group_name LocalNetworkGateway#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.addressSpace">addressSpace</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#address_space LocalNetworkGateway#address_space}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.gatewayAddress">gatewayAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#gateway_address LocalNetworkGateway#gateway_address}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#location LocalNetworkGateway#location}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#name LocalNetworkGateway#name}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#resource_group_name LocalNetworkGateway#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.addressSpace">addressSpace</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#address_space LocalNetworkGateway#address_space}. |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.bgpSettings">bgpSettings</a></code> | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings">LocalNetworkGatewayBgpSettings</a></code> | bgp_settings block. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#id LocalNetworkGateway#id}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#tags LocalNetworkGateway#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#id LocalNetworkGateway#id}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#tags LocalNetworkGateway#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts">LocalNetworkGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -871,10 +871,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -936,7 +936,7 @@ public readonly gatewayAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#gateway_address LocalNetworkGateway#gateway_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#gateway_address LocalNetworkGateway#gateway_address}.
 
 ---
 
@@ -948,7 +948,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#location LocalNetworkGateway#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#location LocalNetworkGateway#location}.
 
 ---
 
@@ -960,7 +960,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#name LocalNetworkGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#name LocalNetworkGateway#name}.
 
 ---
 
@@ -972,7 +972,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#resource_group_name LocalNetworkGateway#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#resource_group_name LocalNetworkGateway#resource_group_name}.
 
 ---
 
@@ -984,7 +984,7 @@ public readonly addressSpace: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#address_space LocalNetworkGateway#address_space}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#address_space LocalNetworkGateway#address_space}.
 
 ---
 
@@ -998,7 +998,7 @@ public readonly bgpSettings: LocalNetworkGatewayBgpSettings;
 
 bgp_settings block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#bgp_settings LocalNetworkGateway#bgp_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#bgp_settings LocalNetworkGateway#bgp_settings}
 
 ---
 
@@ -1010,7 +1010,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#id LocalNetworkGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#id LocalNetworkGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1025,7 +1025,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#tags LocalNetworkGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#tags LocalNetworkGateway#tags}.
 
 ---
 
@@ -1039,7 +1039,7 @@ public readonly timeouts: LocalNetworkGatewayTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#timeouts LocalNetworkGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#timeouts LocalNetworkGateway#timeouts}
 
 ---
 
@@ -1057,10 +1057,10 @@ const localNetworkGatewayTimeouts: localNetworkGateway.LocalNetworkGatewayTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#create LocalNetworkGateway#create}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#delete LocalNetworkGateway#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#read LocalNetworkGateway#read}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#update LocalNetworkGateway#update}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#create LocalNetworkGateway#create}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#delete LocalNetworkGateway#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#read LocalNetworkGateway#read}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#update LocalNetworkGateway#update}. |
 
 ---
 
@@ -1072,7 +1072,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#create LocalNetworkGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#create LocalNetworkGateway#create}.
 
 ---
 
@@ -1084,7 +1084,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#delete LocalNetworkGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#delete LocalNetworkGateway#delete}.
 
 ---
 
@@ -1096,7 +1096,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#read LocalNetworkGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#read LocalNetworkGateway#read}.
 
 ---
 
@@ -1108,7 +1108,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#update LocalNetworkGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#update LocalNetworkGateway#update}.
 
 ---
 

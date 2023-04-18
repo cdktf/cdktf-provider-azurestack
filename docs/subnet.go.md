@@ -1,6 +1,6 @@
 # `azurestack_subnet`
 
-Refer to the Terraform Registory for docs: [`azurestack_subnet`](https://www.terraform.io/docs/providers/azurestack/r/subnet).
+Refer to the Terraform Registory for docs: [`azurestack_subnet`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet).
 
 # `subnet` Submodule <a name="`subnet` Submodule" id="@cdktf/provider-azurestack.subnet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_subnet`](https://www.ter
 
 ### Subnet <a name="Subnet" id="@cdktf/provider-azurestack.subnet.Subnet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/subnet azurestack_subnet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet azurestack_subnet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.subnet.Subnet.Initializer"></a>
 
@@ -366,7 +366,7 @@ subnet.Subnet_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -472,10 +472,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.subnet.Subnet.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -678,7 +678,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/subnet"
 
 &subnet.SubnetConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -698,17 +698,17 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/subnet"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.addressPrefix">AddressPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#address_prefix Subnet#address_prefix}. |
-| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#name Subnet#name}. |
-| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#resource_group_name Subnet#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.virtualNetworkName">VirtualNetworkName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#virtual_network_name Subnet#virtual_network_name}. |
-| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#id Subnet#id}. |
+| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.addressPrefix">AddressPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#address_prefix Subnet#address_prefix}. |
+| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#name Subnet#name}. |
+| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#resource_group_name Subnet#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.virtualNetworkName">VirtualNetworkName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}. |
+| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#id Subnet#id}. |
 | <code><a href="#@cdktf/provider-azurestack.subnet.SubnetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -726,10 +726,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.subnet.SubnetConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -791,7 +791,7 @@ AddressPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#address_prefix Subnet#address_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#address_prefix Subnet#address_prefix}.
 
 ---
 
@@ -803,7 +803,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#name Subnet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#name Subnet#name}.
 
 ---
 
@@ -815,7 +815,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#resource_group_name Subnet#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#resource_group_name Subnet#resource_group_name}.
 
 ---
 
@@ -827,7 +827,7 @@ VirtualNetworkName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#virtual_network_name Subnet#virtual_network_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}.
 
 ---
 
@@ -839,7 +839,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#id Subnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#id Subnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -856,7 +856,7 @@ Timeouts SubnetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#timeouts Subnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#timeouts Subnet#timeouts}
 
 ---
 
@@ -879,10 +879,10 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/subnet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#create Subnet#create}. |
-| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#delete Subnet#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#read Subnet#read}. |
-| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#update Subnet#update}. |
+| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#create Subnet#create}. |
+| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#delete Subnet#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#read Subnet#read}. |
+| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#update Subnet#update}. |
 
 ---
 
@@ -894,7 +894,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#create Subnet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#create Subnet#create}.
 
 ---
 
@@ -906,7 +906,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#delete Subnet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#delete Subnet#delete}.
 
 ---
 
@@ -918,7 +918,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#read Subnet#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#read Subnet#read}.
 
 ---
 
@@ -930,7 +930,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/subnet#update Subnet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#update Subnet#update}.
 
 ---
 

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azurestack/d/local_network_gateway
+// https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/local_network_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzurestackLocalNetworkGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/local_network_gateway#id DataAzurestackLocalNetworkGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/local_network_gateway#id DataAzurestackLocalNetworkGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/local_network_gateway#name DataAzurestackLocalNetworkGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/local_network_gateway#name DataAzurestackLocalNetworkGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/local_network_gateway#resource_group_name DataAzurestackLocalNetworkGateway#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/local_network_gateway#resource_group_name DataAzurestackLocalNetworkGateway#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/local_network_gateway#timeouts DataAzurestackLocalNetworkGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/local_network_gateway#timeouts DataAzurestackLocalNetworkGateway#timeouts}
   */
   readonly timeouts?: DataAzurestackLocalNetworkGatewayTimeouts;
 }
@@ -105,12 +105,12 @@ export class DataAzurestackLocalNetworkGatewayBgpSettingsList extends cdktf.Comp
 }
 export interface DataAzurestackLocalNetworkGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/local_network_gateway#read DataAzurestackLocalNetworkGateway#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/local_network_gateway#read DataAzurestackLocalNetworkGateway#read}
   */
   readonly read?: string;
 }
 
-export function dataAzurestackLocalNetworkGatewayTimeoutsToTerraform(struct?: DataAzurestackLocalNetworkGatewayTimeoutsOutputReference | DataAzurestackLocalNetworkGatewayTimeouts | cdktf.IResolvable): any {
+export function dataAzurestackLocalNetworkGatewayTimeoutsToTerraform(struct?: DataAzurestackLocalNetworkGatewayTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -129,7 +129,7 @@ export class DataAzurestackLocalNetworkGatewayTimeoutsOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAzurestackLocalNetworkGatewayTimeouts | cdktf.IResolvable | undefined {
@@ -180,7 +180,7 @@ export class DataAzurestackLocalNetworkGatewayTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/local_network_gateway azurestack_local_network_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/local_network_gateway azurestack_local_network_gateway}
 */
 export class DataAzurestackLocalNetworkGateway extends cdktf.TerraformDataSource {
 
@@ -194,7 +194,7 @@ export class DataAzurestackLocalNetworkGateway extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azurestack/d/local_network_gateway azurestack_local_network_gateway} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/local_network_gateway azurestack_local_network_gateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

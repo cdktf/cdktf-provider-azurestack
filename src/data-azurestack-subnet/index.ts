@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azurestack/d/subnet
+// https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/subnet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzurestackSubnetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/subnet#id DataAzurestackSubnet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/subnet#id DataAzurestackSubnet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/subnet#name DataAzurestackSubnet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/subnet#name DataAzurestackSubnet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/subnet#resource_group_name DataAzurestackSubnet#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/subnet#resource_group_name DataAzurestackSubnet#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/subnet#virtual_network_name DataAzurestackSubnet#virtual_network_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/subnet#virtual_network_name DataAzurestackSubnet#virtual_network_name}
   */
   readonly virtualNetworkName: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/subnet#timeouts DataAzurestackSubnet#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/subnet#timeouts DataAzurestackSubnet#timeouts}
   */
   readonly timeouts?: DataAzurestackSubnetTimeouts;
 }
 export interface DataAzurestackSubnetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/subnet#read DataAzurestackSubnet#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/subnet#read DataAzurestackSubnet#read}
   */
   readonly read?: string;
 }
 
-export function dataAzurestackSubnetTimeoutsToTerraform(struct?: DataAzurestackSubnetTimeoutsOutputReference | DataAzurestackSubnetTimeouts | cdktf.IResolvable): any {
+export function dataAzurestackSubnetTimeoutsToTerraform(struct?: DataAzurestackSubnetTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -59,7 +59,7 @@ export class DataAzurestackSubnetTimeoutsOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAzurestackSubnetTimeouts | cdktf.IResolvable | undefined {
@@ -110,7 +110,7 @@ export class DataAzurestackSubnetTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/subnet azurestack_subnet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/subnet azurestack_subnet}
 */
 export class DataAzurestackSubnet extends cdktf.TerraformDataSource {
 
@@ -124,7 +124,7 @@ export class DataAzurestackSubnet extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azurestack/d/subnet azurestack_subnet} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/subnet azurestack_subnet} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,6 +1,6 @@
 # `azurestack_storage_blob`
 
-Refer to the Terraform Registory for docs: [`azurestack_storage_blob`](https://www.terraform.io/docs/providers/azurestack/r/storage_blob).
+Refer to the Terraform Registory for docs: [`azurestack_storage_blob`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob).
 
 # `storageBlob` Submodule <a name="`storageBlob` Submodule" id="@cdktf/provider-azurestack.storageBlob"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_storage_blob`](https://w
 
 ### StorageBlob <a name="StorageBlob" id="@cdktf/provider-azurestack.storageBlob.StorageBlob"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob azurestack_storage_blob}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob azurestack_storage_blob}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.storageBlob.StorageBlob.Initializer"></a>
 
@@ -429,7 +429,7 @@ storageBlob.StorageBlob.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -554,10 +554,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.storageBlob.StorageBlob.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -956,26 +956,26 @@ const storageBlobConfig: storageBlob.StorageBlobConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#name StorageBlob#name}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.storageAccountName">storageAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#storage_account_name StorageBlob#storage_account_name}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.storageContainerName">storageContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#storage_container_name StorageBlob#storage_container_name}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#type StorageBlob#type}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.cacheControl">cacheControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#cache_control StorageBlob#cache_control}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.contentMd5">contentMd5</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#content_md5 StorageBlob#content_md5}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#content_type StorageBlob#content_type}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#id StorageBlob#id}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#metadata StorageBlob#metadata}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.parallelism">parallelism</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#parallelism StorageBlob#parallelism}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.size">size</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#size StorageBlob#size}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#source StorageBlob#source}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.sourceContent">sourceContent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#source_content StorageBlob#source_content}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.sourceUri">sourceUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#source_uri StorageBlob#source_uri}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#name StorageBlob#name}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.storageAccountName">storageAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#storage_account_name StorageBlob#storage_account_name}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.storageContainerName">storageContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#storage_container_name StorageBlob#storage_container_name}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#type StorageBlob#type}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.cacheControl">cacheControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#cache_control StorageBlob#cache_control}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.contentMd5">contentMd5</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#content_md5 StorageBlob#content_md5}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#content_type StorageBlob#content_type}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#id StorageBlob#id}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#metadata StorageBlob#metadata}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.parallelism">parallelism</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#parallelism StorageBlob#parallelism}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.size">size</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#size StorageBlob#size}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#source StorageBlob#source}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.sourceContent">sourceContent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#source_content StorageBlob#source_content}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.sourceUri">sourceUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#source_uri StorageBlob#source_uri}. |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts">StorageBlobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -993,10 +993,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.storageBlob.StorageBlobConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1058,7 +1058,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#name StorageBlob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#name StorageBlob#name}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly storageAccountName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#storage_account_name StorageBlob#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#storage_account_name StorageBlob#storage_account_name}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly storageContainerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#storage_container_name StorageBlob#storage_container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#storage_container_name StorageBlob#storage_container_name}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#type StorageBlob#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#type StorageBlob#type}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public readonly cacheControl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#cache_control StorageBlob#cache_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#cache_control StorageBlob#cache_control}.
 
 ---
 
@@ -1118,7 +1118,7 @@ public readonly contentMd5: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#content_md5 StorageBlob#content_md5}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#content_md5 StorageBlob#content_md5}.
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#content_type StorageBlob#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#content_type StorageBlob#content_type}.
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#id StorageBlob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#id StorageBlob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1157,7 +1157,7 @@ public readonly metadata: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#metadata StorageBlob#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#metadata StorageBlob#metadata}.
 
 ---
 
@@ -1169,7 +1169,7 @@ public readonly parallelism: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#parallelism StorageBlob#parallelism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#parallelism StorageBlob#parallelism}.
 
 ---
 
@@ -1181,7 +1181,7 @@ public readonly size: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#size StorageBlob#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#size StorageBlob#size}.
 
 ---
 
@@ -1193,7 +1193,7 @@ public readonly source: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#source StorageBlob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#source StorageBlob#source}.
 
 ---
 
@@ -1205,7 +1205,7 @@ public readonly sourceContent: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#source_content StorageBlob#source_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#source_content StorageBlob#source_content}.
 
 ---
 
@@ -1217,7 +1217,7 @@ public readonly sourceUri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#source_uri StorageBlob#source_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#source_uri StorageBlob#source_uri}.
 
 ---
 
@@ -1231,7 +1231,7 @@ public readonly timeouts: StorageBlobTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#timeouts StorageBlob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#timeouts StorageBlob#timeouts}
 
 ---
 
@@ -1249,10 +1249,10 @@ const storageBlobTimeouts: storageBlob.StorageBlobTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#create StorageBlob#create}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#delete StorageBlob#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#read StorageBlob#read}. |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#update StorageBlob#update}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#create StorageBlob#create}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#delete StorageBlob#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#read StorageBlob#read}. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#update StorageBlob#update}. |
 
 ---
 
@@ -1264,7 +1264,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#create StorageBlob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#create StorageBlob#create}.
 
 ---
 
@@ -1276,7 +1276,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#delete StorageBlob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#delete StorageBlob#delete}.
 
 ---
 
@@ -1288,7 +1288,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#read StorageBlob#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#read StorageBlob#read}.
 
 ---
 
@@ -1300,7 +1300,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/storage_blob#update StorageBlob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob#update StorageBlob#update}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_azurestack_managed_disk`
 
-Refer to the Terraform Registory for docs: [`data_azurestack_managed_disk`](https://www.terraform.io/docs/providers/azurestack/d/managed_disk).
+Refer to the Terraform Registory for docs: [`data_azurestack_managed_disk`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk).
 
 # `dataAzurestackManagedDisk` Submodule <a name="`dataAzurestackManagedDisk` Submodule" id="@cdktf/provider-azurestack.dataAzurestackManagedDisk"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azurestack_managed_disk`](http
 
 ### DataAzurestackManagedDisk <a name="DataAzurestackManagedDisk" id="@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDisk"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/managed_disk azurestack_managed_disk}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk azurestack_managed_disk}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDisk.Initializer"></a>
 
@@ -372,7 +372,7 @@ dataazurestackmanageddisk.DataAzurestackManagedDisk_IsTerraformDataSource(x inte
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDisk.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDisk.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDisk.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDisk.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDisk.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDisk.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDisk.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDisk.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -473,10 +473,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDisk.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -729,7 +729,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 
 &dataazurestackmanageddisk.DataAzurestackManagedDiskConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -748,16 +748,16 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/managed_disk#name DataAzurestackManagedDisk#name}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/managed_disk#resource_group_name DataAzurestackManagedDisk#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/managed_disk#id DataAzurestackManagedDisk#id}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/managed_disk#tags DataAzurestackManagedDisk#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk#name DataAzurestackManagedDisk#name}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk#resource_group_name DataAzurestackManagedDisk#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk#id DataAzurestackManagedDisk#id}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk#tags DataAzurestackManagedDisk#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskTimeouts">DataAzurestackManagedDiskTimeouts</a></code> | timeouts block. |
 
 ---
@@ -775,10 +775,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -840,7 +840,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/managed_disk#name DataAzurestackManagedDisk#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk#name DataAzurestackManagedDisk#name}.
 
 ---
 
@@ -852,7 +852,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/managed_disk#resource_group_name DataAzurestackManagedDisk#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk#resource_group_name DataAzurestackManagedDisk#resource_group_name}.
 
 ---
 
@@ -864,7 +864,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/managed_disk#id DataAzurestackManagedDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk#id DataAzurestackManagedDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -879,7 +879,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/managed_disk#tags DataAzurestackManagedDisk#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk#tags DataAzurestackManagedDisk#tags}.
 
 ---
 
@@ -893,7 +893,7 @@ Timeouts DataAzurestackManagedDiskTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/managed_disk#timeouts DataAzurestackManagedDisk#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk#timeouts DataAzurestackManagedDisk#timeouts}
 
 ---
 
@@ -913,7 +913,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/managed_disk#read DataAzurestackManagedDisk#read}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackManagedDisk.DataAzurestackManagedDiskTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk#read DataAzurestackManagedDisk#read}. |
 
 ---
 
@@ -925,7 +925,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/managed_disk#read DataAzurestackManagedDisk#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk#read DataAzurestackManagedDisk#read}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_azurestack_client_config`
 
-Refer to the Terraform Registory for docs: [`data_azurestack_client_config`](https://www.terraform.io/docs/providers/azurestack/d/client_config).
+Refer to the Terraform Registory for docs: [`data_azurestack_client_config`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/client_config).
 
 # `dataAzurestackClientConfig` Submodule <a name="`dataAzurestackClientConfig` Submodule" id="@cdktf/provider-azurestack.dataAzurestackClientConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azurestack_client_config`](htt
 
 ### DataAzurestackClientConfig <a name="DataAzurestackClientConfig" id="@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfig"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/client_config azurestack_client_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/client_config azurestack_client_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfig.Initializer"></a>
 
@@ -365,7 +365,7 @@ dataazurestackclientconfig.DataAzurestackClientConfig_IsTerraformDataSource(x in
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfig.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfig.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfig.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfig.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -458,10 +458,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfig.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -634,7 +634,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 
 &dataazurestackclientconfig.DataAzurestackClientConfigConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -650,13 +650,13 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/client_config#id DataAzurestackClientConfig#id}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/client_config#id DataAzurestackClientConfig#id}. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigTimeouts">DataAzurestackClientConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -674,10 +674,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -739,7 +739,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/client_config#id DataAzurestackClientConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/client_config#id DataAzurestackClientConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -756,7 +756,7 @@ Timeouts DataAzurestackClientConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/client_config#timeouts DataAzurestackClientConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/client_config#timeouts DataAzurestackClientConfig#timeouts}
 
 ---
 
@@ -776,7 +776,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/client_config#read DataAzurestackClientConfig#read}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackClientConfig.DataAzurestackClientConfigTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/client_config#read DataAzurestackClientConfig#read}. |
 
 ---
 
@@ -788,7 +788,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/client_config#read DataAzurestackClientConfig#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/client_config#read DataAzurestackClientConfig#read}.
 
 ---
 

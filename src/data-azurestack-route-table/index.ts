@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azurestack/d/route_table
+// https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/route_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzurestackRouteTableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/route_table#id DataAzurestackRouteTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/route_table#id DataAzurestackRouteTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/route_table#name DataAzurestackRouteTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/route_table#name DataAzurestackRouteTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/route_table#resource_group_name DataAzurestackRouteTable#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/route_table#resource_group_name DataAzurestackRouteTable#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/route_table#timeouts DataAzurestackRouteTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/route_table#timeouts DataAzurestackRouteTable#timeouts}
   */
   readonly timeouts?: DataAzurestackRouteTableTimeouts;
 }
@@ -110,12 +110,12 @@ export class DataAzurestackRouteTableRouteList extends cdktf.ComplexList {
 }
 export interface DataAzurestackRouteTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/route_table#read DataAzurestackRouteTable#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/route_table#read DataAzurestackRouteTable#read}
   */
   readonly read?: string;
 }
 
-export function dataAzurestackRouteTableTimeoutsToTerraform(struct?: DataAzurestackRouteTableTimeoutsOutputReference | DataAzurestackRouteTableTimeouts | cdktf.IResolvable): any {
+export function dataAzurestackRouteTableTimeoutsToTerraform(struct?: DataAzurestackRouteTableTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -134,7 +134,7 @@ export class DataAzurestackRouteTableTimeoutsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAzurestackRouteTableTimeouts | cdktf.IResolvable | undefined {
@@ -185,7 +185,7 @@ export class DataAzurestackRouteTableTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/route_table azurestack_route_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/route_table azurestack_route_table}
 */
 export class DataAzurestackRouteTable extends cdktf.TerraformDataSource {
 
@@ -199,7 +199,7 @@ export class DataAzurestackRouteTable extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azurestack/d/route_table azurestack_route_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/route_table azurestack_route_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
