@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool
+// https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,71 +8,71 @@ import * as cdktf from 'cdktf';
 
 export interface LbNatPoolConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#backend_port LbNatPool#backend_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#backend_port LbNatPool#backend_port}
   */
   readonly backendPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#frontend_ip_configuration_name LbNatPool#frontend_ip_configuration_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#frontend_ip_configuration_name LbNatPool#frontend_ip_configuration_name}
   */
   readonly frontendIpConfigurationName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#frontend_port_end LbNatPool#frontend_port_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#frontend_port_end LbNatPool#frontend_port_end}
   */
   readonly frontendPortEnd: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#frontend_port_start LbNatPool#frontend_port_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#frontend_port_start LbNatPool#frontend_port_start}
   */
   readonly frontendPortStart: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#id LbNatPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#id LbNatPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#loadbalancer_id LbNatPool#loadbalancer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#loadbalancer_id LbNatPool#loadbalancer_id}
   */
   readonly loadbalancerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#name LbNatPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#name LbNatPool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#protocol LbNatPool#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#protocol LbNatPool#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#resource_group_name LbNatPool#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#resource_group_name LbNatPool#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#timeouts LbNatPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#timeouts LbNatPool#timeouts}
   */
   readonly timeouts?: LbNatPoolTimeouts;
 }
 export interface LbNatPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#create LbNatPool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#create LbNatPool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#delete LbNatPool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#delete LbNatPool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#read LbNatPool#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#read LbNatPool#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#update LbNatPool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#update LbNatPool#update}
   */
   readonly update?: string;
 }
 
-export function lbNatPoolTimeoutsToTerraform(struct?: LbNatPoolTimeoutsOutputReference | LbNatPoolTimeouts | cdktf.IResolvable): any {
+export function lbNatPoolTimeoutsToTerraform(struct?: LbNatPoolTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -94,7 +94,7 @@ export class LbNatPoolTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): LbNatPoolTimeouts | cdktf.IResolvable | undefined {
@@ -211,7 +211,7 @@ export class LbNatPoolTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool azurestack_lb_nat_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool azurestack_lb_nat_pool}
 */
 export class LbNatPool extends cdktf.TerraformResource {
 
@@ -225,7 +225,7 @@ export class LbNatPool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool azurestack_lb_nat_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool azurestack_lb_nat_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

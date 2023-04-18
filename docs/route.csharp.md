@@ -1,6 +1,6 @@
 # `azurestack_route`
 
-Refer to the Terraform Registory for docs: [`azurestack_route`](https://www.terraform.io/docs/providers/azurestack/r/route).
+Refer to the Terraform Registory for docs: [`azurestack_route`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route).
 
 # `route` Submodule <a name="`route` Submodule" id="@cdktf/provider-azurestack.route"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_route`](https://www.terr
 
 ### Route <a name="Route" id="@cdktf/provider-azurestack.route.Route"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/route azurestack_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route azurestack_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.route.Route.Initializer"></a>
 
@@ -373,7 +373,7 @@ Route.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-azurestack.route.Route.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.route.Route.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.route.Route.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.route.Route.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.route.Route.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.route.Route.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.route.Route.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.route.Route.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -483,10 +483,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.route.Route.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -729,7 +729,7 @@ using HashiCorp.Cdktf.Providers.Azurestack;
 
 new RouteConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -751,19 +751,19 @@ new RouteConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.addressPrefix">AddressPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#address_prefix Route#address_prefix}. |
-| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#name Route#name}. |
-| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.nextHopType">NextHopType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#next_hop_type Route#next_hop_type}. |
-| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#resource_group_name Route#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.routeTableName">RouteTableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#route_table_name Route#route_table_name}. |
-| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#id Route#id}. |
-| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.nextHopInIpAddress">NextHopInIpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#next_hop_in_ip_address Route#next_hop_in_ip_address}. |
+| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.addressPrefix">AddressPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#address_prefix Route#address_prefix}. |
+| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#name Route#name}. |
+| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.nextHopType">NextHopType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#next_hop_type Route#next_hop_type}. |
+| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#resource_group_name Route#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.routeTableName">RouteTableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#route_table_name Route#route_table_name}. |
+| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#id Route#id}. |
+| <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.nextHopInIpAddress">NextHopInIpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#next_hop_in_ip_address Route#next_hop_in_ip_address}. |
 | <code><a href="#@cdktf/provider-azurestack.route.RouteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.route.RouteTimeouts">RouteTimeouts</a></code> | timeouts block. |
 
 ---
@@ -781,10 +781,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.route.RouteConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -846,7 +846,7 @@ public string AddressPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#address_prefix Route#address_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#address_prefix Route#address_prefix}.
 
 ---
 
@@ -858,7 +858,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#name Route#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#name Route#name}.
 
 ---
 
@@ -870,7 +870,7 @@ public string NextHopType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#next_hop_type Route#next_hop_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#next_hop_type Route#next_hop_type}.
 
 ---
 
@@ -882,7 +882,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#resource_group_name Route#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#resource_group_name Route#resource_group_name}.
 
 ---
 
@@ -894,7 +894,7 @@ public string RouteTableName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#route_table_name Route#route_table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#route_table_name Route#route_table_name}.
 
 ---
 
@@ -906,7 +906,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#id Route#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#id Route#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -921,7 +921,7 @@ public string NextHopInIpAddress { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#next_hop_in_ip_address Route#next_hop_in_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#next_hop_in_ip_address Route#next_hop_in_ip_address}.
 
 ---
 
@@ -935,7 +935,7 @@ public RouteTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#timeouts Route#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#timeouts Route#timeouts}
 
 ---
 
@@ -958,10 +958,10 @@ new RouteTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.route.RouteTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#create Route#create}. |
-| <code><a href="#@cdktf/provider-azurestack.route.RouteTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#delete Route#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.route.RouteTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#read Route#read}. |
-| <code><a href="#@cdktf/provider-azurestack.route.RouteTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#update Route#update}. |
+| <code><a href="#@cdktf/provider-azurestack.route.RouteTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#create Route#create}. |
+| <code><a href="#@cdktf/provider-azurestack.route.RouteTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#delete Route#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.route.RouteTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#read Route#read}. |
+| <code><a href="#@cdktf/provider-azurestack.route.RouteTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#update Route#update}. |
 
 ---
 
@@ -973,7 +973,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#create Route#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#create Route#create}.
 
 ---
 
@@ -985,7 +985,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#delete Route#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#delete Route#delete}.
 
 ---
 
@@ -997,7 +997,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#read Route#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#read Route#read}.
 
 ---
 
@@ -1009,7 +1009,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/route#update Route#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route#update Route#update}.
 
 ---
 

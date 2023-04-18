@@ -1,6 +1,6 @@
 # `azurestack_virtual_machine_extension`
 
-Refer to the Terraform Registory for docs: [`azurestack_virtual_machine_extension`](https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension).
+Refer to the Terraform Registory for docs: [`azurestack_virtual_machine_extension`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension).
 
 # `virtualMachineExtension` Submodule <a name="`virtualMachineExtension` Submodule" id="@cdktf/provider-azurestack.virtualMachineExtension"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`azurestack_virtual_machine_extensio
 
 ### VirtualMachineExtension <a name="VirtualMachineExtension" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension azurestack_virtual_machine_extension}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension azurestack_virtual_machine_extension}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 virtualmachineextension.NewVirtualMachineExtension(scope Construct, id *string, config VirtualMachineExtensionConfig) VirtualMachineExtension
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 virtualmachineextension.VirtualMachineExtension_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 virtualmachineextension.VirtualMachineExtension_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ virtualmachineextension.VirtualMachineExtension_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 virtualmachineextension.VirtualMachineExtension_IsTerraformResource(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ virtualmachineextension.VirtualMachineExtension_IsTerraformResource(x interface{
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -510,10 +510,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -812,11 +812,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 &virtualmachineextension.VirtualMachineExtensionConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -832,7 +832,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualmachi
 	ProtectedSettings: *string,
 	Settings: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.virtualMachineExtension.VirtualMachineExtensionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts,
 }
 ```
 
@@ -841,22 +841,22 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualmachi
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#name VirtualMachineExtension#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.publisher">Publisher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#publisher VirtualMachineExtension#publisher}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#type VirtualMachineExtension#type}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.typeHandlerVersion">TypeHandlerVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#type_handler_version VirtualMachineExtension#type_handler_version}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.virtualMachineId">VirtualMachineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#virtual_machine_id VirtualMachineExtension#virtual_machine_id}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.autoUpgradeMinorVersion">AutoUpgradeMinorVersion</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#auto_upgrade_minor_version VirtualMachineExtension#auto_upgrade_minor_version}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#id VirtualMachineExtension#id}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.protectedSettings">ProtectedSettings</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#protected_settings VirtualMachineExtension#protected_settings}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.settings">Settings</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#settings VirtualMachineExtension#settings}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#tags VirtualMachineExtension#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#name VirtualMachineExtension#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.publisher">Publisher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#publisher VirtualMachineExtension#publisher}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#type VirtualMachineExtension#type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.typeHandlerVersion">TypeHandlerVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#type_handler_version VirtualMachineExtension#type_handler_version}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.virtualMachineId">VirtualMachineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#virtual_machine_id VirtualMachineExtension#virtual_machine_id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.autoUpgradeMinorVersion">AutoUpgradeMinorVersion</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#auto_upgrade_minor_version VirtualMachineExtension#auto_upgrade_minor_version}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#id VirtualMachineExtension#id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.protectedSettings">ProtectedSettings</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#protected_settings VirtualMachineExtension#protected_settings}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.settings">Settings</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#settings VirtualMachineExtension#settings}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#tags VirtualMachineExtension#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts">VirtualMachineExtensionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -874,10 +874,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -939,7 +939,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#name VirtualMachineExtension#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#name VirtualMachineExtension#name}.
 
 ---
 
@@ -951,7 +951,7 @@ Publisher *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#publisher VirtualMachineExtension#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#publisher VirtualMachineExtension#publisher}.
 
 ---
 
@@ -963,7 +963,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#type VirtualMachineExtension#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#type VirtualMachineExtension#type}.
 
 ---
 
@@ -975,7 +975,7 @@ TypeHandlerVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#type_handler_version VirtualMachineExtension#type_handler_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#type_handler_version VirtualMachineExtension#type_handler_version}.
 
 ---
 
@@ -987,7 +987,7 @@ VirtualMachineId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#virtual_machine_id VirtualMachineExtension#virtual_machine_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#virtual_machine_id VirtualMachineExtension#virtual_machine_id}.
 
 ---
 
@@ -999,7 +999,7 @@ AutoUpgradeMinorVersion interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#auto_upgrade_minor_version VirtualMachineExtension#auto_upgrade_minor_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#auto_upgrade_minor_version VirtualMachineExtension#auto_upgrade_minor_version}.
 
 ---
 
@@ -1011,7 +1011,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#id VirtualMachineExtension#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#id VirtualMachineExtension#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1026,7 +1026,7 @@ ProtectedSettings *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#protected_settings VirtualMachineExtension#protected_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#protected_settings VirtualMachineExtension#protected_settings}.
 
 ---
 
@@ -1038,7 +1038,7 @@ Settings *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#settings VirtualMachineExtension#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#settings VirtualMachineExtension#settings}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#tags VirtualMachineExtension#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#tags VirtualMachineExtension#tags}.
 
 ---
 
@@ -1064,7 +1064,7 @@ Timeouts VirtualMachineExtensionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#timeouts VirtualMachineExtension#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#timeouts VirtualMachineExtension#timeouts}
 
 ---
 
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 &virtualmachineextension.VirtualMachineExtensionTimeouts {
 	Create: *string,
@@ -1087,10 +1087,10 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualmachi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#create VirtualMachineExtension#create}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#delete VirtualMachineExtension#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#read VirtualMachineExtension#read}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#update VirtualMachineExtension#update}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#create VirtualMachineExtension#create}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#delete VirtualMachineExtension#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#read VirtualMachineExtension#read}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#update VirtualMachineExtension#update}. |
 
 ---
 
@@ -1102,7 +1102,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#create VirtualMachineExtension#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#create VirtualMachineExtension#create}.
 
 ---
 
@@ -1114,7 +1114,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#delete VirtualMachineExtension#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#delete VirtualMachineExtension#delete}.
 
 ---
 
@@ -1126,7 +1126,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#read VirtualMachineExtension#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#read VirtualMachineExtension#read}.
 
 ---
 
@@ -1138,7 +1138,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_extension#update VirtualMachineExtension#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension#update VirtualMachineExtension#update}.
 
 ---
 
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 virtualmachineextension.NewVirtualMachineExtensionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineExtensionTimeoutsOutputReference
 ```

@@ -1,6 +1,6 @@
 # `azurestack_public_ip`
 
-Refer to the Terraform Registory for docs: [`azurestack_public_ip`](https://www.terraform.io/docs/providers/azurestack/r/public_ip).
+Refer to the Terraform Registory for docs: [`azurestack_public_ip`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip).
 
 # `publicIp` Submodule <a name="`publicIp` Submodule" id="@cdktf/provider-azurestack.publicIp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_public_ip`](https://www.
 
 ### PublicIp <a name="PublicIp" id="@cdktf/provider-azurestack.publicIp.PublicIp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip azurestack_public_ip}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip azurestack_public_ip}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.publicIp.PublicIp.Initializer"></a>
 
@@ -422,7 +422,7 @@ publicIp.PublicIp.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIp.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIp.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIp.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIp.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIp.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIp.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIp.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIp.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -544,10 +544,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.publicIp.PublicIp.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -916,24 +916,24 @@ const publicIpConfig: publicIp.PublicIpConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#location PublicIp#location}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#name PublicIp#name}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#resource_group_name PublicIp#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.allocationMethod">allocationMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#allocation_method PublicIp#allocation_method}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.domainNameLabel">domainNameLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#domain_name_label PublicIp#domain_name_label}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#id PublicIp#id}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.idleTimeoutInMinutes">idleTimeoutInMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#idle_timeout_in_minutes PublicIp#idle_timeout_in_minutes}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.ipVersion">ipVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#ip_version PublicIp#ip_version}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.publicIpAddressAllocation">publicIpAddressAllocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#public_ip_address_allocation PublicIp#public_ip_address_allocation}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.reverseFqdn">reverseFqdn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#reverse_fqdn PublicIp#reverse_fqdn}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.sku">sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#sku PublicIp#sku}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#tags PublicIp#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#location PublicIp#location}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#name PublicIp#name}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#resource_group_name PublicIp#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.allocationMethod">allocationMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#allocation_method PublicIp#allocation_method}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.domainNameLabel">domainNameLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#domain_name_label PublicIp#domain_name_label}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#id PublicIp#id}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.idleTimeoutInMinutes">idleTimeoutInMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#idle_timeout_in_minutes PublicIp#idle_timeout_in_minutes}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.ipVersion">ipVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#ip_version PublicIp#ip_version}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.publicIpAddressAllocation">publicIpAddressAllocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#public_ip_address_allocation PublicIp#public_ip_address_allocation}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.reverseFqdn">reverseFqdn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#reverse_fqdn PublicIp#reverse_fqdn}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.sku">sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#sku PublicIp#sku}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#tags PublicIp#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpTimeouts">PublicIpTimeouts</a></code> | timeouts block. |
 
 ---
@@ -951,10 +951,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.publicIp.PublicIpConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1016,7 +1016,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#location PublicIp#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#location PublicIp#location}.
 
 ---
 
@@ -1028,7 +1028,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#name PublicIp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#name PublicIp#name}.
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#resource_group_name PublicIp#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#resource_group_name PublicIp#resource_group_name}.
 
 ---
 
@@ -1052,7 +1052,7 @@ public readonly allocationMethod: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#allocation_method PublicIp#allocation_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#allocation_method PublicIp#allocation_method}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public readonly domainNameLabel: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#domain_name_label PublicIp#domain_name_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#domain_name_label PublicIp#domain_name_label}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#id PublicIp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#id PublicIp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1091,7 @@ public readonly idleTimeoutInMinutes: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#idle_timeout_in_minutes PublicIp#idle_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#idle_timeout_in_minutes PublicIp#idle_timeout_in_minutes}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public readonly ipVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#ip_version PublicIp#ip_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#ip_version PublicIp#ip_version}.
 
 ---
 
@@ -1115,7 +1115,7 @@ public readonly publicIpAddressAllocation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#public_ip_address_allocation PublicIp#public_ip_address_allocation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#public_ip_address_allocation PublicIp#public_ip_address_allocation}.
 
 ---
 
@@ -1127,7 +1127,7 @@ public readonly reverseFqdn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#reverse_fqdn PublicIp#reverse_fqdn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#reverse_fqdn PublicIp#reverse_fqdn}.
 
 ---
 
@@ -1139,7 +1139,7 @@ public readonly sku: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#sku PublicIp#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#sku PublicIp#sku}.
 
 ---
 
@@ -1151,7 +1151,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#tags PublicIp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#tags PublicIp#tags}.
 
 ---
 
@@ -1165,7 +1165,7 @@ public readonly timeouts: PublicIpTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#timeouts PublicIp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#timeouts PublicIp#timeouts}
 
 ---
 
@@ -1183,10 +1183,10 @@ const publicIpTimeouts: publicIp.PublicIpTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#create PublicIp#create}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#delete PublicIp#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#read PublicIp#read}. |
-| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#update PublicIp#update}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#create PublicIp#create}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#delete PublicIp#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#read PublicIp#read}. |
+| <code><a href="#@cdktf/provider-azurestack.publicIp.PublicIpTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#update PublicIp#update}. |
 
 ---
 
@@ -1198,7 +1198,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#create PublicIp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#create PublicIp#create}.
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#delete PublicIp#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#delete PublicIp#delete}.
 
 ---
 
@@ -1222,7 +1222,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#read PublicIp#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#read PublicIp#read}.
 
 ---
 
@@ -1234,7 +1234,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/public_ip#update PublicIp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#update PublicIp#update}.
 
 ---
 

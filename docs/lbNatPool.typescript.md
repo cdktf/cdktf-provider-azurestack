@@ -1,6 +1,6 @@
 # `azurestack_lb_nat_pool`
 
-Refer to the Terraform Registory for docs: [`azurestack_lb_nat_pool`](https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool).
+Refer to the Terraform Registory for docs: [`azurestack_lb_nat_pool`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool).
 
 # `lbNatPool` Submodule <a name="`lbNatPool` Submodule" id="@cdktf/provider-azurestack.lbNatPool"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_lb_nat_pool`](https://ww
 
 ### LbNatPool <a name="LbNatPool" id="@cdktf/provider-azurestack.lbNatPool.LbNatPool"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool azurestack_lb_nat_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool azurestack_lb_nat_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.lbNatPool.LbNatPool.Initializer"></a>
 
@@ -366,7 +366,7 @@ lbNatPool.LbNatPool.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -481,10 +481,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -783,21 +783,21 @@ const lbNatPoolConfig: lbNatPool.LbNatPoolConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.backendPort">backendPort</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#backend_port LbNatPool#backend_port}. |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.frontendIpConfigurationName">frontendIpConfigurationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#frontend_ip_configuration_name LbNatPool#frontend_ip_configuration_name}. |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.frontendPortEnd">frontendPortEnd</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#frontend_port_end LbNatPool#frontend_port_end}. |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.frontendPortStart">frontendPortStart</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#frontend_port_start LbNatPool#frontend_port_start}. |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.loadbalancerId">loadbalancerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#loadbalancer_id LbNatPool#loadbalancer_id}. |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#name LbNatPool#name}. |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#protocol LbNatPool#protocol}. |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#resource_group_name LbNatPool#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#id LbNatPool#id}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.backendPort">backendPort</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#backend_port LbNatPool#backend_port}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.frontendIpConfigurationName">frontendIpConfigurationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#frontend_ip_configuration_name LbNatPool#frontend_ip_configuration_name}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.frontendPortEnd">frontendPortEnd</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#frontend_port_end LbNatPool#frontend_port_end}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.frontendPortStart">frontendPortStart</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#frontend_port_start LbNatPool#frontend_port_start}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.loadbalancerId">loadbalancerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#loadbalancer_id LbNatPool#loadbalancer_id}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#name LbNatPool#name}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#protocol LbNatPool#protocol}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#resource_group_name LbNatPool#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#id LbNatPool#id}. |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts">LbNatPoolTimeouts</a></code> | timeouts block. |
 
 ---
@@ -815,10 +815,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.lbNatPool.LbNatPoolConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -880,7 +880,7 @@ public readonly backendPort: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#backend_port LbNatPool#backend_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#backend_port LbNatPool#backend_port}.
 
 ---
 
@@ -892,7 +892,7 @@ public readonly frontendIpConfigurationName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#frontend_ip_configuration_name LbNatPool#frontend_ip_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#frontend_ip_configuration_name LbNatPool#frontend_ip_configuration_name}.
 
 ---
 
@@ -904,7 +904,7 @@ public readonly frontendPortEnd: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#frontend_port_end LbNatPool#frontend_port_end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#frontend_port_end LbNatPool#frontend_port_end}.
 
 ---
 
@@ -916,7 +916,7 @@ public readonly frontendPortStart: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#frontend_port_start LbNatPool#frontend_port_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#frontend_port_start LbNatPool#frontend_port_start}.
 
 ---
 
@@ -928,7 +928,7 @@ public readonly loadbalancerId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#loadbalancer_id LbNatPool#loadbalancer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#loadbalancer_id LbNatPool#loadbalancer_id}.
 
 ---
 
@@ -940,7 +940,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#name LbNatPool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#name LbNatPool#name}.
 
 ---
 
@@ -952,7 +952,7 @@ public readonly protocol: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#protocol LbNatPool#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#protocol LbNatPool#protocol}.
 
 ---
 
@@ -964,7 +964,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#resource_group_name LbNatPool#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#resource_group_name LbNatPool#resource_group_name}.
 
 ---
 
@@ -976,7 +976,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#id LbNatPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#id LbNatPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -993,7 +993,7 @@ public readonly timeouts: LbNatPoolTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#timeouts LbNatPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#timeouts LbNatPool#timeouts}
 
 ---
 
@@ -1011,10 +1011,10 @@ const lbNatPoolTimeouts: lbNatPool.LbNatPoolTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#create LbNatPool#create}. |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#delete LbNatPool#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#read LbNatPool#read}. |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#update LbNatPool#update}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#create LbNatPool#create}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#delete LbNatPool#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#read LbNatPool#read}. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#update LbNatPool#update}. |
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#create LbNatPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#create LbNatPool#create}.
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#delete LbNatPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#delete LbNatPool#delete}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#read LbNatPool#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#read LbNatPool#read}.
 
 ---
 
@@ -1062,7 +1062,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_nat_pool#update LbNatPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#update LbNatPool#update}.
 
 ---
 

@@ -1,3 +1,3 @@
 # `azurestack_virtual_network_peering`
 
-Refer to the Terraform Registory for docs: [`azurestack_virtual_network_peering`](https://www.terraform.io/docs/providers/azurestack/r/virtual_network_peering).
+Refer to the Terraform Registory for docs: [`azurestack_virtual_network_peering`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_peering).

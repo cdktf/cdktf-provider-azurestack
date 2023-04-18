@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway
+// https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,88 +8,88 @@ import * as cdktf from 'cdktf';
 
 export interface VirtualNetworkGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#active_active VirtualNetworkGateway#active_active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#active_active VirtualNetworkGateway#active_active}
   */
   readonly activeActive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#default_local_network_gateway_id VirtualNetworkGateway#default_local_network_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#default_local_network_gateway_id VirtualNetworkGateway#default_local_network_gateway_id}
   */
   readonly defaultLocalNetworkGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#enable_bgp VirtualNetworkGateway#enable_bgp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#enable_bgp VirtualNetworkGateway#enable_bgp}
   */
   readonly enableBgp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#id VirtualNetworkGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#id VirtualNetworkGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#location VirtualNetworkGateway#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#location VirtualNetworkGateway#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#name VirtualNetworkGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#name VirtualNetworkGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#resource_group_name VirtualNetworkGateway#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#resource_group_name VirtualNetworkGateway#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#sku VirtualNetworkGateway#sku}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#sku VirtualNetworkGateway#sku}
   */
   readonly sku: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#tags VirtualNetworkGateway#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#tags VirtualNetworkGateway#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#type VirtualNetworkGateway#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#type VirtualNetworkGateway#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#vpn_type VirtualNetworkGateway#vpn_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#vpn_type VirtualNetworkGateway#vpn_type}
   */
   readonly vpnType?: string;
   /**
   * bgp_settings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#bgp_settings VirtualNetworkGateway#bgp_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#bgp_settings VirtualNetworkGateway#bgp_settings}
   */
   readonly bgpSettings?: VirtualNetworkGatewayBgpSettings;
   /**
   * ip_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#ip_configuration VirtualNetworkGateway#ip_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#ip_configuration VirtualNetworkGateway#ip_configuration}
   */
   readonly ipConfiguration: VirtualNetworkGatewayIpConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#timeouts VirtualNetworkGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#timeouts VirtualNetworkGateway#timeouts}
   */
   readonly timeouts?: VirtualNetworkGatewayTimeouts;
   /**
   * vpn_client_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#vpn_client_configuration VirtualNetworkGateway#vpn_client_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#vpn_client_configuration VirtualNetworkGateway#vpn_client_configuration}
   */
   readonly vpnClientConfiguration?: VirtualNetworkGatewayVpnClientConfiguration;
 }
 export interface VirtualNetworkGatewayBgpSettings {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#asn VirtualNetworkGateway#asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#asn VirtualNetworkGateway#asn}
   */
   readonly asn?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#peer_weight VirtualNetworkGateway#peer_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#peer_weight VirtualNetworkGateway#peer_weight}
   */
   readonly peerWeight?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#peering_address VirtualNetworkGateway#peering_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#peering_address VirtualNetworkGateway#peering_address}
   */
   readonly peeringAddress?: string;
 }
@@ -200,19 +200,19 @@ export class VirtualNetworkGatewayBgpSettingsOutputReference extends cdktf.Compl
 }
 export interface VirtualNetworkGatewayIpConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#name VirtualNetworkGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#name VirtualNetworkGateway#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#private_ip_address_allocation VirtualNetworkGateway#private_ip_address_allocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#private_ip_address_allocation VirtualNetworkGateway#private_ip_address_allocation}
   */
   readonly privateIpAddressAllocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#public_ip_address_id VirtualNetworkGateway#public_ip_address_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#public_ip_address_id VirtualNetworkGateway#public_ip_address_id}
   */
   readonly publicIpAddressId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#subnet_id VirtualNetworkGateway#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#subnet_id VirtualNetworkGateway#subnet_id}
   */
   readonly subnetId: string;
 }
@@ -372,24 +372,24 @@ export class VirtualNetworkGatewayIpConfigurationList extends cdktf.ComplexList 
 }
 export interface VirtualNetworkGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#create VirtualNetworkGateway#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#create VirtualNetworkGateway#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#delete VirtualNetworkGateway#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#delete VirtualNetworkGateway#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#read VirtualNetworkGateway#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#read VirtualNetworkGateway#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#update VirtualNetworkGateway#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#update VirtualNetworkGateway#update}
   */
   readonly update?: string;
 }
 
-export function virtualNetworkGatewayTimeoutsToTerraform(struct?: VirtualNetworkGatewayTimeoutsOutputReference | VirtualNetworkGatewayTimeouts | cdktf.IResolvable): any {
+export function virtualNetworkGatewayTimeoutsToTerraform(struct?: VirtualNetworkGatewayTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -411,7 +411,7 @@ export class VirtualNetworkGatewayTimeoutsOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): VirtualNetworkGatewayTimeouts | cdktf.IResolvable | undefined {
@@ -528,11 +528,11 @@ export class VirtualNetworkGatewayTimeoutsOutputReference extends cdktf.ComplexO
 }
 export interface VirtualNetworkGatewayVpnClientConfigurationRevokedCertificate {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#name VirtualNetworkGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#name VirtualNetworkGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#thumbprint VirtualNetworkGateway#thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#thumbprint VirtualNetworkGateway#thumbprint}
   */
   readonly thumbprint: string;
 }
@@ -646,11 +646,11 @@ export class VirtualNetworkGatewayVpnClientConfigurationRevokedCertificateList e
 }
 export interface VirtualNetworkGatewayVpnClientConfigurationRootCertificate {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#name VirtualNetworkGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#name VirtualNetworkGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#public_cert_data VirtualNetworkGateway#public_cert_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#public_cert_data VirtualNetworkGateway#public_cert_data}
   */
   readonly publicCertData: string;
 }
@@ -764,31 +764,31 @@ export class VirtualNetworkGatewayVpnClientConfigurationRootCertificateList exte
 }
 export interface VirtualNetworkGatewayVpnClientConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#address_space VirtualNetworkGateway#address_space}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#address_space VirtualNetworkGateway#address_space}
   */
   readonly addressSpace: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#radius_server_address VirtualNetworkGateway#radius_server_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#radius_server_address VirtualNetworkGateway#radius_server_address}
   */
   readonly radiusServerAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#radius_server_secret VirtualNetworkGateway#radius_server_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#radius_server_secret VirtualNetworkGateway#radius_server_secret}
   */
   readonly radiusServerSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#vpn_client_protocols VirtualNetworkGateway#vpn_client_protocols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#vpn_client_protocols VirtualNetworkGateway#vpn_client_protocols}
   */
   readonly vpnClientProtocols?: string[];
   /**
   * revoked_certificate block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#revoked_certificate VirtualNetworkGateway#revoked_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#revoked_certificate VirtualNetworkGateway#revoked_certificate}
   */
   readonly revokedCertificate?: VirtualNetworkGatewayVpnClientConfigurationRevokedCertificate[] | cdktf.IResolvable;
   /**
   * root_certificate block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway#root_certificate VirtualNetworkGateway#root_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway#root_certificate VirtualNetworkGateway#root_certificate}
   */
   readonly rootCertificate?: VirtualNetworkGatewayVpnClientConfigurationRootCertificate[] | cdktf.IResolvable;
 }
@@ -965,7 +965,7 @@ export class VirtualNetworkGatewayVpnClientConfigurationOutputReference extends 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway azurestack_virtual_network_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway azurestack_virtual_network_gateway}
 */
 export class VirtualNetworkGateway extends cdktf.TerraformResource {
 
@@ -979,7 +979,7 @@ export class VirtualNetworkGateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network_gateway azurestack_virtual_network_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway azurestack_virtual_network_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

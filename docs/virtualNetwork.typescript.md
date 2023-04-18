@@ -1,6 +1,6 @@
 # `azurestack_virtual_network`
 
-Refer to the Terraform Registory for docs: [`azurestack_virtual_network`](https://www.terraform.io/docs/providers/azurestack/r/virtual_network).
+Refer to the Terraform Registory for docs: [`azurestack_virtual_network`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network).
 
 # `virtualNetwork` Submodule <a name="`virtualNetwork` Submodule" id="@cdktf/provider-azurestack.virtualNetwork"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_virtual_network`](https:
 
 ### VirtualNetwork <a name="VirtualNetwork" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network azurestack_virtual_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network azurestack_virtual_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.Initializer"></a>
 
@@ -400,7 +400,7 @@ virtualNetwork.VirtualNetwork.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -513,10 +513,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -795,20 +795,20 @@ const virtualNetworkConfig: virtualNetwork.VirtualNetworkConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.addressSpace">addressSpace</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#address_space VirtualNetwork#address_space}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#location VirtualNetwork#location}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#name VirtualNetwork#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#resource_group_name VirtualNetwork#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.dnsServers">dnsServers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#dns_servers VirtualNetwork#dns_servers}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#id VirtualNetwork#id}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.subnet">subnet</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnet">VirtualNetworkSubnet</a>[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#subnet VirtualNetwork#subnet}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#tags VirtualNetwork#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.addressSpace">addressSpace</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#address_space VirtualNetwork#address_space}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#location VirtualNetwork#location}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#name VirtualNetwork#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#resource_group_name VirtualNetwork#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.dnsServers">dnsServers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#dns_servers VirtualNetwork#dns_servers}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#id VirtualNetwork#id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.subnet">subnet</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnet">VirtualNetworkSubnet</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#subnet VirtualNetwork#subnet}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#tags VirtualNetwork#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkTimeouts">VirtualNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -826,10 +826,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -891,7 +891,7 @@ public readonly addressSpace: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#address_space VirtualNetwork#address_space}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#address_space VirtualNetwork#address_space}.
 
 ---
 
@@ -903,7 +903,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#location VirtualNetwork#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#location VirtualNetwork#location}.
 
 ---
 
@@ -915,7 +915,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#name VirtualNetwork#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#name VirtualNetwork#name}.
 
 ---
 
@@ -927,7 +927,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#resource_group_name VirtualNetwork#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#resource_group_name VirtualNetwork#resource_group_name}.
 
 ---
 
@@ -939,7 +939,7 @@ public readonly dnsServers: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#dns_servers VirtualNetwork#dns_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#dns_servers VirtualNetwork#dns_servers}.
 
 ---
 
@@ -951,7 +951,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#id VirtualNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#id VirtualNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -966,7 +966,7 @@ public readonly subnet: IResolvable | VirtualNetworkSubnet[];
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnet">VirtualNetworkSubnet</a>[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#subnet VirtualNetwork#subnet}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#subnet VirtualNetwork#subnet}.
 
 ---
 
@@ -978,7 +978,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#tags VirtualNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#tags VirtualNetwork#tags}.
 
 ---
 
@@ -992,7 +992,7 @@ public readonly timeouts: VirtualNetworkTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#timeouts VirtualNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#timeouts VirtualNetwork#timeouts}
 
 ---
 
@@ -1010,10 +1010,10 @@ const virtualNetworkSubnet: virtualNetwork.VirtualNetworkSubnet = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnet.property.addressPrefix">addressPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#address_prefix VirtualNetwork#address_prefix}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnet.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#id VirtualNetwork#id}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnet.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#name VirtualNetwork#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnet.property.securityGroup">securityGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#security_group VirtualNetwork#security_group}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnet.property.addressPrefix">addressPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#address_prefix VirtualNetwork#address_prefix}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnet.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#id VirtualNetwork#id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnet.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#name VirtualNetwork#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnet.property.securityGroup">securityGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#security_group VirtualNetwork#security_group}. |
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly addressPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#address_prefix VirtualNetwork#address_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#address_prefix VirtualNetwork#address_prefix}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#id VirtualNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#id VirtualNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1052,7 +1052,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#name VirtualNetwork#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#name VirtualNetwork#name}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public readonly securityGroup: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#security_group VirtualNetwork#security_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#security_group VirtualNetwork#security_group}.
 
 ---
 
@@ -1082,10 +1082,10 @@ const virtualNetworkTimeouts: virtualNetwork.VirtualNetworkTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#create VirtualNetwork#create}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#delete VirtualNetwork#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#read VirtualNetwork#read}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#update VirtualNetwork#update}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#create VirtualNetwork#create}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#delete VirtualNetwork#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#read VirtualNetwork#read}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#update VirtualNetwork#update}. |
 
 ---
 
@@ -1097,7 +1097,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#create VirtualNetwork#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#create VirtualNetwork#create}.
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#delete VirtualNetwork#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#delete VirtualNetwork#delete}.
 
 ---
 
@@ -1121,7 +1121,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#read VirtualNetwork#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#read VirtualNetwork#read}.
 
 ---
 
@@ -1133,7 +1133,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_network#update VirtualNetwork#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network#update VirtualNetwork#update}.
 
 ---
 

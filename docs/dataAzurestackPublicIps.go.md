@@ -1,6 +1,6 @@
 # `data_azurestack_public_ips`
 
-Refer to the Terraform Registory for docs: [`data_azurestack_public_ips`](https://www.terraform.io/docs/providers/azurestack/d/public_ips).
+Refer to the Terraform Registory for docs: [`data_azurestack_public_ips`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips).
 
 # `dataAzurestackPublicIps` Submodule <a name="`dataAzurestackPublicIps` Submodule" id="@cdktf/provider-azurestack.dataAzurestackPublicIps"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_azurestack_public_ips`](https:
 
 ### DataAzurestackPublicIps <a name="DataAzurestackPublicIps" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips azurestack_public_ips}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips azurestack_public_ips}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicips"
 
 dataazurestackpublicips.NewDataAzurestackPublicIps(scope Construct, id *string, config DataAzurestackPublicIpsConfig) DataAzurestackPublicIps
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicips"
 
 dataazurestackpublicips.DataAzurestackPublicIps_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicips"
 
 dataazurestackpublicips.DataAzurestackPublicIps_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurestackpublicips.DataAzurestackPublicIps_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicips"
 
 dataazurestackpublicips.DataAzurestackPublicIps_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataazurestackpublicips.DataAzurestackPublicIps_IsTerraformDataSource(x interfac
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -491,10 +491,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIps.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -713,11 +713,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicips"
 
 &dataazurestackpublicips.DataAzurestackPublicIpsConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -729,7 +729,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 	AttachmentStatus: *string,
 	Id: *string,
 	NamePrefix: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.dataAzurestackPublicIps.DataAzurestackPublicIpsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsTimeouts,
 }
 ```
 
@@ -738,18 +738,18 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#resource_group_name DataAzurestackPublicIps#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.allocationType">AllocationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#allocation_type DataAzurestackPublicIps#allocation_type}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.attached">Attached</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#attached DataAzurestackPublicIps#attached}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.attachmentStatus">AttachmentStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#attachment_status DataAzurestackPublicIps#attachment_status}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#id DataAzurestackPublicIps#id}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#name_prefix DataAzurestackPublicIps#name_prefix}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#resource_group_name DataAzurestackPublicIps#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.allocationType">AllocationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#allocation_type DataAzurestackPublicIps#allocation_type}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.attached">Attached</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#attached DataAzurestackPublicIps#attached}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.attachmentStatus">AttachmentStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#attachment_status DataAzurestackPublicIps#attachment_status}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#id DataAzurestackPublicIps#id}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#name_prefix DataAzurestackPublicIps#name_prefix}. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsTimeouts">DataAzurestackPublicIpsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -767,10 +767,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -832,7 +832,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#resource_group_name DataAzurestackPublicIps#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#resource_group_name DataAzurestackPublicIps#resource_group_name}.
 
 ---
 
@@ -844,7 +844,7 @@ AllocationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#allocation_type DataAzurestackPublicIps#allocation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#allocation_type DataAzurestackPublicIps#allocation_type}.
 
 ---
 
@@ -856,7 +856,7 @@ Attached interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#attached DataAzurestackPublicIps#attached}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#attached DataAzurestackPublicIps#attached}.
 
 ---
 
@@ -868,7 +868,7 @@ AttachmentStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#attachment_status DataAzurestackPublicIps#attachment_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#attachment_status DataAzurestackPublicIps#attachment_status}.
 
 ---
 
@@ -880,7 +880,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#id DataAzurestackPublicIps#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#id DataAzurestackPublicIps#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -895,7 +895,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#name_prefix DataAzurestackPublicIps#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#name_prefix DataAzurestackPublicIps#name_prefix}.
 
 ---
 
@@ -909,7 +909,7 @@ Timeouts DataAzurestackPublicIpsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#timeouts DataAzurestackPublicIps#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#timeouts DataAzurestackPublicIps#timeouts}
 
 ---
 
@@ -918,7 +918,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsPublicIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicips"
 
 &dataazurestackpublicips.DataAzurestackPublicIpsPublicIps {
 
@@ -931,7 +931,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicips"
 
 &dataazurestackpublicips.DataAzurestackPublicIpsTimeouts {
 	Read: *string,
@@ -942,7 +942,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#read DataAzurestackPublicIps#read}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#read DataAzurestackPublicIps#read}. |
 
 ---
 
@@ -954,7 +954,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/public_ips#read DataAzurestackPublicIps#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips#read DataAzurestackPublicIps#read}.
 
 ---
 
@@ -965,7 +965,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsPublicIpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicips"
 
 dataazurestackpublicips.NewDataAzurestackPublicIpsPublicIpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackPublicIpsPublicIpsList
 ```
@@ -1097,7 +1097,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsPublicIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicips"
 
 dataazurestackpublicips.NewDataAzurestackPublicIpsPublicIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackPublicIpsPublicIpsOutputReference
 ```
@@ -1419,7 +1419,7 @@ func InternalValue() DataAzurestackPublicIpsPublicIps
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackPublicIps.DataAzurestackPublicIpsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackpublicips"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicips"
 
 dataazurestackpublicips.NewDataAzurestackPublicIpsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackPublicIpsTimeoutsOutputReference
 ```

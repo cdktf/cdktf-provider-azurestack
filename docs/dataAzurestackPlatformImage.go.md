@@ -1,6 +1,6 @@
 # `data_azurestack_platform_image`
 
-Refer to the Terraform Registory for docs: [`data_azurestack_platform_image`](https://www.terraform.io/docs/providers/azurestack/d/platform_image).
+Refer to the Terraform Registory for docs: [`data_azurestack_platform_image`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image).
 
 # `dataAzurestackPlatformImage` Submodule <a name="`dataAzurestackPlatformImage` Submodule" id="@cdktf/provider-azurestack.dataAzurestackPlatformImage"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_azurestack_platform_image`](ht
 
 ### DataAzurestackPlatformImage <a name="DataAzurestackPlatformImage" id="@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image azurestack_platform_image}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image azurestack_platform_image}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackplatformimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackplatformimage"
 
 dataazurestackplatformimage.NewDataAzurestackPlatformImage(scope Construct, id *string, config DataAzurestackPlatformImageConfig) DataAzurestackPlatformImage
 ```
@@ -304,7 +304,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackplatformimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackplatformimage"
 
 dataazurestackplatformimage.DataAzurestackPlatformImage_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackplatformimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackplatformimage"
 
 dataazurestackplatformimage.DataAzurestackPlatformImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataazurestackplatformimage.DataAzurestackPlatformImage_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackplatformimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackplatformimage"
 
 dataazurestackplatformimage.DataAzurestackPlatformImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataazurestackplatformimage.DataAzurestackPlatformImage_IsTerraformDataSource(x 
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -469,10 +469,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImage.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -681,11 +681,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackplatformimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackplatformimage"
 
 &dataazurestackplatformimage.DataAzurestackPlatformImageConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -696,7 +696,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 	Publisher: *string,
 	Sku: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.dataAzurestackPlatformImage.DataAzurestackPlatformImageTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageTimeouts,
 	Version: *string,
 }
 ```
@@ -706,19 +706,19 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#location DataAzurestackPlatformImage#location}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.offer">Offer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#offer DataAzurestackPlatformImage#offer}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.publisher">Publisher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#publisher DataAzurestackPlatformImage#publisher}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#sku DataAzurestackPlatformImage#sku}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#id DataAzurestackPlatformImage#id}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#location DataAzurestackPlatformImage#location}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.offer">Offer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#offer DataAzurestackPlatformImage#offer}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.publisher">Publisher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#publisher DataAzurestackPlatformImage#publisher}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#sku DataAzurestackPlatformImage#sku}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#id DataAzurestackPlatformImage#id}. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageTimeouts">DataAzurestackPlatformImageTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#version DataAzurestackPlatformImage#version}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#version DataAzurestackPlatformImage#version}. |
 
 ---
 
@@ -735,10 +735,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -800,7 +800,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#location DataAzurestackPlatformImage#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#location DataAzurestackPlatformImage#location}.
 
 ---
 
@@ -812,7 +812,7 @@ Offer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#offer DataAzurestackPlatformImage#offer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#offer DataAzurestackPlatformImage#offer}.
 
 ---
 
@@ -824,7 +824,7 @@ Publisher *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#publisher DataAzurestackPlatformImage#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#publisher DataAzurestackPlatformImage#publisher}.
 
 ---
 
@@ -836,7 +836,7 @@ Sku *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#sku DataAzurestackPlatformImage#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#sku DataAzurestackPlatformImage#sku}.
 
 ---
 
@@ -848,7 +848,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#id DataAzurestackPlatformImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#id DataAzurestackPlatformImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -865,7 +865,7 @@ Timeouts DataAzurestackPlatformImageTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#timeouts DataAzurestackPlatformImage#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#timeouts DataAzurestackPlatformImage#timeouts}
 
 ---
 
@@ -877,7 +877,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#version DataAzurestackPlatformImage#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#version DataAzurestackPlatformImage#version}.
 
 ---
 
@@ -886,7 +886,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackplatformimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackplatformimage"
 
 &dataazurestackplatformimage.DataAzurestackPlatformImageTimeouts {
 	Read: *string,
@@ -897,7 +897,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazuresta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#read DataAzurestackPlatformImage#read}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#read DataAzurestackPlatformImage#read}. |
 
 ---
 
@@ -909,7 +909,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#read DataAzurestackPlatformImage#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#read DataAzurestackPlatformImage#read}.
 
 ---
 
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackPlatformImage.DataAzurestackPlatformImageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackplatformimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackplatformimage"
 
 dataazurestackplatformimage.NewDataAzurestackPlatformImageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackPlatformImageTimeoutsOutputReference
 ```

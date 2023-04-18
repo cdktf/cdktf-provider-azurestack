@@ -1,6 +1,6 @@
 # `data_azurestack_virtual_network`
 
-Refer to the Terraform Registory for docs: [`data_azurestack_virtual_network`](https://www.terraform.io/docs/providers/azurestack/d/virtual_network).
+Refer to the Terraform Registory for docs: [`data_azurestack_virtual_network`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network).
 
 # `dataAzurestackVirtualNetwork` Submodule <a name="`dataAzurestackVirtualNetwork` Submodule" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azurestack_virtual_network`](h
 
 ### DataAzurestackVirtualNetwork <a name="DataAzurestackVirtualNetwork" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network azurestack_virtual_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network azurestack_virtual_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer"></a>
 
@@ -19,7 +19,7 @@ dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -37,15 +37,15 @@ dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork(
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#name DataAzurestackVirtualNetwork#name}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#resource_group_name DataAzurestackVirtualNetwork#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#id DataAzurestackVirtualNetwork#id}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#name DataAzurestackVirtualNetwork#name}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#resource_group_name DataAzurestackVirtualNetwork#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#id DataAzurestackVirtualNetwork#id}. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts">DataAzurestackVirtualNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -76,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#name DataAzurestackVirtualNetwork#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#name DataAzurestackVirtualNetwork#name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#resource_group_name DataAzurestackVirtualNetwork#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#resource_group_name DataAzurestackVirtualNetwork#resource_group_name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#id DataAzurestackVirtualNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#id DataAzurestackVirtualNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#timeouts DataAzurestackVirtualNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#timeouts DataAzurestackVirtualNetwork#timeouts}
 
 ---
 
@@ -394,7 +394,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#read DataAzurestackVirtualNetwork#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#read DataAzurestackVirtualNetwork#read}.
 
 ---
 
@@ -497,7 +497,7 @@ dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.is_terraform_data_sour
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -594,10 +594,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -810,7 +810,7 @@ from cdktf_cdktf_provider_azurestack import data_azurestack_virtual_network
 
 dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -828,15 +828,15 @@ dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#name DataAzurestackVirtualNetwork#name}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#resource_group_name DataAzurestackVirtualNetwork#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#id DataAzurestackVirtualNetwork#id}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#name DataAzurestackVirtualNetwork#name}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#resource_group_name DataAzurestackVirtualNetwork#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#id DataAzurestackVirtualNetwork#id}. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts">DataAzurestackVirtualNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -854,10 +854,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -919,7 +919,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#name DataAzurestackVirtualNetwork#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#name DataAzurestackVirtualNetwork#name}.
 
 ---
 
@@ -931,7 +931,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#resource_group_name DataAzurestackVirtualNetwork#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#resource_group_name DataAzurestackVirtualNetwork#resource_group_name}.
 
 ---
 
@@ -943,7 +943,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#id DataAzurestackVirtualNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#id DataAzurestackVirtualNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -960,7 +960,7 @@ timeouts: DataAzurestackVirtualNetworkTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#timeouts DataAzurestackVirtualNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#timeouts DataAzurestackVirtualNetwork#timeouts}
 
 ---
 
@@ -980,7 +980,7 @@ dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#read DataAzurestackVirtualNetwork#read}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#read DataAzurestackVirtualNetwork#read}. |
 
 ---
 
@@ -992,7 +992,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/virtual_network#read DataAzurestackVirtualNetwork#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#read DataAzurestackVirtualNetwork#read}.
 
 ---
 

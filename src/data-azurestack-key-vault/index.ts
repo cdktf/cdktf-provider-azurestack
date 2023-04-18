@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azurestack/d/key_vault
+// https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzurestackKeyVaultConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault#id DataAzurestackKeyVault#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault#id DataAzurestackKeyVault#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault#name DataAzurestackKeyVault#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault#name DataAzurestackKeyVault#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault#resource_group_name DataAzurestackKeyVault#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault#resource_group_name DataAzurestackKeyVault#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault#timeouts DataAzurestackKeyVault#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault#timeouts DataAzurestackKeyVault#timeouts}
   */
   readonly timeouts?: DataAzurestackKeyVaultTimeouts;
 }
@@ -204,12 +204,12 @@ export class DataAzurestackKeyVaultNetworkAclsList extends cdktf.ComplexList {
 }
 export interface DataAzurestackKeyVaultTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault#read DataAzurestackKeyVault#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault#read DataAzurestackKeyVault#read}
   */
   readonly read?: string;
 }
 
-export function dataAzurestackKeyVaultTimeoutsToTerraform(struct?: DataAzurestackKeyVaultTimeoutsOutputReference | DataAzurestackKeyVaultTimeouts | cdktf.IResolvable): any {
+export function dataAzurestackKeyVaultTimeoutsToTerraform(struct?: DataAzurestackKeyVaultTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -228,7 +228,7 @@ export class DataAzurestackKeyVaultTimeoutsOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAzurestackKeyVaultTimeouts | cdktf.IResolvable | undefined {
@@ -279,7 +279,7 @@ export class DataAzurestackKeyVaultTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault azurestack_key_vault}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault azurestack_key_vault}
 */
 export class DataAzurestackKeyVault extends cdktf.TerraformDataSource {
 
@@ -293,7 +293,7 @@ export class DataAzurestackKeyVault extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault azurestack_key_vault} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault azurestack_key_vault} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

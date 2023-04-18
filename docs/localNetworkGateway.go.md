@@ -1,6 +1,6 @@
 # `azurestack_local_network_gateway`
 
-Refer to the Terraform Registory for docs: [`azurestack_local_network_gateway`](https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway).
+Refer to the Terraform Registory for docs: [`azurestack_local_network_gateway`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway).
 
 # `localNetworkGateway` Submodule <a name="`localNetworkGateway` Submodule" id="@cdktf/provider-azurestack.localNetworkGateway"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`azurestack_local_network_gateway`](
 
 ### LocalNetworkGateway <a name="LocalNetworkGateway" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway azurestack_local_network_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway azurestack_local_network_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
 
 localnetworkgateway.NewLocalNetworkGateway(scope Construct, id *string, config LocalNetworkGatewayConfig) LocalNetworkGateway
 ```
@@ -331,7 +331,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
 
 localnetworkgateway.LocalNetworkGateway_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
 
 localnetworkgateway.LocalNetworkGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ localnetworkgateway.LocalNetworkGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
 
 localnetworkgateway.LocalNetworkGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ localnetworkgateway.LocalNetworkGateway_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -512,10 +512,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGateway.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -774,7 +774,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
 
 &localnetworkgateway.LocalNetworkGatewayBgpSettings {
 	Asn: *f64,
@@ -787,9 +787,9 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetwork
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.property.asn">Asn</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#asn LocalNetworkGateway#asn}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.property.bgpPeeringAddress">BgpPeeringAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#bgp_peering_address LocalNetworkGateway#bgp_peering_address}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.property.peerWeight">PeerWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#peer_weight LocalNetworkGateway#peer_weight}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.property.asn">Asn</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#asn LocalNetworkGateway#asn}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.property.bgpPeeringAddress">BgpPeeringAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#bgp_peering_address LocalNetworkGateway#bgp_peering_address}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings.property.peerWeight">PeerWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#peer_weight LocalNetworkGateway#peer_weight}. |
 
 ---
 
@@ -801,7 +801,7 @@ Asn *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#asn LocalNetworkGateway#asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#asn LocalNetworkGateway#asn}.
 
 ---
 
@@ -813,7 +813,7 @@ BgpPeeringAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#bgp_peering_address LocalNetworkGateway#bgp_peering_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#bgp_peering_address LocalNetworkGateway#bgp_peering_address}.
 
 ---
 
@@ -825,7 +825,7 @@ PeerWeight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#peer_weight LocalNetworkGateway#peer_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#peer_weight LocalNetworkGateway#peer_weight}.
 
 ---
 
@@ -834,11 +834,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
 
 &localnetworkgateway.LocalNetworkGatewayConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -849,10 +849,10 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetwork
 	Name: *string,
 	ResourceGroupName: *string,
 	AddressSpace: *[]*string,
-	BgpSettings: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.localNetworkGateway.LocalNetworkGatewayBgpSettings,
+	BgpSettings: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.localNetworkGateway.LocalNetworkGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts,
 }
 ```
 
@@ -861,20 +861,20 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetwork
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.gatewayAddress">GatewayAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#gateway_address LocalNetworkGateway#gateway_address}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#location LocalNetworkGateway#location}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#name LocalNetworkGateway#name}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#resource_group_name LocalNetworkGateway#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.addressSpace">AddressSpace</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#address_space LocalNetworkGateway#address_space}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.gatewayAddress">GatewayAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#gateway_address LocalNetworkGateway#gateway_address}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#location LocalNetworkGateway#location}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#name LocalNetworkGateway#name}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#resource_group_name LocalNetworkGateway#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.addressSpace">AddressSpace</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#address_space LocalNetworkGateway#address_space}. |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.bgpSettings">BgpSettings</a></code> | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettings">LocalNetworkGatewayBgpSettings</a></code> | bgp_settings block. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#id LocalNetworkGateway#id}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#tags LocalNetworkGateway#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#id LocalNetworkGateway#id}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#tags LocalNetworkGateway#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts">LocalNetworkGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -892,10 +892,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -957,7 +957,7 @@ GatewayAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#gateway_address LocalNetworkGateway#gateway_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#gateway_address LocalNetworkGateway#gateway_address}.
 
 ---
 
@@ -969,7 +969,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#location LocalNetworkGateway#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#location LocalNetworkGateway#location}.
 
 ---
 
@@ -981,7 +981,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#name LocalNetworkGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#name LocalNetworkGateway#name}.
 
 ---
 
@@ -993,7 +993,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#resource_group_name LocalNetworkGateway#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#resource_group_name LocalNetworkGateway#resource_group_name}.
 
 ---
 
@@ -1005,7 +1005,7 @@ AddressSpace *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#address_space LocalNetworkGateway#address_space}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#address_space LocalNetworkGateway#address_space}.
 
 ---
 
@@ -1019,7 +1019,7 @@ BgpSettings LocalNetworkGatewayBgpSettings
 
 bgp_settings block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#bgp_settings LocalNetworkGateway#bgp_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#bgp_settings LocalNetworkGateway#bgp_settings}
 
 ---
 
@@ -1031,7 +1031,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#id LocalNetworkGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#id LocalNetworkGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1046,7 +1046,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#tags LocalNetworkGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#tags LocalNetworkGateway#tags}.
 
 ---
 
@@ -1060,7 +1060,7 @@ Timeouts LocalNetworkGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#timeouts LocalNetworkGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#timeouts LocalNetworkGateway#timeouts}
 
 ---
 
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
 
 &localnetworkgateway.LocalNetworkGatewayTimeouts {
 	Create: *string,
@@ -1083,10 +1083,10 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetwork
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#create LocalNetworkGateway#create}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#delete LocalNetworkGateway#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#read LocalNetworkGateway#read}. |
-| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#update LocalNetworkGateway#update}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#create LocalNetworkGateway#create}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#delete LocalNetworkGateway#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#read LocalNetworkGateway#read}. |
+| <code><a href="#@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#update LocalNetworkGateway#update}. |
 
 ---
 
@@ -1098,7 +1098,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#create LocalNetworkGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#create LocalNetworkGateway#create}.
 
 ---
 
@@ -1110,7 +1110,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#delete LocalNetworkGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#delete LocalNetworkGateway#delete}.
 
 ---
 
@@ -1122,7 +1122,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#read LocalNetworkGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#read LocalNetworkGateway#read}.
 
 ---
 
@@ -1134,7 +1134,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/local_network_gateway#update LocalNetworkGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#update LocalNetworkGateway#update}.
 
 ---
 
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayBgpSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
 
 localnetworkgateway.NewLocalNetworkGatewayBgpSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LocalNetworkGatewayBgpSettingsOutputReference
 ```
@@ -1467,7 +1467,7 @@ func InternalValue() LocalNetworkGatewayBgpSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.localNetworkGateway.LocalNetworkGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/localnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/localnetworkgateway"
 
 localnetworkgateway.NewLocalNetworkGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LocalNetworkGatewayTimeoutsOutputReference
 ```

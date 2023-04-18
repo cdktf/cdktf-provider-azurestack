@@ -1,6 +1,6 @@
 # `azurestack_key_vault_key`
 
-Refer to the Terraform Registory for docs: [`azurestack_key_vault_key`](https://www.terraform.io/docs/providers/azurestack/r/key_vault_key).
+Refer to the Terraform Registory for docs: [`azurestack_key_vault_key`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key).
 
 # `keyVaultKey` Submodule <a name="`keyVaultKey` Submodule" id="@cdktf/provider-azurestack.keyVaultKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_key_vault_key`](https://
 
 ### KeyVaultKey <a name="KeyVaultKey" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key azurestack_key_vault_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key azurestack_key_vault_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.Initializer"></a>
 
@@ -401,7 +401,7 @@ KeyVaultKey.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -523,10 +523,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -889,7 +889,7 @@ using HashiCorp.Cdktf.Providers.Azurestack;
 
 new KeyVaultKeyConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -914,22 +914,22 @@ new KeyVaultKeyConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.keyOpts">KeyOpts</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#key_opts KeyVaultKey#key_opts}. |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.keyType">KeyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#key_type KeyVaultKey#key_type}. |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.keyVaultId">KeyVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#key_vault_id KeyVaultKey#key_vault_id}. |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#name KeyVaultKey#name}. |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.curve">Curve</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#curve KeyVaultKey#curve}. |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.expirationDate">ExpirationDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#expiration_date KeyVaultKey#expiration_date}. |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#id KeyVaultKey#id}. |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.keySize">KeySize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#key_size KeyVaultKey#key_size}. |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.notBeforeDate">NotBeforeDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#not_before_date KeyVaultKey#not_before_date}. |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#tags KeyVaultKey#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.keyOpts">KeyOpts</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#key_opts KeyVaultKey#key_opts}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.keyType">KeyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#key_type KeyVaultKey#key_type}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.keyVaultId">KeyVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#key_vault_id KeyVaultKey#key_vault_id}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#name KeyVaultKey#name}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.curve">Curve</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#curve KeyVaultKey#curve}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.expirationDate">ExpirationDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#expiration_date KeyVaultKey#expiration_date}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#id KeyVaultKey#id}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.keySize">KeySize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#key_size KeyVaultKey#key_size}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.notBeforeDate">NotBeforeDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#not_before_date KeyVaultKey#not_before_date}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#tags KeyVaultKey#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyTimeouts">KeyVaultKeyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -947,10 +947,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -1012,7 +1012,7 @@ public string[] KeyOpts { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#key_opts KeyVaultKey#key_opts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#key_opts KeyVaultKey#key_opts}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public string KeyType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#key_type KeyVaultKey#key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#key_type KeyVaultKey#key_type}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public string KeyVaultId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#key_vault_id KeyVaultKey#key_vault_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#key_vault_id KeyVaultKey#key_vault_id}.
 
 ---
 
@@ -1048,7 +1048,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#name KeyVaultKey#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#name KeyVaultKey#name}.
 
 ---
 
@@ -1060,7 +1060,7 @@ public string Curve { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#curve KeyVaultKey#curve}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#curve KeyVaultKey#curve}.
 
 ---
 
@@ -1072,7 +1072,7 @@ public string ExpirationDate { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#expiration_date KeyVaultKey#expiration_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#expiration_date KeyVaultKey#expiration_date}.
 
 ---
 
@@ -1084,7 +1084,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#id KeyVaultKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#id KeyVaultKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1099,7 +1099,7 @@ public double KeySize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#key_size KeyVaultKey#key_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#key_size KeyVaultKey#key_size}.
 
 ---
 
@@ -1111,7 +1111,7 @@ public string NotBeforeDate { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#not_before_date KeyVaultKey#not_before_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#not_before_date KeyVaultKey#not_before_date}.
 
 ---
 
@@ -1123,7 +1123,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#tags KeyVaultKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#tags KeyVaultKey#tags}.
 
 ---
 
@@ -1137,7 +1137,7 @@ public KeyVaultKeyTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#timeouts KeyVaultKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#timeouts KeyVaultKey#timeouts}
 
 ---
 
@@ -1160,10 +1160,10 @@ new KeyVaultKeyTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#create KeyVaultKey#create}. |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#delete KeyVaultKey#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#read KeyVaultKey#read}. |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#update KeyVaultKey#update}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#create KeyVaultKey#create}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#delete KeyVaultKey#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#read KeyVaultKey#read}. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#update KeyVaultKey#update}. |
 
 ---
 
@@ -1175,7 +1175,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#create KeyVaultKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#create KeyVaultKey#create}.
 
 ---
 
@@ -1187,7 +1187,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#delete KeyVaultKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#delete KeyVaultKey#delete}.
 
 ---
 
@@ -1199,7 +1199,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#read KeyVaultKey#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#read KeyVaultKey#read}.
 
 ---
 
@@ -1211,7 +1211,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/key_vault_key#update KeyVaultKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_key#update KeyVaultKey#update}.
 
 ---
 

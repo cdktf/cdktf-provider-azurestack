@@ -1,6 +1,6 @@
 # `azurestack_lb_probe`
 
-Refer to the Terraform Registory for docs: [`azurestack_lb_probe`](https://www.terraform.io/docs/providers/azurestack/r/lb_probe).
+Refer to the Terraform Registory for docs: [`azurestack_lb_probe`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe).
 
 # `lbProbe` Submodule <a name="`lbProbe` Submodule" id="@cdktf/provider-azurestack.lbProbe"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_lb_probe`](https://www.t
 
 ### LbProbe <a name="LbProbe" id="@cdktf/provider-azurestack.lbProbe.LbProbe"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe azurestack_lb_probe}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe azurestack_lb_probe}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer"></a>
 
@@ -19,7 +19,7 @@ lbProbe.LbProbe(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -43,21 +43,21 @@ lbProbe.LbProbe(
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.loadbalancerId">loadbalancer_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#name LbProbe#name}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#port LbProbe#port}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#resource_group_name LbProbe#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#id LbProbe#id}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.intervalInSeconds">interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.numberOfProbes">number_of_probes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#number_of_probes LbProbe#number_of_probes}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#protocol LbProbe#protocol}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.requestPath">request_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#request_path LbProbe#request_path}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.loadbalancerId">loadbalancer_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#name LbProbe#name}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#port LbProbe#port}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#resource_group_name LbProbe#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#id LbProbe#id}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.intervalInSeconds">interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.numberOfProbes">number_of_probes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#protocol LbProbe#protocol}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.requestPath">request_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#request_path LbProbe#request_path}. |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -88,7 +88,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.lbProbe.LbProbe.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#name LbProbe#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#name LbProbe#name}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#port LbProbe#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#port LbProbe#port}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#resource_group_name LbProbe#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#resource_group_name LbProbe#resource_group_name}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#id LbProbe#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#id LbProbe#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}.
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#number_of_probes LbProbe#number_of_probes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}.
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#protocol LbProbe#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#protocol LbProbe#protocol}.
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#request_path LbProbe#request_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#request_path LbProbe#request_path}.
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#timeouts LbProbe#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#timeouts LbProbe#timeouts}
 
 ---
 
@@ -461,7 +461,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#create LbProbe#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#create LbProbe#create}.
 
 ---
 
@@ -469,7 +469,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#delete LbProbe#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#delete LbProbe#delete}.
 
 ---
 
@@ -477,7 +477,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#read LbProbe#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#read LbProbe#read}.
 
 ---
 
@@ -485,7 +485,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#update LbProbe#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#update LbProbe#update}.
 
 ---
 
@@ -613,7 +613,7 @@ lbProbe.LbProbe.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -728,10 +728,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.lbProbe.LbProbe.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1024,7 +1024,7 @@ from cdktf_cdktf_provider_azurestack import lb_probe
 
 lbProbe.LbProbeConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1048,21 +1048,21 @@ lbProbe.LbProbeConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.loadbalancerId">loadbalancer_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#name LbProbe#name}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#port LbProbe#port}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#resource_group_name LbProbe#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#id LbProbe#id}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.intervalInSeconds">interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.numberOfProbes">number_of_probes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#number_of_probes LbProbe#number_of_probes}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#protocol LbProbe#protocol}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.requestPath">request_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#request_path LbProbe#request_path}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.loadbalancerId">loadbalancer_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#name LbProbe#name}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#port LbProbe#port}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#resource_group_name LbProbe#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#id LbProbe#id}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.intervalInSeconds">interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.numberOfProbes">number_of_probes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#protocol LbProbe#protocol}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.requestPath">request_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#request_path LbProbe#request_path}. |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1080,10 +1080,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.lbProbe.LbProbeConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1145,7 +1145,7 @@ loadbalancer_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}.
 
 ---
 
@@ -1157,7 +1157,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#name LbProbe#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#name LbProbe#name}.
 
 ---
 
@@ -1169,7 +1169,7 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#port LbProbe#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#port LbProbe#port}.
 
 ---
 
@@ -1181,7 +1181,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#resource_group_name LbProbe#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#resource_group_name LbProbe#resource_group_name}.
 
 ---
 
@@ -1193,7 +1193,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#id LbProbe#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#id LbProbe#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1208,7 +1208,7 @@ interval_in_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}.
 
 ---
 
@@ -1220,7 +1220,7 @@ number_of_probes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#number_of_probes LbProbe#number_of_probes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}.
 
 ---
 
@@ -1232,7 +1232,7 @@ protocol: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#protocol LbProbe#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#protocol LbProbe#protocol}.
 
 ---
 
@@ -1244,7 +1244,7 @@ request_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#request_path LbProbe#request_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#request_path LbProbe#request_path}.
 
 ---
 
@@ -1258,7 +1258,7 @@ timeouts: LbProbeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#timeouts LbProbe#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#timeouts LbProbe#timeouts}
 
 ---
 
@@ -1281,10 +1281,10 @@ lbProbe.LbProbeTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#create LbProbe#create}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#delete LbProbe#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#read LbProbe#read}. |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#update LbProbe#update}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#create LbProbe#create}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#delete LbProbe#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#read LbProbe#read}. |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#update LbProbe#update}. |
 
 ---
 
@@ -1296,7 +1296,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#create LbProbe#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#create LbProbe#create}.
 
 ---
 
@@ -1308,7 +1308,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#delete LbProbe#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#delete LbProbe#delete}.
 
 ---
 
@@ -1320,7 +1320,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#read LbProbe#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#read LbProbe#read}.
 
 ---
 
@@ -1332,7 +1332,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/lb_probe#update LbProbe#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_probe#update LbProbe#update}.
 
 ---
 

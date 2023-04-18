@@ -1,6 +1,6 @@
 # `data_azurestack_resource_group`
 
-Refer to the Terraform Registory for docs: [`data_azurestack_resource_group`](https://www.terraform.io/docs/providers/azurestack/d/resource_group).
+Refer to the Terraform Registory for docs: [`data_azurestack_resource_group`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resource_group).
 
 # `dataAzurestackResourceGroup` Submodule <a name="`dataAzurestackResourceGroup` Submodule" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azurestack_resource_group`](ht
 
 ### DataAzurestackResourceGroup <a name="DataAzurestackResourceGroup" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/resource_group azurestack_resource_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resource_group azurestack_resource_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.Initializer"></a>
 
@@ -365,7 +365,7 @@ dataAzurestackResourceGroup.DataAzurestackResourceGroup.isTerraformDataSource(x:
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -456,10 +456,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -618,14 +618,14 @@ const dataAzurestackResourceGroupConfig: dataAzurestackResourceGroup.DataAzurest
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resource_group#name DataAzurestackResourceGroup#name}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resource_group#id DataAzurestackResourceGroup#id}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resource_group#name DataAzurestackResourceGroup#name}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resource_group#id DataAzurestackResourceGroup#id}. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupTimeouts">DataAzurestackResourceGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -643,10 +643,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -708,7 +708,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resource_group#name DataAzurestackResourceGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resource_group#name DataAzurestackResourceGroup#name}.
 
 ---
 
@@ -720,7 +720,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resource_group#id DataAzurestackResourceGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resource_group#id DataAzurestackResourceGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -737,7 +737,7 @@ public readonly timeouts: DataAzurestackResourceGroupTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resource_group#timeouts DataAzurestackResourceGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resource_group#timeouts DataAzurestackResourceGroup#timeouts}
 
 ---
 
@@ -755,7 +755,7 @@ const dataAzurestackResourceGroupTimeouts: dataAzurestackResourceGroup.DataAzure
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resource_group#read DataAzurestackResourceGroup#read}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resource_group#read DataAzurestackResourceGroup#read}. |
 
 ---
 
@@ -767,7 +767,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resource_group#read DataAzurestackResourceGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resource_group#read DataAzurestackResourceGroup#read}.
 
 ---
 

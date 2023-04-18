@@ -1,6 +1,6 @@
 # `azurestack_virtual_machine_scale_set`
 
-Refer to the Terraform Registory for docs: [`azurestack_virtual_machine_scale_set`](https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set).
+Refer to the Terraform Registory for docs: [`azurestack_virtual_machine_scale_set`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set).
 
 # `virtualMachineScaleSet` Submodule <a name="`virtualMachineScaleSet` Submodule" id="@cdktf/provider-azurestack.virtualMachineScaleSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_virtual_machine_scale_se
 
 ### VirtualMachineScaleSet <a name="VirtualMachineScaleSet" id="@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set azurestack_virtual_machine_scale_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set azurestack_virtual_machine_scale_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet.Initializer"></a>
 
@@ -674,7 +674,7 @@ virtualMachineScaleSet.VirtualMachineScaleSet.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -824,10 +824,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1475,8 +1475,8 @@ const virtualMachineScaleSetBootDiagnostics: virtualMachineScaleSet.VirtualMachi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetBootDiagnostics.property.storageUri">storageUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#storage_uri VirtualMachineScaleSet#storage_uri}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetBootDiagnostics.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#enabled VirtualMachineScaleSet#enabled}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetBootDiagnostics.property.storageUri">storageUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#storage_uri VirtualMachineScaleSet#storage_uri}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetBootDiagnostics.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#enabled VirtualMachineScaleSet#enabled}. |
 
 ---
 
@@ -1488,7 +1488,7 @@ public readonly storageUri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#storage_uri VirtualMachineScaleSet#storage_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#storage_uri VirtualMachineScaleSet#storage_uri}.
 
 ---
 
@@ -1500,7 +1500,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#enabled VirtualMachineScaleSet#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#enabled VirtualMachineScaleSet#enabled}.
 
 ---
 
@@ -1519,40 +1519,40 @@ const virtualMachineScaleSetConfig: virtualMachineScaleSet.VirtualMachineScaleSe
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#location VirtualMachineScaleSet#location}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#location VirtualMachineScaleSet#location}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.networkProfile">networkProfile</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile">VirtualMachineScaleSetNetworkProfile</a>[]</code> | network_profile block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.osProfile">osProfile</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfile">VirtualMachineScaleSetOsProfile</a></code> | os_profile block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#resource_group_name VirtualMachineScaleSet#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#resource_group_name VirtualMachineScaleSet#resource_group_name}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.sku">sku</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetSku">VirtualMachineScaleSetSku</a></code> | sku block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.storageProfileOsDisk">storageProfileOsDisk</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk">VirtualMachineScaleSetStorageProfileOsDisk</a></code> | storage_profile_os_disk block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.upgradePolicyMode">upgradePolicyMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#upgrade_policy_mode VirtualMachineScaleSet#upgrade_policy_mode}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.upgradePolicyMode">upgradePolicyMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#upgrade_policy_mode VirtualMachineScaleSet#upgrade_policy_mode}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.bootDiagnostics">bootDiagnostics</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetBootDiagnostics">VirtualMachineScaleSetBootDiagnostics</a></code> | boot_diagnostics block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.evictionPolicy">evictionPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#eviction_policy VirtualMachineScaleSet#eviction_policy}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.evictionPolicy">evictionPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#eviction_policy VirtualMachineScaleSet#eviction_policy}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.extension">extension</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension">VirtualMachineScaleSetExtension</a>[]</code> | extension block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.healthProbeId">healthProbeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#health_probe_id VirtualMachineScaleSet#health_probe_id}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#id VirtualMachineScaleSet#id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.healthProbeId">healthProbeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#health_probe_id VirtualMachineScaleSet#health_probe_id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#id VirtualMachineScaleSet#id}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.identity">identity</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetIdentity">VirtualMachineScaleSetIdentity</a></code> | identity block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.licenseType">licenseType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#license_type VirtualMachineScaleSet#license_type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.licenseType">licenseType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#license_type VirtualMachineScaleSet#license_type}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.osProfileLinuxConfig">osProfileLinuxConfig</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfig">VirtualMachineScaleSetOsProfileLinuxConfig</a></code> | os_profile_linux_config block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.osProfileSecrets">osProfileSecrets</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecrets">VirtualMachineScaleSetOsProfileSecrets</a>[]</code> | os_profile_secrets block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.osProfileWindowsConfig">osProfileWindowsConfig</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfig">VirtualMachineScaleSetOsProfileWindowsConfig</a></code> | os_profile_windows_config block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.overprovision">overprovision</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#overprovision VirtualMachineScaleSet#overprovision}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.overprovision">overprovision</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#overprovision VirtualMachineScaleSet#overprovision}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.plan">plan</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetPlan">VirtualMachineScaleSetPlan</a></code> | plan block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.priority">priority</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#priority VirtualMachineScaleSet#priority}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.priority">priority</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#priority VirtualMachineScaleSet#priority}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.rollingUpgradePolicy">rollingUpgradePolicy</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicy">VirtualMachineScaleSetRollingUpgradePolicy</a></code> | rolling_upgrade_policy block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.singlePlacementGroup">singlePlacementGroup</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#single_placement_group VirtualMachineScaleSet#single_placement_group}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.singlePlacementGroup">singlePlacementGroup</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#single_placement_group VirtualMachineScaleSet#single_placement_group}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.storageProfileDataDisk">storageProfileDataDisk</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDisk">VirtualMachineScaleSetStorageProfileDataDisk</a>[]</code> | storage_profile_data_disk block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.storageProfileImageReference">storageProfileImageReference</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference">VirtualMachineScaleSetStorageProfileImageReference</a></code> | storage_profile_image_reference block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#tags VirtualMachineScaleSet#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#tags VirtualMachineScaleSet#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetTimeouts">VirtualMachineScaleSetTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.zones">zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#zones VirtualMachineScaleSet#zones}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.zones">zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#zones VirtualMachineScaleSet#zones}. |
 
 ---
 
@@ -1569,10 +1569,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1634,7 +1634,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#location VirtualMachineScaleSet#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#location VirtualMachineScaleSet#location}.
 
 ---
 
@@ -1646,7 +1646,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
 
 ---
 
@@ -1660,7 +1660,7 @@ public readonly networkProfile: IResolvable | VirtualMachineScaleSetNetworkProfi
 
 network_profile block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#network_profile VirtualMachineScaleSet#network_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#network_profile VirtualMachineScaleSet#network_profile}
 
 ---
 
@@ -1674,7 +1674,7 @@ public readonly osProfile: VirtualMachineScaleSetOsProfile;
 
 os_profile block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#os_profile VirtualMachineScaleSet#os_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#os_profile VirtualMachineScaleSet#os_profile}
 
 ---
 
@@ -1686,7 +1686,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#resource_group_name VirtualMachineScaleSet#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#resource_group_name VirtualMachineScaleSet#resource_group_name}.
 
 ---
 
@@ -1700,7 +1700,7 @@ public readonly sku: VirtualMachineScaleSetSku;
 
 sku block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#sku VirtualMachineScaleSet#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#sku VirtualMachineScaleSet#sku}
 
 ---
 
@@ -1714,7 +1714,7 @@ public readonly storageProfileOsDisk: VirtualMachineScaleSetStorageProfileOsDisk
 
 storage_profile_os_disk block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#storage_profile_os_disk VirtualMachineScaleSet#storage_profile_os_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#storage_profile_os_disk VirtualMachineScaleSet#storage_profile_os_disk}
 
 ---
 
@@ -1726,7 +1726,7 @@ public readonly upgradePolicyMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#upgrade_policy_mode VirtualMachineScaleSet#upgrade_policy_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#upgrade_policy_mode VirtualMachineScaleSet#upgrade_policy_mode}.
 
 ---
 
@@ -1740,7 +1740,7 @@ public readonly bootDiagnostics: VirtualMachineScaleSetBootDiagnostics;
 
 boot_diagnostics block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#boot_diagnostics VirtualMachineScaleSet#boot_diagnostics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#boot_diagnostics VirtualMachineScaleSet#boot_diagnostics}
 
 ---
 
@@ -1752,7 +1752,7 @@ public readonly evictionPolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#eviction_policy VirtualMachineScaleSet#eviction_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#eviction_policy VirtualMachineScaleSet#eviction_policy}.
 
 ---
 
@@ -1766,7 +1766,7 @@ public readonly extension: IResolvable | VirtualMachineScaleSetExtension[];
 
 extension block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#extension VirtualMachineScaleSet#extension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#extension VirtualMachineScaleSet#extension}
 
 ---
 
@@ -1778,7 +1778,7 @@ public readonly healthProbeId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#health_probe_id VirtualMachineScaleSet#health_probe_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#health_probe_id VirtualMachineScaleSet#health_probe_id}.
 
 ---
 
@@ -1790,7 +1790,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#id VirtualMachineScaleSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#id VirtualMachineScaleSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1807,7 +1807,7 @@ public readonly identity: VirtualMachineScaleSetIdentity;
 
 identity block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#identity VirtualMachineScaleSet#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#identity VirtualMachineScaleSet#identity}
 
 ---
 
@@ -1819,7 +1819,7 @@ public readonly licenseType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#license_type VirtualMachineScaleSet#license_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#license_type VirtualMachineScaleSet#license_type}.
 
 ---
 
@@ -1833,7 +1833,7 @@ public readonly osProfileLinuxConfig: VirtualMachineScaleSetOsProfileLinuxConfig
 
 os_profile_linux_config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#os_profile_linux_config VirtualMachineScaleSet#os_profile_linux_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#os_profile_linux_config VirtualMachineScaleSet#os_profile_linux_config}
 
 ---
 
@@ -1847,7 +1847,7 @@ public readonly osProfileSecrets: IResolvable | VirtualMachineScaleSetOsProfileS
 
 os_profile_secrets block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#os_profile_secrets VirtualMachineScaleSet#os_profile_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#os_profile_secrets VirtualMachineScaleSet#os_profile_secrets}
 
 ---
 
@@ -1861,7 +1861,7 @@ public readonly osProfileWindowsConfig: VirtualMachineScaleSetOsProfileWindowsCo
 
 os_profile_windows_config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#os_profile_windows_config VirtualMachineScaleSet#os_profile_windows_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#os_profile_windows_config VirtualMachineScaleSet#os_profile_windows_config}
 
 ---
 
@@ -1873,7 +1873,7 @@ public readonly overprovision: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#overprovision VirtualMachineScaleSet#overprovision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#overprovision VirtualMachineScaleSet#overprovision}.
 
 ---
 
@@ -1887,7 +1887,7 @@ public readonly plan: VirtualMachineScaleSetPlan;
 
 plan block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#plan VirtualMachineScaleSet#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#plan VirtualMachineScaleSet#plan}
 
 ---
 
@@ -1899,7 +1899,7 @@ public readonly priority: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#priority VirtualMachineScaleSet#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#priority VirtualMachineScaleSet#priority}.
 
 ---
 
@@ -1913,7 +1913,7 @@ public readonly rollingUpgradePolicy: VirtualMachineScaleSetRollingUpgradePolicy
 
 rolling_upgrade_policy block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#rolling_upgrade_policy VirtualMachineScaleSet#rolling_upgrade_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#rolling_upgrade_policy VirtualMachineScaleSet#rolling_upgrade_policy}
 
 ---
 
@@ -1925,7 +1925,7 @@ public readonly singlePlacementGroup: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#single_placement_group VirtualMachineScaleSet#single_placement_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#single_placement_group VirtualMachineScaleSet#single_placement_group}.
 
 ---
 
@@ -1939,7 +1939,7 @@ public readonly storageProfileDataDisk: IResolvable | VirtualMachineScaleSetStor
 
 storage_profile_data_disk block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#storage_profile_data_disk VirtualMachineScaleSet#storage_profile_data_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#storage_profile_data_disk VirtualMachineScaleSet#storage_profile_data_disk}
 
 ---
 
@@ -1953,7 +1953,7 @@ public readonly storageProfileImageReference: VirtualMachineScaleSetStorageProfi
 
 storage_profile_image_reference block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#storage_profile_image_reference VirtualMachineScaleSet#storage_profile_image_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#storage_profile_image_reference VirtualMachineScaleSet#storage_profile_image_reference}
 
 ---
 
@@ -1965,7 +1965,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#tags VirtualMachineScaleSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#tags VirtualMachineScaleSet#tags}.
 
 ---
 
@@ -1979,7 +1979,7 @@ public readonly timeouts: VirtualMachineScaleSetTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#timeouts VirtualMachineScaleSet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#timeouts VirtualMachineScaleSet#timeouts}
 
 ---
 
@@ -1991,7 +1991,7 @@ public readonly zones: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#zones VirtualMachineScaleSet#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#zones VirtualMachineScaleSet#zones}.
 
 ---
 
@@ -2009,13 +2009,13 @@ const virtualMachineScaleSetExtension: virtualMachineScaleSet.VirtualMachineScal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.publisher">publisher</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#publisher VirtualMachineScaleSet#publisher}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#type VirtualMachineScaleSet#type}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.typeHandlerVersion">typeHandlerVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#type_handler_version VirtualMachineScaleSet#type_handler_version}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.autoUpgradeMinorVersion">autoUpgradeMinorVersion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#auto_upgrade_minor_version VirtualMachineScaleSet#auto_upgrade_minor_version}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.protectedSettings">protectedSettings</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#protected_settings VirtualMachineScaleSet#protected_settings}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.settings">settings</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#settings VirtualMachineScaleSet#settings}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.publisher">publisher</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#publisher VirtualMachineScaleSet#publisher}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#type VirtualMachineScaleSet#type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.typeHandlerVersion">typeHandlerVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#type_handler_version VirtualMachineScaleSet#type_handler_version}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.autoUpgradeMinorVersion">autoUpgradeMinorVersion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#auto_upgrade_minor_version VirtualMachineScaleSet#auto_upgrade_minor_version}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.protectedSettings">protectedSettings</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#protected_settings VirtualMachineScaleSet#protected_settings}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetExtension.property.settings">settings</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#settings VirtualMachineScaleSet#settings}. |
 
 ---
 
@@ -2027,7 +2027,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
 
 ---
 
@@ -2039,7 +2039,7 @@ public readonly publisher: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#publisher VirtualMachineScaleSet#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#publisher VirtualMachineScaleSet#publisher}.
 
 ---
 
@@ -2051,7 +2051,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#type VirtualMachineScaleSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#type VirtualMachineScaleSet#type}.
 
 ---
 
@@ -2063,7 +2063,7 @@ public readonly typeHandlerVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#type_handler_version VirtualMachineScaleSet#type_handler_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#type_handler_version VirtualMachineScaleSet#type_handler_version}.
 
 ---
 
@@ -2075,7 +2075,7 @@ public readonly autoUpgradeMinorVersion: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#auto_upgrade_minor_version VirtualMachineScaleSet#auto_upgrade_minor_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#auto_upgrade_minor_version VirtualMachineScaleSet#auto_upgrade_minor_version}.
 
 ---
 
@@ -2087,7 +2087,7 @@ public readonly protectedSettings: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#protected_settings VirtualMachineScaleSet#protected_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#protected_settings VirtualMachineScaleSet#protected_settings}.
 
 ---
 
@@ -2099,7 +2099,7 @@ public readonly settings: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#settings VirtualMachineScaleSet#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#settings VirtualMachineScaleSet#settings}.
 
 ---
 
@@ -2117,7 +2117,7 @@ const virtualMachineScaleSetIdentity: virtualMachineScaleSet.VirtualMachineScale
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#type VirtualMachineScaleSet#type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#type VirtualMachineScaleSet#type}. |
 
 ---
 
@@ -2129,7 +2129,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#type VirtualMachineScaleSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#type VirtualMachineScaleSet#type}.
 
 ---
 
@@ -2148,12 +2148,12 @@ const virtualMachineScaleSetNetworkProfile: virtualMachineScaleSet.VirtualMachin
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.property.ipConfiguration">ipConfiguration</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration">VirtualMachineScaleSetNetworkProfileIpConfiguration</a>[]</code> | ip_configuration block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.property.primary">primary</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#primary VirtualMachineScaleSet#primary}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.property.acceleratedNetworking">acceleratedNetworking</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#accelerated_networking VirtualMachineScaleSet#accelerated_networking}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.property.primary">primary</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#primary VirtualMachineScaleSet#primary}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.property.acceleratedNetworking">acceleratedNetworking</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#accelerated_networking VirtualMachineScaleSet#accelerated_networking}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.property.dnsSettings">dnsSettings</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileDnsSettings">VirtualMachineScaleSetNetworkProfileDnsSettings</a></code> | dns_settings block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.property.ipForwarding">ipForwarding</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#ip_forwarding VirtualMachineScaleSet#ip_forwarding}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.property.networkSecurityGroupId">networkSecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#network_security_group_id VirtualMachineScaleSet#network_security_group_id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.property.ipForwarding">ipForwarding</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#ip_forwarding VirtualMachineScaleSet#ip_forwarding}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.property.networkSecurityGroupId">networkSecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#network_security_group_id VirtualMachineScaleSet#network_security_group_id}. |
 
 ---
 
@@ -2167,7 +2167,7 @@ public readonly ipConfiguration: IResolvable | VirtualMachineScaleSetNetworkProf
 
 ip_configuration block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#ip_configuration VirtualMachineScaleSet#ip_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#ip_configuration VirtualMachineScaleSet#ip_configuration}
 
 ---
 
@@ -2179,7 +2179,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
 
 ---
 
@@ -2191,7 +2191,7 @@ public readonly primary: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#primary VirtualMachineScaleSet#primary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#primary VirtualMachineScaleSet#primary}.
 
 ---
 
@@ -2203,7 +2203,7 @@ public readonly acceleratedNetworking: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#accelerated_networking VirtualMachineScaleSet#accelerated_networking}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#accelerated_networking VirtualMachineScaleSet#accelerated_networking}.
 
 ---
 
@@ -2217,7 +2217,7 @@ public readonly dnsSettings: VirtualMachineScaleSetNetworkProfileDnsSettings;
 
 dns_settings block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#dns_settings VirtualMachineScaleSet#dns_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#dns_settings VirtualMachineScaleSet#dns_settings}
 
 ---
 
@@ -2229,7 +2229,7 @@ public readonly ipForwarding: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#ip_forwarding VirtualMachineScaleSet#ip_forwarding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#ip_forwarding VirtualMachineScaleSet#ip_forwarding}.
 
 ---
 
@@ -2241,7 +2241,7 @@ public readonly networkSecurityGroupId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#network_security_group_id VirtualMachineScaleSet#network_security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#network_security_group_id VirtualMachineScaleSet#network_security_group_id}.
 
 ---
 
@@ -2259,7 +2259,7 @@ const virtualMachineScaleSetNetworkProfileDnsSettings: virtualMachineScaleSet.Vi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileDnsSettings.property.dnsServers">dnsServers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#dns_servers VirtualMachineScaleSet#dns_servers}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileDnsSettings.property.dnsServers">dnsServers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#dns_servers VirtualMachineScaleSet#dns_servers}. |
 
 ---
 
@@ -2271,7 +2271,7 @@ public readonly dnsServers: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#dns_servers VirtualMachineScaleSet#dns_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#dns_servers VirtualMachineScaleSet#dns_servers}.
 
 ---
 
@@ -2289,12 +2289,12 @@ const virtualMachineScaleSetNetworkProfileIpConfiguration: virtualMachineScaleSe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.primary">primary</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#primary VirtualMachineScaleSet#primary}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.subnetId">subnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#subnet_id VirtualMachineScaleSet#subnet_id}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.applicationGatewayBackendAddressPoolIds">applicationGatewayBackendAddressPoolIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#application_gateway_backend_address_pool_ids VirtualMachineScaleSet#application_gateway_backend_address_pool_ids}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.loadBalancerBackendAddressPoolIds">loadBalancerBackendAddressPoolIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#load_balancer_backend_address_pool_ids VirtualMachineScaleSet#load_balancer_backend_address_pool_ids}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.loadBalancerInboundNatRulesIds">loadBalancerInboundNatRulesIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#load_balancer_inbound_nat_rules_ids VirtualMachineScaleSet#load_balancer_inbound_nat_rules_ids}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.primary">primary</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#primary VirtualMachineScaleSet#primary}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.subnetId">subnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#subnet_id VirtualMachineScaleSet#subnet_id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.applicationGatewayBackendAddressPoolIds">applicationGatewayBackendAddressPoolIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#application_gateway_backend_address_pool_ids VirtualMachineScaleSet#application_gateway_backend_address_pool_ids}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.loadBalancerBackendAddressPoolIds">loadBalancerBackendAddressPoolIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#load_balancer_backend_address_pool_ids VirtualMachineScaleSet#load_balancer_backend_address_pool_ids}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.loadBalancerInboundNatRulesIds">loadBalancerInboundNatRulesIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#load_balancer_inbound_nat_rules_ids VirtualMachineScaleSet#load_balancer_inbound_nat_rules_ids}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.property.publicIpAddressConfiguration">publicIpAddressConfiguration</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfiguration">VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfiguration</a></code> | public_ip_address_configuration block. |
 
 ---
@@ -2307,7 +2307,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
 
 ---
 
@@ -2319,7 +2319,7 @@ public readonly primary: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#primary VirtualMachineScaleSet#primary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#primary VirtualMachineScaleSet#primary}.
 
 ---
 
@@ -2331,7 +2331,7 @@ public readonly subnetId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#subnet_id VirtualMachineScaleSet#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#subnet_id VirtualMachineScaleSet#subnet_id}.
 
 ---
 
@@ -2343,7 +2343,7 @@ public readonly applicationGatewayBackendAddressPoolIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#application_gateway_backend_address_pool_ids VirtualMachineScaleSet#application_gateway_backend_address_pool_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#application_gateway_backend_address_pool_ids VirtualMachineScaleSet#application_gateway_backend_address_pool_ids}.
 
 ---
 
@@ -2355,7 +2355,7 @@ public readonly loadBalancerBackendAddressPoolIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#load_balancer_backend_address_pool_ids VirtualMachineScaleSet#load_balancer_backend_address_pool_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#load_balancer_backend_address_pool_ids VirtualMachineScaleSet#load_balancer_backend_address_pool_ids}.
 
 ---
 
@@ -2367,7 +2367,7 @@ public readonly loadBalancerInboundNatRulesIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#load_balancer_inbound_nat_rules_ids VirtualMachineScaleSet#load_balancer_inbound_nat_rules_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#load_balancer_inbound_nat_rules_ids VirtualMachineScaleSet#load_balancer_inbound_nat_rules_ids}.
 
 ---
 
@@ -2381,7 +2381,7 @@ public readonly publicIpAddressConfiguration: VirtualMachineScaleSetNetworkProfi
 
 public_ip_address_configuration block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#public_ip_address_configuration VirtualMachineScaleSet#public_ip_address_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#public_ip_address_configuration VirtualMachineScaleSet#public_ip_address_configuration}
 
 ---
 
@@ -2399,9 +2399,9 @@ const virtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfiguration.property.domainNameLabel">domainNameLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#domain_name_label VirtualMachineScaleSet#domain_name_label}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfiguration.property.idleTimeout">idleTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#idle_timeout VirtualMachineScaleSet#idle_timeout}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfiguration.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfiguration.property.domainNameLabel">domainNameLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#domain_name_label VirtualMachineScaleSet#domain_name_label}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfiguration.property.idleTimeout">idleTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#idle_timeout VirtualMachineScaleSet#idle_timeout}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfiguration.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
 
 ---
 
@@ -2413,7 +2413,7 @@ public readonly domainNameLabel: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#domain_name_label VirtualMachineScaleSet#domain_name_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#domain_name_label VirtualMachineScaleSet#domain_name_label}.
 
 ---
 
@@ -2425,7 +2425,7 @@ public readonly idleTimeout: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#idle_timeout VirtualMachineScaleSet#idle_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#idle_timeout VirtualMachineScaleSet#idle_timeout}.
 
 ---
 
@@ -2437,7 +2437,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
 
 ---
 
@@ -2455,10 +2455,10 @@ const virtualMachineScaleSetOsProfile: virtualMachineScaleSet.VirtualMachineScal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfile.property.adminUsername">adminUsername</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#admin_username VirtualMachineScaleSet#admin_username}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfile.property.computerNamePrefix">computerNamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#computer_name_prefix VirtualMachineScaleSet#computer_name_prefix}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfile.property.adminPassword">adminPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#admin_password VirtualMachineScaleSet#admin_password}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfile.property.customData">customData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#custom_data VirtualMachineScaleSet#custom_data}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfile.property.adminUsername">adminUsername</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#admin_username VirtualMachineScaleSet#admin_username}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfile.property.computerNamePrefix">computerNamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#computer_name_prefix VirtualMachineScaleSet#computer_name_prefix}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfile.property.adminPassword">adminPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#admin_password VirtualMachineScaleSet#admin_password}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfile.property.customData">customData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#custom_data VirtualMachineScaleSet#custom_data}. |
 
 ---
 
@@ -2470,7 +2470,7 @@ public readonly adminUsername: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#admin_username VirtualMachineScaleSet#admin_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#admin_username VirtualMachineScaleSet#admin_username}.
 
 ---
 
@@ -2482,7 +2482,7 @@ public readonly computerNamePrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#computer_name_prefix VirtualMachineScaleSet#computer_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#computer_name_prefix VirtualMachineScaleSet#computer_name_prefix}.
 
 ---
 
@@ -2494,7 +2494,7 @@ public readonly adminPassword: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#admin_password VirtualMachineScaleSet#admin_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#admin_password VirtualMachineScaleSet#admin_password}.
 
 ---
 
@@ -2506,7 +2506,7 @@ public readonly customData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#custom_data VirtualMachineScaleSet#custom_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#custom_data VirtualMachineScaleSet#custom_data}.
 
 ---
 
@@ -2524,7 +2524,7 @@ const virtualMachineScaleSetOsProfileLinuxConfig: virtualMachineScaleSet.Virtual
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfig.property.disablePasswordAuthentication">disablePasswordAuthentication</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#disable_password_authentication VirtualMachineScaleSet#disable_password_authentication}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfig.property.disablePasswordAuthentication">disablePasswordAuthentication</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#disable_password_authentication VirtualMachineScaleSet#disable_password_authentication}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfig.property.sshKeys">sshKeys</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfigSshKeys">VirtualMachineScaleSetOsProfileLinuxConfigSshKeys</a>[]</code> | ssh_keys block. |
 
 ---
@@ -2537,7 +2537,7 @@ public readonly disablePasswordAuthentication: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#disable_password_authentication VirtualMachineScaleSet#disable_password_authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#disable_password_authentication VirtualMachineScaleSet#disable_password_authentication}.
 
 ---
 
@@ -2551,7 +2551,7 @@ public readonly sshKeys: IResolvable | VirtualMachineScaleSetOsProfileLinuxConfi
 
 ssh_keys block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#ssh_keys VirtualMachineScaleSet#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#ssh_keys VirtualMachineScaleSet#ssh_keys}
 
 ---
 
@@ -2569,8 +2569,8 @@ const virtualMachineScaleSetOsProfileLinuxConfigSshKeys: virtualMachineScaleSet.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfigSshKeys.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#path VirtualMachineScaleSet#path}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfigSshKeys.property.keyData">keyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#key_data VirtualMachineScaleSet#key_data}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfigSshKeys.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#path VirtualMachineScaleSet#path}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfigSshKeys.property.keyData">keyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#key_data VirtualMachineScaleSet#key_data}. |
 
 ---
 
@@ -2582,7 +2582,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#path VirtualMachineScaleSet#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#path VirtualMachineScaleSet#path}.
 
 ---
 
@@ -2594,7 +2594,7 @@ public readonly keyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#key_data VirtualMachineScaleSet#key_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#key_data VirtualMachineScaleSet#key_data}.
 
 ---
 
@@ -2612,7 +2612,7 @@ const virtualMachineScaleSetOsProfileSecrets: virtualMachineScaleSet.VirtualMach
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecrets.property.sourceVaultId">sourceVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#source_vault_id VirtualMachineScaleSet#source_vault_id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecrets.property.sourceVaultId">sourceVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#source_vault_id VirtualMachineScaleSet#source_vault_id}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecrets.property.vaultCertificates">vaultCertificates</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecretsVaultCertificates">VirtualMachineScaleSetOsProfileSecretsVaultCertificates</a>[]</code> | vault_certificates block. |
 
 ---
@@ -2625,7 +2625,7 @@ public readonly sourceVaultId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#source_vault_id VirtualMachineScaleSet#source_vault_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#source_vault_id VirtualMachineScaleSet#source_vault_id}.
 
 ---
 
@@ -2639,7 +2639,7 @@ public readonly vaultCertificates: IResolvable | VirtualMachineScaleSetOsProfile
 
 vault_certificates block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#vault_certificates VirtualMachineScaleSet#vault_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#vault_certificates VirtualMachineScaleSet#vault_certificates}
 
 ---
 
@@ -2657,8 +2657,8 @@ const virtualMachineScaleSetOsProfileSecretsVaultCertificates: virtualMachineSca
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecretsVaultCertificates.property.certificateUrl">certificateUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#certificate_url VirtualMachineScaleSet#certificate_url}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecretsVaultCertificates.property.certificateStore">certificateStore</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#certificate_store VirtualMachineScaleSet#certificate_store}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecretsVaultCertificates.property.certificateUrl">certificateUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#certificate_url VirtualMachineScaleSet#certificate_url}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecretsVaultCertificates.property.certificateStore">certificateStore</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#certificate_store VirtualMachineScaleSet#certificate_store}. |
 
 ---
 
@@ -2670,7 +2670,7 @@ public readonly certificateUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#certificate_url VirtualMachineScaleSet#certificate_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#certificate_url VirtualMachineScaleSet#certificate_url}.
 
 ---
 
@@ -2682,7 +2682,7 @@ public readonly certificateStore: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#certificate_store VirtualMachineScaleSet#certificate_store}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#certificate_store VirtualMachineScaleSet#certificate_store}.
 
 ---
 
@@ -2701,8 +2701,8 @@ const virtualMachineScaleSetOsProfileWindowsConfig: virtualMachineScaleSet.Virtu
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfig.property.additionalUnattendConfig">additionalUnattendConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig">VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig</a>[]</code> | additional_unattend_config block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfig.property.enableAutomaticUpgrades">enableAutomaticUpgrades</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#enable_automatic_upgrades VirtualMachineScaleSet#enable_automatic_upgrades}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfig.property.provisionVmAgent">provisionVmAgent</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#provision_vm_agent VirtualMachineScaleSet#provision_vm_agent}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfig.property.enableAutomaticUpgrades">enableAutomaticUpgrades</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#enable_automatic_upgrades VirtualMachineScaleSet#enable_automatic_upgrades}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfig.property.provisionVmAgent">provisionVmAgent</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#provision_vm_agent VirtualMachineScaleSet#provision_vm_agent}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfig.property.winrm">winrm</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigWinrm">VirtualMachineScaleSetOsProfileWindowsConfigWinrm</a>[]</code> | winrm block. |
 
 ---
@@ -2717,7 +2717,7 @@ public readonly additionalUnattendConfig: IResolvable | VirtualMachineScaleSetOs
 
 additional_unattend_config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#additional_unattend_config VirtualMachineScaleSet#additional_unattend_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#additional_unattend_config VirtualMachineScaleSet#additional_unattend_config}
 
 ---
 
@@ -2729,7 +2729,7 @@ public readonly enableAutomaticUpgrades: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#enable_automatic_upgrades VirtualMachineScaleSet#enable_automatic_upgrades}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#enable_automatic_upgrades VirtualMachineScaleSet#enable_automatic_upgrades}.
 
 ---
 
@@ -2741,7 +2741,7 @@ public readonly provisionVmAgent: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#provision_vm_agent VirtualMachineScaleSet#provision_vm_agent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#provision_vm_agent VirtualMachineScaleSet#provision_vm_agent}.
 
 ---
 
@@ -2755,7 +2755,7 @@ public readonly winrm: IResolvable | VirtualMachineScaleSetOsProfileWindowsConfi
 
 winrm block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#winrm VirtualMachineScaleSet#winrm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#winrm VirtualMachineScaleSet#winrm}
 
 ---
 
@@ -2773,10 +2773,10 @@ const virtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig: virt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig.property.component">component</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#component VirtualMachineScaleSet#component}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#content VirtualMachineScaleSet#content}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig.property.pass">pass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#pass VirtualMachineScaleSet#pass}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig.property.settingName">settingName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#setting_name VirtualMachineScaleSet#setting_name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig.property.component">component</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#component VirtualMachineScaleSet#component}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#content VirtualMachineScaleSet#content}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig.property.pass">pass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#pass VirtualMachineScaleSet#pass}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig.property.settingName">settingName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#setting_name VirtualMachineScaleSet#setting_name}. |
 
 ---
 
@@ -2788,7 +2788,7 @@ public readonly component: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#component VirtualMachineScaleSet#component}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#component VirtualMachineScaleSet#component}.
 
 ---
 
@@ -2800,7 +2800,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#content VirtualMachineScaleSet#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#content VirtualMachineScaleSet#content}.
 
 ---
 
@@ -2812,7 +2812,7 @@ public readonly pass: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#pass VirtualMachineScaleSet#pass}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#pass VirtualMachineScaleSet#pass}.
 
 ---
 
@@ -2824,7 +2824,7 @@ public readonly settingName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#setting_name VirtualMachineScaleSet#setting_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#setting_name VirtualMachineScaleSet#setting_name}.
 
 ---
 
@@ -2842,8 +2842,8 @@ const virtualMachineScaleSetOsProfileWindowsConfigWinrm: virtualMachineScaleSet.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigWinrm.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#protocol VirtualMachineScaleSet#protocol}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigWinrm.property.certificateUrl">certificateUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#certificate_url VirtualMachineScaleSet#certificate_url}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigWinrm.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#protocol VirtualMachineScaleSet#protocol}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigWinrm.property.certificateUrl">certificateUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#certificate_url VirtualMachineScaleSet#certificate_url}. |
 
 ---
 
@@ -2855,7 +2855,7 @@ public readonly protocol: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#protocol VirtualMachineScaleSet#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#protocol VirtualMachineScaleSet#protocol}.
 
 ---
 
@@ -2867,7 +2867,7 @@ public readonly certificateUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#certificate_url VirtualMachineScaleSet#certificate_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#certificate_url VirtualMachineScaleSet#certificate_url}.
 
 ---
 
@@ -2885,9 +2885,9 @@ const virtualMachineScaleSetPlan: virtualMachineScaleSet.VirtualMachineScaleSetP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetPlan.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetPlan.property.product">product</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#product VirtualMachineScaleSet#product}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetPlan.property.publisher">publisher</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#publisher VirtualMachineScaleSet#publisher}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetPlan.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetPlan.property.product">product</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#product VirtualMachineScaleSet#product}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetPlan.property.publisher">publisher</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#publisher VirtualMachineScaleSet#publisher}. |
 
 ---
 
@@ -2899,7 +2899,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
 
 ---
 
@@ -2911,7 +2911,7 @@ public readonly product: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#product VirtualMachineScaleSet#product}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#product VirtualMachineScaleSet#product}.
 
 ---
 
@@ -2923,7 +2923,7 @@ public readonly publisher: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#publisher VirtualMachineScaleSet#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#publisher VirtualMachineScaleSet#publisher}.
 
 ---
 
@@ -2941,10 +2941,10 @@ const virtualMachineScaleSetRollingUpgradePolicy: virtualMachineScaleSet.Virtual
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicy.property.maxBatchInstancePercent">maxBatchInstancePercent</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#max_batch_instance_percent VirtualMachineScaleSet#max_batch_instance_percent}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicy.property.maxUnhealthyInstancePercent">maxUnhealthyInstancePercent</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#max_unhealthy_instance_percent VirtualMachineScaleSet#max_unhealthy_instance_percent}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicy.property.maxUnhealthyUpgradedInstancePercent">maxUnhealthyUpgradedInstancePercent</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#max_unhealthy_upgraded_instance_percent VirtualMachineScaleSet#max_unhealthy_upgraded_instance_percent}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicy.property.pauseTimeBetweenBatches">pauseTimeBetweenBatches</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#pause_time_between_batches VirtualMachineScaleSet#pause_time_between_batches}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicy.property.maxBatchInstancePercent">maxBatchInstancePercent</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#max_batch_instance_percent VirtualMachineScaleSet#max_batch_instance_percent}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicy.property.maxUnhealthyInstancePercent">maxUnhealthyInstancePercent</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#max_unhealthy_instance_percent VirtualMachineScaleSet#max_unhealthy_instance_percent}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicy.property.maxUnhealthyUpgradedInstancePercent">maxUnhealthyUpgradedInstancePercent</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#max_unhealthy_upgraded_instance_percent VirtualMachineScaleSet#max_unhealthy_upgraded_instance_percent}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicy.property.pauseTimeBetweenBatches">pauseTimeBetweenBatches</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#pause_time_between_batches VirtualMachineScaleSet#pause_time_between_batches}. |
 
 ---
 
@@ -2956,7 +2956,7 @@ public readonly maxBatchInstancePercent: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#max_batch_instance_percent VirtualMachineScaleSet#max_batch_instance_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#max_batch_instance_percent VirtualMachineScaleSet#max_batch_instance_percent}.
 
 ---
 
@@ -2968,7 +2968,7 @@ public readonly maxUnhealthyInstancePercent: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#max_unhealthy_instance_percent VirtualMachineScaleSet#max_unhealthy_instance_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#max_unhealthy_instance_percent VirtualMachineScaleSet#max_unhealthy_instance_percent}.
 
 ---
 
@@ -2980,7 +2980,7 @@ public readonly maxUnhealthyUpgradedInstancePercent: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#max_unhealthy_upgraded_instance_percent VirtualMachineScaleSet#max_unhealthy_upgraded_instance_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#max_unhealthy_upgraded_instance_percent VirtualMachineScaleSet#max_unhealthy_upgraded_instance_percent}.
 
 ---
 
@@ -2992,7 +2992,7 @@ public readonly pauseTimeBetweenBatches: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#pause_time_between_batches VirtualMachineScaleSet#pause_time_between_batches}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#pause_time_between_batches VirtualMachineScaleSet#pause_time_between_batches}.
 
 ---
 
@@ -3010,9 +3010,9 @@ const virtualMachineScaleSetSku: virtualMachineScaleSet.VirtualMachineScaleSetSk
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetSku.property.capacity">capacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#capacity VirtualMachineScaleSet#capacity}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetSku.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetSku.property.tier">tier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#tier VirtualMachineScaleSet#tier}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetSku.property.capacity">capacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#capacity VirtualMachineScaleSet#capacity}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetSku.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetSku.property.tier">tier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#tier VirtualMachineScaleSet#tier}. |
 
 ---
 
@@ -3024,7 +3024,7 @@ public readonly capacity: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#capacity VirtualMachineScaleSet#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#capacity VirtualMachineScaleSet#capacity}.
 
 ---
 
@@ -3036,7 +3036,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
 
 ---
 
@@ -3048,7 +3048,7 @@ public readonly tier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#tier VirtualMachineScaleSet#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#tier VirtualMachineScaleSet#tier}.
 
 ---
 
@@ -3066,11 +3066,11 @@ const virtualMachineScaleSetStorageProfileDataDisk: virtualMachineScaleSet.Virtu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDisk.property.createOption">createOption</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#create_option VirtualMachineScaleSet#create_option}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDisk.property.lun">lun</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#lun VirtualMachineScaleSet#lun}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDisk.property.caching">caching</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#caching VirtualMachineScaleSet#caching}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDisk.property.diskSizeGb">diskSizeGb</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#disk_size_gb VirtualMachineScaleSet#disk_size_gb}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDisk.property.managedDiskType">managedDiskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#managed_disk_type VirtualMachineScaleSet#managed_disk_type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDisk.property.createOption">createOption</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#create_option VirtualMachineScaleSet#create_option}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDisk.property.lun">lun</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#lun VirtualMachineScaleSet#lun}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDisk.property.caching">caching</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#caching VirtualMachineScaleSet#caching}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDisk.property.diskSizeGb">diskSizeGb</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#disk_size_gb VirtualMachineScaleSet#disk_size_gb}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDisk.property.managedDiskType">managedDiskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#managed_disk_type VirtualMachineScaleSet#managed_disk_type}. |
 
 ---
 
@@ -3082,7 +3082,7 @@ public readonly createOption: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#create_option VirtualMachineScaleSet#create_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#create_option VirtualMachineScaleSet#create_option}.
 
 ---
 
@@ -3094,7 +3094,7 @@ public readonly lun: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#lun VirtualMachineScaleSet#lun}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#lun VirtualMachineScaleSet#lun}.
 
 ---
 
@@ -3106,7 +3106,7 @@ public readonly caching: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#caching VirtualMachineScaleSet#caching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#caching VirtualMachineScaleSet#caching}.
 
 ---
 
@@ -3118,7 +3118,7 @@ public readonly diskSizeGb: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#disk_size_gb VirtualMachineScaleSet#disk_size_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#disk_size_gb VirtualMachineScaleSet#disk_size_gb}.
 
 ---
 
@@ -3130,7 +3130,7 @@ public readonly managedDiskType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#managed_disk_type VirtualMachineScaleSet#managed_disk_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#managed_disk_type VirtualMachineScaleSet#managed_disk_type}.
 
 ---
 
@@ -3148,11 +3148,11 @@ const virtualMachineScaleSetStorageProfileImageReference: virtualMachineScaleSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#id VirtualMachineScaleSet#id}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference.property.offer">offer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#offer VirtualMachineScaleSet#offer}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference.property.publisher">publisher</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#publisher VirtualMachineScaleSet#publisher}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference.property.sku">sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#sku VirtualMachineScaleSet#sku}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference.property.version">version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#version VirtualMachineScaleSet#version}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#id VirtualMachineScaleSet#id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference.property.offer">offer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#offer VirtualMachineScaleSet#offer}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference.property.publisher">publisher</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#publisher VirtualMachineScaleSet#publisher}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference.property.sku">sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#sku VirtualMachineScaleSet#sku}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference.property.version">version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#version VirtualMachineScaleSet#version}. |
 
 ---
 
@@ -3164,7 +3164,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#id VirtualMachineScaleSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#id VirtualMachineScaleSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3179,7 +3179,7 @@ public readonly offer: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#offer VirtualMachineScaleSet#offer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#offer VirtualMachineScaleSet#offer}.
 
 ---
 
@@ -3191,7 +3191,7 @@ public readonly publisher: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#publisher VirtualMachineScaleSet#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#publisher VirtualMachineScaleSet#publisher}.
 
 ---
 
@@ -3203,7 +3203,7 @@ public readonly sku: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#sku VirtualMachineScaleSet#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#sku VirtualMachineScaleSet#sku}.
 
 ---
 
@@ -3215,7 +3215,7 @@ public readonly version: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#version VirtualMachineScaleSet#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#version VirtualMachineScaleSet#version}.
 
 ---
 
@@ -3233,13 +3233,13 @@ const virtualMachineScaleSetStorageProfileOsDisk: virtualMachineScaleSet.Virtual
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.createOption">createOption</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#create_option VirtualMachineScaleSet#create_option}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.caching">caching</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#caching VirtualMachineScaleSet#caching}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.image">image</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#image VirtualMachineScaleSet#image}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.managedDiskType">managedDiskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#managed_disk_type VirtualMachineScaleSet#managed_disk_type}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.osType">osType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#os_type VirtualMachineScaleSet#os_type}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.vhdContainers">vhdContainers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#vhd_containers VirtualMachineScaleSet#vhd_containers}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.createOption">createOption</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#create_option VirtualMachineScaleSet#create_option}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.caching">caching</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#caching VirtualMachineScaleSet#caching}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.image">image</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#image VirtualMachineScaleSet#image}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.managedDiskType">managedDiskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#managed_disk_type VirtualMachineScaleSet#managed_disk_type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.osType">osType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#os_type VirtualMachineScaleSet#os_type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.property.vhdContainers">vhdContainers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#vhd_containers VirtualMachineScaleSet#vhd_containers}. |
 
 ---
 
@@ -3251,7 +3251,7 @@ public readonly createOption: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#create_option VirtualMachineScaleSet#create_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#create_option VirtualMachineScaleSet#create_option}.
 
 ---
 
@@ -3263,7 +3263,7 @@ public readonly caching: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#caching VirtualMachineScaleSet#caching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#caching VirtualMachineScaleSet#caching}.
 
 ---
 
@@ -3275,7 +3275,7 @@ public readonly image: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#image VirtualMachineScaleSet#image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#image VirtualMachineScaleSet#image}.
 
 ---
 
@@ -3287,7 +3287,7 @@ public readonly managedDiskType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#managed_disk_type VirtualMachineScaleSet#managed_disk_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#managed_disk_type VirtualMachineScaleSet#managed_disk_type}.
 
 ---
 
@@ -3299,7 +3299,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#name VirtualMachineScaleSet#name}.
 
 ---
 
@@ -3311,7 +3311,7 @@ public readonly osType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#os_type VirtualMachineScaleSet#os_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#os_type VirtualMachineScaleSet#os_type}.
 
 ---
 
@@ -3323,7 +3323,7 @@ public readonly vhdContainers: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#vhd_containers VirtualMachineScaleSet#vhd_containers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#vhd_containers VirtualMachineScaleSet#vhd_containers}.
 
 ---
 
@@ -3341,10 +3341,10 @@ const virtualMachineScaleSetTimeouts: virtualMachineScaleSet.VirtualMachineScale
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#create VirtualMachineScaleSet#create}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#delete VirtualMachineScaleSet#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#read VirtualMachineScaleSet#read}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#update VirtualMachineScaleSet#update}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#create VirtualMachineScaleSet#create}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#delete VirtualMachineScaleSet#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#read VirtualMachineScaleSet#read}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSetTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#update VirtualMachineScaleSet#update}. |
 
 ---
 
@@ -3356,7 +3356,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#create VirtualMachineScaleSet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#create VirtualMachineScaleSet#create}.
 
 ---
 
@@ -3368,7 +3368,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#delete VirtualMachineScaleSet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#delete VirtualMachineScaleSet#delete}.
 
 ---
 
@@ -3380,7 +3380,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#read VirtualMachineScaleSet#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#read VirtualMachineScaleSet#read}.
 
 ---
 
@@ -3392,7 +3392,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine_scale_set#update VirtualMachineScaleSet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set#update VirtualMachineScaleSet#update}.
 
 ---
 

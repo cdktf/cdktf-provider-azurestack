@@ -1,6 +1,6 @@
 # `azurestack_dns_cname_record`
 
-Refer to the Terraform Registory for docs: [`azurestack_dns_cname_record`](https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record).
+Refer to the Terraform Registory for docs: [`azurestack_dns_cname_record`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record).
 
 # `dnsCnameRecord` Submodule <a name="`dnsCnameRecord` Submodule" id="@cdktf/provider-azurestack.dnsCnameRecord"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_dns_cname_record`](https
 
 ### DnsCnameRecord <a name="DnsCnameRecord" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record azurestack_dns_cname_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record azurestack_dns_cname_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.Initializer"></a>
 
@@ -380,7 +380,7 @@ dnsCnameRecord.DnsCnameRecord.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -491,10 +491,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -753,19 +753,19 @@ const dnsCnameRecordConfig: dnsCnameRecord.DnsCnameRecordConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#name DnsCnameRecord#name}. |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#resource_group_name DnsCnameRecord#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.ttl">ttl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#ttl DnsCnameRecord#ttl}. |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.zoneName">zoneName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#zone_name DnsCnameRecord#zone_name}. |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#id DnsCnameRecord#id}. |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.record">record</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#record DnsCnameRecord#record}. |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#tags DnsCnameRecord#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#name DnsCnameRecord#name}. |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#resource_group_name DnsCnameRecord#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.ttl">ttl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#ttl DnsCnameRecord#ttl}. |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.zoneName">zoneName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#zone_name DnsCnameRecord#zone_name}. |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#id DnsCnameRecord#id}. |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.record">record</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#record DnsCnameRecord#record}. |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#tags DnsCnameRecord#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts">DnsCnameRecordTimeouts</a></code> | timeouts block. |
 
 ---
@@ -783,10 +783,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -848,7 +848,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#name DnsCnameRecord#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#name DnsCnameRecord#name}.
 
 ---
 
@@ -860,7 +860,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#resource_group_name DnsCnameRecord#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#resource_group_name DnsCnameRecord#resource_group_name}.
 
 ---
 
@@ -872,7 +872,7 @@ public readonly ttl: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#ttl DnsCnameRecord#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#ttl DnsCnameRecord#ttl}.
 
 ---
 
@@ -884,7 +884,7 @@ public readonly zoneName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#zone_name DnsCnameRecord#zone_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#zone_name DnsCnameRecord#zone_name}.
 
 ---
 
@@ -896,7 +896,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#id DnsCnameRecord#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#id DnsCnameRecord#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -911,7 +911,7 @@ public readonly record: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#record DnsCnameRecord#record}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#record DnsCnameRecord#record}.
 
 ---
 
@@ -923,7 +923,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#tags DnsCnameRecord#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#tags DnsCnameRecord#tags}.
 
 ---
 
@@ -937,7 +937,7 @@ public readonly timeouts: DnsCnameRecordTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#timeouts DnsCnameRecord#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#timeouts DnsCnameRecord#timeouts}
 
 ---
 
@@ -955,10 +955,10 @@ const dnsCnameRecordTimeouts: dnsCnameRecord.DnsCnameRecordTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#create DnsCnameRecord#create}. |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#delete DnsCnameRecord#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#read DnsCnameRecord#read}. |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#update DnsCnameRecord#update}. |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#create DnsCnameRecord#create}. |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#delete DnsCnameRecord#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#read DnsCnameRecord#read}. |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#update DnsCnameRecord#update}. |
 
 ---
 
@@ -970,7 +970,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#create DnsCnameRecord#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#create DnsCnameRecord#create}.
 
 ---
 
@@ -982,7 +982,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#delete DnsCnameRecord#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#delete DnsCnameRecord#delete}.
 
 ---
 
@@ -994,7 +994,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#read DnsCnameRecord#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#read DnsCnameRecord#read}.
 
 ---
 
@@ -1006,7 +1006,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/dns_cname_record#update DnsCnameRecord#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#update DnsCnameRecord#update}.
 
 ---
 

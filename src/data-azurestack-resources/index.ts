@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azurestack/d/resources
+// https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resources
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzurestackResourcesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resources#id DataAzurestackResources#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resources#id DataAzurestackResources#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resources#name DataAzurestackResources#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resources#name DataAzurestackResources#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resources#required_tags DataAzurestackResources#required_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resources#required_tags DataAzurestackResources#required_tags}
   */
   readonly requiredTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resources#resource_group_name DataAzurestackResources#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resources#resource_group_name DataAzurestackResources#resource_group_name}
   */
   readonly resourceGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resources#type DataAzurestackResources#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resources#type DataAzurestackResources#type}
   */
   readonly type?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resources#timeouts DataAzurestackResources#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resources#timeouts DataAzurestackResources#timeouts}
   */
   readonly timeouts?: DataAzurestackResourcesTimeouts;
 }
@@ -124,12 +124,12 @@ export class DataAzurestackResourcesResourcesList extends cdktf.ComplexList {
 }
 export interface DataAzurestackResourcesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/resources#read DataAzurestackResources#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resources#read DataAzurestackResources#read}
   */
   readonly read?: string;
 }
 
-export function dataAzurestackResourcesTimeoutsToTerraform(struct?: DataAzurestackResourcesTimeoutsOutputReference | DataAzurestackResourcesTimeouts | cdktf.IResolvable): any {
+export function dataAzurestackResourcesTimeoutsToTerraform(struct?: DataAzurestackResourcesTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -148,7 +148,7 @@ export class DataAzurestackResourcesTimeoutsOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAzurestackResourcesTimeouts | cdktf.IResolvable | undefined {
@@ -199,7 +199,7 @@ export class DataAzurestackResourcesTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/resources azurestack_resources}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resources azurestack_resources}
 */
 export class DataAzurestackResources extends cdktf.TerraformDataSource {
 
@@ -213,7 +213,7 @@ export class DataAzurestackResources extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azurestack/d/resources azurestack_resources} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resources azurestack_resources} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

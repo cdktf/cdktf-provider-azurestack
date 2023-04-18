@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azurestack
+// https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,101 +10,101 @@ export interface AzurestackProviderConfig {
   /**
   * The Hostname which should be used for the Azure Metadata Service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#arm_endpoint AzurestackProvider#arm_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#arm_endpoint AzurestackProvider#arm_endpoint}
   */
   readonly armEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#auxiliary_tenant_ids AzurestackProvider#auxiliary_tenant_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#auxiliary_tenant_ids AzurestackProvider#auxiliary_tenant_ids}
   */
   readonly auxiliaryTenantIds?: string[];
   /**
   * The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client Certificate
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#client_certificate_password AzurestackProvider#client_certificate_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#client_certificate_password AzurestackProvider#client_certificate_password}
   */
   readonly clientCertificatePassword?: string;
   /**
   * The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#client_certificate_path AzurestackProvider#client_certificate_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#client_certificate_path AzurestackProvider#client_certificate_path}
   */
   readonly clientCertificatePath?: string;
   /**
   * The Client ID which should be used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#client_id AzurestackProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#client_id AzurestackProvider#client_id}
   */
   readonly clientId?: string;
   /**
   * The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#client_secret AzurestackProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#client_secret AzurestackProvider#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * This will disable the x-ms-correlation-request-id header.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#disable_correlation_request_id AzurestackProvider#disable_correlation_request_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#disable_correlation_request_id AzurestackProvider#disable_correlation_request_id}
   */
   readonly disableCorrelationRequestId?: boolean | cdktf.IResolvable;
   /**
   * The Cloud Environment which should be used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#environment AzurestackProvider#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#environment AzurestackProvider#environment}
   */
   readonly environment?: string;
   /**
   * The Hostname which should be used for the Azure Metadata Service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#metadata_host AzurestackProvider#metadata_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#metadata_host AzurestackProvider#metadata_host}
   */
   readonly metadataHost?: string;
   /**
   * The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected automatically. 
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#msi_endpoint AzurestackProvider#msi_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#msi_endpoint AzurestackProvider#msi_endpoint}
   */
   readonly msiEndpoint?: string;
   /**
   * Should the AzureStack Provider skip registering all of the Resource Providers that it supports, if they're not already registered?
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#skip_provider_registration AzurestackProvider#skip_provider_registration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#skip_provider_registration AzurestackProvider#skip_provider_registration}
   */
   readonly skipProviderRegistration?: boolean | cdktf.IResolvable;
   /**
   * The Subscription ID which should be used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#subscription_id AzurestackProvider#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#subscription_id AzurestackProvider#subscription_id}
   */
   readonly subscriptionId?: string;
   /**
   * The Tenant ID which should be used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#tenant_id AzurestackProvider#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#tenant_id AzurestackProvider#tenant_id}
   */
   readonly tenantId?: string;
   /**
   * Allowed Managed Service Identity be used for Authentication.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#use_msi AzurestackProvider#use_msi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#use_msi AzurestackProvider#use_msi}
   */
   readonly useMsi?: boolean | cdktf.IResolvable;
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#alias AzurestackProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#alias AzurestackProvider#alias}
   */
   readonly alias?: string;
   /**
   * features block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#features AzurestackProvider#features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#features AzurestackProvider#features}
   */
   readonly features: AzurestackProviderFeatures;
 }
 export interface AzurestackProviderFeaturesResourceGroup {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#prevent_deletion_if_contains_resources AzurestackProvider#prevent_deletion_if_contains_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#prevent_deletion_if_contains_resources AzurestackProvider#prevent_deletion_if_contains_resources}
   */
   readonly preventDeletionIfContainsResources?: boolean | cdktf.IResolvable;
 }
@@ -121,15 +121,15 @@ export function azurestackProviderFeaturesResourceGroupToTerraform(struct?: Azur
 
 export interface AzurestackProviderFeaturesVirtualMachine {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#delete_os_disk_on_deletion AzurestackProvider#delete_os_disk_on_deletion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#delete_os_disk_on_deletion AzurestackProvider#delete_os_disk_on_deletion}
   */
   readonly deleteOsDiskOnDeletion?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#graceful_shutdown AzurestackProvider#graceful_shutdown}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#graceful_shutdown AzurestackProvider#graceful_shutdown}
   */
   readonly gracefulShutdown?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#skip_shutdown_and_force_delete AzurestackProvider#skip_shutdown_and_force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#skip_shutdown_and_force_delete AzurestackProvider#skip_shutdown_and_force_delete}
   */
   readonly skipShutdownAndForceDelete?: boolean | cdktf.IResolvable;
 }
@@ -148,15 +148,15 @@ export function azurestackProviderFeaturesVirtualMachineToTerraform(struct?: Azu
 
 export interface AzurestackProviderFeaturesVirtualMachineScaleSet {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#force_delete AzurestackProvider#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#force_delete AzurestackProvider#force_delete}
   */
   readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#roll_instances_when_required AzurestackProvider#roll_instances_when_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#roll_instances_when_required AzurestackProvider#roll_instances_when_required}
   */
   readonly rollInstancesWhenRequired: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#scale_to_zero_before_deletion AzurestackProvider#scale_to_zero_before_deletion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#scale_to_zero_before_deletion AzurestackProvider#scale_to_zero_before_deletion}
   */
   readonly scaleToZeroBeforeDeletion?: boolean | cdktf.IResolvable;
 }
@@ -177,19 +177,19 @@ export interface AzurestackProviderFeatures {
   /**
   * resource_group block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#resource_group AzurestackProvider#resource_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#resource_group AzurestackProvider#resource_group}
   */
   readonly resourceGroup?: AzurestackProviderFeaturesResourceGroup;
   /**
   * virtual_machine block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#virtual_machine AzurestackProvider#virtual_machine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#virtual_machine AzurestackProvider#virtual_machine}
   */
   readonly virtualMachine?: AzurestackProviderFeaturesVirtualMachine;
   /**
   * virtual_machine_scale_set block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack#virtual_machine_scale_set AzurestackProvider#virtual_machine_scale_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#virtual_machine_scale_set AzurestackProvider#virtual_machine_scale_set}
   */
   readonly virtualMachineScaleSet?: AzurestackProviderFeaturesVirtualMachineScaleSet;
 }
@@ -208,7 +208,7 @@ export function azurestackProviderFeaturesToTerraform(struct?: AzurestackProvide
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azurestack azurestack}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs azurestack}
 */
 export class AzurestackProvider extends cdktf.TerraformProvider {
 
@@ -222,7 +222,7 @@ export class AzurestackProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azurestack azurestack} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs azurestack} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

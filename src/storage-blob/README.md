@@ -1,3 +1,3 @@
 # `azurestack_storage_blob`
 
-Refer to the Terraform Registory for docs: [`azurestack_storage_blob`](https://www.terraform.io/docs/providers/azurestack/r/storage_blob).
+Refer to the Terraform Registory for docs: [`azurestack_storage_blob`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob).

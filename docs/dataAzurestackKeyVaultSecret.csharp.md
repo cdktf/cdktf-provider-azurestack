@@ -1,6 +1,6 @@
 # `data_azurestack_key_vault_secret`
 
-Refer to the Terraform Registory for docs: [`data_azurestack_key_vault_secret`](https://www.terraform.io/docs/providers/azurestack/d/key_vault_secret).
+Refer to the Terraform Registory for docs: [`data_azurestack_key_vault_secret`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault_secret).
 
 # `dataAzurestackKeyVaultSecret` Submodule <a name="`dataAzurestackKeyVaultSecret` Submodule" id="@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_azurestack_key_vault_secret`](
 
 ### DataAzurestackKeyVaultSecret <a name="DataAzurestackKeyVaultSecret" id="@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecret"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault_secret azurestack_key_vault_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault_secret azurestack_key_vault_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecret.Initializer"></a>
 
@@ -365,7 +365,7 @@ DataAzurestackKeyVaultSecret.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecret.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecret.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecret.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecret.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecret.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecret.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecret.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecret.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -460,10 +460,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecret.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -656,7 +656,7 @@ using HashiCorp.Cdktf.Providers.Azurestack;
 
 new DataAzurestackKeyVaultSecretConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -674,15 +674,15 @@ new DataAzurestackKeyVaultSecretConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.keyVaultId">KeyVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault_secret#key_vault_id DataAzurestackKeyVaultSecret#key_vault_id}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault_secret#name DataAzurestackKeyVaultSecret#name}. |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault_secret#id DataAzurestackKeyVaultSecret#id}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.keyVaultId">KeyVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault_secret#key_vault_id DataAzurestackKeyVaultSecret#key_vault_id}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault_secret#name DataAzurestackKeyVaultSecret#name}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault_secret#id DataAzurestackKeyVaultSecret#id}. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretTimeouts">DataAzurestackKeyVaultSecretTimeouts</a></code> | timeouts block. |
 
 ---
@@ -700,10 +700,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -765,7 +765,7 @@ public string KeyVaultId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault_secret#key_vault_id DataAzurestackKeyVaultSecret#key_vault_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault_secret#key_vault_id DataAzurestackKeyVaultSecret#key_vault_id}.
 
 ---
 
@@ -777,7 +777,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault_secret#name DataAzurestackKeyVaultSecret#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault_secret#name DataAzurestackKeyVaultSecret#name}.
 
 ---
 
@@ -789,7 +789,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault_secret#id DataAzurestackKeyVaultSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault_secret#id DataAzurestackKeyVaultSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -806,7 +806,7 @@ public DataAzurestackKeyVaultSecretTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault_secret#timeouts DataAzurestackKeyVaultSecret#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault_secret#timeouts DataAzurestackKeyVaultSecret#timeouts}
 
 ---
 
@@ -826,7 +826,7 @@ new DataAzurestackKeyVaultSecretTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault_secret#read DataAzurestackKeyVaultSecret#read}. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackKeyVaultSecret.DataAzurestackKeyVaultSecretTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault_secret#read DataAzurestackKeyVaultSecret#read}. |
 
 ---
 
@@ -838,7 +838,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/key_vault_secret#read DataAzurestackKeyVaultSecret#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault_secret#read DataAzurestackKeyVaultSecret#read}.
 
 ---
 

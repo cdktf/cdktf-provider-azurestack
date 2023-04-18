@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azurestack/d/platform_image
+// https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,47 +8,47 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzurestackPlatformImageConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#id DataAzurestackPlatformImage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#id DataAzurestackPlatformImage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#location DataAzurestackPlatformImage#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#location DataAzurestackPlatformImage#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#offer DataAzurestackPlatformImage#offer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#offer DataAzurestackPlatformImage#offer}
   */
   readonly offer: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#publisher DataAzurestackPlatformImage#publisher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#publisher DataAzurestackPlatformImage#publisher}
   */
   readonly publisher: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#sku DataAzurestackPlatformImage#sku}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#sku DataAzurestackPlatformImage#sku}
   */
   readonly sku: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#version DataAzurestackPlatformImage#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#version DataAzurestackPlatformImage#version}
   */
   readonly version?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#timeouts DataAzurestackPlatformImage#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#timeouts DataAzurestackPlatformImage#timeouts}
   */
   readonly timeouts?: DataAzurestackPlatformImageTimeouts;
 }
 export interface DataAzurestackPlatformImageTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image#read DataAzurestackPlatformImage#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image#read DataAzurestackPlatformImage#read}
   */
   readonly read?: string;
 }
 
-export function dataAzurestackPlatformImageTimeoutsToTerraform(struct?: DataAzurestackPlatformImageTimeoutsOutputReference | DataAzurestackPlatformImageTimeouts | cdktf.IResolvable): any {
+export function dataAzurestackPlatformImageTimeoutsToTerraform(struct?: DataAzurestackPlatformImageTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -67,7 +67,7 @@ export class DataAzurestackPlatformImageTimeoutsOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAzurestackPlatformImageTimeouts | cdktf.IResolvable | undefined {
@@ -118,7 +118,7 @@ export class DataAzurestackPlatformImageTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image azurestack_platform_image}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image azurestack_platform_image}
 */
 export class DataAzurestackPlatformImage extends cdktf.TerraformDataSource {
 
@@ -132,7 +132,7 @@ export class DataAzurestackPlatformImage extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azurestack/d/platform_image azurestack_platform_image} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image azurestack_platform_image} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

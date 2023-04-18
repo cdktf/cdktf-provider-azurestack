@@ -1,6 +1,6 @@
 # `azurestack_network_security_group`
 
-Refer to the Terraform Registory for docs: [`azurestack_network_security_group`](https://www.terraform.io/docs/providers/azurestack/r/network_security_group).
+Refer to the Terraform Registory for docs: [`azurestack_network_security_group`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group).
 
 # `networkSecurityGroup` Submodule <a name="`networkSecurityGroup` Submodule" id="@cdktf/provider-azurestack.networkSecurityGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_network_security_group`]
 
 ### NetworkSecurityGroup <a name="NetworkSecurityGroup" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group azurestack_network_security_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group azurestack_network_security_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer"></a>
 
@@ -19,7 +19,7 @@ networkSecurityGroup.NetworkSecurityGroup(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -40,18 +40,18 @@ networkSecurityGroup.NetworkSecurityGroup(
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#location NetworkSecurityGroup#location}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#name NetworkSecurityGroup#name}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#resource_group_name NetworkSecurityGroup#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#id NetworkSecurityGroup#id}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.securityRule">security_rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>]]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#security_rule NetworkSecurityGroup#security_rule}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#tags NetworkSecurityGroup#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#location NetworkSecurityGroup#location}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#name NetworkSecurityGroup#name}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#resource_group_name NetworkSecurityGroup#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#id NetworkSecurityGroup#id}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.securityRule">security_rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#security_rule NetworkSecurityGroup#security_rule}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#tags NetworkSecurityGroup#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts">NetworkSecurityGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -82,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#location NetworkSecurityGroup#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#location NetworkSecurityGroup#location}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#name NetworkSecurityGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#name NetworkSecurityGroup#name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#resource_group_name NetworkSecurityGroup#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#resource_group_name NetworkSecurityGroup#resource_group_name}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#id NetworkSecurityGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#id NetworkSecurityGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>]]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#security_rule NetworkSecurityGroup#security_rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#security_rule NetworkSecurityGroup#security_rule}.
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#tags NetworkSecurityGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#tags NetworkSecurityGroup#tags}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#timeouts NetworkSecurityGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#timeouts NetworkSecurityGroup#timeouts}
 
 ---
 
@@ -444,7 +444,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#create NetworkSecurityGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#create NetworkSecurityGroup#create}.
 
 ---
 
@@ -452,7 +452,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#delete NetworkSecurityGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#delete NetworkSecurityGroup#delete}.
 
 ---
 
@@ -460,7 +460,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#read NetworkSecurityGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#read NetworkSecurityGroup#read}.
 
 ---
 
@@ -468,7 +468,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#update NetworkSecurityGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#update NetworkSecurityGroup#update}.
 
 ---
 
@@ -584,7 +584,7 @@ networkSecurityGroup.NetworkSecurityGroup.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -692,10 +692,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -918,7 +918,7 @@ from cdktf_cdktf_provider_azurestack import network_security_group
 
 networkSecurityGroup.NetworkSecurityGroupConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -939,18 +939,18 @@ networkSecurityGroup.NetworkSecurityGroupConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#location NetworkSecurityGroup#location}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#name NetworkSecurityGroup#name}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#resource_group_name NetworkSecurityGroup#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#id NetworkSecurityGroup#id}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.securityRule">security_rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>]]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#security_rule NetworkSecurityGroup#security_rule}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#tags NetworkSecurityGroup#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#location NetworkSecurityGroup#location}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#name NetworkSecurityGroup#name}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#resource_group_name NetworkSecurityGroup#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#id NetworkSecurityGroup#id}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.securityRule">security_rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#security_rule NetworkSecurityGroup#security_rule}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#tags NetworkSecurityGroup#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts">NetworkSecurityGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -968,10 +968,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1033,7 +1033,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#location NetworkSecurityGroup#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#location NetworkSecurityGroup#location}.
 
 ---
 
@@ -1045,7 +1045,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#name NetworkSecurityGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#name NetworkSecurityGroup#name}.
 
 ---
 
@@ -1057,7 +1057,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#resource_group_name NetworkSecurityGroup#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#resource_group_name NetworkSecurityGroup#resource_group_name}.
 
 ---
 
@@ -1069,7 +1069,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#id NetworkSecurityGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#id NetworkSecurityGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1084,7 +1084,7 @@ security_rule: typing.Union[IResolvable, typing.List[NetworkSecurityGroupSecurit
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>]]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#security_rule NetworkSecurityGroup#security_rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#security_rule NetworkSecurityGroup#security_rule}.
 
 ---
 
@@ -1096,7 +1096,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#tags NetworkSecurityGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#tags NetworkSecurityGroup#tags}.
 
 ---
 
@@ -1110,7 +1110,7 @@ timeouts: NetworkSecurityGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#timeouts NetworkSecurityGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#timeouts NetworkSecurityGroup#timeouts}
 
 ---
 
@@ -1143,20 +1143,20 @@ networkSecurityGroup.NetworkSecurityGroupSecurityRule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.access">access</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#access NetworkSecurityGroup#access}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#description NetworkSecurityGroup#description}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.destinationAddressPrefix">destination_address_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#destination_address_prefix NetworkSecurityGroup#destination_address_prefix}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.destinationAddressPrefixes">destination_address_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#destination_address_prefixes NetworkSecurityGroup#destination_address_prefixes}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.destinationPortRange">destination_port_range</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#destination_port_range NetworkSecurityGroup#destination_port_range}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.destinationPortRanges">destination_port_ranges</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#destination_port_ranges NetworkSecurityGroup#destination_port_ranges}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.direction">direction</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#direction NetworkSecurityGroup#direction}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#name NetworkSecurityGroup#name}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#priority NetworkSecurityGroup#priority}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#protocol NetworkSecurityGroup#protocol}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.sourceAddressPrefix">source_address_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#source_address_prefix NetworkSecurityGroup#source_address_prefix}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.sourceAddressPrefixes">source_address_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#source_address_prefixes NetworkSecurityGroup#source_address_prefixes}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.sourcePortRange">source_port_range</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#source_port_range NetworkSecurityGroup#source_port_range}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.sourcePortRanges">source_port_ranges</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#source_port_ranges NetworkSecurityGroup#source_port_ranges}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.access">access</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#access NetworkSecurityGroup#access}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#description NetworkSecurityGroup#description}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.destinationAddressPrefix">destination_address_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#destination_address_prefix NetworkSecurityGroup#destination_address_prefix}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.destinationAddressPrefixes">destination_address_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#destination_address_prefixes NetworkSecurityGroup#destination_address_prefixes}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.destinationPortRange">destination_port_range</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#destination_port_range NetworkSecurityGroup#destination_port_range}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.destinationPortRanges">destination_port_ranges</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#destination_port_ranges NetworkSecurityGroup#destination_port_ranges}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.direction">direction</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#direction NetworkSecurityGroup#direction}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#name NetworkSecurityGroup#name}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#priority NetworkSecurityGroup#priority}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#protocol NetworkSecurityGroup#protocol}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.sourceAddressPrefix">source_address_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#source_address_prefix NetworkSecurityGroup#source_address_prefix}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.sourceAddressPrefixes">source_address_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#source_address_prefixes NetworkSecurityGroup#source_address_prefixes}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.sourcePortRange">source_port_range</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#source_port_range NetworkSecurityGroup#source_port_range}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.property.sourcePortRanges">source_port_ranges</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#source_port_ranges NetworkSecurityGroup#source_port_ranges}. |
 
 ---
 
@@ -1168,7 +1168,7 @@ access: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#access NetworkSecurityGroup#access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#access NetworkSecurityGroup#access}.
 
 ---
 
@@ -1180,7 +1180,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#description NetworkSecurityGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#description NetworkSecurityGroup#description}.
 
 ---
 
@@ -1192,7 +1192,7 @@ destination_address_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#destination_address_prefix NetworkSecurityGroup#destination_address_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#destination_address_prefix NetworkSecurityGroup#destination_address_prefix}.
 
 ---
 
@@ -1204,7 +1204,7 @@ destination_address_prefixes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#destination_address_prefixes NetworkSecurityGroup#destination_address_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#destination_address_prefixes NetworkSecurityGroup#destination_address_prefixes}.
 
 ---
 
@@ -1216,7 +1216,7 @@ destination_port_range: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#destination_port_range NetworkSecurityGroup#destination_port_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#destination_port_range NetworkSecurityGroup#destination_port_range}.
 
 ---
 
@@ -1228,7 +1228,7 @@ destination_port_ranges: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#destination_port_ranges NetworkSecurityGroup#destination_port_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#destination_port_ranges NetworkSecurityGroup#destination_port_ranges}.
 
 ---
 
@@ -1240,7 +1240,7 @@ direction: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#direction NetworkSecurityGroup#direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#direction NetworkSecurityGroup#direction}.
 
 ---
 
@@ -1252,7 +1252,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#name NetworkSecurityGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#name NetworkSecurityGroup#name}.
 
 ---
 
@@ -1264,7 +1264,7 @@ priority: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#priority NetworkSecurityGroup#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#priority NetworkSecurityGroup#priority}.
 
 ---
 
@@ -1276,7 +1276,7 @@ protocol: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#protocol NetworkSecurityGroup#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#protocol NetworkSecurityGroup#protocol}.
 
 ---
 
@@ -1288,7 +1288,7 @@ source_address_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#source_address_prefix NetworkSecurityGroup#source_address_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#source_address_prefix NetworkSecurityGroup#source_address_prefix}.
 
 ---
 
@@ -1300,7 +1300,7 @@ source_address_prefixes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#source_address_prefixes NetworkSecurityGroup#source_address_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#source_address_prefixes NetworkSecurityGroup#source_address_prefixes}.
 
 ---
 
@@ -1312,7 +1312,7 @@ source_port_range: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#source_port_range NetworkSecurityGroup#source_port_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#source_port_range NetworkSecurityGroup#source_port_range}.
 
 ---
 
@@ -1324,7 +1324,7 @@ source_port_ranges: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#source_port_ranges NetworkSecurityGroup#source_port_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#source_port_ranges NetworkSecurityGroup#source_port_ranges}.
 
 ---
 
@@ -1347,10 +1347,10 @@ networkSecurityGroup.NetworkSecurityGroupTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#create NetworkSecurityGroup#create}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#delete NetworkSecurityGroup#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#read NetworkSecurityGroup#read}. |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#update NetworkSecurityGroup#update}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#create NetworkSecurityGroup#create}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#delete NetworkSecurityGroup#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#read NetworkSecurityGroup#read}. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#update NetworkSecurityGroup#update}. |
 
 ---
 
@@ -1362,7 +1362,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#create NetworkSecurityGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#create NetworkSecurityGroup#create}.
 
 ---
 
@@ -1374,7 +1374,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#delete NetworkSecurityGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#delete NetworkSecurityGroup#delete}.
 
 ---
 
@@ -1386,7 +1386,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#read NetworkSecurityGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#read NetworkSecurityGroup#read}.
 
 ---
 
@@ -1398,7 +1398,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_security_group#update NetworkSecurityGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#update NetworkSecurityGroup#update}.
 
 ---
 

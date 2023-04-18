@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/azurestack/d/storage_account
+// https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/storage_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzurestackStorageAccountConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/storage_account#id DataAzurestackStorageAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/storage_account#id DataAzurestackStorageAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/storage_account#name DataAzurestackStorageAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/storage_account#name DataAzurestackStorageAccount#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/storage_account#resource_group_name DataAzurestackStorageAccount#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/storage_account#resource_group_name DataAzurestackStorageAccount#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/storage_account#timeouts DataAzurestackStorageAccount#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/storage_account#timeouts DataAzurestackStorageAccount#timeouts}
   */
   readonly timeouts?: DataAzurestackStorageAccountTimeouts;
 }
@@ -95,12 +95,12 @@ export class DataAzurestackStorageAccountCustomDomainList extends cdktf.ComplexL
 }
 export interface DataAzurestackStorageAccountTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/d/storage_account#read DataAzurestackStorageAccount#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/storage_account#read DataAzurestackStorageAccount#read}
   */
   readonly read?: string;
 }
 
-export function dataAzurestackStorageAccountTimeoutsToTerraform(struct?: DataAzurestackStorageAccountTimeoutsOutputReference | DataAzurestackStorageAccountTimeouts | cdktf.IResolvable): any {
+export function dataAzurestackStorageAccountTimeoutsToTerraform(struct?: DataAzurestackStorageAccountTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -119,7 +119,7 @@ export class DataAzurestackStorageAccountTimeoutsOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataAzurestackStorageAccountTimeouts | cdktf.IResolvable | undefined {
@@ -170,7 +170,7 @@ export class DataAzurestackStorageAccountTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/azurestack/d/storage_account azurestack_storage_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/storage_account azurestack_storage_account}
 */
 export class DataAzurestackStorageAccount extends cdktf.TerraformDataSource {
 
@@ -184,7 +184,7 @@ export class DataAzurestackStorageAccount extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/azurestack/d/storage_account azurestack_storage_account} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/storage_account azurestack_storage_account} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

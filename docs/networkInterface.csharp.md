@@ -1,6 +1,6 @@
 # `azurestack_network_interface`
 
-Refer to the Terraform Registory for docs: [`azurestack_network_interface`](https://www.terraform.io/docs/providers/azurestack/r/network_interface).
+Refer to the Terraform Registory for docs: [`azurestack_network_interface`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface).
 
 # `networkInterface` Submodule <a name="`networkInterface` Submodule" id="@cdktf/provider-azurestack.networkInterface"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_network_interface`](http
 
 ### NetworkInterface <a name="NetworkInterface" id="@cdktf/provider-azurestack.networkInterface.NetworkInterface"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface azurestack_network_interface}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface azurestack_network_interface}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.networkInterface.NetworkInterface.Initializer"></a>
 
@@ -400,7 +400,7 @@ NetworkInterface.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterface.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterface.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterface.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterface.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterface.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterface.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterface.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterface.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -518,10 +518,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.networkInterface.NetworkInterface.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -844,7 +844,7 @@ using HashiCorp.Cdktf.Providers.Azurestack;
 
 new NetworkInterfaceConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -867,20 +867,20 @@ new NetworkInterfaceConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.ipConfiguration">IpConfiguration</a></code> | <code>object</code> | ip_configuration block. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#location NetworkInterface#location}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#name NetworkInterface#name}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#resource_group_name NetworkInterface#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.dnsServers">DnsServers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#dns_servers NetworkInterface#dns_servers}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.enableIpForwarding">EnableIpForwarding</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#enable_ip_forwarding NetworkInterface#enable_ip_forwarding}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#id NetworkInterface#id}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#tags NetworkInterface#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#location NetworkInterface#location}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#name NetworkInterface#name}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#resource_group_name NetworkInterface#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.dnsServers">DnsServers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#dns_servers NetworkInterface#dns_servers}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.enableIpForwarding">EnableIpForwarding</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#enable_ip_forwarding NetworkInterface#enable_ip_forwarding}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#id NetworkInterface#id}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#tags NetworkInterface#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceTimeouts">NetworkInterfaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -898,10 +898,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -965,7 +965,7 @@ public object IpConfiguration { get; set; }
 
 ip_configuration block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#ip_configuration NetworkInterface#ip_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#ip_configuration NetworkInterface#ip_configuration}
 
 ---
 
@@ -977,7 +977,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#location NetworkInterface#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#location NetworkInterface#location}.
 
 ---
 
@@ -989,7 +989,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#name NetworkInterface#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#name NetworkInterface#name}.
 
 ---
 
@@ -1001,7 +1001,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#resource_group_name NetworkInterface#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#resource_group_name NetworkInterface#resource_group_name}.
 
 ---
 
@@ -1013,7 +1013,7 @@ public string[] DnsServers { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#dns_servers NetworkInterface#dns_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#dns_servers NetworkInterface#dns_servers}.
 
 ---
 
@@ -1025,7 +1025,7 @@ public object EnableIpForwarding { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#enable_ip_forwarding NetworkInterface#enable_ip_forwarding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#enable_ip_forwarding NetworkInterface#enable_ip_forwarding}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#id NetworkInterface#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#id NetworkInterface#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1052,7 +1052,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#tags NetworkInterface#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#tags NetworkInterface#tags}.
 
 ---
 
@@ -1066,7 +1066,7 @@ public NetworkInterfaceTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#timeouts NetworkInterface#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#timeouts NetworkInterface#timeouts}
 
 ---
 
@@ -1092,13 +1092,13 @@ new NetworkInterfaceIpConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#name NetworkInterface#name}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.privateIpAddressAllocation">PrivateIpAddressAllocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#private_ip_address_allocation NetworkInterface#private_ip_address_allocation}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.primary">Primary</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#primary NetworkInterface#primary}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.privateIpAddress">PrivateIpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#private_ip_address NetworkInterface#private_ip_address}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.privateIpAddressVersion">PrivateIpAddressVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#private_ip_address_version NetworkInterface#private_ip_address_version}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#public_ip_address_id NetworkInterface#public_ip_address_id}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#subnet_id NetworkInterface#subnet_id}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#name NetworkInterface#name}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.privateIpAddressAllocation">PrivateIpAddressAllocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#private_ip_address_allocation NetworkInterface#private_ip_address_allocation}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.primary">Primary</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#primary NetworkInterface#primary}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.privateIpAddress">PrivateIpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#private_ip_address NetworkInterface#private_ip_address}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.privateIpAddressVersion">PrivateIpAddressVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#private_ip_address_version NetworkInterface#private_ip_address_version}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#public_ip_address_id NetworkInterface#public_ip_address_id}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}. |
 
 ---
 
@@ -1110,7 +1110,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#name NetworkInterface#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#name NetworkInterface#name}.
 
 ---
 
@@ -1122,7 +1122,7 @@ public string PrivateIpAddressAllocation { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#private_ip_address_allocation NetworkInterface#private_ip_address_allocation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#private_ip_address_allocation NetworkInterface#private_ip_address_allocation}.
 
 ---
 
@@ -1134,7 +1134,7 @@ public object Primary { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#primary NetworkInterface#primary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#primary NetworkInterface#primary}.
 
 ---
 
@@ -1146,7 +1146,7 @@ public string PrivateIpAddress { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#private_ip_address NetworkInterface#private_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#private_ip_address NetworkInterface#private_ip_address}.
 
 ---
 
@@ -1158,7 +1158,7 @@ public string PrivateIpAddressVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#private_ip_address_version NetworkInterface#private_ip_address_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#private_ip_address_version NetworkInterface#private_ip_address_version}.
 
 ---
 
@@ -1170,7 +1170,7 @@ public string PublicIpAddressId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#public_ip_address_id NetworkInterface#public_ip_address_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#public_ip_address_id NetworkInterface#public_ip_address_id}.
 
 ---
 
@@ -1182,7 +1182,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#subnet_id NetworkInterface#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}.
 
 ---
 
@@ -1205,10 +1205,10 @@ new NetworkInterfaceTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#create NetworkInterface#create}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#delete NetworkInterface#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#read NetworkInterface#read}. |
-| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#update NetworkInterface#update}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#create NetworkInterface#create}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#delete NetworkInterface#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#read NetworkInterface#read}. |
+| <code><a href="#@cdktf/provider-azurestack.networkInterface.NetworkInterfaceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#update NetworkInterface#update}. |
 
 ---
 
@@ -1220,7 +1220,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#create NetworkInterface#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#create NetworkInterface#create}.
 
 ---
 
@@ -1232,7 +1232,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#delete NetworkInterface#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#delete NetworkInterface#delete}.
 
 ---
 
@@ -1244,7 +1244,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#read NetworkInterface#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#read NetworkInterface#read}.
 
 ---
 
@@ -1256,7 +1256,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/network_interface#update NetworkInterface#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#update NetworkInterface#update}.
 
 ---
 

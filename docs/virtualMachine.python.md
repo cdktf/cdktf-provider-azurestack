@@ -1,6 +1,6 @@
 # `azurestack_virtual_machine`
 
-Refer to the Terraform Registory for docs: [`azurestack_virtual_machine`](https://www.terraform.io/docs/providers/azurestack/r/virtual_machine).
+Refer to the Terraform Registory for docs: [`azurestack_virtual_machine`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine).
 
 # `virtualMachine` Submodule <a name="`virtualMachine` Submodule" id="@cdktf/provider-azurestack.virtualMachine"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`azurestack_virtual_machine`](https:
 
 ### VirtualMachine <a name="VirtualMachine" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachine"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine azurestack_virtual_machine}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine azurestack_virtual_machine}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer"></a>
 
@@ -19,7 +19,7 @@ virtualMachine.VirtualMachine(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -57,36 +57,36 @@ virtualMachine.VirtualMachine(
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#location VirtualMachine#location}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#name VirtualMachine#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.networkInterfaceIds">network_interface_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#network_interface_ids VirtualMachine#network_interface_ids}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#resource_group_name VirtualMachine#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#location VirtualMachine#location}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#name VirtualMachine#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.networkInterfaceIds">network_interface_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#network_interface_ids VirtualMachine#network_interface_ids}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#resource_group_name VirtualMachine#resource_group_name}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.storageOsDisk">storage_os_disk</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk">VirtualMachineStorageOsDisk</a></code> | storage_os_disk block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.vmSize">vm_size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#vm_size VirtualMachine#vm_size}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.availabilitySetId">availability_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#availability_set_id VirtualMachine#availability_set_id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.vmSize">vm_size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#vm_size VirtualMachine#vm_size}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.availabilitySetId">availability_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#availability_set_id VirtualMachine#availability_set_id}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.bootDiagnostics">boot_diagnostics</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineBootDiagnostics">VirtualMachineBootDiagnostics</a></code> | boot_diagnostics block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.deleteDataDisksOnTermination">delete_data_disks_on_termination</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#delete_data_disks_on_termination VirtualMachine#delete_data_disks_on_termination}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.deleteOsDiskOnTermination">delete_os_disk_on_termination</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#delete_os_disk_on_termination VirtualMachine#delete_os_disk_on_termination}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#id VirtualMachine#id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.deleteDataDisksOnTermination">delete_data_disks_on_termination</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#delete_data_disks_on_termination VirtualMachine#delete_data_disks_on_termination}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.deleteOsDiskOnTermination">delete_os_disk_on_termination</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#delete_os_disk_on_termination VirtualMachine#delete_os_disk_on_termination}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#id VirtualMachine#id}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineIdentity">VirtualMachineIdentity</a></code> | identity block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.licenseType">license_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#license_type VirtualMachine#license_type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.licenseType">license_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#license_type VirtualMachine#license_type}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.osProfile">os_profile</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfile">VirtualMachineOsProfile</a></code> | os_profile block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.osProfileLinuxConfig">os_profile_linux_config</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfig">VirtualMachineOsProfileLinuxConfig</a></code> | os_profile_linux_config block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.osProfileSecrets">os_profile_secrets</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecrets">VirtualMachineOsProfileSecrets</a>]]</code> | os_profile_secrets block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.osProfileWindowsConfig">os_profile_windows_config</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfig">VirtualMachineOsProfileWindowsConfig</a></code> | os_profile_windows_config block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.plan">plan</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachinePlan">VirtualMachinePlan</a></code> | plan block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.primaryNetworkInterfaceId">primary_network_interface_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#primary_network_interface_id VirtualMachine#primary_network_interface_id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.primaryNetworkInterfaceId">primary_network_interface_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#primary_network_interface_id VirtualMachine#primary_network_interface_id}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.storageDataDisk">storage_data_disk</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk">VirtualMachineStorageDataDisk</a>]]</code> | storage_data_disk block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.storageImageReference">storage_image_reference</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference">VirtualMachineStorageImageReference</a></code> | storage_image_reference block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#tags VirtualMachine#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#tags VirtualMachine#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineTimeouts">VirtualMachineTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.zones">zones</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#zones VirtualMachine#zones}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.zones">zones</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#zones VirtualMachine#zones}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -154,7 +154,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#location VirtualMachine#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#location VirtualMachine#location}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#name VirtualMachine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#name VirtualMachine#name}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#network_interface_ids VirtualMachine#network_interface_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#network_interface_ids VirtualMachine#network_interface_ids}.
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#resource_group_name VirtualMachine#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#resource_group_name VirtualMachine#resource_group_name}.
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 storage_os_disk block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#storage_os_disk VirtualMachine#storage_os_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#storage_os_disk VirtualMachine#storage_os_disk}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#vm_size VirtualMachine#vm_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#vm_size VirtualMachine#vm_size}.
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#availability_set_id VirtualMachine#availability_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#availability_set_id VirtualMachine#availability_set_id}.
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 boot_diagnostics block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#boot_diagnostics VirtualMachine#boot_diagnostics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#boot_diagnostics VirtualMachine#boot_diagnostics}
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#delete_data_disks_on_termination VirtualMachine#delete_data_disks_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#delete_data_disks_on_termination VirtualMachine#delete_data_disks_on_termination}.
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#delete_os_disk_on_termination VirtualMachine#delete_os_disk_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#delete_os_disk_on_termination VirtualMachine#delete_os_disk_on_termination}.
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#id VirtualMachine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#id VirtualMachine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -251,7 +251,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 identity block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#identity VirtualMachine#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#identity VirtualMachine#identity}
 
 ---
 
@@ -259,7 +259,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#license_type VirtualMachine#license_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#license_type VirtualMachine#license_type}.
 
 ---
 
@@ -269,7 +269,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 os_profile block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#os_profile VirtualMachine#os_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#os_profile VirtualMachine#os_profile}
 
 ---
 
@@ -279,7 +279,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 os_profile_linux_config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#os_profile_linux_config VirtualMachine#os_profile_linux_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#os_profile_linux_config VirtualMachine#os_profile_linux_config}
 
 ---
 
@@ -289,7 +289,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 os_profile_secrets block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#os_profile_secrets VirtualMachine#os_profile_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#os_profile_secrets VirtualMachine#os_profile_secrets}
 
 ---
 
@@ -299,7 +299,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 os_profile_windows_config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#os_profile_windows_config VirtualMachine#os_profile_windows_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#os_profile_windows_config VirtualMachine#os_profile_windows_config}
 
 ---
 
@@ -309,7 +309,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 plan block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#plan VirtualMachine#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#plan VirtualMachine#plan}
 
 ---
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#primary_network_interface_id VirtualMachine#primary_network_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#primary_network_interface_id VirtualMachine#primary_network_interface_id}.
 
 ---
 
@@ -327,7 +327,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 storage_data_disk block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#storage_data_disk VirtualMachine#storage_data_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#storage_data_disk VirtualMachine#storage_data_disk}
 
 ---
 
@@ -337,7 +337,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 storage_image_reference block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#storage_image_reference VirtualMachine#storage_image_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#storage_image_reference VirtualMachine#storage_image_reference}
 
 ---
 
@@ -345,7 +345,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#tags VirtualMachine#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#tags VirtualMachine#tags}.
 
 ---
 
@@ -355,7 +355,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#timeouts VirtualMachine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#timeouts VirtualMachine#timeouts}
 
 ---
 
@@ -363,7 +363,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#zones VirtualMachine#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#zones VirtualMachine#zones}.
 
 ---
 
@@ -641,7 +641,7 @@ def put_boot_diagnostics(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#enabled VirtualMachine#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#enabled VirtualMachine#enabled}.
 
 ---
 
@@ -649,7 +649,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#storage_uri VirtualMachine#storage_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#storage_uri VirtualMachine#storage_uri}.
 
 ---
 
@@ -665,7 +665,7 @@ def put_identity(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#type VirtualMachine#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#type VirtualMachine#type}.
 
 ---
 
@@ -684,7 +684,7 @@ def put_os_profile(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#admin_username VirtualMachine#admin_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#admin_username VirtualMachine#admin_username}.
 
 ---
 
@@ -692,7 +692,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#computer_name VirtualMachine#computer_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#computer_name VirtualMachine#computer_name}.
 
 ---
 
@@ -700,7 +700,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#admin_password VirtualMachine#admin_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#admin_password VirtualMachine#admin_password}.
 
 ---
 
@@ -708,7 +708,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#custom_data VirtualMachine#custom_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#custom_data VirtualMachine#custom_data}.
 
 ---
 
@@ -725,7 +725,7 @@ def put_os_profile_linux_config(
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#disable_password_authentication VirtualMachine#disable_password_authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#disable_password_authentication VirtualMachine#disable_password_authentication}.
 
 ---
 
@@ -735,7 +735,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 ssh_keys block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#ssh_keys VirtualMachine#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#ssh_keys VirtualMachine#ssh_keys}
 
 ---
 
@@ -771,7 +771,7 @@ def put_os_profile_windows_config(
 
 additional_unattend_config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#additional_unattend_config VirtualMachine#additional_unattend_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#additional_unattend_config VirtualMachine#additional_unattend_config}
 
 ---
 
@@ -779,7 +779,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#enable_automatic_upgrades VirtualMachine#enable_automatic_upgrades}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#enable_automatic_upgrades VirtualMachine#enable_automatic_upgrades}.
 
 ---
 
@@ -787,7 +787,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#provision_vm_agent VirtualMachine#provision_vm_agent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#provision_vm_agent VirtualMachine#provision_vm_agent}.
 
 ---
 
@@ -795,7 +795,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#timezone VirtualMachine#timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#timezone VirtualMachine#timezone}.
 
 ---
 
@@ -805,7 +805,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 winrm block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#winrm VirtualMachine#winrm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#winrm VirtualMachine#winrm}
 
 ---
 
@@ -823,7 +823,7 @@ def put_plan(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#name VirtualMachine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#name VirtualMachine#name}.
 
 ---
 
@@ -831,7 +831,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#product VirtualMachine#product}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#product VirtualMachine#product}.
 
 ---
 
@@ -839,7 +839,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#publisher VirtualMachine#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#publisher VirtualMachine#publisher}.
 
 ---
 
@@ -873,7 +873,7 @@ def put_storage_image_reference(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#id VirtualMachine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#id VirtualMachine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -884,7 +884,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#offer VirtualMachine#offer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#offer VirtualMachine#offer}.
 
 ---
 
@@ -892,7 +892,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#publisher VirtualMachine#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#publisher VirtualMachine#publisher}.
 
 ---
 
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#sku VirtualMachine#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#sku VirtualMachine#sku}.
 
 ---
 
@@ -908,7 +908,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#version VirtualMachine#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#version VirtualMachine#version}.
 
 ---
 
@@ -933,7 +933,7 @@ def put_storage_os_disk(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#create_option VirtualMachine#create_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#create_option VirtualMachine#create_option}.
 
 ---
 
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#name VirtualMachine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#name VirtualMachine#name}.
 
 ---
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#caching VirtualMachine#caching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#caching VirtualMachine#caching}.
 
 ---
 
@@ -957,7 +957,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#disk_size_gb VirtualMachine#disk_size_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#disk_size_gb VirtualMachine#disk_size_gb}.
 
 ---
 
@@ -965,7 +965,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#image_uri VirtualMachine#image_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#image_uri VirtualMachine#image_uri}.
 
 ---
 
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#managed_disk_id VirtualMachine#managed_disk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#managed_disk_id VirtualMachine#managed_disk_id}.
 
 ---
 
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#managed_disk_type VirtualMachine#managed_disk_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#managed_disk_type VirtualMachine#managed_disk_type}.
 
 ---
 
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#os_type VirtualMachine#os_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#os_type VirtualMachine#os_type}.
 
 ---
 
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#vhd_uri VirtualMachine#vhd_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#vhd_uri VirtualMachine#vhd_uri}.
 
 ---
 
@@ -1005,7 +1005,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#write_accelerator_enabled VirtualMachine#write_accelerator_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#write_accelerator_enabled VirtualMachine#write_accelerator_enabled}.
 
 ---
 
@@ -1024,7 +1024,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#create VirtualMachine#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#create VirtualMachine#create}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#delete VirtualMachine#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#delete VirtualMachine#delete}.
 
 ---
 
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#read VirtualMachine#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#read VirtualMachine#read}.
 
 ---
 
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azure
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#update VirtualMachine#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#update VirtualMachine#update}.
 
 ---
 
@@ -1248,7 +1248,7 @@ virtualMachine.VirtualMachine.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1390,10 +1390,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachine.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1964,8 +1964,8 @@ virtualMachine.VirtualMachineBootDiagnostics(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineBootDiagnostics.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#enabled VirtualMachine#enabled}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineBootDiagnostics.property.storageUri">storage_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#storage_uri VirtualMachine#storage_uri}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineBootDiagnostics.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#enabled VirtualMachine#enabled}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineBootDiagnostics.property.storageUri">storage_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#storage_uri VirtualMachine#storage_uri}. |
 
 ---
 
@@ -1977,7 +1977,7 @@ enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#enabled VirtualMachine#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#enabled VirtualMachine#enabled}.
 
 ---
 
@@ -1989,7 +1989,7 @@ storage_uri: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#storage_uri VirtualMachine#storage_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#storage_uri VirtualMachine#storage_uri}.
 
 ---
 
@@ -2002,7 +2002,7 @@ from cdktf_cdktf_provider_azurestack import virtual_machine
 
 virtualMachine.VirtualMachineConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -2040,36 +2040,36 @@ virtualMachine.VirtualMachineConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#location VirtualMachine#location}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#name VirtualMachine#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.networkInterfaceIds">network_interface_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#network_interface_ids VirtualMachine#network_interface_ids}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#resource_group_name VirtualMachine#resource_group_name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#location VirtualMachine#location}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#name VirtualMachine#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.networkInterfaceIds">network_interface_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#network_interface_ids VirtualMachine#network_interface_ids}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#resource_group_name VirtualMachine#resource_group_name}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.storageOsDisk">storage_os_disk</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk">VirtualMachineStorageOsDisk</a></code> | storage_os_disk block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.vmSize">vm_size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#vm_size VirtualMachine#vm_size}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.availabilitySetId">availability_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#availability_set_id VirtualMachine#availability_set_id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.vmSize">vm_size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#vm_size VirtualMachine#vm_size}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.availabilitySetId">availability_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#availability_set_id VirtualMachine#availability_set_id}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.bootDiagnostics">boot_diagnostics</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineBootDiagnostics">VirtualMachineBootDiagnostics</a></code> | boot_diagnostics block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.deleteDataDisksOnTermination">delete_data_disks_on_termination</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#delete_data_disks_on_termination VirtualMachine#delete_data_disks_on_termination}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.deleteOsDiskOnTermination">delete_os_disk_on_termination</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#delete_os_disk_on_termination VirtualMachine#delete_os_disk_on_termination}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#id VirtualMachine#id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.deleteDataDisksOnTermination">delete_data_disks_on_termination</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#delete_data_disks_on_termination VirtualMachine#delete_data_disks_on_termination}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.deleteOsDiskOnTermination">delete_os_disk_on_termination</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#delete_os_disk_on_termination VirtualMachine#delete_os_disk_on_termination}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#id VirtualMachine#id}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.identity">identity</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineIdentity">VirtualMachineIdentity</a></code> | identity block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.licenseType">license_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#license_type VirtualMachine#license_type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.licenseType">license_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#license_type VirtualMachine#license_type}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.osProfile">os_profile</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfile">VirtualMachineOsProfile</a></code> | os_profile block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.osProfileLinuxConfig">os_profile_linux_config</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfig">VirtualMachineOsProfileLinuxConfig</a></code> | os_profile_linux_config block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.osProfileSecrets">os_profile_secrets</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecrets">VirtualMachineOsProfileSecrets</a>]]</code> | os_profile_secrets block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.osProfileWindowsConfig">os_profile_windows_config</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfig">VirtualMachineOsProfileWindowsConfig</a></code> | os_profile_windows_config block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.plan">plan</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachinePlan">VirtualMachinePlan</a></code> | plan block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.primaryNetworkInterfaceId">primary_network_interface_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#primary_network_interface_id VirtualMachine#primary_network_interface_id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.primaryNetworkInterfaceId">primary_network_interface_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#primary_network_interface_id VirtualMachine#primary_network_interface_id}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.storageDataDisk">storage_data_disk</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk">VirtualMachineStorageDataDisk</a>]]</code> | storage_data_disk block. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.storageImageReference">storage_image_reference</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference">VirtualMachineStorageImageReference</a></code> | storage_image_reference block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#tags VirtualMachine#tags}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#tags VirtualMachine#tags}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineTimeouts">VirtualMachineTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.zones">zones</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#zones VirtualMachine#zones}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.zones">zones</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#zones VirtualMachine#zones}. |
 
 ---
 
@@ -2086,10 +2086,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -2151,7 +2151,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#location VirtualMachine#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#location VirtualMachine#location}.
 
 ---
 
@@ -2163,7 +2163,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#name VirtualMachine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#name VirtualMachine#name}.
 
 ---
 
@@ -2175,7 +2175,7 @@ network_interface_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#network_interface_ids VirtualMachine#network_interface_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#network_interface_ids VirtualMachine#network_interface_ids}.
 
 ---
 
@@ -2187,7 +2187,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#resource_group_name VirtualMachine#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#resource_group_name VirtualMachine#resource_group_name}.
 
 ---
 
@@ -2201,7 +2201,7 @@ storage_os_disk: VirtualMachineStorageOsDisk
 
 storage_os_disk block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#storage_os_disk VirtualMachine#storage_os_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#storage_os_disk VirtualMachine#storage_os_disk}
 
 ---
 
@@ -2213,7 +2213,7 @@ vm_size: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#vm_size VirtualMachine#vm_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#vm_size VirtualMachine#vm_size}.
 
 ---
 
@@ -2225,7 +2225,7 @@ availability_set_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#availability_set_id VirtualMachine#availability_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#availability_set_id VirtualMachine#availability_set_id}.
 
 ---
 
@@ -2239,7 +2239,7 @@ boot_diagnostics: VirtualMachineBootDiagnostics
 
 boot_diagnostics block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#boot_diagnostics VirtualMachine#boot_diagnostics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#boot_diagnostics VirtualMachine#boot_diagnostics}
 
 ---
 
@@ -2251,7 +2251,7 @@ delete_data_disks_on_termination: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#delete_data_disks_on_termination VirtualMachine#delete_data_disks_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#delete_data_disks_on_termination VirtualMachine#delete_data_disks_on_termination}.
 
 ---
 
@@ -2263,7 +2263,7 @@ delete_os_disk_on_termination: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#delete_os_disk_on_termination VirtualMachine#delete_os_disk_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#delete_os_disk_on_termination VirtualMachine#delete_os_disk_on_termination}.
 
 ---
 
@@ -2275,7 +2275,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#id VirtualMachine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#id VirtualMachine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2292,7 +2292,7 @@ identity: VirtualMachineIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#identity VirtualMachine#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#identity VirtualMachine#identity}
 
 ---
 
@@ -2304,7 +2304,7 @@ license_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#license_type VirtualMachine#license_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#license_type VirtualMachine#license_type}.
 
 ---
 
@@ -2318,7 +2318,7 @@ os_profile: VirtualMachineOsProfile
 
 os_profile block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#os_profile VirtualMachine#os_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#os_profile VirtualMachine#os_profile}
 
 ---
 
@@ -2332,7 +2332,7 @@ os_profile_linux_config: VirtualMachineOsProfileLinuxConfig
 
 os_profile_linux_config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#os_profile_linux_config VirtualMachine#os_profile_linux_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#os_profile_linux_config VirtualMachine#os_profile_linux_config}
 
 ---
 
@@ -2346,7 +2346,7 @@ os_profile_secrets: typing.Union[IResolvable, typing.List[VirtualMachineOsProfil
 
 os_profile_secrets block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#os_profile_secrets VirtualMachine#os_profile_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#os_profile_secrets VirtualMachine#os_profile_secrets}
 
 ---
 
@@ -2360,7 +2360,7 @@ os_profile_windows_config: VirtualMachineOsProfileWindowsConfig
 
 os_profile_windows_config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#os_profile_windows_config VirtualMachine#os_profile_windows_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#os_profile_windows_config VirtualMachine#os_profile_windows_config}
 
 ---
 
@@ -2374,7 +2374,7 @@ plan: VirtualMachinePlan
 
 plan block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#plan VirtualMachine#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#plan VirtualMachine#plan}
 
 ---
 
@@ -2386,7 +2386,7 @@ primary_network_interface_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#primary_network_interface_id VirtualMachine#primary_network_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#primary_network_interface_id VirtualMachine#primary_network_interface_id}.
 
 ---
 
@@ -2400,7 +2400,7 @@ storage_data_disk: typing.Union[IResolvable, typing.List[VirtualMachineStorageDa
 
 storage_data_disk block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#storage_data_disk VirtualMachine#storage_data_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#storage_data_disk VirtualMachine#storage_data_disk}
 
 ---
 
@@ -2414,7 +2414,7 @@ storage_image_reference: VirtualMachineStorageImageReference
 
 storage_image_reference block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#storage_image_reference VirtualMachine#storage_image_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#storage_image_reference VirtualMachine#storage_image_reference}
 
 ---
 
@@ -2426,7 +2426,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#tags VirtualMachine#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#tags VirtualMachine#tags}.
 
 ---
 
@@ -2440,7 +2440,7 @@ timeouts: VirtualMachineTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#timeouts VirtualMachine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#timeouts VirtualMachine#timeouts}
 
 ---
 
@@ -2452,7 +2452,7 @@ zones: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#zones VirtualMachine#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#zones VirtualMachine#zones}.
 
 ---
 
@@ -2472,7 +2472,7 @@ virtualMachine.VirtualMachineIdentity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#type VirtualMachine#type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#type VirtualMachine#type}. |
 
 ---
 
@@ -2484,7 +2484,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#type VirtualMachine#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#type VirtualMachine#type}.
 
 ---
 
@@ -2507,10 +2507,10 @@ virtualMachine.VirtualMachineOsProfile(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfile.property.adminUsername">admin_username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#admin_username VirtualMachine#admin_username}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfile.property.computerName">computer_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#computer_name VirtualMachine#computer_name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfile.property.adminPassword">admin_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#admin_password VirtualMachine#admin_password}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfile.property.customData">custom_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#custom_data VirtualMachine#custom_data}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfile.property.adminUsername">admin_username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#admin_username VirtualMachine#admin_username}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfile.property.computerName">computer_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#computer_name VirtualMachine#computer_name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfile.property.adminPassword">admin_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#admin_password VirtualMachine#admin_password}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfile.property.customData">custom_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#custom_data VirtualMachine#custom_data}. |
 
 ---
 
@@ -2522,7 +2522,7 @@ admin_username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#admin_username VirtualMachine#admin_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#admin_username VirtualMachine#admin_username}.
 
 ---
 
@@ -2534,7 +2534,7 @@ computer_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#computer_name VirtualMachine#computer_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#computer_name VirtualMachine#computer_name}.
 
 ---
 
@@ -2546,7 +2546,7 @@ admin_password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#admin_password VirtualMachine#admin_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#admin_password VirtualMachine#admin_password}.
 
 ---
 
@@ -2558,7 +2558,7 @@ custom_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#custom_data VirtualMachine#custom_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#custom_data VirtualMachine#custom_data}.
 
 ---
 
@@ -2579,7 +2579,7 @@ virtualMachine.VirtualMachineOsProfileLinuxConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfig.property.disablePasswordAuthentication">disable_password_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#disable_password_authentication VirtualMachine#disable_password_authentication}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfig.property.disablePasswordAuthentication">disable_password_authentication</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#disable_password_authentication VirtualMachine#disable_password_authentication}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfig.property.sshKeys">ssh_keys</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeys">VirtualMachineOsProfileLinuxConfigSshKeys</a>]]</code> | ssh_keys block. |
 
 ---
@@ -2592,7 +2592,7 @@ disable_password_authentication: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#disable_password_authentication VirtualMachine#disable_password_authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#disable_password_authentication VirtualMachine#disable_password_authentication}.
 
 ---
 
@@ -2606,7 +2606,7 @@ ssh_keys: typing.Union[IResolvable, typing.List[VirtualMachineOsProfileLinuxConf
 
 ssh_keys block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#ssh_keys VirtualMachine#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#ssh_keys VirtualMachine#ssh_keys}
 
 ---
 
@@ -2627,8 +2627,8 @@ virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeys(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeys.property.keyData">key_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#key_data VirtualMachine#key_data}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeys.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#path VirtualMachine#path}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeys.property.keyData">key_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#key_data VirtualMachine#key_data}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeys.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#path VirtualMachine#path}. |
 
 ---
 
@@ -2640,7 +2640,7 @@ key_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#key_data VirtualMachine#key_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#key_data VirtualMachine#key_data}.
 
 ---
 
@@ -2652,7 +2652,7 @@ path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#path VirtualMachine#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#path VirtualMachine#path}.
 
 ---
 
@@ -2673,7 +2673,7 @@ virtualMachine.VirtualMachineOsProfileSecrets(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecrets.property.sourceVaultId">source_vault_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#source_vault_id VirtualMachine#source_vault_id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecrets.property.sourceVaultId">source_vault_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#source_vault_id VirtualMachine#source_vault_id}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecrets.property.vaultCertificates">vault_certificates</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificates">VirtualMachineOsProfileSecretsVaultCertificates</a>]]</code> | vault_certificates block. |
 
 ---
@@ -2686,7 +2686,7 @@ source_vault_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#source_vault_id VirtualMachine#source_vault_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#source_vault_id VirtualMachine#source_vault_id}.
 
 ---
 
@@ -2700,7 +2700,7 @@ vault_certificates: typing.Union[IResolvable, typing.List[VirtualMachineOsProfil
 
 vault_certificates block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#vault_certificates VirtualMachine#vault_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#vault_certificates VirtualMachine#vault_certificates}
 
 ---
 
@@ -2721,8 +2721,8 @@ virtualMachine.VirtualMachineOsProfileSecretsVaultCertificates(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificates.property.certificateUrl">certificate_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#certificate_url VirtualMachine#certificate_url}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificates.property.certificateStore">certificate_store</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#certificate_store VirtualMachine#certificate_store}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificates.property.certificateUrl">certificate_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#certificate_url VirtualMachine#certificate_url}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificates.property.certificateStore">certificate_store</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#certificate_store VirtualMachine#certificate_store}. |
 
 ---
 
@@ -2734,7 +2734,7 @@ certificate_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#certificate_url VirtualMachine#certificate_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#certificate_url VirtualMachine#certificate_url}.
 
 ---
 
@@ -2746,7 +2746,7 @@ certificate_store: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#certificate_store VirtualMachine#certificate_store}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#certificate_store VirtualMachine#certificate_store}.
 
 ---
 
@@ -2771,9 +2771,9 @@ virtualMachine.VirtualMachineOsProfileWindowsConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfig.property.additionalUnattendConfig">additional_unattend_config</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig">VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig</a>]]</code> | additional_unattend_config block. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfig.property.enableAutomaticUpgrades">enable_automatic_upgrades</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#enable_automatic_upgrades VirtualMachine#enable_automatic_upgrades}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfig.property.provisionVmAgent">provision_vm_agent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#provision_vm_agent VirtualMachine#provision_vm_agent}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfig.property.timezone">timezone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#timezone VirtualMachine#timezone}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfig.property.enableAutomaticUpgrades">enable_automatic_upgrades</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#enable_automatic_upgrades VirtualMachine#enable_automatic_upgrades}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfig.property.provisionVmAgent">provision_vm_agent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#provision_vm_agent VirtualMachine#provision_vm_agent}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfig.property.timezone">timezone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#timezone VirtualMachine#timezone}. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfig.property.winrm">winrm</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrm">VirtualMachineOsProfileWindowsConfigWinrm</a>]]</code> | winrm block. |
 
 ---
@@ -2788,7 +2788,7 @@ additional_unattend_config: typing.Union[IResolvable, typing.List[VirtualMachine
 
 additional_unattend_config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#additional_unattend_config VirtualMachine#additional_unattend_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#additional_unattend_config VirtualMachine#additional_unattend_config}
 
 ---
 
@@ -2800,7 +2800,7 @@ enable_automatic_upgrades: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#enable_automatic_upgrades VirtualMachine#enable_automatic_upgrades}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#enable_automatic_upgrades VirtualMachine#enable_automatic_upgrades}.
 
 ---
 
@@ -2812,7 +2812,7 @@ provision_vm_agent: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#provision_vm_agent VirtualMachine#provision_vm_agent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#provision_vm_agent VirtualMachine#provision_vm_agent}.
 
 ---
 
@@ -2824,7 +2824,7 @@ timezone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#timezone VirtualMachine#timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#timezone VirtualMachine#timezone}.
 
 ---
 
@@ -2838,7 +2838,7 @@ winrm: typing.Union[IResolvable, typing.List[VirtualMachineOsProfileWindowsConfi
 
 winrm block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#winrm VirtualMachine#winrm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#winrm VirtualMachine#winrm}
 
 ---
 
@@ -2861,10 +2861,10 @@ virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig.property.component">component</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#component VirtualMachine#component}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#content VirtualMachine#content}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig.property.pass">pass</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#pass VirtualMachine#pass}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig.property.settingName">setting_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#setting_name VirtualMachine#setting_name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig.property.component">component</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#component VirtualMachine#component}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#content VirtualMachine#content}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig.property.pass">pass</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#pass VirtualMachine#pass}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig.property.settingName">setting_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#setting_name VirtualMachine#setting_name}. |
 
 ---
 
@@ -2876,7 +2876,7 @@ component: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#component VirtualMachine#component}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#component VirtualMachine#component}.
 
 ---
 
@@ -2888,7 +2888,7 @@ content: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#content VirtualMachine#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#content VirtualMachine#content}.
 
 ---
 
@@ -2900,7 +2900,7 @@ pass: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#pass VirtualMachine#pass}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#pass VirtualMachine#pass}.
 
 ---
 
@@ -2912,7 +2912,7 @@ setting_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#setting_name VirtualMachine#setting_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#setting_name VirtualMachine#setting_name}.
 
 ---
 
@@ -2933,8 +2933,8 @@ virtualMachine.VirtualMachineOsProfileWindowsConfigWinrm(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrm.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#protocol VirtualMachine#protocol}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrm.property.certificateUrl">certificate_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#certificate_url VirtualMachine#certificate_url}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrm.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#protocol VirtualMachine#protocol}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrm.property.certificateUrl">certificate_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#certificate_url VirtualMachine#certificate_url}. |
 
 ---
 
@@ -2946,7 +2946,7 @@ protocol: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#protocol VirtualMachine#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#protocol VirtualMachine#protocol}.
 
 ---
 
@@ -2958,7 +2958,7 @@ certificate_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#certificate_url VirtualMachine#certificate_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#certificate_url VirtualMachine#certificate_url}.
 
 ---
 
@@ -2980,9 +2980,9 @@ virtualMachine.VirtualMachinePlan(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachinePlan.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#name VirtualMachine#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachinePlan.property.product">product</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#product VirtualMachine#product}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachinePlan.property.publisher">publisher</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#publisher VirtualMachine#publisher}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachinePlan.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#name VirtualMachine#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachinePlan.property.product">product</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#product VirtualMachine#product}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachinePlan.property.publisher">publisher</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#publisher VirtualMachine#publisher}. |
 
 ---
 
@@ -2994,7 +2994,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#name VirtualMachine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#name VirtualMachine#name}.
 
 ---
 
@@ -3006,7 +3006,7 @@ product: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#product VirtualMachine#product}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#product VirtualMachine#product}.
 
 ---
 
@@ -3018,7 +3018,7 @@ publisher: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#publisher VirtualMachine#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#publisher VirtualMachine#publisher}.
 
 ---
 
@@ -3046,15 +3046,15 @@ virtualMachine.VirtualMachineStorageDataDisk(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.createOption">create_option</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#create_option VirtualMachine#create_option}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.lun">lun</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#lun VirtualMachine#lun}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#name VirtualMachine#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.caching">caching</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#caching VirtualMachine#caching}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.diskSizeGb">disk_size_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#disk_size_gb VirtualMachine#disk_size_gb}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.managedDiskId">managed_disk_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#managed_disk_id VirtualMachine#managed_disk_id}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.managedDiskType">managed_disk_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#managed_disk_type VirtualMachine#managed_disk_type}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.vhdUri">vhd_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#vhd_uri VirtualMachine#vhd_uri}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.writeAcceleratorEnabled">write_accelerator_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#write_accelerator_enabled VirtualMachine#write_accelerator_enabled}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.createOption">create_option</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#create_option VirtualMachine#create_option}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.lun">lun</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#lun VirtualMachine#lun}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#name VirtualMachine#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.caching">caching</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#caching VirtualMachine#caching}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.diskSizeGb">disk_size_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#disk_size_gb VirtualMachine#disk_size_gb}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.managedDiskId">managed_disk_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#managed_disk_id VirtualMachine#managed_disk_id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.managedDiskType">managed_disk_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#managed_disk_type VirtualMachine#managed_disk_type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.vhdUri">vhd_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#vhd_uri VirtualMachine#vhd_uri}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.property.writeAcceleratorEnabled">write_accelerator_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#write_accelerator_enabled VirtualMachine#write_accelerator_enabled}. |
 
 ---
 
@@ -3066,7 +3066,7 @@ create_option: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#create_option VirtualMachine#create_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#create_option VirtualMachine#create_option}.
 
 ---
 
@@ -3078,7 +3078,7 @@ lun: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#lun VirtualMachine#lun}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#lun VirtualMachine#lun}.
 
 ---
 
@@ -3090,7 +3090,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#name VirtualMachine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#name VirtualMachine#name}.
 
 ---
 
@@ -3102,7 +3102,7 @@ caching: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#caching VirtualMachine#caching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#caching VirtualMachine#caching}.
 
 ---
 
@@ -3114,7 +3114,7 @@ disk_size_gb: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#disk_size_gb VirtualMachine#disk_size_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#disk_size_gb VirtualMachine#disk_size_gb}.
 
 ---
 
@@ -3126,7 +3126,7 @@ managed_disk_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#managed_disk_id VirtualMachine#managed_disk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#managed_disk_id VirtualMachine#managed_disk_id}.
 
 ---
 
@@ -3138,7 +3138,7 @@ managed_disk_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#managed_disk_type VirtualMachine#managed_disk_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#managed_disk_type VirtualMachine#managed_disk_type}.
 
 ---
 
@@ -3150,7 +3150,7 @@ vhd_uri: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#vhd_uri VirtualMachine#vhd_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#vhd_uri VirtualMachine#vhd_uri}.
 
 ---
 
@@ -3162,7 +3162,7 @@ write_accelerator_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#write_accelerator_enabled VirtualMachine#write_accelerator_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#write_accelerator_enabled VirtualMachine#write_accelerator_enabled}.
 
 ---
 
@@ -3186,11 +3186,11 @@ virtualMachine.VirtualMachineStorageImageReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#id VirtualMachine#id}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference.property.offer">offer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#offer VirtualMachine#offer}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference.property.publisher">publisher</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#publisher VirtualMachine#publisher}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference.property.sku">sku</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#sku VirtualMachine#sku}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#version VirtualMachine#version}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#id VirtualMachine#id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference.property.offer">offer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#offer VirtualMachine#offer}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference.property.publisher">publisher</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#publisher VirtualMachine#publisher}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference.property.sku">sku</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#sku VirtualMachine#sku}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#version VirtualMachine#version}. |
 
 ---
 
@@ -3202,7 +3202,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#id VirtualMachine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#id VirtualMachine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3217,7 +3217,7 @@ offer: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#offer VirtualMachine#offer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#offer VirtualMachine#offer}.
 
 ---
 
@@ -3229,7 +3229,7 @@ publisher: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#publisher VirtualMachine#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#publisher VirtualMachine#publisher}.
 
 ---
 
@@ -3241,7 +3241,7 @@ sku: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#sku VirtualMachine#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#sku VirtualMachine#sku}.
 
 ---
 
@@ -3253,7 +3253,7 @@ version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#version VirtualMachine#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#version VirtualMachine#version}.
 
 ---
 
@@ -3282,16 +3282,16 @@ virtualMachine.VirtualMachineStorageOsDisk(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.createOption">create_option</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#create_option VirtualMachine#create_option}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#name VirtualMachine#name}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.caching">caching</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#caching VirtualMachine#caching}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.diskSizeGb">disk_size_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#disk_size_gb VirtualMachine#disk_size_gb}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.imageUri">image_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#image_uri VirtualMachine#image_uri}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.managedDiskId">managed_disk_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#managed_disk_id VirtualMachine#managed_disk_id}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.managedDiskType">managed_disk_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#managed_disk_type VirtualMachine#managed_disk_type}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.osType">os_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#os_type VirtualMachine#os_type}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.vhdUri">vhd_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#vhd_uri VirtualMachine#vhd_uri}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.writeAcceleratorEnabled">write_accelerator_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#write_accelerator_enabled VirtualMachine#write_accelerator_enabled}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.createOption">create_option</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#create_option VirtualMachine#create_option}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#name VirtualMachine#name}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.caching">caching</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#caching VirtualMachine#caching}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.diskSizeGb">disk_size_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#disk_size_gb VirtualMachine#disk_size_gb}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.imageUri">image_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#image_uri VirtualMachine#image_uri}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.managedDiskId">managed_disk_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#managed_disk_id VirtualMachine#managed_disk_id}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.managedDiskType">managed_disk_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#managed_disk_type VirtualMachine#managed_disk_type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.osType">os_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#os_type VirtualMachine#os_type}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.vhdUri">vhd_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#vhd_uri VirtualMachine#vhd_uri}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.property.writeAcceleratorEnabled">write_accelerator_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#write_accelerator_enabled VirtualMachine#write_accelerator_enabled}. |
 
 ---
 
@@ -3303,7 +3303,7 @@ create_option: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#create_option VirtualMachine#create_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#create_option VirtualMachine#create_option}.
 
 ---
 
@@ -3315,7 +3315,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#name VirtualMachine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#name VirtualMachine#name}.
 
 ---
 
@@ -3327,7 +3327,7 @@ caching: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#caching VirtualMachine#caching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#caching VirtualMachine#caching}.
 
 ---
 
@@ -3339,7 +3339,7 @@ disk_size_gb: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#disk_size_gb VirtualMachine#disk_size_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#disk_size_gb VirtualMachine#disk_size_gb}.
 
 ---
 
@@ -3351,7 +3351,7 @@ image_uri: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#image_uri VirtualMachine#image_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#image_uri VirtualMachine#image_uri}.
 
 ---
 
@@ -3363,7 +3363,7 @@ managed_disk_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#managed_disk_id VirtualMachine#managed_disk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#managed_disk_id VirtualMachine#managed_disk_id}.
 
 ---
 
@@ -3375,7 +3375,7 @@ managed_disk_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#managed_disk_type VirtualMachine#managed_disk_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#managed_disk_type VirtualMachine#managed_disk_type}.
 
 ---
 
@@ -3387,7 +3387,7 @@ os_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#os_type VirtualMachine#os_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#os_type VirtualMachine#os_type}.
 
 ---
 
@@ -3399,7 +3399,7 @@ vhd_uri: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#vhd_uri VirtualMachine#vhd_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#vhd_uri VirtualMachine#vhd_uri}.
 
 ---
 
@@ -3411,7 +3411,7 @@ write_accelerator_enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#write_accelerator_enabled VirtualMachine#write_accelerator_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#write_accelerator_enabled VirtualMachine#write_accelerator_enabled}.
 
 ---
 
@@ -3434,10 +3434,10 @@ virtualMachine.VirtualMachineTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#create VirtualMachine#create}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#delete VirtualMachine#delete}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#read VirtualMachine#read}. |
-| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#update VirtualMachine#update}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#create VirtualMachine#create}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#delete VirtualMachine#delete}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#read VirtualMachine#read}. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#update VirtualMachine#update}. |
 
 ---
 
@@ -3449,7 +3449,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#create VirtualMachine#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#create VirtualMachine#create}.
 
 ---
 
@@ -3461,7 +3461,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#delete VirtualMachine#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#delete VirtualMachine#delete}.
 
 ---
 
@@ -3473,7 +3473,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#read VirtualMachine#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#read VirtualMachine#read}.
 
 ---
 
@@ -3485,7 +3485,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/azurestack/r/virtual_machine#update VirtualMachine#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine#update VirtualMachine#update}.
 
 ---
 
