@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackvirtualnetwork"
 
 dataazurestackvirtualnetwork.NewDataAzurestackVirtualNetwork(scope Construct, id *string, config DataAzurestackVirtualNetworkConfig) DataAzurestackVirtualNetwork
 ```
@@ -297,7 +297,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackvirtualnetwork"
 
 dataazurestackvirtualnetwork.DataAzurestackVirtualNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackvirtualnetwork"
 
 dataazurestackvirtualnetwork.DataAzurestackVirtualNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataazurestackvirtualnetwork.DataAzurestackVirtualNetwork_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackvirtualnetwork"
 
 dataazurestackvirtualnetwork.DataAzurestackVirtualNetwork_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackvirtualnetwork"
 
 &dataazurestackvirtualnetwork.DataAzurestackVirtualNetworkConfig {
 	Connection: interface{},
@@ -687,7 +687,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackv
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts,
 }
 ```
 
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackvirtualnetwork"
 
 &dataazurestackvirtualnetwork.DataAzurestackVirtualNetworkTimeouts {
 	Read: *string,
@@ -871,7 +871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/dataazurestackvirtualnetwork"
 
 dataazurestackvirtualnetwork.NewDataAzurestackVirtualNetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackVirtualNetworkTimeoutsOutputReference
 ```
