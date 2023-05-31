@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.networkInterface.NetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/networkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networkinterface"
 
 networkinterface.NewNetworkInterface(scope Construct, id *string, config NetworkInterfaceConfig) NetworkInterface
 ```
@@ -331,7 +331,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.networkInterface.NetworkInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/networkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networkinterface"
 
 networkinterface.NetworkInterface_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.networkInterface.NetworkInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/networkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networkinterface"
 
 networkinterface.NetworkInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ networkinterface.NetworkInterface_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.networkInterface.NetworkInterface.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/networkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networkinterface"
 
 networkinterface.NetworkInterface_IsTerraformResource(x interface{}) *bool
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.networkInterface.NetworkInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/networkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networkinterface"
 
 &networkinterface.NetworkInterfaceConfig {
 	Connection: interface{},
@@ -858,7 +858,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/networkinter
 	EnableIpForwarding: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.networkInterface.NetworkInterfaceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.networkInterface.NetworkInterfaceTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/networkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networkinterface"
 
 &networkinterface.NetworkInterfaceIpConfiguration {
 	Name: *string,
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.networkInterface.NetworkInterfaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/networkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networkinterface"
 
 &networkinterface.NetworkInterfaceTimeouts {
 	Create: *string,
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/networkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networkinterface"
 
 networkinterface.NewNetworkInterfaceIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkInterfaceIpConfigurationList
 ```
@@ -1410,7 +1410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.networkInterface.NetworkInterfaceIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/networkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networkinterface"
 
 networkinterface.NewNetworkInterfaceIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkInterfaceIpConfigurationOutputReference
 ```
@@ -1866,7 +1866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.networkInterface.NetworkInterfaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/networkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networkinterface"
 
 networkinterface.NewNetworkInterfaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkInterfaceTimeoutsOutputReference
 ```

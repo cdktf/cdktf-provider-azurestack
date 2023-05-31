@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualNetworkPeering.VirtualNetworkPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualnetworkpeering"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetworkpeering"
 
 virtualnetworkpeering.NewVirtualNetworkPeering(scope Construct, id *string, config VirtualNetworkPeeringConfig) VirtualNetworkPeering
 ```
@@ -325,7 +325,7 @@ func ResetUseRemoteGateways()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.virtualNetworkPeering.VirtualNetworkPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualnetworkpeering"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetworkpeering"
 
 virtualnetworkpeering.VirtualNetworkPeering_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.virtualNetworkPeering.VirtualNetworkPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualnetworkpeering"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetworkpeering"
 
 virtualnetworkpeering.VirtualNetworkPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ virtualnetworkpeering.VirtualNetworkPeering_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.virtualNetworkPeering.VirtualNetworkPeering.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualnetworkpeering"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetworkpeering"
 
 virtualnetworkpeering.VirtualNetworkPeering_IsTerraformResource(x interface{}) *bool
 ```
@@ -790,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualNetworkPeering.VirtualNetworkPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualnetworkpeering"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetworkpeering"
 
 &virtualnetworkpeering.VirtualNetworkPeeringConfig {
 	Connection: interface{},
@@ -808,7 +808,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualnetwo
 	AllowGatewayTransit: interface{},
 	AllowVirtualNetworkAccess: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4.virtualNetworkPeering.VirtualNetworkPeeringTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.virtualNetworkPeering.VirtualNetworkPeeringTimeouts,
 	UseRemoteGateways: interface{},
 }
 ```
@@ -1037,7 +1037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualNetworkPeering.VirtualNetworkPeeringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualnetworkpeering"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetworkpeering"
 
 &virtualnetworkpeering.VirtualNetworkPeeringTimeouts {
 	Create: *string,
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualNetworkPeering.VirtualNetworkPeeringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v4/virtualnetworkpeering"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetworkpeering"
 
 virtualnetworkpeering.NewVirtualNetworkPeeringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualNetworkPeeringTimeoutsOutputReference
 ```
