@@ -556,7 +556,7 @@ subnet.Subnet.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts">SubnetTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts">SubnetTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.virtualNetworkNameInput">virtual_network_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.addressPrefix">address_prefix</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.Subnet.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -761,10 +761,10 @@ resource_group_name_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurestack.subnet.Subnet.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[SubnetTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, SubnetTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts">SubnetTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts">SubnetTimeouts</a>]
 
 ---
 
@@ -1386,7 +1386,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts">SubnetTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.subnet.SubnetTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts">SubnetTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1497,10 +1497,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurestack.subnet.SubnetTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SubnetTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, SubnetTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts">SubnetTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.subnet.SubnetTimeouts">SubnetTimeouts</a>]
 
 ---
 

@@ -570,7 +570,7 @@ LbProbe.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.protocolInput">protocolInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.requestPathInput">requestPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.intervalInSeconds">intervalInSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.loadbalancerId">loadbalancerId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -841,7 +841,7 @@ public java.lang.String getResourceGroupNameInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a>
 
 ---
 
@@ -1528,7 +1528,7 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeoutsOutputReference.property.read">read</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1642,7 +1642,7 @@ public java.lang.String getUpdate();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a>
 
 ---
 

@@ -479,7 +479,7 @@ DataAzurestackVirtualNetwork.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts">DataAzurestackVirtualNetworkTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts">DataAzurestackVirtualNetworkTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetwork.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -714,7 +714,7 @@ public java.lang.String getResourceGroupNameInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts">DataAzurestackVirtualNetworkTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts">DataAzurestackVirtualNetworkTimeouts</a>
 
 ---
 
@@ -1188,7 +1188,7 @@ public void resetRead()
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeoutsOutputReference.property.read">read</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts">DataAzurestackVirtualNetworkTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts">DataAzurestackVirtualNetworkTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1242,7 +1242,7 @@ public java.lang.String getRead();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts">DataAzurestackVirtualNetworkTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetwork.DataAzurestackVirtualNetworkTimeouts">DataAzurestackVirtualNetworkTimeouts</a>
 
 ---
 

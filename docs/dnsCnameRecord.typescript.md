@@ -393,7 +393,7 @@ dnsCnameRecord.DnsCnameRecord.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.recordInput">recordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts">DnsCnameRecordTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts">DnsCnameRecordTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.ttlInput">ttlInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.zoneNameInput">zoneNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -621,10 +621,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DnsCnameRecordTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DnsCnameRecordTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts">DnsCnameRecordTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts">DnsCnameRecordTimeouts</a>
 
 ---
 
@@ -1258,7 +1258,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts">DnsCnameRecordTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts">DnsCnameRecordTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1369,10 +1369,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DnsCnameRecordTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DnsCnameRecordTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts">DnsCnameRecordTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts">DnsCnameRecordTimeouts</a>
 
 ---
 

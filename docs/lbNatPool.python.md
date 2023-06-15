@@ -602,7 +602,7 @@ lbNatPool.LbNatPool.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.protocolInput">protocol_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts">LbNatPoolTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts">LbNatPoolTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.backendPort">backend_port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.frontendIpConfigurationName">frontend_ip_configuration_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.frontendPortEnd">frontend_port_end</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -870,10 +870,10 @@ resource_group_name_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurestack.lbNatPool.LbNatPool.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[LbNatPoolTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, LbNatPoolTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts">LbNatPoolTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts">LbNatPoolTimeouts</a>]
 
 ---
 
@@ -1581,7 +1581,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts">LbNatPoolTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts">LbNatPoolTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1692,10 +1692,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LbNatPoolTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, LbNatPoolTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts">LbNatPoolTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.lbNatPool.LbNatPoolTimeouts">LbNatPoolTimeouts</a>]
 
 ---
 

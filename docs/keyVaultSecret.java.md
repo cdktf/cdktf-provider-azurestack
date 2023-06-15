@@ -558,7 +558,7 @@ KeyVaultSecret.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecret.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecret.property.notBeforeDateInput">notBeforeDateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecret.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecret.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeouts">KeyVaultSecretTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecret.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeouts">KeyVaultSecretTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecret.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecret.property.contentType">contentType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecret.property.expirationDate">expirationDate</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -809,7 +809,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeouts">KeyVaultSecretTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeouts">KeyVaultSecretTimeouts</a>
 
 ---
 
@@ -1482,7 +1482,7 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeoutsOutputReference.property.read">read</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeouts">KeyVaultSecretTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeouts">KeyVaultSecretTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1596,7 +1596,7 @@ public java.lang.String getUpdate();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeouts">KeyVaultSecretTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.keyVaultSecret.KeyVaultSecretTimeouts">KeyVaultSecretTimeouts</a>
 
 ---
 

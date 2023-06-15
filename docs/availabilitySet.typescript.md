@@ -409,7 +409,7 @@ availabilitySet.AvailabilitySet.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySet.property.platformUpdateDomainCountInput">platformUpdateDomainCountInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySet.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySet.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySet.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeouts">AvailabilitySetTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySet.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeouts">AvailabilitySetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySet.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySet.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySet.property.managed">managed</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -656,10 +656,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azurestack.availabilitySet.AvailabilitySet.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: AvailabilitySetTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | AvailabilitySetTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeouts">AvailabilitySetTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeouts">AvailabilitySetTimeouts</a>
 
 ---
 
@@ -1296,7 +1296,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeouts">AvailabilitySetTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeouts">AvailabilitySetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1407,10 +1407,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AvailabilitySetTimeouts | IResolvable;
+public readonly internalValue: IResolvable | AvailabilitySetTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeouts">AvailabilitySetTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.availabilitySet.AvailabilitySetTimeouts">AvailabilitySetTimeouts</a>
 
 ---
 

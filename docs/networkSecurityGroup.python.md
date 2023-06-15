@@ -598,7 +598,7 @@ networkSecurityGroup.NetworkSecurityGroup.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.securityRuleInput">security_rule_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts">NetworkSecurityGroupTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts">NetworkSecurityGroupTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -832,10 +832,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[NetworkSecurityGroupTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, NetworkSecurityGroupTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts">NetworkSecurityGroupTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts">NetworkSecurityGroupTimeouts</a>]
 
 ---
 
@@ -1936,7 +1936,7 @@ def reset_source_port_ranges() -> None
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRuleOutputReference.property.sourceAddressPrefixes">source_address_prefixes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRuleOutputReference.property.sourcePortRange">source_port_range</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRuleOutputReference.property.sourcePortRanges">source_port_ranges</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRuleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRuleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>]</code> | *No description.* |
 
 ---
 
@@ -2247,10 +2247,10 @@ source_port_ranges: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRuleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[NetworkSecurityGroupSecurityRule, IResolvable]
+internal_value: typing.Union[IResolvable, NetworkSecurityGroupSecurityRule]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>]
 
 ---
 
@@ -2526,7 +2526,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts">NetworkSecurityGroupTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts">NetworkSecurityGroupTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2637,10 +2637,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[NetworkSecurityGroupTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, NetworkSecurityGroupTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts">NetworkSecurityGroupTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts">NetworkSecurityGroupTimeouts</a>]
 
 ---
 

@@ -670,7 +670,7 @@ KeyVault.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVault.property.skuNameInput">skuNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVault.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVault.property.tenantIdInput">tenantIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVault.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeouts">KeyVaultTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVault.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeouts">KeyVaultTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVault.property.enabledForDeployment">enabledForDeployment</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVault.property.enabledForDiskEncryption">enabledForDiskEncryption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVault.property.enabledForTemplateDeployment">enabledForTemplateDeployment</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1003,7 +1003,7 @@ public java.lang.String getTenantIdInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeouts">KeyVaultTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeouts">KeyVaultTimeouts</a>
 
 ---
 
@@ -2151,7 +2151,7 @@ public void resetTenantId()
 | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultAccessPolicyOutputReference.property.secretPermissions">secretPermissions</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultAccessPolicyOutputReference.property.storagePermissions">storagePermissions</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultAccessPolicyOutputReference.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultAccessPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultAccessPolicy">KeyVaultAccessPolicy</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultAccessPolicyOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.keyVault.KeyVaultAccessPolicy">KeyVaultAccessPolicy</a></code> | *No description.* |
 
 ---
 
@@ -2325,7 +2325,7 @@ public java.lang.String getTenantId();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.keyVault.KeyVaultAccessPolicy">KeyVaultAccessPolicy</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.keyVault.KeyVaultAccessPolicy">KeyVaultAccessPolicy</a>
 
 ---
 
@@ -2927,7 +2927,7 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeoutsOutputReference.property.read">read</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeouts">KeyVaultTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeouts">KeyVaultTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3041,7 +3041,7 @@ public java.lang.String getUpdate();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeouts">KeyVaultTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-azurestack.keyVault.KeyVaultTimeouts">KeyVaultTimeouts</a>
 
 ---
 

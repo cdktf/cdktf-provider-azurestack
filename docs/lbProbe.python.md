@@ -630,7 +630,7 @@ lbProbe.LbProbe.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.protocolInput">protocol_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.requestPathInput">request_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.intervalInSeconds">interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbe.property.loadbalancerId">loadbalancer_id</a></code> | <code>str</code> | *No description.* |
@@ -898,10 +898,10 @@ resource_group_name_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurestack.lbProbe.LbProbe.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[LbProbeTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, LbProbeTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a>]
 
 ---
 
@@ -1609,7 +1609,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1720,10 +1720,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurestack.lbProbe.LbProbeTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LbProbeTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, LbProbeTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a>]
 
 ---
 
