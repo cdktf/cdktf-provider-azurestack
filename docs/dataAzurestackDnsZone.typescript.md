@@ -385,7 +385,7 @@ dataAzurestackDnsZone.DataAzurestackDnsZone.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZone.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZone.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZone.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZone.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeouts">DataAzurestackDnsZoneTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZone.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeouts">DataAzurestackDnsZoneTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZone.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZone.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZone.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | *No description.* |
@@ -597,10 +597,10 @@ public readonly resourceGroupNameInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZone.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAzurestackDnsZoneTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataAzurestackDnsZoneTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeouts">DataAzurestackDnsZoneTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeouts">DataAzurestackDnsZoneTimeouts</a>
 
 ---
 
@@ -1056,7 +1056,7 @@ public resetRead(): void
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeouts">DataAzurestackDnsZoneTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeouts">DataAzurestackDnsZoneTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1107,10 +1107,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAzurestackDnsZoneTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataAzurestackDnsZoneTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeouts">DataAzurestackDnsZoneTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.dataAzurestackDnsZone.DataAzurestackDnsZoneTimeouts">DataAzurestackDnsZoneTimeouts</a>
 
 ---
 

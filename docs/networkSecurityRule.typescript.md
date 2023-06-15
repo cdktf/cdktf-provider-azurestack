@@ -453,7 +453,7 @@ networkSecurityRule.NetworkSecurityRule.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.property.sourceAddressPrefixInput">sourceAddressPrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.property.sourcePortRangeInput">sourcePortRangeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.property.sourcePortRangesInput">sourcePortRangesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeouts">NetworkSecurityRuleTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeouts">NetworkSecurityRuleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.property.access">access</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.property.destinationAddressPrefix">destinationAddressPrefix</a></code> | <code>string</code> | *No description.* |
@@ -799,10 +799,10 @@ public readonly sourcePortRangesInput: string[];
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: NetworkSecurityRuleTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | NetworkSecurityRuleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeouts">NetworkSecurityRuleTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeouts">NetworkSecurityRuleTimeouts</a>
 
 ---
 
@@ -1646,7 +1646,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeouts">NetworkSecurityRuleTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeouts">NetworkSecurityRuleTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1757,10 +1757,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: NetworkSecurityRuleTimeouts | IResolvable;
+public readonly internalValue: IResolvable | NetworkSecurityRuleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeouts">NetworkSecurityRuleTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeouts">NetworkSecurityRuleTimeouts</a>
 
 ---
 

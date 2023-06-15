@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.lbNatRule.LbNatRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v5/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/lbnatrule"
 
 lbnatrule.NewLbNatRule(scope Construct, id *string, config LbNatRuleConfig) LbNatRule
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.lbNatRule.LbNatRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v5/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/lbnatrule"
 
 lbnatrule.LbNatRule_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.lbNatRule.LbNatRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v5/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/lbnatrule"
 
 lbnatrule.LbNatRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ lbnatrule.LbNatRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.lbNatRule.LbNatRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v5/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/lbnatrule"
 
 lbnatrule.LbNatRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.lbNatRule.LbNatRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v5/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/lbnatrule"
 
 &lbnatrule.LbNatRuleConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v5/lbnatrule"
 	EnableFloatingIp: interface{},
 	Id: *string,
 	IdleTimeoutInMinutes: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v5.lbNatRule.LbNatRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.lbNatRule.LbNatRuleTimeouts,
 }
 ```
 
@@ -1081,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.lbNatRule.LbNatRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v5/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/lbnatrule"
 
 &lbnatrule.LbNatRuleTimeouts {
 	Create: *string,
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.lbNatRule.LbNatRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v5/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/lbnatrule"
 
 lbnatrule.NewLbNatRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbNatRuleTimeoutsOutputReference
 ```

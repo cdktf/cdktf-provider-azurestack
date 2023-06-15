@@ -719,7 +719,7 @@ storageBlob.StorageBlob.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.sourceUriInput">source_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.storageAccountNameInput">storage_account_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.storageContainerNameInput">storage_container_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts">StorageBlobTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts">StorageBlobTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.cacheControl">cache_control</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.property.contentMd5">content_md5</a></code> | <code>str</code> | *No description.* |
@@ -1033,10 +1033,10 @@ storage_container_name_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurestack.storageBlob.StorageBlob.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[StorageBlobTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, StorageBlobTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts">StorageBlobTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts">StorageBlobTimeouts</a>]
 
 ---
 
@@ -1874,7 +1874,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts">StorageBlobTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts">StorageBlobTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1985,10 +1985,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurestack.storageBlob.StorageBlobTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[StorageBlobTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, StorageBlobTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts">StorageBlobTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.storageBlob.StorageBlobTimeouts">StorageBlobTimeouts</a>]
 
 ---
 

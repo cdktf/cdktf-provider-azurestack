@@ -701,7 +701,7 @@ image.Image.is_terraform_resource(
 | <code><a href="#@cdktf/provider-azurestack.image.Image.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.Image.property.sourceVirtualMachineIdInput">source_virtual_machine_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.Image.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.image.Image.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.image.Image.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.Image.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.Image.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.Image.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -966,10 +966,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurestack.image.Image.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[ImageTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, ImageTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a>]
 
 ---
 
@@ -2007,7 +2007,7 @@ def reset_size_gb() -> None
 | <code><a href="#@cdktf/provider-azurestack.image.ImageDataDiskOutputReference.property.lun">lun</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.ImageDataDiskOutputReference.property.managedDiskId">managed_disk_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.ImageDataDiskOutputReference.property.sizeGb">size_gb</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.image.ImageDataDiskOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.image.ImageDataDisk">ImageDataDisk</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.image.ImageDataDiskOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.image.ImageDataDisk">ImageDataDisk</a>]</code> | *No description.* |
 
 ---
 
@@ -2138,10 +2138,10 @@ size_gb: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurestack.image.ImageDataDiskOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ImageDataDisk, IResolvable]
+internal_value: typing.Union[IResolvable, ImageDataDisk]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.image.ImageDataDisk">ImageDataDisk</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.image.ImageDataDisk">ImageDataDisk</a>]
 
 ---
 
@@ -2865,7 +2865,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-azurestack.image.ImageTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.ImageTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.ImageTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.image.ImageTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.image.ImageTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2976,10 +2976,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurestack.image.ImageTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ImageTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, ImageTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a>]
 
 ---
 

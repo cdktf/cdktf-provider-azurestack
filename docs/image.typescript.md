@@ -437,7 +437,7 @@ image.Image.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.image.Image.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.Image.property.sourceVirtualMachineIdInput">sourceVirtualMachineIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.Image.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.image.Image.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.image.Image.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.Image.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.Image.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.Image.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -702,10 +702,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azurestack.image.Image.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: ImageTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | ImageTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a>
 
 ---
 
@@ -1673,7 +1673,7 @@ public resetSizeGb(): void
 | <code><a href="#@cdktf/provider-azurestack.image.ImageDataDiskOutputReference.property.lun">lun</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.ImageDataDiskOutputReference.property.managedDiskId">managedDiskId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.ImageDataDiskOutputReference.property.sizeGb">sizeGb</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.image.ImageDataDiskOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azurestack.image.ImageDataDisk">ImageDataDisk</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.image.ImageDataDiskOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.image.ImageDataDisk">ImageDataDisk</a></code> | *No description.* |
 
 ---
 
@@ -1804,10 +1804,10 @@ public readonly sizeGb: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azurestack.image.ImageDataDiskOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ImageDataDisk | IResolvable;
+public readonly internalValue: IResolvable | ImageDataDisk;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.image.ImageDataDisk">ImageDataDisk</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.image.ImageDataDisk">ImageDataDisk</a>
 
 ---
 
@@ -2481,7 +2481,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-azurestack.image.ImageTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.ImageTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.image.ImageTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.image.ImageTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.image.ImageTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2592,10 +2592,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azurestack.image.ImageTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ImageTimeouts | IResolvable;
+public readonly internalValue: IResolvable | ImageTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.image.ImageTimeouts">ImageTimeouts</a>
 
 ---
 

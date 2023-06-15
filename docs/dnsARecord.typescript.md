@@ -386,7 +386,7 @@ dnsARecord.DnsARecord.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecord.property.recordsInput">recordsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecord.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecord.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecord.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeouts">DnsARecordTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecord.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeouts">DnsARecordTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecord.property.ttlInput">ttlInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecord.property.zoneNameInput">zoneNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecord.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -614,10 +614,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azurestack.dnsARecord.DnsARecord.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DnsARecordTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DnsARecordTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeouts">DnsARecordTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeouts">DnsARecordTimeouts</a>
 
 ---
 
@@ -1251,7 +1251,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeouts">DnsARecordTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeouts">DnsARecordTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1362,10 +1362,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DnsARecordTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DnsARecordTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeouts">DnsARecordTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeouts">DnsARecordTimeouts</a>
 
 ---
 
