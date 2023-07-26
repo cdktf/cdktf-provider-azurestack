@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway_connection
 // generated from terraform resource schema
 
@@ -77,13 +72,13 @@ export interface VirtualNetworkGatewayConnectionConfig extends cdktf.TerraformMe
   readonly virtualNetworkGatewayId: string;
   /**
   * ipsec_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway_connection#ipsec_policy VirtualNetworkGatewayConnection#ipsec_policy}
   */
   readonly ipsecPolicy?: VirtualNetworkGatewayConnectionIpsecPolicy;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway_connection#timeouts VirtualNetworkGatewayConnection#timeouts}
   */
   readonly timeouts?: VirtualNetworkGatewayConnectionTimeouts;

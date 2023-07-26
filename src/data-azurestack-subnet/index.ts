@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/subnet
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface DataAzurestackSubnetConfig extends cdktf.TerraformMetaArguments
   readonly virtualNetworkName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/subnet#timeouts DataAzurestackSubnet#timeouts}
   */
   readonly timeouts?: DataAzurestackSubnetTimeouts;

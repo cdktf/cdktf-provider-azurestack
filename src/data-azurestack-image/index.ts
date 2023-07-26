@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/image
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface DataAzurestackImageConfig extends cdktf.TerraformMetaArguments 
   readonly sortDescending?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/image#timeouts DataAzurestackImage#timeouts}
   */
   readonly timeouts?: DataAzurestackImageTimeouts;

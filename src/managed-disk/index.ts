@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/managed_disk
 // generated from terraform resource schema
 
@@ -73,13 +68,13 @@ export interface ManagedDiskConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * encryption block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/managed_disk#encryption ManagedDisk#encryption}
   */
   readonly encryption?: ManagedDiskEncryption;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/managed_disk#timeouts ManagedDisk#timeouts}
   */
   readonly timeouts?: ManagedDiskTimeouts;
@@ -263,13 +258,13 @@ export interface ManagedDiskEncryption {
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * disk_encryption_key block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/managed_disk#disk_encryption_key ManagedDisk#disk_encryption_key}
   */
   readonly diskEncryptionKey?: ManagedDiskEncryptionDiskEncryptionKey;
   /**
   * key_encryption_key block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/managed_disk#key_encryption_key ManagedDisk#key_encryption_key}
   */
   readonly keyEncryptionKey?: ManagedDiskEncryptionKeyEncryptionKey;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface
 // generated from terraform resource schema
 
@@ -45,13 +40,13 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * ip_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#ip_configuration NetworkInterface#ip_configuration}
   */
   readonly ipConfiguration: NetworkInterfaceIpConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#timeouts NetworkInterface#timeouts}
   */
   readonly timeouts?: NetworkInterfaceTimeouts;

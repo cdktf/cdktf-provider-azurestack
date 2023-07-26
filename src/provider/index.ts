@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface AzurestackProviderConfig {
   /**
   * The Hostname which should be used for the Azure Metadata Service.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#arm_endpoint AzurestackProvider#arm_endpoint}
   */
   readonly armEndpoint?: string;
@@ -24,85 +19,85 @@ export interface AzurestackProviderConfig {
   readonly auxiliaryTenantIds?: string[];
   /**
   * The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client Certificate
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#client_certificate_password AzurestackProvider#client_certificate_password}
   */
   readonly clientCertificatePassword?: string;
   /**
   * The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#client_certificate_path AzurestackProvider#client_certificate_path}
   */
   readonly clientCertificatePath?: string;
   /**
   * The Client ID which should be used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#client_id AzurestackProvider#client_id}
   */
   readonly clientId?: string;
   /**
   * The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#client_secret AzurestackProvider#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * This will disable the x-ms-correlation-request-id header.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#disable_correlation_request_id AzurestackProvider#disable_correlation_request_id}
   */
   readonly disableCorrelationRequestId?: boolean | cdktf.IResolvable;
   /**
   * The Cloud Environment which should be used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#environment AzurestackProvider#environment}
   */
   readonly environment?: string;
   /**
   * The Hostname which should be used for the Azure Metadata Service.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#metadata_host AzurestackProvider#metadata_host}
   */
   readonly metadataHost?: string;
   /**
   * The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected automatically. 
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#msi_endpoint AzurestackProvider#msi_endpoint}
   */
   readonly msiEndpoint?: string;
   /**
   * Should the AzureStack Provider skip registering all of the Resource Providers that it supports, if they're not already registered?
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#skip_provider_registration AzurestackProvider#skip_provider_registration}
   */
   readonly skipProviderRegistration?: boolean | cdktf.IResolvable;
   /**
   * The Subscription ID which should be used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#subscription_id AzurestackProvider#subscription_id}
   */
   readonly subscriptionId?: string;
   /**
   * The Tenant ID which should be used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#tenant_id AzurestackProvider#tenant_id}
   */
   readonly tenantId?: string;
   /**
   * Allowed Managed Service Identity be used for Authentication.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#use_msi AzurestackProvider#use_msi}
   */
   readonly useMsi?: boolean | cdktf.IResolvable;
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#alias AzurestackProvider#alias}
   */
   readonly alias?: string;
   /**
   * features block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#features AzurestackProvider#features}
   */
   readonly features: AzurestackProviderFeatures;
@@ -181,19 +176,19 @@ export function azurestackProviderFeaturesVirtualMachineScaleSetToTerraform(stru
 export interface AzurestackProviderFeatures {
   /**
   * resource_group block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#resource_group AzurestackProvider#resource_group}
   */
   readonly resourceGroup?: AzurestackProviderFeaturesResourceGroup;
   /**
   * virtual_machine block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#virtual_machine AzurestackProvider#virtual_machine}
   */
   readonly virtualMachine?: AzurestackProviderFeaturesVirtualMachine;
   /**
   * virtual_machine_scale_set block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#virtual_machine_scale_set AzurestackProvider#virtual_machine_scale_set}
   */
   readonly virtualMachineScaleSet?: AzurestackProviderFeaturesVirtualMachineScaleSet;

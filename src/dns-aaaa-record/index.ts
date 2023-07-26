@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_aaaa_record
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface DnsAaaaRecordConfig extends cdktf.TerraformMetaArguments {
   readonly zoneName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_aaaa_record#timeouts DnsAaaaRecord#timeouts}
   */
   readonly timeouts?: DnsAaaaRecordTimeouts;

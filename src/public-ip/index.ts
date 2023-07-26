@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip
 // generated from terraform resource schema
 
@@ -65,7 +60,7 @@ export interface PublicIpConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip#timeouts PublicIp#timeouts}
   */
   readonly timeouts?: PublicIpTimeouts;

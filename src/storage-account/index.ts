@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_account
 // generated from terraform resource schema
 
@@ -61,13 +56,13 @@ export interface StorageAccountConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * custom_domain block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_account#custom_domain StorageAccount#custom_domain}
   */
   readonly customDomain?: StorageAccountCustomDomain;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_account#timeouts StorageAccount#timeouts}
   */
   readonly timeouts?: StorageAccountTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault
 // generated from terraform resource schema
 
@@ -65,13 +60,13 @@ export interface KeyVaultConfig extends cdktf.TerraformMetaArguments {
   readonly tenantId: string;
   /**
   * network_acls block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault#network_acls KeyVault#network_acls}
   */
   readonly networkAcls?: KeyVaultNetworkAcls;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault#timeouts KeyVault#timeouts}
   */
   readonly timeouts?: KeyVaultTimeouts;

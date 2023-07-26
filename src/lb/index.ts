@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb
 // generated from terraform resource schema
 
@@ -41,13 +36,13 @@ export interface LbConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * frontend_ip_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb#frontend_ip_configuration Lb#frontend_ip_configuration}
   */
   readonly frontendIpConfiguration?: LbFrontendIpConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb#timeouts Lb#timeouts}
   */
   readonly timeouts?: LbTimeouts;
