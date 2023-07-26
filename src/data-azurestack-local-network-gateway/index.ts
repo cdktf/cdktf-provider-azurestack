@@ -29,7 +29,7 @@ export interface DataAzurestackLocalNetworkGatewayConfig extends cdktf.Terraform
   readonly resourceGroupName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/local_network_gateway#timeouts DataAzurestackLocalNetworkGateway#timeouts}
   */
   readonly timeouts?: DataAzurestackLocalNetworkGatewayTimeouts;

@@ -45,7 +45,7 @@ export interface DnsNsRecordConfig extends cdktf.TerraformMetaArguments {
   readonly zoneName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_ns_record#timeouts DnsNsRecord#timeouts}
   */
   readonly timeouts?: DnsNsRecordTimeouts;

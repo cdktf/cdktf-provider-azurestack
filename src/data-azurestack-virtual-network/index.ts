@@ -29,7 +29,7 @@ export interface DataAzurestackVirtualNetworkConfig extends cdktf.TerraformMetaA
   readonly resourceGroupName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network#timeouts DataAzurestackVirtualNetwork#timeouts}
   */
   readonly timeouts?: DataAzurestackVirtualNetworkTimeouts;

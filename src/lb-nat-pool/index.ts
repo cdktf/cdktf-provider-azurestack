@@ -53,7 +53,7 @@ export interface LbNatPoolConfig extends cdktf.TerraformMetaArguments {
   readonly resourceGroupName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_nat_pool#timeouts LbNatPool#timeouts}
   */
   readonly timeouts?: LbNatPoolTimeouts;

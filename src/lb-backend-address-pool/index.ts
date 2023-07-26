@@ -33,7 +33,7 @@ export interface LbBackendAddressPoolConfig extends cdktf.TerraformMetaArguments
   readonly resourceGroupName?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/lb_backend_address_pool#timeouts LbBackendAddressPool#timeouts}
   */
   readonly timeouts?: LbBackendAddressPoolTimeouts;

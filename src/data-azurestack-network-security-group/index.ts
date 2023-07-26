@@ -29,7 +29,7 @@ export interface DataAzurestackNetworkSecurityGroupConfig extends cdktf.Terrafor
   readonly resourceGroupName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/network_security_group#timeouts DataAzurestackNetworkSecurityGroup#timeouts}
   */
   readonly timeouts?: DataAzurestackNetworkSecurityGroupTimeouts;

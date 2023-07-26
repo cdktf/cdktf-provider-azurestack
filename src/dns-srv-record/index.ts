@@ -41,13 +41,13 @@ export interface DnsSrvRecordConfig extends cdktf.TerraformMetaArguments {
   readonly zoneName: string;
   /**
   * record block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_srv_record#record DnsSrvRecord#record}
   */
   readonly record: DnsSrvRecordRecord[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_srv_record#timeouts DnsSrvRecord#timeouts}
   */
   readonly timeouts?: DnsSrvRecordTimeouts;

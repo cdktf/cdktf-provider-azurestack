@@ -33,7 +33,7 @@ export interface ResourceGroupConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/resource_group#timeouts ResourceGroup#timeouts}
   */
   readonly timeouts?: ResourceGroupTimeouts;

@@ -29,7 +29,7 @@ export interface DataAzurestackVirtualNetworkGatewayConnectionConfig extends cdk
   readonly resourceGroupName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network_gateway_connection#timeouts DataAzurestackVirtualNetworkGatewayConnection#timeouts}
   */
   readonly timeouts?: DataAzurestackVirtualNetworkGatewayConnectionTimeouts;

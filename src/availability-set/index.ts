@@ -49,7 +49,7 @@ export interface AvailabilitySetConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/availability_set#timeouts AvailabilitySet#timeouts}
   */
   readonly timeouts?: AvailabilitySetTimeouts;

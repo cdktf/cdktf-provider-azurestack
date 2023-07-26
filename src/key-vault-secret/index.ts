@@ -49,7 +49,7 @@ export interface KeyVaultSecretConfig extends cdktf.TerraformMetaArguments {
   readonly value: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_secret#timeouts KeyVaultSecret#timeouts}
   */
   readonly timeouts?: KeyVaultSecretTimeouts;

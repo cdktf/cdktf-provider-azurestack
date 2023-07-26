@@ -53,7 +53,7 @@ export interface KeyVaultAccessPolicyAConfig extends cdktf.TerraformMetaArgument
   readonly tenantId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/key_vault_access_policy#timeouts KeyVaultAccessPolicyA#timeouts}
   */
   readonly timeouts?: KeyVaultAccessPolicyTimeouts;

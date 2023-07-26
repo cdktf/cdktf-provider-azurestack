@@ -29,7 +29,7 @@ export interface DataAzurestackStorageAccountConfig extends cdktf.TerraformMetaA
   readonly resourceGroupName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/storage_account#timeouts DataAzurestackStorageAccount#timeouts}
   */
   readonly timeouts?: DataAzurestackStorageAccountTimeouts;

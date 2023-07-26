@@ -33,7 +33,7 @@ export interface DataAzurestackManagedDiskConfig extends cdktf.TerraformMetaArgu
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/managed_disk#timeouts DataAzurestackManagedDisk#timeouts}
   */
   readonly timeouts?: DataAzurestackManagedDiskTimeouts;

@@ -29,7 +29,7 @@ export interface DataAzurestackAvailabilitySetConfig extends cdktf.TerraformMeta
   readonly resourceGroupName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/availability_set#timeouts DataAzurestackAvailabilitySet#timeouts}
   */
   readonly timeouts?: DataAzurestackAvailabilitySetTimeouts;

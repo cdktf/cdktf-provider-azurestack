@@ -37,7 +37,7 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   readonly virtualNetworkName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/subnet#timeouts Subnet#timeouts}
   */
   readonly timeouts?: SubnetTimeouts;

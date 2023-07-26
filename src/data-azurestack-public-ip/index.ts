@@ -33,7 +33,7 @@ export interface DataAzurestackPublicIpConfig extends cdktf.TerraformMetaArgumen
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ip#timeouts DataAzurestackPublicIp#timeouts}
   */
   readonly timeouts?: DataAzurestackPublicIpTimeouts;

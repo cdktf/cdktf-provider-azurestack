@@ -29,7 +29,7 @@ export interface DataAzurestackKeyVaultKeyConfig extends cdktf.TerraformMetaArgu
   readonly name: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/key_vault_key#timeouts DataAzurestackKeyVaultKey#timeouts}
   */
   readonly timeouts?: DataAzurestackKeyVaultKeyTimeouts;

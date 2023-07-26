@@ -57,7 +57,7 @@ export interface VirtualMachineScaleSetExtensionAConfig extends cdktf.TerraformM
   readonly virtualMachineScaleSetId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set_extension#timeouts VirtualMachineScaleSetExtensionA#timeouts}
   */
   readonly timeouts?: VirtualMachineScaleSetExtensionTimeouts;

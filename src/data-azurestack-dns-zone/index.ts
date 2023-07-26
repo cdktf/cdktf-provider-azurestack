@@ -29,7 +29,7 @@ export interface DataAzurestackDnsZoneConfig extends cdktf.TerraformMetaArgument
   readonly resourceGroupName?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/dns_zone#timeouts DataAzurestackDnsZone#timeouts}
   */
   readonly timeouts?: DataAzurestackDnsZoneTimeouts;
