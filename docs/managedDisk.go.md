@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.managedDisk.ManagedDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 manageddisk.NewManagedDisk(scope Construct, id *string, config ManagedDiskConfig) ManagedDisk
 ```
@@ -373,7 +373,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.managedDisk.ManagedDisk.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 manageddisk.ManagedDisk_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.managedDisk.ManagedDisk.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 manageddisk.ManagedDisk_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ manageddisk.ManagedDisk_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.managedDisk.ManagedDisk.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 manageddisk.ManagedDisk_IsTerraformResource(x interface{}) *bool
 ```
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.managedDisk.ManagedDiskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 &manageddisk.ManagedDiskConfig {
 	Connection: interface{},
@@ -986,7 +986,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
 	ResourceGroupName: *string,
 	StorageAccountType: *string,
 	DiskSizeGb: *f64,
-	Encryption: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.managedDisk.ManagedDiskEncryption,
+	Encryption: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.managedDisk.ManagedDiskEncryption,
 	HyperVGeneration: *string,
 	Id: *string,
 	ImageReferenceId: *string,
@@ -995,7 +995,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
 	SourceUri: *string,
 	StorageAccountId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.managedDisk.ManagedDiskTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.managedDisk.ManagedDiskTimeouts,
 }
 ```
 
@@ -1303,12 +1303,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.managedDisk.ManagedDiskEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 &manageddisk.ManagedDiskEncryption {
 	Enabled: interface{},
-	DiskEncryptionKey: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.managedDisk.ManagedDiskEncryptionDiskEncryptionKey,
-	KeyEncryptionKey: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.managedDisk.ManagedDiskEncryptionKeyEncryptionKey,
+	DiskEncryptionKey: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.managedDisk.ManagedDiskEncryptionDiskEncryptionKey,
+	KeyEncryptionKey: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.managedDisk.ManagedDiskEncryptionKeyEncryptionKey,
 }
 ```
 
@@ -1367,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.managedDisk.ManagedDiskEncryptionDiskEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 &manageddisk.ManagedDiskEncryptionDiskEncryptionKey {
 	SecretUrl: *string,
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.managedDisk.ManagedDiskEncryptionKeyEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 &manageddisk.ManagedDiskEncryptionKeyEncryptionKey {
 	KeyUrl: *string,
@@ -1459,7 +1459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.managedDisk.ManagedDiskTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 &manageddisk.ManagedDiskTimeouts {
 	Create: *string,
@@ -1535,7 +1535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.managedDisk.ManagedDiskEncryptionDiskEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 manageddisk.NewManagedDiskEncryptionDiskEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDiskEncryptionDiskEncryptionKeyOutputReference
 ```
@@ -1828,7 +1828,7 @@ func InternalValue() ManagedDiskEncryptionDiskEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.managedDisk.ManagedDiskEncryptionKeyEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 manageddisk.NewManagedDiskEncryptionKeyEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDiskEncryptionKeyEncryptionKeyOutputReference
 ```
@@ -2121,7 +2121,7 @@ func InternalValue() ManagedDiskEncryptionKeyEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.managedDisk.ManagedDiskEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 manageddisk.NewManagedDiskEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDiskEncryptionOutputReference
 ```
@@ -2476,7 +2476,7 @@ func InternalValue() ManagedDiskEncryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.managedDisk.ManagedDiskTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/manageddisk"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/manageddisk"
 
 manageddisk.NewManagedDiskTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDiskTimeoutsOutputReference
 ```
