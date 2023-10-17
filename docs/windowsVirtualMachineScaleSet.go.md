@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSet(scope Construct, id *string, config WindowsVirtualMachineScaleSetConfig) WindowsVirtualMachineScaleSet
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.putAdditionalCapabilities">PutAdditionalCapabilities</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.putAdditionalUnattendContent">PutAdditionalUnattendContent</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.putAutomaticInstanceRepair">PutAutomaticInstanceRepair</a></code> | *No description.* |
@@ -182,6 +185,22 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
+
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.getAnyMapAttribute"></a>
 
 ```go
@@ -290,6 +309,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.interpolationForAttribute"></a>
 
 ```go
@@ -299,6 +336,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -669,13 +730,14 @@ func ResetWinrmListener()
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a WindowsVirtualMachineScaleSet resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSet_IsConstruct(x interface{}) *bool
 ```
@@ -707,7 +769,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -721,7 +783,7 @@ windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSet_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -729,6 +791,50 @@ windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSet_IsTerraformResource(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
+
+windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a WindowsVirtualMachineScaleSet resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the WindowsVirtualMachineScaleSet to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing WindowsVirtualMachineScaleSet that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/windows_virtual_machine_scale_set#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSet.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the WindowsVirtualMachineScaleSet to import is found.
 
 ---
 
@@ -1789,7 +1895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAdditionalCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetAdditionalCapabilities {
 	UltraSsdEnabled: interface{},
@@ -1821,7 +1927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAdditionalUnattendContent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetAdditionalUnattendContent {
 	Content: *string,
@@ -1867,7 +1973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAutomaticInstanceRepair.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetAutomaticInstanceRepair {
 	Enabled: interface{},
@@ -1913,7 +2019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAutomaticOsUpgradePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetAutomaticOsUpgradePolicy {
 	DisableAutomaticRollback: interface{},
@@ -1959,7 +2065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetBootDiagnostics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetBootDiagnostics {
 	StorageAccountUri: *string,
@@ -1991,7 +2097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetConfig {
 	Connection: interface{},
@@ -2007,14 +2113,14 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtu
 	Location: *string,
 	Name: *string,
 	NetworkInterface: interface{},
-	OsDisk: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetOsDisk,
+	OsDisk: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetOsDisk,
 	ResourceGroupName: *string,
 	Sku: *string,
-	AdditionalCapabilities: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAdditionalCapabilities,
+	AdditionalCapabilities: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAdditionalCapabilities,
 	AdditionalUnattendContent: interface{},
-	AutomaticInstanceRepair: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAutomaticInstanceRepair,
-	AutomaticOsUpgradePolicy: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAutomaticOsUpgradePolicy,
-	BootDiagnostics: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetBootDiagnostics,
+	AutomaticInstanceRepair: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAutomaticInstanceRepair,
+	AutomaticOsUpgradePolicy: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAutomaticOsUpgradePolicy,
+	BootDiagnostics: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetBootDiagnostics,
 	ComputerNamePrefix: *string,
 	CustomData: *string,
 	DataDisk: interface{},
@@ -2026,17 +2132,17 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtu
 	Id: *string,
 	LicenseType: *string,
 	Overprovision: interface{},
-	Plan: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetPlan,
+	Plan: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetPlan,
 	PlatformFaultDomainCount: *f64,
 	ProvisionVmAgent: interface{},
 	ScaleInPolicy: *string,
 	Secret: interface{},
 	SinglePlacementGroup: interface{},
 	SourceImageId: *string,
-	SourceImageReference: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetSourceImageReference,
+	SourceImageReference: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetSourceImageReference,
 	Tags: *map[string]*string,
-	TerminateNotification: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetTerminateNotification,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetTimeouts,
+	TerminateNotification: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetTerminateNotification,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetTimeouts,
 	Timezone: *string,
 	UpgradeMode: *string,
 	WinrmListener: interface{},
@@ -2672,7 +2778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetDataDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetDataDisk {
 	Caching: *string,
@@ -2788,7 +2894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetExtension {
 	Name: *string,
@@ -2946,7 +3052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetNetworkInterface {
 	IpConfiguration: interface{},
@@ -3050,7 +3156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetNetworkInterfaceIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetNetworkInterfaceIpConfiguration {
 	Name: *string,
@@ -3152,12 +3258,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetOsDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetOsDisk {
 	Caching: *string,
 	StorageAccountType: *string,
-	DiffDiskSettings: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetOsDiskDiffDiskSettings,
+	DiffDiskSettings: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetOsDiskDiffDiskSettings,
 	DiskEncryptionSetId: *string,
 	DiskSizeGb: *f64,
 	WriteAcceleratorEnabled: interface{},
@@ -3256,7 +3362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetOsDiskDiffDiskSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetOsDiskDiffDiskSettings {
 	Option: *string,
@@ -3288,7 +3394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetPlan {
 	Name: *string,
@@ -3348,7 +3454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetSecret {
 	Certificate: interface{},
@@ -3396,7 +3502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetSecretCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetSecretCertificate {
 	Store: *string,
@@ -3428,7 +3534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetSourceImageReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetSourceImageReference {
 	Offer: *string,
@@ -3502,7 +3608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetTerminateNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetTerminateNotification {
 	Enabled: interface{},
@@ -3548,7 +3654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetTimeouts {
 	Create: *string,
@@ -3622,7 +3728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetWinrmListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 &windowsvirtualmachinescaleset.WindowsVirtualMachineScaleSetWinrmListener {
 	Protocol: *string,
@@ -3656,7 +3762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAdditionalCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetAdditionalCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineScaleSetAdditionalCapabilitiesOutputReference
 ```
@@ -3934,7 +4040,7 @@ func InternalValue() WindowsVirtualMachineScaleSetAdditionalCapabilities
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAdditionalUnattendContentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetAdditionalUnattendContentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsVirtualMachineScaleSetAdditionalUnattendContentList
 ```
@@ -4077,7 +4183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAdditionalUnattendContentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetAdditionalUnattendContentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsVirtualMachineScaleSetAdditionalUnattendContentOutputReference
 ```
@@ -4388,7 +4494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineScaleSetAutomaticInstanceRepairOutputReference
 ```
@@ -4688,7 +4794,7 @@ func InternalValue() WindowsVirtualMachineScaleSetAutomaticInstanceRepair
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetAutomaticOsUpgradePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetAutomaticOsUpgradePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineScaleSetAutomaticOsUpgradePolicyOutputReference
 ```
@@ -4981,7 +5087,7 @@ func InternalValue() WindowsVirtualMachineScaleSetAutomaticOsUpgradePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetBootDiagnosticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetBootDiagnosticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineScaleSetBootDiagnosticsOutputReference
 ```
@@ -5252,7 +5358,7 @@ func InternalValue() WindowsVirtualMachineScaleSetBootDiagnostics
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetDataDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetDataDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsVirtualMachineScaleSetDataDiskList
 ```
@@ -5395,7 +5501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetDataDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetDataDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsVirtualMachineScaleSetDataDiskOutputReference
 ```
@@ -5837,7 +5943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetExtensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetExtensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsVirtualMachineScaleSetExtensionList
 ```
@@ -5980,7 +6086,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetExtensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetExtensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsVirtualMachineScaleSetExtensionOutputReference
 ```
@@ -6509,7 +6615,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationList
 ```
@@ -6652,7 +6758,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationOutputReference
 ```
@@ -7086,7 +7192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsVirtualMachineScaleSetNetworkInterfaceList
 ```
@@ -7229,7 +7335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsVirtualMachineScaleSetNetworkInterfaceOutputReference
 ```
@@ -7669,7 +7775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetOsDiskDiffDiskSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetOsDiskDiffDiskSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineScaleSetOsDiskDiffDiskSettingsOutputReference
 ```
@@ -7940,7 +8046,7 @@ func InternalValue() WindowsVirtualMachineScaleSetOsDiskDiffDiskSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetOsDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetOsDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineScaleSetOsDiskOutputReference
 ```
@@ -8362,7 +8468,7 @@ func InternalValue() WindowsVirtualMachineScaleSetOsDisk
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetPlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetPlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineScaleSetPlanOutputReference
 ```
@@ -8677,7 +8783,7 @@ func InternalValue() WindowsVirtualMachineScaleSetPlan
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetSecretCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetSecretCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsVirtualMachineScaleSetSecretCertificateList
 ```
@@ -8820,7 +8926,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetSecretCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetSecretCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsVirtualMachineScaleSetSecretCertificateOutputReference
 ```
@@ -9109,7 +9215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsVirtualMachineScaleSetSecretList
 ```
@@ -9252,7 +9358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsVirtualMachineScaleSetSecretOutputReference
 ```
@@ -9576,7 +9682,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetSourceImageReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetSourceImageReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineScaleSetSourceImageReferenceOutputReference
 ```
@@ -9913,7 +10019,7 @@ func InternalValue() WindowsVirtualMachineScaleSetSourceImageReference
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetTerminateNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetTerminateNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineScaleSetTerminateNotificationOutputReference
 ```
@@ -10213,7 +10319,7 @@ func InternalValue() WindowsVirtualMachineScaleSetTerminateNotification
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineScaleSetTimeoutsOutputReference
 ```
@@ -10578,7 +10684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetWinrmListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetWinrmListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsVirtualMachineScaleSetWinrmListenerList
 ```
@@ -10721,7 +10827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachineScaleSet.WindowsVirtualMachineScaleSetWinrmListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachinescaleset"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachinescaleset"
 
 windowsvirtualmachinescaleset.NewWindowsVirtualMachineScaleSetWinrmListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsVirtualMachineScaleSetWinrmListenerOutputReference
 ```

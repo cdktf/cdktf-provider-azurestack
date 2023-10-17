@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.NewDataAzurestackVirtualNetworkGatewayConnection(scope Construct, id *string, config DataAzurestackVirtualNetworkGatewayConnectionConfig) DataAzurestackVirtualNetworkGatewayConnection
 ```
@@ -291,13 +291,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAzurestackVirtualNetworkGatewayConnection resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnection_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +344,7 @@ dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -351,6 +352,50 @@ dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewa
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
+
+dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAzurestackVirtualNetworkGatewayConnection resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAzurestackVirtualNetworkGatewayConnection to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAzurestackVirtualNetworkGatewayConnection that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network_gateway_connection#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAzurestackVirtualNetworkGatewayConnection to import is found.
 
 ---
 
@@ -784,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
 
 &dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnectionConfig {
 	Connection: interface{},
@@ -797,7 +842,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazuresta
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionTimeouts,
 }
 ```
 
@@ -947,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
 
 &dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicy {
 
@@ -960,7 +1005,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazuresta
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
 
 &dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnectionTimeouts {
 	Read: *string,
@@ -994,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.NewDataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyList
 ```
@@ -1126,7 +1171,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.NewDataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyOutputReference
 ```
@@ -1481,7 +1526,7 @@ func InternalValue() DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.NewDataAzurestackVirtualNetworkGatewayConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackVirtualNetworkGatewayConnectionTimeoutsOutputReference
 ```
