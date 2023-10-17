@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresources"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackresources"
 
 dataazurestackresources.NewDataAzurestackResources(scope Construct, id *string, config DataAzurestackResourcesConfig) DataAzurestackResources
 ```
@@ -319,13 +319,14 @@ func ResetType()
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAzurestackResources resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresources"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackresources"
 
 dataazurestackresources.DataAzurestackResources_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresources"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackresources"
 
 dataazurestackresources.DataAzurestackResources_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +372,7 @@ dataazurestackresources.DataAzurestackResources_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresources"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackresources"
 
 dataazurestackresources.DataAzurestackResources_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,6 +380,50 @@ dataazurestackresources.DataAzurestackResources_IsTerraformDataSource(x interfac
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackresources"
+
+dataazurestackresources.DataAzurestackResources_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAzurestackResources resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAzurestackResources to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAzurestackResources that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/resources#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResources.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAzurestackResources to import is found.
 
 ---
 
@@ -691,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResourcesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresources"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackresources"
 
 &dataazurestackresources.DataAzurestackResourcesConfig {
 	Connection: interface{},
@@ -705,7 +750,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazuresta
 	Name: *string,
 	RequiredTags: *map[string]*string,
 	ResourceGroupName: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dataAzurestackResources.DataAzurestackResourcesTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackResources.DataAzurestackResourcesTimeouts,
 	Type: *string,
 }
 ```
@@ -882,7 +927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResourcesResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresources"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackresources"
 
 &dataazurestackresources.DataAzurestackResourcesResources {
 
@@ -895,7 +940,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazuresta
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResourcesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresources"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackresources"
 
 &dataazurestackresources.DataAzurestackResourcesTimeouts {
 	Read: *string,
@@ -929,7 +974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResourcesResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresources"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackresources"
 
 dataazurestackresources.NewDataAzurestackResourcesResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackResourcesResourcesList
 ```
@@ -1061,7 +1106,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResourcesResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresources"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackresources"
 
 dataazurestackresources.NewDataAzurestackResourcesResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackResourcesResourcesOutputReference
 ```
@@ -1383,7 +1428,7 @@ func InternalValue() DataAzurestackResourcesResources
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackResources.DataAzurestackResourcesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresources"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackresources"
 
 dataazurestackresources.NewDataAzurestackResourcesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackResourcesTimeoutsOutputReference
 ```

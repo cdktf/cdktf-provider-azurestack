@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
 
 dnscnamerecord.NewDnsCnameRecord(scope Construct, id *string, config DnsCnameRecordConfig) DnsCnameRecord
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.resetRecord">ResetRecord</a></code> | *No description.* |
@@ -141,6 +144,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.getAnyMapAttribute"></a>
 
@@ -250,6 +269,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.interpolationForAttribute"></a>
 
 ```go
@@ -259,6 +296,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -305,13 +366,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DnsCnameRecord resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
 
 dnscnamerecord.DnsCnameRecord_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
 
 dnscnamerecord.DnsCnameRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +419,7 @@ dnscnamerecord.DnsCnameRecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
 
 dnscnamerecord.DnsCnameRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -365,6 +427,50 @@ dnscnamerecord.DnsCnameRecord_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
+
+dnscnamerecord.DnsCnameRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DnsCnameRecord resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DnsCnameRecord to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DnsCnameRecord that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_cname_record#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DnsCnameRecord to import is found.
 
 ---
 
@@ -743,7 +849,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
 
 &dnscnamerecord.DnsCnameRecordConfig {
 	Connection: interface{},
@@ -760,7 +866,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamereco
 	Id: *string,
 	Record: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dnsCnameRecord.DnsCnameRecordTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dnsCnameRecord.DnsCnameRecordTimeouts,
 }
 ```
 
@@ -962,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
 
 &dnscnamerecord.DnsCnameRecordTimeouts {
 	Create: *string,
@@ -1038,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
 
 dnscnamerecord.NewDnsCnameRecordTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsCnameRecordTimeoutsOutputReference
 ```

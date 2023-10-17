@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackpublicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicip"
 
 dataazurestackpublicip.NewDataAzurestackPublicIp(scope Construct, id *string, config DataAzurestackPublicIpConfig) DataAzurestackPublicIp
 ```
@@ -298,13 +298,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAzurestackPublicIp resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackpublicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicip"
 
 dataazurestackpublicip.DataAzurestackPublicIp_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackpublicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicip"
 
 dataazurestackpublicip.DataAzurestackPublicIp_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +351,7 @@ dataazurestackpublicip.DataAzurestackPublicIp_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackpublicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicip"
 
 dataazurestackpublicip.DataAzurestackPublicIp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,6 +359,50 @@ dataazurestackpublicip.DataAzurestackPublicIp_IsTerraformDataSource(x interface{
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicip"
+
+dataazurestackpublicip.DataAzurestackPublicIp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAzurestackPublicIp resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAzurestackPublicIp to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAzurestackPublicIp that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ip#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAzurestackPublicIp to import is found.
 
 ---
 
@@ -747,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackpublicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicip"
 
 &dataazurestackpublicip.DataAzurestackPublicIpConfig {
 	Connection: interface{},
@@ -761,7 +806,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazuresta
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dataAzurestackPublicIp.DataAzurestackPublicIpTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackPublicIp.DataAzurestackPublicIpTimeouts,
 }
 ```
 
@@ -924,7 +969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIpTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackpublicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicip"
 
 &dataazurestackpublicip.DataAzurestackPublicIpTimeouts {
 	Read: *string,
@@ -958,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIpTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackpublicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackpublicip"
 
 dataazurestackpublicip.NewDataAzurestackPublicIpTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackPublicIpTimeoutsOutputReference
 ```

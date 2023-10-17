@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecuritygroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecuritygroup"
 
 networksecuritygroup.NewNetworkSecurityGroup(scope Construct, id *string, config NetworkSecurityGroupConfig) NetworkSecurityGroup
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.putSecurityRule">PutSecurityRule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.resetId">ResetId</a></code> | *No description.* |
@@ -142,6 +145,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.getAnyMapAttribute"></a>
 
@@ -251,6 +270,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.interpolationForAttribute"></a>
 
 ```go
@@ -260,6 +297,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -318,13 +379,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a NetworkSecurityGroup resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecuritygroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecuritygroup"
 
 networksecuritygroup.NetworkSecurityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +418,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecuritygroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecuritygroup"
 
 networksecuritygroup.NetworkSecurityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +432,7 @@ networksecuritygroup.NetworkSecurityGroup_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecuritygroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecuritygroup"
 
 networksecuritygroup.NetworkSecurityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -378,6 +440,50 @@ networksecuritygroup.NetworkSecurityGroup_IsTerraformResource(x interface{}) *bo
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecuritygroup"
+
+networksecuritygroup.NetworkSecurityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a NetworkSecurityGroup resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the NetworkSecurityGroup to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing NetworkSecurityGroup that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_security_group#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroup.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the NetworkSecurityGroup to import is found.
 
 ---
 
@@ -723,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecuritygroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecuritygroup"
 
 &networksecuritygroup.NetworkSecurityGroupConfig {
 	Connection: interface{},
@@ -739,7 +845,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecur
 	Id: *string,
 	SecurityRule: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.networkSecurityGroup.NetworkSecurityGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts,
 }
 ```
 
@@ -928,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecuritygroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecuritygroup"
 
 &networksecuritygroup.NetworkSecurityGroupSecurityRule {
 	Access: *string,
@@ -1142,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecuritygroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecuritygroup"
 
 &networksecuritygroup.NetworkSecurityGroupTimeouts {
 	Create: *string,
@@ -1218,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecuritygroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecuritygroup"
 
 networksecuritygroup.NewNetworkSecurityGroupSecurityRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkSecurityGroupSecurityRuleList
 ```
@@ -1361,7 +1467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupSecurityRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecuritygroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecuritygroup"
 
 networksecuritygroup.NewNetworkSecurityGroupSecurityRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkSecurityGroupSecurityRuleOutputReference
 ```
@@ -2034,7 +2140,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.networkSecurityGroup.NetworkSecurityGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecuritygroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecuritygroup"
 
 networksecuritygroup.NewNetworkSecurityGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityGroupTimeoutsOutputReference
 ```

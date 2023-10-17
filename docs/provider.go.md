@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/provider"
 
 provider.NewAzurestackProvider(scope Construct, id *string, config AzurestackProviderConfig) AzurestackProvider
 ```
@@ -239,13 +239,14 @@ func ResetUseMsi()
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a AzurestackProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.provider.AzurestackProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/provider"
 
 provider.AzurestackProvider_IsConstruct(x interface{}) *bool
 ```
@@ -277,7 +278,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.provider.AzurestackProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/provider"
 
 provider.AzurestackProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -291,7 +292,7 @@ provider.AzurestackProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-azurestack.provider.AzurestackProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/provider"
 
 provider.AzurestackProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -299,6 +300,50 @@ provider.AzurestackProvider_IsTerraformProvider(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurestack.provider.AzurestackProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.provider.AzurestackProvider.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/provider"
+
+provider.AzurestackProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a AzurestackProvider resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurestack.provider.AzurestackProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurestack.provider.AzurestackProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the AzurestackProvider to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurestack.provider.AzurestackProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing AzurestackProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurestack.provider.AzurestackProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the AzurestackProvider to import is found.
 
 ---
 
@@ -776,10 +821,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.provider.AzurestackProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/provider"
 
 &provider.AzurestackProviderConfig {
-	Features: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.provider.AzurestackProviderFeatures,
+	Features: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.provider.AzurestackProviderFeatures,
 	Alias: *string,
 	ArmEndpoint: *string,
 	AuxiliaryTenantIds: *[]*string,
@@ -1048,12 +1093,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/provider"
 
 &provider.AzurestackProviderFeatures {
-	ResourceGroup: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.provider.AzurestackProviderFeaturesResourceGroup,
-	VirtualMachine: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.provider.AzurestackProviderFeaturesVirtualMachine,
-	VirtualMachineScaleSet: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.provider.AzurestackProviderFeaturesVirtualMachineScaleSet,
+	ResourceGroup: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.provider.AzurestackProviderFeaturesResourceGroup,
+	VirtualMachine: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.provider.AzurestackProviderFeaturesVirtualMachine,
+	VirtualMachineScaleSet: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet,
 }
 ```
 
@@ -1114,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesResourceGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/provider"
 
 &provider.AzurestackProviderFeaturesResourceGroup {
 	PreventDeletionIfContainsResources: interface{},
@@ -1146,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/provider"
 
 &provider.AzurestackProviderFeaturesVirtualMachine {
 	DeleteOsDiskOnDeletion: interface{},
@@ -1206,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/provider"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/provider"
 
 &provider.AzurestackProviderFeaturesVirtualMachineScaleSet {
 	RollInstancesWhenRequired: interface{},
