@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
 
 dataazurestacksubnet.NewDataAzurestackSubnet(scope Construct, id *string, config DataAzurestackSubnetConfig) DataAzurestackSubnet
 ```
@@ -298,7 +298,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
 
 dataazurestacksubnet.DataAzurestackSubnet_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
 
 dataazurestacksubnet.DataAzurestackSubnet_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataazurestacksubnet.DataAzurestackSubnet_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
 
 dataazurestacksubnet.DataAzurestackSubnet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataazurestacksubnet.DataAzurestackSubnet_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
 
 dataazurestacksubnet.DataAzurestackSubnet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
 
 &dataazurestacksubnet.DataAzurestackSubnetConfig {
 	Connection: interface{},
@@ -722,7 +722,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacks
 	ResourceGroupName: *string,
 	VirtualNetworkName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackSubnet.DataAzurestackSubnetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dataAzurestackSubnet.DataAzurestackSubnetTimeouts,
 }
 ```
 
@@ -885,7 +885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
 
 &dataazurestacksubnet.DataAzurestackSubnetTimeouts {
 	Read: *string,
@@ -919,7 +919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
 
 dataazurestacksubnet.NewDataAzurestackSubnetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackSubnetTimeoutsOutputReference
 ```
