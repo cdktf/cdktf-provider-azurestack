@@ -336,6 +336,20 @@ export class LocalNetworkGateway extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "azurestack_local_network_gateway";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a LocalNetworkGateway resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the LocalNetworkGateway to import
+  * @param importFromId The id of the existing LocalNetworkGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the LocalNetworkGateway to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurestack_local_network_gateway", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
