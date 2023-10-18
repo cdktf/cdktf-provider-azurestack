@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 dataazurestackkeyvault.NewDataAzurestackKeyVault(scope Construct, id *string, config DataAzurestackKeyVaultConfig) DataAzurestackKeyVault
 ```
@@ -298,7 +298,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 dataazurestackkeyvault.DataAzurestackKeyVault_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 dataazurestackkeyvault.DataAzurestackKeyVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataazurestackkeyvault.DataAzurestackKeyVault_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVault.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 dataazurestackkeyvault.DataAzurestackKeyVault_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataazurestackkeyvault.DataAzurestackKeyVault_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 dataazurestackkeyvault.DataAzurestackKeyVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -763,7 +763,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVaultAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 &dataazurestackkeyvault.DataAzurestackKeyVaultAccessPolicy {
 
@@ -776,7 +776,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazuresta
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 &dataazurestackkeyvault.DataAzurestackKeyVaultConfig {
 	Connection: interface{},
@@ -789,7 +789,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazuresta
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dataAzurestackKeyVault.DataAzurestackKeyVaultTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackKeyVault.DataAzurestackKeyVaultTimeouts,
 }
 ```
 
@@ -939,7 +939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVaultNetworkAcls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 &dataazurestackkeyvault.DataAzurestackKeyVaultNetworkAcls {
 
@@ -952,7 +952,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazuresta
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVaultTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 &dataazurestackkeyvault.DataAzurestackKeyVaultTimeouts {
 	Read: *string,
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVaultAccessPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 dataazurestackkeyvault.NewDataAzurestackKeyVaultAccessPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackKeyVaultAccessPolicyList
 ```
@@ -1118,7 +1118,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVaultAccessPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 dataazurestackkeyvault.NewDataAzurestackKeyVaultAccessPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackKeyVaultAccessPolicyOutputReference
 ```
@@ -1462,7 +1462,7 @@ func InternalValue() DataAzurestackKeyVaultAccessPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVaultNetworkAclsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 dataazurestackkeyvault.NewDataAzurestackKeyVaultNetworkAclsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackKeyVaultNetworkAclsList
 ```
@@ -1594,7 +1594,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVaultNetworkAclsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 dataazurestackkeyvault.NewDataAzurestackKeyVaultNetworkAclsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackKeyVaultNetworkAclsOutputReference
 ```
@@ -1905,7 +1905,7 @@ func InternalValue() DataAzurestackKeyVaultNetworkAcls
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackKeyVault.DataAzurestackKeyVaultTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackkeyvault"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackkeyvault"
 
 dataazurestackkeyvault.NewDataAzurestackKeyVaultTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackKeyVaultTimeoutsOutputReference
 ```
