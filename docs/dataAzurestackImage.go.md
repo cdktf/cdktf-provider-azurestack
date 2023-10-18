@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 dataazurestackimage.NewDataAzurestackImage(scope Construct, id *string, config DataAzurestackImageConfig) DataAzurestackImage
 ```
@@ -319,7 +319,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 dataazurestackimage.DataAzurestackImage_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 dataazurestackimage.DataAzurestackImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataazurestackimage.DataAzurestackImage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 dataazurestackimage.DataAzurestackImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataazurestackimage.DataAzurestackImage_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 dataazurestackimage.DataAzurestackImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 &dataazurestackimage.DataAzurestackImageConfig {
 	Connection: interface{},
@@ -777,7 +777,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacki
 	Name: *string,
 	NameRegex: *string,
 	SortDescending: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackImage.DataAzurestackImageTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dataAzurestackImage.DataAzurestackImageTimeouts,
 }
 ```
 
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImageDataDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 &dataazurestackimage.DataAzurestackImageDataDisk {
 
@@ -966,7 +966,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacki
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImageOsDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 &dataazurestackimage.DataAzurestackImageOsDisk {
 
@@ -979,7 +979,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacki
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 &dataazurestackimage.DataAzurestackImageTimeouts {
 	Read: *string,
@@ -1013,7 +1013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImageDataDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 dataazurestackimage.NewDataAzurestackImageDataDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackImageDataDiskList
 ```
@@ -1145,7 +1145,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImageDataDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 dataazurestackimage.NewDataAzurestackImageDataDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackImageDataDiskOutputReference
 ```
@@ -1467,7 +1467,7 @@ func InternalValue() DataAzurestackImageDataDisk
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImageOsDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 dataazurestackimage.NewDataAzurestackImageOsDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackImageOsDiskList
 ```
@@ -1599,7 +1599,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImageOsDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 dataazurestackimage.NewDataAzurestackImageOsDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackImageOsDiskOutputReference
 ```
@@ -1932,7 +1932,7 @@ func InternalValue() DataAzurestackImageOsDisk
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackImage.DataAzurestackImageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackimage"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackimage"
 
 dataazurestackimage.NewDataAzurestackImageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackImageTimeoutsOutputReference
 ```
