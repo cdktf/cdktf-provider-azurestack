@@ -1,7 +1,9 @@
 
-# Terraform CDK azurestack Provider ~> 1.0
+# Terraform CDK azurestack Provider tracks ~> 1.0
 
 This repo builds and publishes the Terraform azurestack Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on azurestack 1.0.0
 
 ## Available Packages
 
