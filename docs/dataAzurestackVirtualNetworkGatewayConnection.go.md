@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.NewDataAzurestackVirtualNetworkGatewayConnection(scope Construct, id *string, config DataAzurestackVirtualNetworkGatewayConnectionConfig) DataAzurestackVirtualNetworkGatewayConnection
 ```
@@ -298,7 +298,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnection_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewa
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -829,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
 
 &dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnectionConfig {
 	Connection: interface{},
@@ -842,7 +842,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackv
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionTimeouts,
 }
 ```
 
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
 
 &dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicy {
 
@@ -1005,7 +1005,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackv
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
 
 &dataazurestackvirtualnetworkgatewayconnection.DataAzurestackVirtualNetworkGatewayConnectionTimeouts {
 	Read: *string,
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.NewDataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyList
 ```
@@ -1171,7 +1171,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.NewDataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyOutputReference
 ```
@@ -1526,7 +1526,7 @@ func InternalValue() DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGatewayConnection.DataAzurestackVirtualNetworkGatewayConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackvirtualnetworkgatewayconnection"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackvirtualnetworkgatewayconnection"
 
 dataazurestackvirtualnetworkgatewayconnection.NewDataAzurestackVirtualNetworkGatewayConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackVirtualNetworkGatewayConnectionTimeoutsOutputReference
 ```

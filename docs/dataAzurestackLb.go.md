@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackLb.DataAzurestackLb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklb"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacklb"
 
 dataazurestacklb.NewDataAzurestackLb(scope Construct, id *string, config DataAzurestackLbConfig) DataAzurestackLb
 ```
@@ -298,7 +298,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackLb.DataAzurestackLb.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklb"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacklb"
 
 dataazurestacklb.DataAzurestackLb_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackLb.DataAzurestackLb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklb"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacklb"
 
 dataazurestacklb.DataAzurestackLb_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataazurestacklb.DataAzurestackLb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackLb.DataAzurestackLb.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklb"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacklb"
 
 dataazurestacklb.DataAzurestackLb_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataazurestacklb.DataAzurestackLb_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackLb.DataAzurestackLb.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklb"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacklb"
 
 dataazurestacklb.DataAzurestackLb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackLb.DataAzurestackLbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklb"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacklb"
 
 &dataazurestacklb.DataAzurestackLbConfig {
 	Connection: interface{},
@@ -721,7 +721,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackl
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackLb.DataAzurestackLbTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dataAzurestackLb.DataAzurestackLbTimeouts,
 }
 ```
 
@@ -871,7 +871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackLb.DataAzurestackLbFrontendIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklb"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacklb"
 
 &dataazurestacklb.DataAzurestackLbFrontendIpConfiguration {
 
@@ -884,7 +884,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackl
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackLb.DataAzurestackLbTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklb"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacklb"
 
 &dataazurestacklb.DataAzurestackLbTimeouts {
 	Read: *string,
@@ -918,7 +918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackLb.DataAzurestackLbFrontendIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklb"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacklb"
 
 dataazurestacklb.NewDataAzurestackLbFrontendIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackLbFrontendIpConfigurationList
 ```
@@ -1050,7 +1050,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackLb.DataAzurestackLbFrontendIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklb"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacklb"
 
 dataazurestacklb.NewDataAzurestackLbFrontendIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackLbFrontendIpConfigurationOutputReference
 ```
@@ -1394,7 +1394,7 @@ func InternalValue() DataAzurestackLbFrontendIpConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackLb.DataAzurestackLbTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklb"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacklb"
 
 dataazurestacklb.NewDataAzurestackLbTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackLbTimeoutsOutputReference
 ```
