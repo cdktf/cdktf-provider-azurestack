@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.publicIp.PublicIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/publicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/publicip"
 
 publicip.NewPublicIp(scope Construct, id *string, config PublicIpConfig) PublicIp
 ```
@@ -415,7 +415,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.publicIp.PublicIp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/publicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/publicip"
 
 publicip.PublicIp_IsConstruct(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.publicIp.PublicIp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/publicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/publicip"
 
 publicip.PublicIp_IsTerraformElement(x interface{}) *bool
 ```
@@ -461,7 +461,7 @@ publicip.PublicIp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.publicIp.PublicIp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/publicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/publicip"
 
 publicip.PublicIp_IsTerraformResource(x interface{}) *bool
 ```
@@ -475,7 +475,7 @@ publicip.PublicIp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.publicIp.PublicIp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/publicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/publicip"
 
 publicip.PublicIp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1012,7 +1012,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.publicIp.PublicIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/publicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/publicip"
 
 &publicip.PublicIpConfig {
 	Connection: interface{},
@@ -1034,7 +1034,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/publicip"
 	ReverseFqdn: *string,
 	Sku: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.publicIp.PublicIpTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.publicIp.PublicIpTimeouts,
 }
 ```
 
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.publicIp.PublicIpTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/publicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/publicip"
 
 &publicip.PublicIpTimeouts {
 	Create: *string,
@@ -1377,7 +1377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.publicIp.PublicIpTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/publicip"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/publicip"
 
 publicip.NewPublicIpTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PublicIpTimeoutsOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.route.Route.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/route"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/route"
 
 route.NewRoute(scope Construct, id *string, config RouteConfig) Route
 ```
@@ -366,7 +366,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.route.Route.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/route"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/route"
 
 route.Route_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.route.Route.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/route"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/route"
 
 route.Route_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ route.Route_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.route.Route.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/route"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/route"
 
 route.Route_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ route.Route_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.route.Route.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/route"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/route"
 
 route.Route_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.route.RouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/route"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/route"
 
 &route.RouteConfig {
 	Connection: interface{},
@@ -848,7 +848,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/route"
 	RouteTableName: *string,
 	Id: *string,
 	NextHopInIpAddress: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.route.RouteTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.route.RouteTimeouts,
 }
 ```
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.route.RouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/route"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/route"
 
 &route.RouteTimeouts {
 	Create: *string,
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.route.RouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/route"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/route"
 
 route.NewRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RouteTimeoutsOutputReference
 ```
