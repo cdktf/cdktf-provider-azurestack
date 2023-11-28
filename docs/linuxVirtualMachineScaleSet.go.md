@@ -1,7 +1,3 @@
-# `azurestack_linux_virtual_machine_scale_set`
-
-Refer to the Terraform Registory for docs: [`azurestack_linux_virtual_machine_scale_set`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/linux_virtual_machine_scale_set).
-
 # `linuxVirtualMachineScaleSet` Submodule <a name="`linuxVirtualMachineScaleSet` Submodule" id="@cdktf/provider-azurestack.linuxVirtualMachineScaleSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `azurestack_public_ip`
-
-Refer to the Terraform Registory for docs: [`azurestack_public_ip`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/public_ip).
-
 # `publicIp` Submodule <a name="`publicIp` Submodule" id="@cdktf/provider-azurestack.publicIp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `azurestack_local_network_gateway`
-
-Refer to the Terraform Registory for docs: [`azurestack_local_network_gateway`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/local_network_gateway).
-
 # `localNetworkGateway` Submodule <a name="`localNetworkGateway` Submodule" id="@cdktf/provider-azurestack.localNetworkGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

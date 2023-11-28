@@ -1,7 +1,3 @@
-# `azurestack_route`
-
-Refer to the Terraform Registory for docs: [`azurestack_route`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/route).
-
 # `route` Submodule <a name="`route` Submodule" id="@cdktf/provider-azurestack.route"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

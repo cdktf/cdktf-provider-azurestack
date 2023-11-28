@@ -1,7 +1,3 @@
-# `azurestack_storage_blob`
-
-Refer to the Terraform Registory for docs: [`azurestack_storage_blob`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/storage_blob).
-
 # `storageBlob` Submodule <a name="`storageBlob` Submodule" id="@cdktf/provider-azurestack.storageBlob"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

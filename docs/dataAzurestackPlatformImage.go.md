@@ -1,7 +1,3 @@
-# `data_azurestack_platform_image`
-
-Refer to the Terraform Registory for docs: [`data_azurestack_platform_image`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/platform_image).
-
 # `dataAzurestackPlatformImage` Submodule <a name="`dataAzurestackPlatformImage` Submodule" id="@cdktf/provider-azurestack.dataAzurestackPlatformImage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

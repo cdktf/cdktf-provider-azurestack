@@ -1,7 +1,3 @@
-# `data_azurestack_virtual_network_gateway`
-
-Refer to the Terraform Registory for docs: [`data_azurestack_virtual_network_gateway`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/virtual_network_gateway).
-
 # `dataAzurestackVirtualNetworkGateway` Submodule <a name="`dataAzurestackVirtualNetworkGateway` Submodule" id="@cdktf/provider-azurestack.dataAzurestackVirtualNetworkGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
