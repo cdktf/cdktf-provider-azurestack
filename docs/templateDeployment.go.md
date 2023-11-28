@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.templateDeployment.TemplateDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/templatedeployment"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/templatedeployment"
 
 templatedeployment.NewTemplateDeployment(scope Construct, id *string, config TemplateDeploymentConfig) TemplateDeployment
 ```
@@ -376,7 +376,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.templateDeployment.TemplateDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/templatedeployment"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/templatedeployment"
 
 templatedeployment.TemplateDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.templateDeployment.TemplateDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/templatedeployment"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/templatedeployment"
 
 templatedeployment.TemplateDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ templatedeployment.TemplateDeployment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.templateDeployment.TemplateDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/templatedeployment"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/templatedeployment"
 
 templatedeployment.TemplateDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -436,7 +436,7 @@ templatedeployment.TemplateDeployment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.templateDeployment.TemplateDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/templatedeployment"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/templatedeployment"
 
 templatedeployment.TemplateDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -852,7 +852,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.templateDeployment.TemplateDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/templatedeployment"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/templatedeployment"
 
 &templatedeployment.TemplateDeploymentConfig {
 	Connection: interface{},
@@ -869,7 +869,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/templatedeploym
 	Parameters: *map[string]*string,
 	ParametersBody: *string,
 	TemplateBody: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.templateDeployment.TemplateDeploymentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.templateDeployment.TemplateDeploymentTimeouts,
 }
 ```
 
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.templateDeployment.TemplateDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/templatedeployment"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/templatedeployment"
 
 &templatedeployment.TemplateDeploymentTimeouts {
 	Create: *string,
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.templateDeployment.TemplateDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/templatedeployment"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/templatedeployment"
 
 templatedeployment.NewTemplateDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TemplateDeploymentTimeoutsOutputReference
 ```

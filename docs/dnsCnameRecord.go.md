@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
 
 dnscnamerecord.NewDnsCnameRecord(scope Construct, id *string, config DnsCnameRecordConfig) DnsCnameRecord
 ```
@@ -369,7 +369,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
 
 dnscnamerecord.DnsCnameRecord_IsConstruct(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
 
 dnscnamerecord.DnsCnameRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ dnscnamerecord.DnsCnameRecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
 
 dnscnamerecord.DnsCnameRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ dnscnamerecord.DnsCnameRecord_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
 
 dnscnamerecord.DnsCnameRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -845,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
 
 &dnscnamerecord.DnsCnameRecordConfig {
 	Connection: interface{},
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
 	Id: *string,
 	Record: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dnsCnameRecord.DnsCnameRecordTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dnsCnameRecord.DnsCnameRecordTimeouts,
 }
 ```
 
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
 
 &dnscnamerecord.DnsCnameRecordTimeouts {
 	Create: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecordTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnscnamerecord"
 
 dnscnamerecord.NewDnsCnameRecordTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsCnameRecordTimeoutsOutputReference
 ```
