@@ -1,7 +1,3 @@
-# `azurestack_virtual_machine_extension`
-
-Refer to the Terraform Registory for docs: [`azurestack_virtual_machine_extension`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_extension).
-
 # `virtualMachineExtension` Submodule <a name="`virtualMachineExtension` Submodule" id="@cdktf/provider-azurestack.virtualMachineExtension"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 virtualmachineextension.NewVirtualMachineExtension(scope Construct, id *string, config VirtualMachineExtensionConfig) VirtualMachineExtension
 ```
@@ -387,7 +383,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 virtualmachineextension.VirtualMachineExtension_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 virtualmachineextension.VirtualMachineExtension_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ virtualmachineextension.VirtualMachineExtension_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 virtualmachineextension.VirtualMachineExtension_IsTerraformResource(x interface{}) *bool
 ```
@@ -447,7 +443,7 @@ virtualmachineextension.VirtualMachineExtension_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtension.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 virtualmachineextension.VirtualMachineExtension_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -918,7 +914,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 &virtualmachineextension.VirtualMachineExtensionConfig {
 	Connection: interface{},
@@ -938,7 +934,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachi
 	ProtectedSettings: *string,
 	Settings: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.virtualMachineExtension.VirtualMachineExtensionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts,
 }
 ```
 
@@ -1179,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 &virtualmachineextension.VirtualMachineExtensionTimeouts {
 	Create: *string,
@@ -1255,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachineExtension.VirtualMachineExtensionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachineextension"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension"
 
 virtualmachineextension.NewVirtualMachineExtensionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineExtensionTimeoutsOutputReference
 ```

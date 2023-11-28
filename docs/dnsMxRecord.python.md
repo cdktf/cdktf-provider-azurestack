@@ -1,7 +1,3 @@
-# `azurestack_dns_mx_record`
-
-Refer to the Terraform Registory for docs: [`azurestack_dns_mx_record`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/dns_mx_record).
-
 # `dnsMxRecord` Submodule <a name="`dnsMxRecord` Submodule" id="@cdktf/provider-azurestack.dnsMxRecord"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

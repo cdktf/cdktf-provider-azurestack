@@ -1,7 +1,3 @@
-# `azurestack_virtual_machine_scale_set`
-
-Refer to the Terraform Registory for docs: [`azurestack_virtual_machine_scale_set`](https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_machine_scale_set).
-
 # `virtualMachineScaleSet` Submodule <a name="`virtualMachineScaleSet` Submodule" id="@cdktf/provider-azurestack.virtualMachineScaleSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
