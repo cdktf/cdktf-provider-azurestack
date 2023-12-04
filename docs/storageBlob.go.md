@@ -66,9 +66,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.hasResourceMove">HasResourceMove</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.resetCacheControl">ResetCacheControl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageBlob.StorageBlob.resetContentMd5">ResetContentMd5</a></code> | *No description.* |
@@ -272,6 +275,12 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-azurestack.storageBlob.StorageBlob.hasResourceMove"></a>
+
+```go
+func HasResourceMove() interface{}
+```
+
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azurestack.storageBlob.StorageBlob.importFrom"></a>
 
 ```go
@@ -302,6 +311,24 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-azurestack.storageBlob.StorageBlob.moveFromId"></a>
+
+```go
+func MoveFromId(id *string)
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurestack.storageBlob.StorageBlob.moveFromId.parameter.id"></a>
+
+- *Type:* *string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azurestack.storageBlob.StorageBlob.moveTo"></a>
 
 ```go
@@ -323,6 +350,22 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 - *Type:* interface{}
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-azurestack.storageBlob.StorageBlob.moveToId"></a>
+
+```go
+func MoveToId(id *string)
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurestack.storageBlob.StorageBlob.moveToId.parameter.id"></a>
+
+- *Type:* *string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
