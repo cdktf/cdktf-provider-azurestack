@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackStorageContainer.DataAzurestackStorageContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackstoragecontainer"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstoragecontainer"
 
 dataazurestackstoragecontainer.NewDataAzurestackStorageContainer(scope Construct, id *string, config DataAzurestackStorageContainerConfig) DataAzurestackStorageContainer
 ```
@@ -301,7 +301,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackStorageContainer.DataAzurestackStorageContainer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackstoragecontainer"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstoragecontainer"
 
 dataazurestackstoragecontainer.DataAzurestackStorageContainer_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackStorageContainer.DataAzurestackStorageContainer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackstoragecontainer"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstoragecontainer"
 
 dataazurestackstoragecontainer.DataAzurestackStorageContainer_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ dataazurestackstoragecontainer.DataAzurestackStorageContainer_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackStorageContainer.DataAzurestackStorageContainer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackstoragecontainer"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstoragecontainer"
 
 dataazurestackstoragecontainer.DataAzurestackStorageContainer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ dataazurestackstoragecontainer.DataAzurestackStorageContainer_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackStorageContainer.DataAzurestackStorageContainer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackstoragecontainer"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstoragecontainer"
 
 dataazurestackstoragecontainer.DataAzurestackStorageContainer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackStorageContainer.DataAzurestackStorageContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackstoragecontainer"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstoragecontainer"
 
 &dataazurestackstoragecontainer.DataAzurestackStorageContainerConfig {
 	Connection: interface{},
@@ -725,7 +725,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazuresta
 	StorageAccountName: *string,
 	Id: *string,
 	Metadata: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dataAzurestackStorageContainer.DataAzurestackStorageContainerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackStorageContainer.DataAzurestackStorageContainerTimeouts,
 }
 ```
 
@@ -888,7 +888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackStorageContainer.DataAzurestackStorageContainerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackstoragecontainer"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstoragecontainer"
 
 &dataazurestackstoragecontainer.DataAzurestackStorageContainerTimeouts {
 	Read: *string,
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackStorageContainer.DataAzurestackStorageContainerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackstoragecontainer"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstoragecontainer"
 
 dataazurestackstoragecontainer.NewDataAzurestackStorageContainerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackStorageContainerTimeoutsOutputReference
 ```
