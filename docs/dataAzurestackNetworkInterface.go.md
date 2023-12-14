@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackNetworkInterface.DataAzurestackNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacknetworkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacknetworkinterface"
 
 dataazurestacknetworkinterface.NewDataAzurestackNetworkInterface(scope Construct, id *string, config DataAzurestackNetworkInterfaceConfig) DataAzurestackNetworkInterface
 ```
@@ -294,7 +294,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackNetworkInterface.DataAzurestackNetworkInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacknetworkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacknetworkinterface"
 
 dataazurestacknetworkinterface.DataAzurestackNetworkInterface_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackNetworkInterface.DataAzurestackNetworkInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacknetworkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacknetworkinterface"
 
 dataazurestacknetworkinterface.DataAzurestackNetworkInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ dataazurestacknetworkinterface.DataAzurestackNetworkInterface_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackNetworkInterface.DataAzurestackNetworkInterface.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacknetworkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacknetworkinterface"
 
 dataazurestacknetworkinterface.DataAzurestackNetworkInterface_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ dataazurestacknetworkinterface.DataAzurestackNetworkInterface_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackNetworkInterface.DataAzurestackNetworkInterface.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacknetworkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacknetworkinterface"
 
 dataazurestacknetworkinterface.DataAzurestackNetworkInterface_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -781,7 +781,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackNetworkInterface.DataAzurestackNetworkInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacknetworkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacknetworkinterface"
 
 &dataazurestacknetworkinterface.DataAzurestackNetworkInterfaceConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackn
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackNetworkInterface.DataAzurestackNetworkInterfaceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dataAzurestackNetworkInterface.DataAzurestackNetworkInterfaceTimeouts,
 }
 ```
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackNetworkInterface.DataAzurestackNetworkInterfaceIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacknetworkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacknetworkinterface"
 
 &dataazurestacknetworkinterface.DataAzurestackNetworkInterfaceIpConfiguration {
 
@@ -957,7 +957,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackn
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackNetworkInterface.DataAzurestackNetworkInterfaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacknetworkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacknetworkinterface"
 
 &dataazurestacknetworkinterface.DataAzurestackNetworkInterfaceTimeouts {
 	Read: *string,
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackNetworkInterface.DataAzurestackNetworkInterfaceIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacknetworkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacknetworkinterface"
 
 dataazurestacknetworkinterface.NewDataAzurestackNetworkInterfaceIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackNetworkInterfaceIpConfigurationList
 ```
@@ -1123,7 +1123,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackNetworkInterface.DataAzurestackNetworkInterfaceIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacknetworkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacknetworkinterface"
 
 dataazurestacknetworkinterface.NewDataAzurestackNetworkInterfaceIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackNetworkInterfaceIpConfigurationOutputReference
 ```
@@ -1500,7 +1500,7 @@ func InternalValue() DataAzurestackNetworkInterfaceIpConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackNetworkInterface.DataAzurestackNetworkInterfaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacknetworkinterface"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacknetworkinterface"
 
 dataazurestacknetworkinterface.NewDataAzurestackNetworkInterfaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackNetworkInterfaceTimeoutsOutputReference
 ```
