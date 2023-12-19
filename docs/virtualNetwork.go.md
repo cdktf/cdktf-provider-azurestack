@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetwork"
 
 virtualnetwork.NewVirtualNetwork(scope Construct, id *string, config VirtualNetworkConfig) VirtualNetwork
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetwork"
 
 virtualnetwork.VirtualNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetwork"
 
 virtualnetwork.VirtualNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ virtualnetwork.VirtualNetwork_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetwork"
 
 virtualnetwork.VirtualNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ virtualnetwork.VirtualNetwork_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetwork"
 
 virtualnetwork.VirtualNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -930,7 +930,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetwork"
 
 &virtualnetwork.VirtualNetworkConfig {
 	Connection: interface{},
@@ -948,7 +948,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualnetwo
 	Id: *string,
 	Subnet: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.virtualNetwork.VirtualNetworkTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.virtualNetwork.VirtualNetworkTimeouts,
 }
 ```
 
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetwork"
 
 &virtualnetwork.VirtualNetworkSubnet {
 	AddressPrefix: *string,
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetwork"
 
 &virtualnetwork.VirtualNetworkTimeouts {
 	Create: *string,
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetwork"
 
 virtualnetwork.NewVirtualNetworkSubnetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualNetworkSubnetList
 ```
@@ -1459,7 +1459,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkSubnetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetwork"
 
 virtualnetwork.NewVirtualNetworkSubnetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualNetworkSubnetOutputReference
 ```
@@ -1842,7 +1842,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualNetwork.VirtualNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualnetwork"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualnetwork"
 
 virtualnetwork.NewVirtualNetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualNetworkTimeoutsOutputReference
 ```
