@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [availabilitySet](./availabilitySet.go.md)
 - [dataAzurestackAvailabilitySet](./dataAzurestackAvailabilitySet.go.md)
 - [dataAzurestackClientConfig](./dataAzurestackClientConfig.go.md)
@@ -78,3 +81,8 @@ The following submodules are available:
 - [virtualNetworkPeering](./virtualNetworkPeering.go.md)
 - [windowsVirtualMachine](./windowsVirtualMachine.go.md)
 - [windowsVirtualMachineScaleSet](./windowsVirtualMachineScaleSet.go.md)
+
+
+
+
+
