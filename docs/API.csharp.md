@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [availabilitySet](./availabilitySet.csharp.md)
 - [dataAzurestackAvailabilitySet](./dataAzurestackAvailabilitySet.csharp.md)
 - [dataAzurestackClientConfig](./dataAzurestackClientConfig.csharp.md)
@@ -78,3 +81,8 @@ The following submodules are available:
 - [virtualNetworkPeering](./virtualNetworkPeering.csharp.md)
 - [windowsVirtualMachine](./windowsVirtualMachine.csharp.md)
 - [windowsVirtualMachineScaleSet](./windowsVirtualMachineScaleSet.csharp.md)
+
+
+
+
+

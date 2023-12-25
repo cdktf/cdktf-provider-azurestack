@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [availabilitySet](./availabilitySet.java.md)
 - [dataAzurestackAvailabilitySet](./dataAzurestackAvailabilitySet.java.md)
 - [dataAzurestackClientConfig](./dataAzurestackClientConfig.java.md)
@@ -78,3 +81,8 @@ The following submodules are available:
 - [virtualNetworkPeering](./virtualNetworkPeering.java.md)
 - [windowsVirtualMachine](./windowsVirtualMachine.java.md)
 - [windowsVirtualMachineScaleSet](./windowsVirtualMachineScaleSet.java.md)
+
+
+
+
+

@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [availabilitySet](./availabilitySet.typescript.md)
 - [dataAzurestackAvailabilitySet](./dataAzurestackAvailabilitySet.typescript.md)
 - [dataAzurestackClientConfig](./dataAzurestackClientConfig.typescript.md)
@@ -78,3 +81,8 @@ The following submodules are available:
 - [virtualNetworkPeering](./virtualNetworkPeering.typescript.md)
 - [windowsVirtualMachine](./windowsVirtualMachine.typescript.md)
 - [windowsVirtualMachineScaleSet](./windowsVirtualMachineScaleSet.typescript.md)
+
+
+
+
+
