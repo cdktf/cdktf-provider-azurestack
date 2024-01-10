@@ -124,6 +124,25 @@ export function azurestackProviderFeaturesResourceGroupToTerraform(struct?: Azur
   }
 }
 
+
+export function azurestackProviderFeaturesResourceGroupToHclTerraform(struct?: AzurestackProviderFeaturesResourceGroup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prevent_deletion_if_contains_resources: {
+      value: cdktf.booleanToHclTerraform(struct!.preventDeletionIfContainsResources),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface AzurestackProviderFeaturesVirtualMachine {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#delete_os_disk_on_deletion AzurestackProvider#delete_os_disk_on_deletion}
@@ -151,6 +170,37 @@ export function azurestackProviderFeaturesVirtualMachineToTerraform(struct?: Azu
   }
 }
 
+
+export function azurestackProviderFeaturesVirtualMachineToHclTerraform(struct?: AzurestackProviderFeaturesVirtualMachine): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete_os_disk_on_deletion: {
+      value: cdktf.booleanToHclTerraform(struct!.deleteOsDiskOnDeletion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    graceful_shutdown: {
+      value: cdktf.booleanToHclTerraform(struct!.gracefulShutdown),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    skip_shutdown_and_force_delete: {
+      value: cdktf.booleanToHclTerraform(struct!.skipShutdownAndForceDelete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface AzurestackProviderFeaturesVirtualMachineScaleSet {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#force_delete AzurestackProvider#force_delete}
@@ -176,6 +226,37 @@ export function azurestackProviderFeaturesVirtualMachineScaleSetToTerraform(stru
     roll_instances_when_required: cdktf.booleanToTerraform(struct!.rollInstancesWhenRequired),
     scale_to_zero_before_deletion: cdktf.booleanToTerraform(struct!.scaleToZeroBeforeDeletion),
   }
+}
+
+
+export function azurestackProviderFeaturesVirtualMachineScaleSetToHclTerraform(struct?: AzurestackProviderFeaturesVirtualMachineScaleSet): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    force_delete: {
+      value: cdktf.booleanToHclTerraform(struct!.forceDelete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    roll_instances_when_required: {
+      value: cdktf.booleanToHclTerraform(struct!.rollInstancesWhenRequired),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    scale_to_zero_before_deletion: {
+      value: cdktf.booleanToHclTerraform(struct!.scaleToZeroBeforeDeletion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export interface AzurestackProviderFeatures {
@@ -209,6 +290,37 @@ export function azurestackProviderFeaturesToTerraform(struct?: AzurestackProvide
     virtual_machine: azurestackProviderFeaturesVirtualMachineToTerraform(struct!.virtualMachine),
     virtual_machine_scale_set: azurestackProviderFeaturesVirtualMachineScaleSetToTerraform(struct!.virtualMachineScaleSet),
   }
+}
+
+
+export function azurestackProviderFeaturesToHclTerraform(struct?: AzurestackProviderFeatures): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_group: {
+      value: azurestackProviderFeaturesResourceGroupToHclTerraform(struct!.resourceGroup),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AzurestackProviderFeaturesResourceGroupList",
+    },
+    virtual_machine: {
+      value: azurestackProviderFeaturesVirtualMachineToHclTerraform(struct!.virtualMachine),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AzurestackProviderFeaturesVirtualMachineList",
+    },
+    virtual_machine_scale_set: {
+      value: azurestackProviderFeaturesVirtualMachineScaleSetToHclTerraform(struct!.virtualMachineScaleSet),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AzurestackProviderFeaturesVirtualMachineScaleSetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 
@@ -555,5 +667,109 @@ export class AzurestackProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
       features: azurestackProviderFeaturesToTerraform(this._features),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      arm_endpoint: {
+        value: cdktf.stringToHclTerraform(this._armEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auxiliary_tenant_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auxiliaryTenantIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      client_certificate_password: {
+        value: cdktf.stringToHclTerraform(this._clientCertificatePassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_certificate_path: {
+        value: cdktf.stringToHclTerraform(this._clientCertificatePath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_secret: {
+        value: cdktf.stringToHclTerraform(this._clientSecret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_correlation_request_id: {
+        value: cdktf.booleanToHclTerraform(this._disableCorrelationRequestId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      environment: {
+        value: cdktf.stringToHclTerraform(this._environment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metadata_host: {
+        value: cdktf.stringToHclTerraform(this._metadataHost),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      msi_endpoint: {
+        value: cdktf.stringToHclTerraform(this._msiEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      skip_provider_registration: {
+        value: cdktf.booleanToHclTerraform(this._skipProviderRegistration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      subscription_id: {
+        value: cdktf.stringToHclTerraform(this._subscriptionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tenant_id: {
+        value: cdktf.stringToHclTerraform(this._tenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_msi: {
+        value: cdktf.booleanToHclTerraform(this._useMsi),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      features: {
+        value: azurestackProviderFeaturesToHclTerraform(this._features),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AzurestackProviderFeaturesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

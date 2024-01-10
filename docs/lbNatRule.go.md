@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.lbNatRule.LbNatRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/lbnatrule"
 
 lbnatrule.NewLbNatRule(scope Construct, id *string, config LbNatRuleConfig) LbNatRule
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.lbNatRule.LbNatRule.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatRule.LbNatRule.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azurestack.lbNatRule.LbNatRule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azurestack.lbNatRule.LbNatRule.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatRule.LbNatRule.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.lbNatRule.LbNatRule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azurestack.lbNatRule.LbNatRule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurestack.lbNatRule.LbNatRule.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurestack.lbNatRule.LbNatRule.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.lbNatRule.LbNatRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/lbnatrule"
 
 lbnatrule.LbNatRule_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.lbNatRule.LbNatRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/lbnatrule"
 
 lbnatrule.LbNatRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ lbnatrule.LbNatRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.lbNatRule.LbNatRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/lbnatrule"
 
 lbnatrule.LbNatRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ lbnatrule.LbNatRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.lbNatRule.LbNatRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/lbnatrule"
 
 lbnatrule.LbNatRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -965,7 +972,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.lbNatRule.LbNatRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/lbnatrule"
 
 &lbnatrule.LbNatRuleConfig {
 	Connection: interface{},
@@ -985,7 +992,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/lbnatrule"
 	EnableFloatingIp: interface{},
 	Id: *string,
 	IdleTimeoutInMinutes: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.lbNatRule.LbNatRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.lbNatRule.LbNatRuleTimeouts,
 }
 ```
 
@@ -1226,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.lbNatRule.LbNatRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/lbnatrule"
 
 &lbnatrule.LbNatRuleTimeouts {
 	Create: *string,
@@ -1302,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.lbNatRule.LbNatRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/lbnatrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/lbnatrule"
 
 lbnatrule.NewLbNatRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbNatRuleTimeoutsOutputReference
 ```

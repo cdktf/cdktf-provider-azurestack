@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacksubnet"
 
 dataazurestacksubnet.NewDataAzurestackSubnet(scope Construct, id *string, config DataAzurestackSubnetConfig) DataAzurestackSubnet
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.toMetadata"></a>
 
@@ -294,7 +303,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacksubnet"
 
 dataazurestacksubnet.DataAzurestackSubnet_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacksubnet"
 
 dataazurestacksubnet.DataAzurestackSubnet_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +349,7 @@ dataazurestacksubnet.DataAzurestackSubnet_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacksubnet"
 
 dataazurestacksubnet.DataAzurestackSubnet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -354,7 +363,7 @@ dataazurestacksubnet.DataAzurestackSubnet_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacksubnet"
 
 dataazurestacksubnet.DataAzurestackSubnet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -704,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacksubnet"
 
 &dataazurestacksubnet.DataAzurestackSubnetConfig {
 	Connection: interface{},
@@ -718,7 +727,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazuresta
 	ResourceGroupName: *string,
 	VirtualNetworkName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dataAzurestackSubnet.DataAzurestackSubnetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.dataAzurestackSubnet.DataAzurestackSubnetTimeouts,
 }
 ```
 
@@ -881,7 +890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacksubnet"
 
 &dataazurestacksubnet.DataAzurestackSubnetTimeouts {
 	Read: *string,
@@ -915,7 +924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackSubnet.DataAzurestackSubnetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestacksubnet"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacksubnet"
 
 dataazurestacksubnet.NewDataAzurestackSubnetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackSubnetTimeoutsOutputReference
 ```

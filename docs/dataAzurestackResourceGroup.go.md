@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresourcegroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackresourcegroup"
 
 dataazurestackresourcegroup.NewDataAzurestackResourceGroup(scope Construct, id *string, config DataAzurestackResourceGroupConfig) DataAzurestackResourceGroup
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.toMetadata"></a>
 
@@ -294,7 +303,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresourcegroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackresourcegroup"
 
 dataazurestackresourcegroup.DataAzurestackResourceGroup_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresourcegroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackresourcegroup"
 
 dataazurestackresourcegroup.DataAzurestackResourceGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +349,7 @@ dataazurestackresourcegroup.DataAzurestackResourceGroup_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresourcegroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackresourcegroup"
 
 dataazurestackresourcegroup.DataAzurestackResourceGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -354,7 +363,7 @@ dataazurestackresourcegroup.DataAzurestackResourceGroup_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresourcegroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackresourcegroup"
 
 dataazurestackresourcegroup.DataAzurestackResourceGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +658,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresourcegroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackresourcegroup"
 
 &dataazurestackresourcegroup.DataAzurestackResourceGroupConfig {
 	Connection: interface{},
@@ -661,7 +670,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazuresta
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dataAzurestackResourceGroup.DataAzurestackResourceGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.dataAzurestackResourceGroup.DataAzurestackResourceGroupTimeouts,
 }
 ```
 
@@ -798,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresourcegroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackresourcegroup"
 
 &dataazurestackresourcegroup.DataAzurestackResourceGroupTimeouts {
 	Read: *string,
@@ -832,7 +841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackResourceGroup.DataAzurestackResourceGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackresourcegroup"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackresourcegroup"
 
 dataazurestackresourcegroup.NewDataAzurestackResourceGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackResourceGroupTimeoutsOutputReference
 ```

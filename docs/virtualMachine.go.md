@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachine(scope Construct, id *string, config VirtualMachineConfig) VirtualMachine
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachine.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -153,6 +154,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachine.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachine.toMetadata"></a>
 
@@ -640,7 +647,7 @@ func ResetZones()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachine.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.VirtualMachine_IsConstruct(x interface{}) *bool
 ```
@@ -672,7 +679,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.VirtualMachine_IsTerraformElement(x interface{}) *bool
 ```
@@ -686,7 +693,7 @@ virtualmachine.VirtualMachine_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.VirtualMachine_IsTerraformResource(x interface{}) *bool
 ```
@@ -700,7 +707,7 @@ virtualmachine.VirtualMachine_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.VirtualMachine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1457,7 +1464,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineBootDiagnostics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineBootDiagnostics {
 	Enabled: interface{},
@@ -1503,7 +1510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineConfig {
 	Connection: interface{},
@@ -1517,25 +1524,25 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachi
 	Name: *string,
 	NetworkInterfaceIds: *[]*string,
 	ResourceGroupName: *string,
-	StorageOsDisk: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.virtualMachine.VirtualMachineStorageOsDisk,
+	StorageOsDisk: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.virtualMachine.VirtualMachineStorageOsDisk,
 	VmSize: *string,
 	AvailabilitySetId: *string,
-	BootDiagnostics: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.virtualMachine.VirtualMachineBootDiagnostics,
+	BootDiagnostics: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.virtualMachine.VirtualMachineBootDiagnostics,
 	DeleteDataDisksOnTermination: interface{},
 	DeleteOsDiskOnTermination: interface{},
 	Id: *string,
-	Identity: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.virtualMachine.VirtualMachineIdentity,
+	Identity: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.virtualMachine.VirtualMachineIdentity,
 	LicenseType: *string,
-	OsProfile: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.virtualMachine.VirtualMachineOsProfile,
-	OsProfileLinuxConfig: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.virtualMachine.VirtualMachineOsProfileLinuxConfig,
+	OsProfile: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.virtualMachine.VirtualMachineOsProfile,
+	OsProfileLinuxConfig: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.virtualMachine.VirtualMachineOsProfileLinuxConfig,
 	OsProfileSecrets: interface{},
-	OsProfileWindowsConfig: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.virtualMachine.VirtualMachineOsProfileWindowsConfig,
-	Plan: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.virtualMachine.VirtualMachinePlan,
+	OsProfileWindowsConfig: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.virtualMachine.VirtualMachineOsProfileWindowsConfig,
+	Plan: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.virtualMachine.VirtualMachinePlan,
 	PrimaryNetworkInterfaceId: *string,
 	StorageDataDisk: interface{},
-	StorageImageReference: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.virtualMachine.VirtualMachineStorageImageReference,
+	StorageImageReference: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.virtualMachine.VirtualMachineStorageImageReference,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.virtualMachine.VirtualMachineTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.virtualMachine.VirtualMachineTimeouts,
 	Zones: *[]*string,
 }
 ```
@@ -1966,7 +1973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineIdentity {
 	Type: *string,
@@ -1998,7 +2005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineOsProfile {
 	AdminUsername: *string,
@@ -2072,7 +2079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineOsProfileLinuxConfig {
 	DisablePasswordAuthentication: interface{},
@@ -2120,7 +2127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineOsProfileLinuxConfigSshKeys {
 	KeyData: *string,
@@ -2166,7 +2173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineOsProfileSecrets {
 	SourceVaultId: *string,
@@ -2214,7 +2221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineOsProfileSecretsVaultCertificates {
 	CertificateUrl: *string,
@@ -2260,7 +2267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineOsProfileWindowsConfig {
 	AdditionalUnattendConfig: interface{},
@@ -2352,7 +2359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfig {
 	Component: *string,
@@ -2426,7 +2433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineOsProfileWindowsConfigWinrm {
 	Protocol: *string,
@@ -2472,7 +2479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachinePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachinePlan {
 	Name: *string,
@@ -2532,7 +2539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineStorageDataDisk {
 	CreateOption: *string,
@@ -2676,7 +2683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineStorageImageReference {
 	Id: *string,
@@ -2767,7 +2774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineStorageOsDisk {
 	CreateOption: *string,
@@ -2925,7 +2932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 &virtualmachine.VirtualMachineTimeouts {
 	Create: *string,
@@ -3001,7 +3008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineBootDiagnosticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineBootDiagnosticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineBootDiagnosticsOutputReference
 ```
@@ -3294,7 +3301,7 @@ func InternalValue() VirtualMachineBootDiagnostics
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineIdentityOutputReference
 ```
@@ -3576,7 +3583,7 @@ func InternalValue() VirtualMachineIdentity
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileLinuxConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineOsProfileLinuxConfigOutputReference
 ```
@@ -3889,7 +3896,7 @@ func InternalValue() VirtualMachineOsProfileLinuxConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileLinuxConfigSshKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineOsProfileLinuxConfigSshKeysList
 ```
@@ -3930,10 +3937,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeysList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeysList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeysList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeysList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeysList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeysList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeysList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4032,7 +4056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileLinuxConfigSshKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileLinuxConfigSshKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineOsProfileLinuxConfigSshKeysOutputReference
 ```
@@ -4343,7 +4367,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineOsProfileOutputReference
 ```
@@ -4694,7 +4718,7 @@ func InternalValue() VirtualMachineOsProfile
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineOsProfileSecretsList
 ```
@@ -4735,10 +4759,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4837,7 +4878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineOsProfileSecretsOutputReference
 ```
@@ -5168,7 +5209,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileSecretsVaultCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineOsProfileSecretsVaultCertificatesList
 ```
@@ -5209,10 +5250,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificatesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificatesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificatesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificatesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificatesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificatesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificatesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5311,7 +5369,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileSecretsVaultCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileSecretsVaultCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineOsProfileSecretsVaultCertificatesOutputReference
 ```
@@ -5629,7 +5687,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigList
 ```
@@ -5670,10 +5728,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5772,7 +5847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineOsProfileWindowsConfigAdditionalUnattendConfigOutputReference
 ```
@@ -6127,7 +6202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileWindowsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineOsProfileWindowsConfigOutputReference
 ```
@@ -6547,7 +6622,7 @@ func InternalValue() VirtualMachineOsProfileWindowsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrmList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileWindowsConfigWinrmList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineOsProfileWindowsConfigWinrmList
 ```
@@ -6588,10 +6663,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrmList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrmList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrmList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrmList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrmList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrmList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrmList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6690,7 +6782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineOsProfileWindowsConfigWinrmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineOsProfileWindowsConfigWinrmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineOsProfileWindowsConfigWinrmOutputReference
 ```
@@ -7008,7 +7100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachinePlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachinePlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachinePlanOutputReference
 ```
@@ -7323,7 +7415,7 @@ func InternalValue() VirtualMachinePlan
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineStorageDataDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineStorageDataDiskList
 ```
@@ -7364,10 +7456,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDiskList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDiskList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDiskList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDiskList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDiskList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDiskList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDiskList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -7466,7 +7575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageDataDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineStorageDataDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineStorageDataDiskOutputReference
 ```
@@ -7973,7 +8082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageImageReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineStorageImageReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineStorageImageReferenceOutputReference
 ```
@@ -8367,7 +8476,7 @@ func InternalValue() VirtualMachineStorageImageReference
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineStorageOsDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineStorageOsDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineStorageOsDiskOutputReference
 ```
@@ -8892,7 +9001,7 @@ func InternalValue() VirtualMachineStorageOsDisk
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.virtualMachine.VirtualMachineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/virtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/virtualmachine"
 
 virtualmachine.NewVirtualMachineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineTimeoutsOutputReference
 ```

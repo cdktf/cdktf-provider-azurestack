@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.storageAccount.StorageAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/storageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/storageaccount"
 
 storageaccount.NewStorageAccount(scope Construct, id *string, config StorageAccountConfig) StorageAccount
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.storageAccount.StorageAccount.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageAccount.StorageAccount.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azurestack.storageAccount.StorageAccount.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azurestack.storageAccount.StorageAccount.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageAccount.StorageAccount.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.storageAccount.StorageAccount.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azurestack.storageAccount.StorageAccount.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -134,6 +135,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurestack.storageAccount.StorageAccount.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurestack.storageAccount.StorageAccount.toMetadata"></a>
 
@@ -453,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.storageAccount.StorageAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/storageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/storageaccount"
 
 storageaccount.StorageAccount_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.storageAccount.StorageAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/storageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/storageaccount"
 
 storageaccount.StorageAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +506,7 @@ storageaccount.StorageAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.storageAccount.StorageAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/storageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/storageaccount"
 
 storageaccount.StorageAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +520,7 @@ storageaccount.StorageAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.storageAccount.StorageAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/storageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/storageaccount"
 
 storageaccount.StorageAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1193,7 +1200,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.storageAccount.StorageAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/storageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/storageaccount"
 
 &storageaccount.StorageAccountConfig {
 	Connection: interface{},
@@ -1210,12 +1217,12 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/storageaccou
 	ResourceGroupName: *string,
 	AccountEncryptionSource: *string,
 	AccountKind: *string,
-	CustomDomain: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.storageAccount.StorageAccountCustomDomain,
+	CustomDomain: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.storageAccount.StorageAccountCustomDomain,
 	EnableBlobEncryption: interface{},
 	EnableHttpsTrafficOnly: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.storageAccount.StorageAccountTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.storageAccount.StorageAccountTimeouts,
 }
 ```
 
@@ -1484,7 +1491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.storageAccount.StorageAccountCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/storageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/storageaccount"
 
 &storageaccount.StorageAccountCustomDomain {
 	Name: *string,
@@ -1530,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.storageAccount.StorageAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/storageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/storageaccount"
 
 &storageaccount.StorageAccountTimeouts {
 	Create: *string,
@@ -1606,7 +1613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.storageAccount.StorageAccountCustomDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/storageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/storageaccount"
 
 storageaccount.NewStorageAccountCustomDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountCustomDomainOutputReference
 ```
@@ -1906,7 +1913,7 @@ func InternalValue() StorageAccountCustomDomain
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.storageAccount.StorageAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/storageaccount"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/storageaccount"
 
 storageaccount.NewStorageAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountTimeoutsOutputReference
 ```

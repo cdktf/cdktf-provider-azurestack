@@ -94,6 +94,31 @@ export function storageAccountCustomDomainToTerraform(struct?: StorageAccountCus
   }
 }
 
+
+export function storageAccountCustomDomainToHclTerraform(struct?: StorageAccountCustomDomainOutputReference | StorageAccountCustomDomain): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_subdomain: {
+      value: cdktf.booleanToHclTerraform(struct!.useSubdomain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class StorageAccountCustomDomainOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -191,6 +216,43 @@ export function storageAccountTimeoutsToTerraform(struct?: StorageAccountTimeout
     read: cdktf.stringToTerraform(struct!.read),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function storageAccountTimeoutsToHclTerraform(struct?: StorageAccountTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class StorageAccountTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -676,5 +738,91 @@ export class StorageAccount extends cdktf.TerraformResource {
       custom_domain: storageAccountCustomDomainToTerraform(this._customDomain.internalValue),
       timeouts: storageAccountTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_encryption_source: {
+        value: cdktf.stringToHclTerraform(this._accountEncryptionSource),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      account_kind: {
+        value: cdktf.stringToHclTerraform(this._accountKind),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      account_replication_type: {
+        value: cdktf.stringToHclTerraform(this._accountReplicationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      account_tier: {
+        value: cdktf.stringToHclTerraform(this._accountTier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_blob_encryption: {
+        value: cdktf.booleanToHclTerraform(this._enableBlobEncryption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_https_traffic_only: {
+        value: cdktf.booleanToHclTerraform(this._enableHttpsTrafficOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_group_name: {
+        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      custom_domain: {
+        value: storageAccountCustomDomainToHclTerraform(this._customDomain.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StorageAccountCustomDomainList",
+      },
+      timeouts: {
+        value: storageAccountTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "StorageAccountTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
