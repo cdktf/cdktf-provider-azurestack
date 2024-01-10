@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/data-sources/public_ips
 // generated from terraform resource schema
 
@@ -56,6 +51,17 @@ export function dataAzurestackPublicIpsPublicIpsToTerraform(struct?: DataAzurest
   }
   return {
   }
+}
+
+
+export function dataAzurestackPublicIpsPublicIpsToHclTerraform(struct?: DataAzurestackPublicIpsPublicIps): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAzurestackPublicIpsPublicIpsOutputReference extends cdktf.ComplexObject {
@@ -145,6 +151,25 @@ export function dataAzurestackPublicIpsTimeoutsToTerraform(struct?: DataAzuresta
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAzurestackPublicIpsTimeoutsToHclTerraform(struct?: DataAzurestackPublicIpsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAzurestackPublicIpsTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -399,5 +424,55 @@ export class DataAzurestackPublicIps extends cdktf.TerraformDataSource {
       resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurestackPublicIpsTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allocation_type: {
+        value: cdktf.stringToHclTerraform(this._allocationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      attached: {
+        value: cdktf.booleanToHclTerraform(this._attached),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      attachment_status: {
+        value: cdktf.stringToHclTerraform(this._attachmentStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_prefix: {
+        value: cdktf.stringToHclTerraform(this._namePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_group_name: {
+        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: dataAzurestackPublicIpsTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAzurestackPublicIpsTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

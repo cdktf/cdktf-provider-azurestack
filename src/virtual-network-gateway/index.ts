@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/virtual_network_gateway
 // generated from terraform resource schema
 
@@ -109,6 +104,37 @@ export function virtualNetworkGatewayBgpSettingsToTerraform(struct?: VirtualNetw
     peer_weight: cdktf.numberToTerraform(struct!.peerWeight),
     peering_address: cdktf.stringToTerraform(struct!.peeringAddress),
   }
+}
+
+
+export function virtualNetworkGatewayBgpSettingsToHclTerraform(struct?: VirtualNetworkGatewayBgpSettingsOutputReference | VirtualNetworkGatewayBgpSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    asn: {
+      value: cdktf.numberToHclTerraform(struct!.asn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    peer_weight: {
+      value: cdktf.numberToHclTerraform(struct!.peerWeight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    peering_address: {
+      value: cdktf.stringToHclTerraform(struct!.peeringAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VirtualNetworkGatewayBgpSettingsOutputReference extends cdktf.ComplexObject {
@@ -233,6 +259,43 @@ export function virtualNetworkGatewayIpConfigurationToTerraform(struct?: Virtual
     public_ip_address_id: cdktf.stringToTerraform(struct!.publicIpAddressId),
     subnet_id: cdktf.stringToTerraform(struct!.subnetId),
   }
+}
+
+
+export function virtualNetworkGatewayIpConfigurationToHclTerraform(struct?: VirtualNetworkGatewayIpConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_ip_address_allocation: {
+      value: cdktf.stringToHclTerraform(struct!.privateIpAddressAllocation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    public_ip_address_id: {
+      value: cdktf.stringToHclTerraform(struct!.publicIpAddressId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnet_id: {
+      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VirtualNetworkGatewayIpConfigurationOutputReference extends cdktf.ComplexObject {
@@ -407,6 +470,43 @@ export function virtualNetworkGatewayTimeoutsToTerraform(struct?: VirtualNetwork
   }
 }
 
+
+export function virtualNetworkGatewayTimeoutsToHclTerraform(struct?: VirtualNetworkGatewayTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VirtualNetworkGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -553,6 +653,31 @@ export function virtualNetworkGatewayVpnClientConfigurationRevokedCertificateToT
   }
 }
 
+
+export function virtualNetworkGatewayVpnClientConfigurationRevokedCertificateToHclTerraform(struct?: VirtualNetworkGatewayVpnClientConfigurationRevokedCertificate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    thumbprint: {
+      value: cdktf.stringToHclTerraform(struct!.thumbprint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VirtualNetworkGatewayVpnClientConfigurationRevokedCertificateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -669,6 +794,31 @@ export function virtualNetworkGatewayVpnClientConfigurationRootCertificateToTerr
     name: cdktf.stringToTerraform(struct!.name),
     public_cert_data: cdktf.stringToTerraform(struct!.publicCertData),
   }
+}
+
+
+export function virtualNetworkGatewayVpnClientConfigurationRootCertificateToHclTerraform(struct?: VirtualNetworkGatewayVpnClientConfigurationRootCertificate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    public_cert_data: {
+      value: cdktf.stringToHclTerraform(struct!.publicCertData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference extends cdktf.ComplexObject {
@@ -811,6 +961,55 @@ export function virtualNetworkGatewayVpnClientConfigurationToTerraform(struct?: 
     revoked_certificate: cdktf.listMapper(virtualNetworkGatewayVpnClientConfigurationRevokedCertificateToTerraform, true)(struct!.revokedCertificate),
     root_certificate: cdktf.listMapper(virtualNetworkGatewayVpnClientConfigurationRootCertificateToTerraform, true)(struct!.rootCertificate),
   }
+}
+
+
+export function virtualNetworkGatewayVpnClientConfigurationToHclTerraform(struct?: VirtualNetworkGatewayVpnClientConfigurationOutputReference | VirtualNetworkGatewayVpnClientConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address_space: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.addressSpace),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    radius_server_address: {
+      value: cdktf.stringToHclTerraform(struct!.radiusServerAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    radius_server_secret: {
+      value: cdktf.stringToHclTerraform(struct!.radiusServerSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpn_client_protocols: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.vpnClientProtocols),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    revoked_certificate: {
+      value: cdktf.listMapperHcl(virtualNetworkGatewayVpnClientConfigurationRevokedCertificateToHclTerraform, true)(struct!.revokedCertificate),
+      isBlock: true,
+      type: "set",
+      storageClassType: "VirtualNetworkGatewayVpnClientConfigurationRevokedCertificateList",
+    },
+    root_certificate: {
+      value: cdktf.listMapperHcl(virtualNetworkGatewayVpnClientConfigurationRootCertificateToHclTerraform, true)(struct!.rootCertificate),
+      isBlock: true,
+      type: "set",
+      storageClassType: "VirtualNetworkGatewayVpnClientConfigurationRootCertificateList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VirtualNetworkGatewayVpnClientConfigurationOutputReference extends cdktf.ComplexObject {
@@ -1285,5 +1484,103 @@ export class VirtualNetworkGateway extends cdktf.TerraformResource {
       timeouts: virtualNetworkGatewayTimeoutsToTerraform(this._timeouts.internalValue),
       vpn_client_configuration: virtualNetworkGatewayVpnClientConfigurationToTerraform(this._vpnClientConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active_active: {
+        value: cdktf.booleanToHclTerraform(this._activeActive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      default_local_network_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._defaultLocalNetworkGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_bgp: {
+        value: cdktf.booleanToHclTerraform(this._enableBgp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_group_name: {
+        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sku: {
+        value: cdktf.stringToHclTerraform(this._sku),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpn_type: {
+        value: cdktf.stringToHclTerraform(this._vpnType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bgp_settings: {
+        value: virtualNetworkGatewayBgpSettingsToHclTerraform(this._bgpSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VirtualNetworkGatewayBgpSettingsList",
+      },
+      ip_configuration: {
+        value: cdktf.listMapperHcl(virtualNetworkGatewayIpConfigurationToHclTerraform, true)(this._ipConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VirtualNetworkGatewayIpConfigurationList",
+      },
+      timeouts: {
+        value: virtualNetworkGatewayTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VirtualNetworkGatewayTimeouts",
+      },
+      vpn_client_configuration: {
+        value: virtualNetworkGatewayVpnClientConfigurationToHclTerraform(this._vpnClientConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VirtualNetworkGatewayVpnClientConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

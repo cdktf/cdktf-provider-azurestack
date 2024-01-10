@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnsaaaarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnsaaaarecord"
 
 dnsaaaarecord.NewDnsAaaaRecord(scope Construct, id *string, config DnsAaaaRecordConfig) DnsAaaaRecord
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnsaaaarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnsaaaarecord"
 
 dnsaaaarecord.DnsAaaaRecord_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnsaaaarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnsaaaarecord"
 
 dnsaaaarecord.DnsAaaaRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ dnsaaaarecord.DnsAaaaRecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnsaaaarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnsaaaarecord"
 
 dnsaaaarecord.DnsAaaaRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ dnsaaaarecord.DnsAaaaRecord_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnsaaaarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnsaaaarecord"
 
 dnsaaaarecord.DnsAaaaRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnsaaaarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnsaaaarecord"
 
 &dnsaaaarecord.DnsAaaaRecordConfig {
 	Connection: interface{},
@@ -905,7 +912,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnsaaaarecor
 	Id: *string,
 	Records: *[]*string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.dnsAaaaRecord.DnsAaaaRecordTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dnsAaaaRecord.DnsAaaaRecordTimeouts,
 }
 ```
 
@@ -1107,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecordTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnsaaaarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnsaaaarecord"
 
 &dnsaaaarecord.DnsAaaaRecordTimeouts {
 	Create: *string,
@@ -1183,7 +1190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dnsAaaaRecord.DnsAaaaRecordTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dnsaaaarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnsaaaarecord"
 
 dnsaaaarecord.NewDnsAaaaRecordTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsAaaaRecordTimeoutsOutputReference
 ```

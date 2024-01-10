@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachine(scope Construct, id *string, config WindowsVirtualMachineConfig) WindowsVirtualMachine
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -160,6 +161,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.toMetadata"></a>
 
@@ -677,7 +684,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.WindowsVirtualMachine_IsConstruct(x interface{}) *bool
 ```
@@ -709,7 +716,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.WindowsVirtualMachine_IsTerraformElement(x interface{}) *bool
 ```
@@ -723,7 +730,7 @@ windowsvirtualmachine.WindowsVirtualMachine_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.WindowsVirtualMachine_IsTerraformResource(x interface{}) *bool
 ```
@@ -737,7 +744,7 @@ windowsvirtualmachine.WindowsVirtualMachine_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.WindowsVirtualMachine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1791,7 +1798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 &windowsvirtualmachine.WindowsVirtualMachineAdditionalCapabilities {
 	UltraSsdEnabled: interface{},
@@ -1823,7 +1830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalUnattendContent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 &windowsvirtualmachine.WindowsVirtualMachineAdditionalUnattendContent {
 	Content: *string,
@@ -1869,7 +1876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineBootDiagnostics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 &windowsvirtualmachine.WindowsVirtualMachineBootDiagnostics {
 	StorageAccountUri: *string,
@@ -1901,7 +1908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 &windowsvirtualmachine.WindowsVirtualMachineConfig {
 	Connection: interface{},
@@ -1916,14 +1923,14 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtu
 	Location: *string,
 	Name: *string,
 	NetworkInterfaceIds: *[]*string,
-	OsDisk: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachine.WindowsVirtualMachineOsDisk,
+	OsDisk: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachine.WindowsVirtualMachineOsDisk,
 	ResourceGroupName: *string,
 	Size: *string,
-	AdditionalCapabilities: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachine.WindowsVirtualMachineAdditionalCapabilities,
+	AdditionalCapabilities: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalCapabilities,
 	AdditionalUnattendContent: interface{},
 	AllowExtensionOperations: interface{},
 	AvailabilitySetId: *string,
-	BootDiagnostics: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachine.WindowsVirtualMachineBootDiagnostics,
+	BootDiagnostics: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachine.WindowsVirtualMachineBootDiagnostics,
 	ComputerName: *string,
 	CustomData: *string,
 	EnableAutomaticUpdates: interface{},
@@ -1934,14 +1941,14 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtu
 	LicenseType: *string,
 	MaxBidPrice: *f64,
 	PatchMode: *string,
-	Plan: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachine.WindowsVirtualMachinePlan,
+	Plan: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachine.WindowsVirtualMachinePlan,
 	Priority: *string,
 	ProvisionVmAgent: interface{},
 	Secret: interface{},
 	SourceImageId: *string,
-	SourceImageReference: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachine.WindowsVirtualMachineSourceImageReference,
+	SourceImageReference: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachine.WindowsVirtualMachineSourceImageReference,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachine.WindowsVirtualMachineTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachine.WindowsVirtualMachineTimeouts,
 	Timezone: *string,
 	VirtualMachineScaleSetId: *string,
 	WinrmListener: interface{},
@@ -2514,12 +2521,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineOsDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 &windowsvirtualmachine.WindowsVirtualMachineOsDisk {
 	Caching: *string,
 	StorageAccountType: *string,
-	DiffDiskSettings: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.windowsVirtualMachine.WindowsVirtualMachineOsDiskDiffDiskSettings,
+	DiffDiskSettings: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.windowsVirtualMachine.WindowsVirtualMachineOsDiskDiffDiskSettings,
 	DiskEncryptionSetId: *string,
 	DiskSizeGb: *f64,
 	Name: *string,
@@ -2632,7 +2639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineOsDiskDiffDiskSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 &windowsvirtualmachine.WindowsVirtualMachineOsDiskDiffDiskSettings {
 	Option: *string,
@@ -2664,7 +2671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachinePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 &windowsvirtualmachine.WindowsVirtualMachinePlan {
 	Name: *string,
@@ -2724,7 +2731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 &windowsvirtualmachine.WindowsVirtualMachineSecret {
 	Certificate: interface{},
@@ -2772,7 +2779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 &windowsvirtualmachine.WindowsVirtualMachineSecretCertificate {
 	Store: *string,
@@ -2804,7 +2811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSourceImageReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 &windowsvirtualmachine.WindowsVirtualMachineSourceImageReference {
 	Offer: *string,
@@ -2878,7 +2885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 &windowsvirtualmachine.WindowsVirtualMachineTimeouts {
 	Create: *string,
@@ -2952,7 +2959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineWinrmListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 &windowsvirtualmachine.WindowsVirtualMachineWinrmListener {
 	Protocol: *string,
@@ -2986,7 +2993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineAdditionalCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineAdditionalCapabilitiesOutputReference
 ```
@@ -3264,7 +3271,7 @@ func InternalValue() WindowsVirtualMachineAdditionalCapabilities
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalUnattendContentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineAdditionalUnattendContentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsVirtualMachineAdditionalUnattendContentList
 ```
@@ -3305,10 +3312,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalUnattendContentList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalUnattendContentList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalUnattendContentList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalUnattendContentList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalUnattendContentList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalUnattendContentList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalUnattendContentList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3407,7 +3431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineAdditionalUnattendContentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineAdditionalUnattendContentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsVirtualMachineAdditionalUnattendContentOutputReference
 ```
@@ -3718,7 +3742,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineBootDiagnosticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineBootDiagnosticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineBootDiagnosticsOutputReference
 ```
@@ -3989,7 +4013,7 @@ func InternalValue() WindowsVirtualMachineBootDiagnostics
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineOsDiskDiffDiskSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineOsDiskDiffDiskSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineOsDiskDiffDiskSettingsOutputReference
 ```
@@ -4260,7 +4284,7 @@ func InternalValue() WindowsVirtualMachineOsDiskDiffDiskSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineOsDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineOsDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineOsDiskOutputReference
 ```
@@ -4711,7 +4735,7 @@ func InternalValue() WindowsVirtualMachineOsDisk
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachinePlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachinePlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachinePlanOutputReference
 ```
@@ -5026,7 +5050,7 @@ func InternalValue() WindowsVirtualMachinePlan
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineSecretCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsVirtualMachineSecretCertificateList
 ```
@@ -5067,10 +5091,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretCertificateList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretCertificateList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretCertificateList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretCertificateList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretCertificateList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretCertificateList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretCertificateList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5169,7 +5210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineSecretCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsVirtualMachineSecretCertificateOutputReference
 ```
@@ -5458,7 +5499,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsVirtualMachineSecretList
 ```
@@ -5499,10 +5540,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5601,7 +5659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsVirtualMachineSecretOutputReference
 ```
@@ -5925,7 +5983,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineSourceImageReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineSourceImageReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineSourceImageReferenceOutputReference
 ```
@@ -6262,7 +6320,7 @@ func InternalValue() WindowsVirtualMachineSourceImageReference
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsVirtualMachineTimeoutsOutputReference
 ```
@@ -6627,7 +6685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineWinrmListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineWinrmListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsVirtualMachineWinrmListenerList
 ```
@@ -6668,10 +6726,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineWinrmListenerList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineWinrmListenerList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineWinrmListenerList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineWinrmListenerList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineWinrmListenerList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineWinrmListenerList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineWinrmListenerList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6770,7 +6845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.windowsVirtualMachine.WindowsVirtualMachineWinrmListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/windowsvirtualmachine"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/windowsvirtualmachine"
 
 windowsvirtualmachine.NewWindowsVirtualMachineWinrmListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsVirtualMachineWinrmListenerOutputReference
 ```

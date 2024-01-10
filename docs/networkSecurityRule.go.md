@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecurityrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecurityrule"
 
 networksecurityrule.NewNetworkSecurityRule(scope Construct, id *string, config NetworkSecurityRuleConfig) NetworkSecurityRule
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -136,6 +137,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.toMetadata"></a>
 
@@ -461,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecurityrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecurityrule"
 
 networksecurityrule.NetworkSecurityRule_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecurityrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecurityrule"
 
 networksecurityrule.NetworkSecurityRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +514,7 @@ networksecurityrule.NetworkSecurityRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecurityrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecurityrule"
 
 networksecurityrule.NetworkSecurityRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +528,7 @@ networksecurityrule.NetworkSecurityRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecurityrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecurityrule"
 
 networksecurityrule.NetworkSecurityRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1146,7 +1153,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecurityrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecurityrule"
 
 &networksecurityrule.NetworkSecurityRuleConfig {
 	Connection: interface{},
@@ -1173,7 +1180,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecur
 	SourceAddressPrefixes: *[]*string,
 	SourcePortRange: *string,
 	SourcePortRanges: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.networkSecurityRule.NetworkSecurityRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.networkSecurityRule.NetworkSecurityRuleTimeouts,
 }
 ```
 
@@ -1505,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecurityrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecurityrule"
 
 &networksecurityrule.NetworkSecurityRuleTimeouts {
 	Create: *string,
@@ -1581,7 +1588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.networkSecurityRule.NetworkSecurityRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/networksecurityrule"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/networksecurityrule"
 
 networksecurityrule.NewNetworkSecurityRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityRuleTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/keyvaultkey"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/keyvaultkey"
 
 keyvaultkey.NewKeyVaultKey(scope Construct, id *string, config KeyVaultKeyConfig) KeyVaultKey
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.toMetadata"></a>
 
@@ -433,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/keyvaultkey"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/keyvaultkey"
 
 keyvaultkey.KeyVaultKey_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/keyvaultkey"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/keyvaultkey"
 
 keyvaultkey.KeyVaultKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ keyvaultkey.KeyVaultKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/keyvaultkey"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/keyvaultkey"
 
 keyvaultkey.KeyVaultKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +500,7 @@ keyvaultkey.KeyVaultKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/keyvaultkey"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/keyvaultkey"
 
 keyvaultkey.KeyVaultKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1030,7 +1037,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/keyvaultkey"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/keyvaultkey"
 
 &keyvaultkey.KeyVaultKeyConfig {
 	Connection: interface{},
@@ -1050,7 +1057,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/keyvaultkey"
 	KeySize: *f64,
 	NotBeforeDate: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7.keyVaultKey.KeyVaultKeyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.keyVaultKey.KeyVaultKeyTimeouts,
 }
 ```
 
@@ -1291,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/keyvaultkey"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/keyvaultkey"
 
 &keyvaultkey.KeyVaultKeyTimeouts {
 	Create: *string,
@@ -1367,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.keyVaultKey.KeyVaultKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/keyvaultkey"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/keyvaultkey"
 
 keyvaultkey.NewKeyVaultKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyVaultKeyTimeoutsOutputReference
 ```
