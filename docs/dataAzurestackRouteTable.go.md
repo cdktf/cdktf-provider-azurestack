@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackRouteTable.DataAzurestackRouteTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackroutetable"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackroutetable"
 
 dataazurestackroutetable.NewDataAzurestackRouteTable(scope Construct, id *string, config DataAzurestackRouteTableConfig) DataAzurestackRouteTable
 ```
@@ -303,7 +303,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackRouteTable.DataAzurestackRouteTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackroutetable"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackroutetable"
 
 dataazurestackroutetable.DataAzurestackRouteTable_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackRouteTable.DataAzurestackRouteTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackroutetable"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackroutetable"
 
 dataazurestackroutetable.DataAzurestackRouteTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ dataazurestackroutetable.DataAzurestackRouteTable_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackRouteTable.DataAzurestackRouteTable.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackroutetable"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackroutetable"
 
 dataazurestackroutetable.DataAzurestackRouteTable_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataazurestackroutetable.DataAzurestackRouteTable_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackRouteTable.DataAzurestackRouteTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackroutetable"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackroutetable"
 
 dataazurestackroutetable.DataAzurestackRouteTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -702,7 +702,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackRouteTable.DataAzurestackRouteTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackroutetable"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackroutetable"
 
 &dataazurestackroutetable.DataAzurestackRouteTableConfig {
 	Connection: interface{},
@@ -715,7 +715,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackr
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackRouteTable.DataAzurestackRouteTableTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.dataAzurestackRouteTable.DataAzurestackRouteTableTimeouts,
 }
 ```
 
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackRouteTable.DataAzurestackRouteTableRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackroutetable"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackroutetable"
 
 &dataazurestackroutetable.DataAzurestackRouteTableRoute {
 
@@ -878,7 +878,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackr
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackRouteTable.DataAzurestackRouteTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackroutetable"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackroutetable"
 
 &dataazurestackroutetable.DataAzurestackRouteTableTimeouts {
 	Read: *string,
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackRouteTable.DataAzurestackRouteTableRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackroutetable"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackroutetable"
 
 dataazurestackroutetable.NewDataAzurestackRouteTableRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackRouteTableRouteList
 ```
@@ -1061,7 +1061,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackRouteTable.DataAzurestackRouteTableRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackroutetable"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackroutetable"
 
 dataazurestackroutetable.NewDataAzurestackRouteTableRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackRouteTableRouteOutputReference
 ```
@@ -1372,7 +1372,7 @@ func InternalValue() DataAzurestackRouteTableRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackRouteTable.DataAzurestackRouteTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackroutetable"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestackroutetable"
 
 dataazurestackroutetable.NewDataAzurestackRouteTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackRouteTableTimeoutsOutputReference
 ```
