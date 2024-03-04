@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklocalnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacklocalnetworkgateway"
 
 dataazurestacklocalnetworkgateway.NewDataAzurestackLocalNetworkGateway(scope Construct, id *string, config DataAzurestackLocalNetworkGatewayConfig) DataAzurestackLocalNetworkGateway
 ```
@@ -303,7 +303,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklocalnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacklocalnetworkgateway"
 
 dataazurestacklocalnetworkgateway.DataAzurestackLocalNetworkGateway_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklocalnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacklocalnetworkgateway"
 
 dataazurestacklocalnetworkgateway.DataAzurestackLocalNetworkGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ dataazurestacklocalnetworkgateway.DataAzurestackLocalNetworkGateway_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azurestack.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklocalnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacklocalnetworkgateway"
 
 dataazurestacklocalnetworkgateway.DataAzurestackLocalNetworkGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataazurestacklocalnetworkgateway.DataAzurestackLocalNetworkGateway_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklocalnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacklocalnetworkgateway"
 
 dataazurestacklocalnetworkgateway.DataAzurestackLocalNetworkGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGatewayBgpSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklocalnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacklocalnetworkgateway"
 
 &dataazurestacklocalnetworkgateway.DataAzurestackLocalNetworkGatewayBgpSettings {
 
@@ -726,7 +726,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackl
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklocalnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacklocalnetworkgateway"
 
 &dataazurestacklocalnetworkgateway.DataAzurestackLocalNetworkGatewayConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackl
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGatewayTimeouts,
 }
 ```
 
@@ -889,7 +889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklocalnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacklocalnetworkgateway"
 
 &dataazurestacklocalnetworkgateway.DataAzurestackLocalNetworkGatewayTimeouts {
 	Read: *string,
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGatewayBgpSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklocalnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacklocalnetworkgateway"
 
 dataazurestacklocalnetworkgateway.NewDataAzurestackLocalNetworkGatewayBgpSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurestackLocalNetworkGatewayBgpSettingsList
 ```
@@ -1072,7 +1072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGatewayBgpSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklocalnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacklocalnetworkgateway"
 
 dataazurestacklocalnetworkgateway.NewDataAzurestackLocalNetworkGatewayBgpSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurestackLocalNetworkGatewayBgpSettingsOutputReference
 ```
@@ -1372,7 +1372,7 @@ func InternalValue() DataAzurestackLocalNetworkGatewayBgpSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dataAzurestackLocalNetworkGateway.DataAzurestackLocalNetworkGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestacklocalnetworkgateway"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dataazurestacklocalnetworkgateway"
 
 dataazurestacklocalnetworkgateway.NewDataAzurestackLocalNetworkGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurestackLocalNetworkGatewayTimeoutsOutputReference
 ```
