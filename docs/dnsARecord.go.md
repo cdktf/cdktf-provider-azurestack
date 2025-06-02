@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurestack
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dnsARecord.DnsARecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dnsarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v9/dnsarecord"
 
 dnsarecord.NewDnsARecord(scope Construct, id *string, config DnsARecordConfig) DnsARecord
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurestack.dnsARecord.DnsARecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dnsarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v9/dnsarecord"
 
 dnsarecord.DnsARecord_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurestack.dnsARecord.DnsARecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dnsarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v9/dnsarecord"
 
 dnsarecord.DnsARecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ dnsarecord.DnsARecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurestack.dnsARecord.DnsARecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dnsarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v9/dnsarecord"
 
 dnsarecord.DnsARecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ dnsarecord.DnsARecord_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurestack.dnsARecord.DnsARecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dnsarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v9/dnsarecord"
 
 dnsarecord.DnsARecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dnsARecord.DnsARecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dnsarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v9/dnsarecord"
 
 &dnsarecord.DnsARecordConfig {
 	Connection: interface{},
@@ -905,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dnsarecord"
 	ZoneName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8.dnsARecord.DnsARecordTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v9.dnsARecord.DnsARecordTimeouts,
 }
 ```
 
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dnsarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v9/dnsarecord"
 
 &dnsarecord.DnsARecordTimeouts {
 	Create: *string,
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-azurestack.dnsARecord.DnsARecordTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v8/dnsarecord"
+import "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v9/dnsarecord"
 
 dnsarecord.NewDnsARecordTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsARecordTimeoutsOutputReference
 ```
