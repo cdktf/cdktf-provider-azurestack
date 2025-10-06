@@ -370,30 +370,30 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurestack
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientCertificatePathInput">ClientCertificatePathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientIdInput">ClientIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientSecretInput">ClientSecretInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.disableCorrelationRequestIdInput">DisableCorrelationRequestIdInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.disableCorrelationRequestIdInput">DisableCorrelationRequestIdInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.environmentInput">EnvironmentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.featuresInput">FeaturesInput</a></code> | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeatures">AzurestackProviderFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.metadataHostInput">MetadataHostInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.msiEndpointInput">MsiEndpointInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.skipProviderRegistrationInput">SkipProviderRegistrationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.skipProviderRegistrationInput">SkipProviderRegistrationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.subscriptionIdInput">SubscriptionIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.tenantIdInput">TenantIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.useMsiInput">UseMsiInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.useMsiInput">UseMsiInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.armEndpoint">ArmEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.auxiliaryTenantIds">AuxiliaryTenantIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientCertificatePassword">ClientCertificatePassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientCertificatePath">ClientCertificatePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientId">ClientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientSecret">ClientSecret</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.disableCorrelationRequestId">DisableCorrelationRequestId</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.disableCorrelationRequestId">DisableCorrelationRequestId</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.environment">Environment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.features">Features</a></code> | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeatures">AzurestackProviderFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.metadataHost">MetadataHost</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.msiEndpoint">MsiEndpoint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.skipProviderRegistration">SkipProviderRegistration</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.skipProviderRegistration">SkipProviderRegistration</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.tenantId">TenantId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.useMsi">UseMsi</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.useMsi">UseMsi</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -562,10 +562,10 @@ public string ClientSecretInput { get; }
 ##### `DisableCorrelationRequestIdInput`<sup>Optional</sup> <a name="DisableCorrelationRequestIdInput" id="@cdktf/provider-azurestack.provider.AzurestackProvider.property.disableCorrelationRequestIdInput"></a>
 
 ```csharp
-public object DisableCorrelationRequestIdInput { get; }
+public bool|IResolvable DisableCorrelationRequestIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -612,10 +612,10 @@ public string MsiEndpointInput { get; }
 ##### `SkipProviderRegistrationInput`<sup>Optional</sup> <a name="SkipProviderRegistrationInput" id="@cdktf/provider-azurestack.provider.AzurestackProvider.property.skipProviderRegistrationInput"></a>
 
 ```csharp
-public object SkipProviderRegistrationInput { get; }
+public bool|IResolvable SkipProviderRegistrationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -642,10 +642,10 @@ public string TenantIdInput { get; }
 ##### `UseMsiInput`<sup>Optional</sup> <a name="UseMsiInput" id="@cdktf/provider-azurestack.provider.AzurestackProvider.property.useMsiInput"></a>
 
 ```csharp
-public object UseMsiInput { get; }
+public bool|IResolvable UseMsiInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -712,10 +712,10 @@ public string ClientSecret { get; }
 ##### `DisableCorrelationRequestId`<sup>Optional</sup> <a name="DisableCorrelationRequestId" id="@cdktf/provider-azurestack.provider.AzurestackProvider.property.disableCorrelationRequestId"></a>
 
 ```csharp
-public object DisableCorrelationRequestId { get; }
+public bool|IResolvable DisableCorrelationRequestId { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -762,10 +762,10 @@ public string MsiEndpoint { get; }
 ##### `SkipProviderRegistration`<sup>Optional</sup> <a name="SkipProviderRegistration" id="@cdktf/provider-azurestack.provider.AzurestackProvider.property.skipProviderRegistration"></a>
 
 ```csharp
-public object SkipProviderRegistration { get; }
+public bool|IResolvable SkipProviderRegistration { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -792,10 +792,10 @@ public string TenantId { get; }
 ##### `UseMsi`<sup>Optional</sup> <a name="UseMsi" id="@cdktf/provider-azurestack.provider.AzurestackProvider.property.useMsi"></a>
 
 ```csharp
-public object UseMsi { get; }
+public bool|IResolvable UseMsi { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -835,14 +835,14 @@ new AzurestackProviderConfig {
     string ClientCertificatePath = null,
     string ClientId = null,
     string ClientSecret = null,
-    object DisableCorrelationRequestId = null,
+    bool|IResolvable DisableCorrelationRequestId = null,
     string Environment = null,
     string MetadataHost = null,
     string MsiEndpoint = null,
-    object SkipProviderRegistration = null,
+    bool|IResolvable SkipProviderRegistration = null,
     string SubscriptionId = null,
     string TenantId = null,
-    object UseMsi = null
+    bool|IResolvable UseMsi = null
 };
 ```
 
@@ -858,14 +858,14 @@ new AzurestackProviderConfig {
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.clientCertificatePath">ClientCertificatePath</a></code> | <code>string</code> | The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.clientId">ClientId</a></code> | <code>string</code> | The Client ID which should be used. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.clientSecret">ClientSecret</a></code> | <code>string</code> | The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.disableCorrelationRequestId">DisableCorrelationRequestId</a></code> | <code>object</code> | This will disable the x-ms-correlation-request-id header. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.disableCorrelationRequestId">DisableCorrelationRequestId</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | This will disable the x-ms-correlation-request-id header. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.environment">Environment</a></code> | <code>string</code> | The Cloud Environment which should be used. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.metadataHost">MetadataHost</a></code> | <code>string</code> | The Hostname which should be used for the Azure Metadata Service. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.msiEndpoint">MsiEndpoint</a></code> | <code>string</code> | The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected automatically. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.skipProviderRegistration">SkipProviderRegistration</a></code> | <code>object</code> | Should the AzureStack Provider skip registering all of the Resource Providers that it supports, if they're not already registered? |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.skipProviderRegistration">SkipProviderRegistration</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Should the AzureStack Provider skip registering all of the Resource Providers that it supports, if they're not already registered? |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | The Subscription ID which should be used. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.tenantId">TenantId</a></code> | <code>string</code> | The Tenant ID which should be used. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.useMsi">UseMsi</a></code> | <code>object</code> | Allowed Managed Service Identity be used for Authentication. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.useMsi">UseMsi</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allowed Managed Service Identity be used for Authentication. |
 
 ---
 
@@ -982,10 +982,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DisableCorrelationRequestId`<sup>Optional</sup> <a name="DisableCorrelationRequestId" id="@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.disableCorrelationRequestId"></a>
 
 ```csharp
-public object DisableCorrelationRequestId { get; set; }
+public bool|IResolvable DisableCorrelationRequestId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 This will disable the x-ms-correlation-request-id header.
 
@@ -1038,10 +1038,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SkipProviderRegistration`<sup>Optional</sup> <a name="SkipProviderRegistration" id="@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.skipProviderRegistration"></a>
 
 ```csharp
-public object SkipProviderRegistration { get; set; }
+public bool|IResolvable SkipProviderRegistration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Should the AzureStack Provider skip registering all of the Resource Providers that it supports, if they're not already registered?
 
@@ -1080,10 +1080,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseMsi`<sup>Optional</sup> <a name="UseMsi" id="@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.useMsi"></a>
 
 ```csharp
-public object UseMsi { get; set; }
+public bool|IResolvable UseMsi { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allowed Managed Service Identity be used for Authentication.
 
@@ -1165,7 +1165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Azurestack;
 
 new AzurestackProviderFeaturesResourceGroup {
-    object PreventDeletionIfContainsResources = null
+    bool|IResolvable PreventDeletionIfContainsResources = null
 };
 ```
 
@@ -1173,17 +1173,17 @@ new AzurestackProviderFeaturesResourceGroup {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesResourceGroup.property.preventDeletionIfContainsResources">PreventDeletionIfContainsResources</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#prevent_deletion_if_contains_resources AzurestackProvider#prevent_deletion_if_contains_resources}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesResourceGroup.property.preventDeletionIfContainsResources">PreventDeletionIfContainsResources</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#prevent_deletion_if_contains_resources AzurestackProvider#prevent_deletion_if_contains_resources}. |
 
 ---
 
 ##### `PreventDeletionIfContainsResources`<sup>Optional</sup> <a name="PreventDeletionIfContainsResources" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesResourceGroup.property.preventDeletionIfContainsResources"></a>
 
 ```csharp
-public object PreventDeletionIfContainsResources { get; set; }
+public bool|IResolvable PreventDeletionIfContainsResources { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#prevent_deletion_if_contains_resources AzurestackProvider#prevent_deletion_if_contains_resources}.
 
@@ -1197,9 +1197,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Azurestack;
 
 new AzurestackProviderFeaturesVirtualMachine {
-    object DeleteOsDiskOnDeletion = null,
-    object GracefulShutdown = null,
-    object SkipShutdownAndForceDelete = null
+    bool|IResolvable DeleteOsDiskOnDeletion = null,
+    bool|IResolvable GracefulShutdown = null,
+    bool|IResolvable SkipShutdownAndForceDelete = null
 };
 ```
 
@@ -1207,19 +1207,19 @@ new AzurestackProviderFeaturesVirtualMachine {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.deleteOsDiskOnDeletion">DeleteOsDiskOnDeletion</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#delete_os_disk_on_deletion AzurestackProvider#delete_os_disk_on_deletion}. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.gracefulShutdown">GracefulShutdown</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#graceful_shutdown AzurestackProvider#graceful_shutdown}. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.skipShutdownAndForceDelete">SkipShutdownAndForceDelete</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#skip_shutdown_and_force_delete AzurestackProvider#skip_shutdown_and_force_delete}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.deleteOsDiskOnDeletion">DeleteOsDiskOnDeletion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#delete_os_disk_on_deletion AzurestackProvider#delete_os_disk_on_deletion}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.gracefulShutdown">GracefulShutdown</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#graceful_shutdown AzurestackProvider#graceful_shutdown}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.skipShutdownAndForceDelete">SkipShutdownAndForceDelete</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#skip_shutdown_and_force_delete AzurestackProvider#skip_shutdown_and_force_delete}. |
 
 ---
 
 ##### `DeleteOsDiskOnDeletion`<sup>Optional</sup> <a name="DeleteOsDiskOnDeletion" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.deleteOsDiskOnDeletion"></a>
 
 ```csharp
-public object DeleteOsDiskOnDeletion { get; set; }
+public bool|IResolvable DeleteOsDiskOnDeletion { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#delete_os_disk_on_deletion AzurestackProvider#delete_os_disk_on_deletion}.
 
@@ -1228,10 +1228,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `GracefulShutdown`<sup>Optional</sup> <a name="GracefulShutdown" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.gracefulShutdown"></a>
 
 ```csharp
-public object GracefulShutdown { get; set; }
+public bool|IResolvable GracefulShutdown { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#graceful_shutdown AzurestackProvider#graceful_shutdown}.
 
@@ -1240,10 +1240,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SkipShutdownAndForceDelete`<sup>Optional</sup> <a name="SkipShutdownAndForceDelete" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.skipShutdownAndForceDelete"></a>
 
 ```csharp
-public object SkipShutdownAndForceDelete { get; set; }
+public bool|IResolvable SkipShutdownAndForceDelete { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#skip_shutdown_and_force_delete AzurestackProvider#skip_shutdown_and_force_delete}.
 
@@ -1257,9 +1257,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Azurestack;
 
 new AzurestackProviderFeaturesVirtualMachineScaleSet {
-    object RollInstancesWhenRequired,
-    object ForceDelete = null,
-    object ScaleToZeroBeforeDeletion = null
+    bool|IResolvable RollInstancesWhenRequired,
+    bool|IResolvable ForceDelete = null,
+    bool|IResolvable ScaleToZeroBeforeDeletion = null
 };
 ```
 
@@ -1267,19 +1267,19 @@ new AzurestackProviderFeaturesVirtualMachineScaleSet {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.rollInstancesWhenRequired">RollInstancesWhenRequired</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#roll_instances_when_required AzurestackProvider#roll_instances_when_required}. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.forceDelete">ForceDelete</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#force_delete AzurestackProvider#force_delete}. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.scaleToZeroBeforeDeletion">ScaleToZeroBeforeDeletion</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#scale_to_zero_before_deletion AzurestackProvider#scale_to_zero_before_deletion}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.rollInstancesWhenRequired">RollInstancesWhenRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#roll_instances_when_required AzurestackProvider#roll_instances_when_required}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.forceDelete">ForceDelete</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#force_delete AzurestackProvider#force_delete}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.scaleToZeroBeforeDeletion">ScaleToZeroBeforeDeletion</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#scale_to_zero_before_deletion AzurestackProvider#scale_to_zero_before_deletion}. |
 
 ---
 
 ##### `RollInstancesWhenRequired`<sup>Required</sup> <a name="RollInstancesWhenRequired" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.rollInstancesWhenRequired"></a>
 
 ```csharp
-public object RollInstancesWhenRequired { get; set; }
+public bool|IResolvable RollInstancesWhenRequired { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#roll_instances_when_required AzurestackProvider#roll_instances_when_required}.
 
@@ -1288,10 +1288,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ForceDelete`<sup>Optional</sup> <a name="ForceDelete" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.forceDelete"></a>
 
 ```csharp
-public object ForceDelete { get; set; }
+public bool|IResolvable ForceDelete { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#force_delete AzurestackProvider#force_delete}.
 
@@ -1300,10 +1300,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ScaleToZeroBeforeDeletion`<sup>Optional</sup> <a name="ScaleToZeroBeforeDeletion" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.scaleToZeroBeforeDeletion"></a>
 
 ```csharp
-public object ScaleToZeroBeforeDeletion { get; set; }
+public bool|IResolvable ScaleToZeroBeforeDeletion { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#scale_to_zero_before_deletion AzurestackProvider#scale_to_zero_before_deletion}.
 

@@ -22,14 +22,14 @@ provider.AzurestackProvider(
   client_certificate_path: str = None,
   client_id: str = None,
   client_secret: str = None,
-  disable_correlation_request_id: typing.Union[bool, IResolvable] = None,
+  disable_correlation_request_id: bool | IResolvable = None,
   environment: str = None,
   metadata_host: str = None,
   msi_endpoint: str = None,
-  skip_provider_registration: typing.Union[bool, IResolvable] = None,
+  skip_provider_registration: bool | IResolvable = None,
   subscription_id: str = None,
   tenant_id: str = None,
-  use_msi: typing.Union[bool, IResolvable] = None
+  use_msi: bool | IResolvable = None
 )
 ```
 
@@ -45,14 +45,14 @@ provider.AzurestackProvider(
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.clientCertificatePath">client_certificate_path</a></code> | <code>str</code> | The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | The Client ID which should be used. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.disableCorrelationRequestId">disable_correlation_request_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | This will disable the x-ms-correlation-request-id header. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.disableCorrelationRequestId">disable_correlation_request_id</a></code> | <code>bool \| cdktf.IResolvable</code> | This will disable the x-ms-correlation-request-id header. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.environment">environment</a></code> | <code>str</code> | The Cloud Environment which should be used. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.metadataHost">metadata_host</a></code> | <code>str</code> | The Hostname which should be used for the Azure Metadata Service. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.msiEndpoint">msi_endpoint</a></code> | <code>str</code> | The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected automatically. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.skipProviderRegistration">skip_provider_registration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Should the AzureStack Provider skip registering all of the Resource Providers that it supports, if they're not already registered? |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.skipProviderRegistration">skip_provider_registration</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the AzureStack Provider skip registering all of the Resource Providers that it supports, if they're not already registered? |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.subscriptionId">subscription_id</a></code> | <code>str</code> | The Subscription ID which should be used. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.tenantId">tenant_id</a></code> | <code>str</code> | The Tenant ID which should be used. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.useMsi">use_msi</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allowed Managed Service Identity be used for Authentication. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.useMsi">use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | Allowed Managed Service Identity be used for Authentication. |
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `disable_correlation_request_id`<sup>Optional</sup> <a name="disable_correlation_request_id" id="@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.disableCorrelationRequestId"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This will disable the x-ms-correlation-request-id header.
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skip_provider_registration`<sup>Optional</sup> <a name="skip_provider_registration" id="@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.skipProviderRegistration"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Should the AzureStack Provider skip registering all of the Resource Providers that it supports, if they're not already registered?
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_msi`<sup>Optional</sup> <a name="use_msi" id="@cdktf/provider-azurestack.provider.AzurestackProvider.Initializer.parameter.useMsi"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allowed Managed Service Identity be used for Authentication.
 
@@ -572,30 +572,30 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurestack
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientCertificatePathInput">client_certificate_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.disableCorrelationRequestIdInput">disable_correlation_request_id_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.disableCorrelationRequestIdInput">disable_correlation_request_id_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.environmentInput">environment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.featuresInput">features_input</a></code> | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeatures">AzurestackProviderFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.metadataHostInput">metadata_host_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.msiEndpointInput">msi_endpoint_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.skipProviderRegistrationInput">skip_provider_registration_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.skipProviderRegistrationInput">skip_provider_registration_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.subscriptionIdInput">subscription_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.tenantIdInput">tenant_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.useMsiInput">use_msi_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.useMsiInput">use_msi_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.armEndpoint">arm_endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.auxiliaryTenantIds">auxiliary_tenant_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientCertificatePassword">client_certificate_password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientCertificatePath">client_certificate_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.disableCorrelationRequestId">disable_correlation_request_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.disableCorrelationRequestId">disable_correlation_request_id</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.environment">environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.features">features</a></code> | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeatures">AzurestackProviderFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.metadataHost">metadata_host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.msiEndpoint">msi_endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.skipProviderRegistration">skip_provider_registration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.skipProviderRegistration">skip_provider_registration</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.subscriptionId">subscription_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.useMsi">use_msi</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProvider.property.useMsi">use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -764,10 +764,10 @@ client_secret_input: str
 ##### `disable_correlation_request_id_input`<sup>Optional</sup> <a name="disable_correlation_request_id_input" id="@cdktf/provider-azurestack.provider.AzurestackProvider.property.disableCorrelationRequestIdInput"></a>
 
 ```python
-disable_correlation_request_id_input: typing.Union[bool, IResolvable]
+disable_correlation_request_id_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -814,10 +814,10 @@ msi_endpoint_input: str
 ##### `skip_provider_registration_input`<sup>Optional</sup> <a name="skip_provider_registration_input" id="@cdktf/provider-azurestack.provider.AzurestackProvider.property.skipProviderRegistrationInput"></a>
 
 ```python
-skip_provider_registration_input: typing.Union[bool, IResolvable]
+skip_provider_registration_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -844,10 +844,10 @@ tenant_id_input: str
 ##### `use_msi_input`<sup>Optional</sup> <a name="use_msi_input" id="@cdktf/provider-azurestack.provider.AzurestackProvider.property.useMsiInput"></a>
 
 ```python
-use_msi_input: typing.Union[bool, IResolvable]
+use_msi_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -914,10 +914,10 @@ client_secret: str
 ##### `disable_correlation_request_id`<sup>Optional</sup> <a name="disable_correlation_request_id" id="@cdktf/provider-azurestack.provider.AzurestackProvider.property.disableCorrelationRequestId"></a>
 
 ```python
-disable_correlation_request_id: typing.Union[bool, IResolvable]
+disable_correlation_request_id: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -964,10 +964,10 @@ msi_endpoint: str
 ##### `skip_provider_registration`<sup>Optional</sup> <a name="skip_provider_registration" id="@cdktf/provider-azurestack.provider.AzurestackProvider.property.skipProviderRegistration"></a>
 
 ```python
-skip_provider_registration: typing.Union[bool, IResolvable]
+skip_provider_registration: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -994,10 +994,10 @@ tenant_id: str
 ##### `use_msi`<sup>Optional</sup> <a name="use_msi" id="@cdktf/provider-azurestack.provider.AzurestackProvider.property.useMsi"></a>
 
 ```python
-use_msi: typing.Union[bool, IResolvable]
+use_msi: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1037,14 +1037,14 @@ provider.AzurestackProviderConfig(
   client_certificate_path: str = None,
   client_id: str = None,
   client_secret: str = None,
-  disable_correlation_request_id: typing.Union[bool, IResolvable] = None,
+  disable_correlation_request_id: bool | IResolvable = None,
   environment: str = None,
   metadata_host: str = None,
   msi_endpoint: str = None,
-  skip_provider_registration: typing.Union[bool, IResolvable] = None,
+  skip_provider_registration: bool | IResolvable = None,
   subscription_id: str = None,
   tenant_id: str = None,
-  use_msi: typing.Union[bool, IResolvable] = None
+  use_msi: bool | IResolvable = None
 )
 ```
 
@@ -1060,14 +1060,14 @@ provider.AzurestackProviderConfig(
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.clientCertificatePath">client_certificate_path</a></code> | <code>str</code> | The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.clientId">client_id</a></code> | <code>str</code> | The Client ID which should be used. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.disableCorrelationRequestId">disable_correlation_request_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | This will disable the x-ms-correlation-request-id header. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.disableCorrelationRequestId">disable_correlation_request_id</a></code> | <code>bool \| cdktf.IResolvable</code> | This will disable the x-ms-correlation-request-id header. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.environment">environment</a></code> | <code>str</code> | The Cloud Environment which should be used. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.metadataHost">metadata_host</a></code> | <code>str</code> | The Hostname which should be used for the Azure Metadata Service. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.msiEndpoint">msi_endpoint</a></code> | <code>str</code> | The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected automatically. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.skipProviderRegistration">skip_provider_registration</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Should the AzureStack Provider skip registering all of the Resource Providers that it supports, if they're not already registered? |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.skipProviderRegistration">skip_provider_registration</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the AzureStack Provider skip registering all of the Resource Providers that it supports, if they're not already registered? |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.subscriptionId">subscription_id</a></code> | <code>str</code> | The Subscription ID which should be used. |
 | <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.tenantId">tenant_id</a></code> | <code>str</code> | The Tenant ID which should be used. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.useMsi">use_msi</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allowed Managed Service Identity be used for Authentication. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.useMsi">use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | Allowed Managed Service Identity be used for Authentication. |
 
 ---
 
@@ -1184,10 +1184,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `disable_correlation_request_id`<sup>Optional</sup> <a name="disable_correlation_request_id" id="@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.disableCorrelationRequestId"></a>
 
 ```python
-disable_correlation_request_id: typing.Union[bool, IResolvable]
+disable_correlation_request_id: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This will disable the x-ms-correlation-request-id header.
 
@@ -1240,10 +1240,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skip_provider_registration`<sup>Optional</sup> <a name="skip_provider_registration" id="@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.skipProviderRegistration"></a>
 
 ```python
-skip_provider_registration: typing.Union[bool, IResolvable]
+skip_provider_registration: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Should the AzureStack Provider skip registering all of the Resource Providers that it supports, if they're not already registered?
 
@@ -1282,10 +1282,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_msi`<sup>Optional</sup> <a name="use_msi" id="@cdktf/provider-azurestack.provider.AzurestackProviderConfig.property.useMsi"></a>
 
 ```python
-use_msi: typing.Union[bool, IResolvable]
+use_msi: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allowed Managed Service Identity be used for Authentication.
 
@@ -1367,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_azurestack import provider
 
 provider.AzurestackProviderFeaturesResourceGroup(
-  prevent_deletion_if_contains_resources: typing.Union[bool, IResolvable] = None
+  prevent_deletion_if_contains_resources: bool | IResolvable = None
 )
 ```
 
@@ -1375,17 +1375,17 @@ provider.AzurestackProviderFeaturesResourceGroup(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesResourceGroup.property.preventDeletionIfContainsResources">prevent_deletion_if_contains_resources</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#prevent_deletion_if_contains_resources AzurestackProvider#prevent_deletion_if_contains_resources}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesResourceGroup.property.preventDeletionIfContainsResources">prevent_deletion_if_contains_resources</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#prevent_deletion_if_contains_resources AzurestackProvider#prevent_deletion_if_contains_resources}. |
 
 ---
 
 ##### `prevent_deletion_if_contains_resources`<sup>Optional</sup> <a name="prevent_deletion_if_contains_resources" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesResourceGroup.property.preventDeletionIfContainsResources"></a>
 
 ```python
-prevent_deletion_if_contains_resources: typing.Union[bool, IResolvable]
+prevent_deletion_if_contains_resources: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#prevent_deletion_if_contains_resources AzurestackProvider#prevent_deletion_if_contains_resources}.
 
@@ -1399,9 +1399,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_azurestack import provider
 
 provider.AzurestackProviderFeaturesVirtualMachine(
-  delete_os_disk_on_deletion: typing.Union[bool, IResolvable] = None,
-  graceful_shutdown: typing.Union[bool, IResolvable] = None,
-  skip_shutdown_and_force_delete: typing.Union[bool, IResolvable] = None
+  delete_os_disk_on_deletion: bool | IResolvable = None,
+  graceful_shutdown: bool | IResolvable = None,
+  skip_shutdown_and_force_delete: bool | IResolvable = None
 )
 ```
 
@@ -1409,19 +1409,19 @@ provider.AzurestackProviderFeaturesVirtualMachine(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.deleteOsDiskOnDeletion">delete_os_disk_on_deletion</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#delete_os_disk_on_deletion AzurestackProvider#delete_os_disk_on_deletion}. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.gracefulShutdown">graceful_shutdown</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#graceful_shutdown AzurestackProvider#graceful_shutdown}. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.skipShutdownAndForceDelete">skip_shutdown_and_force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#skip_shutdown_and_force_delete AzurestackProvider#skip_shutdown_and_force_delete}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.deleteOsDiskOnDeletion">delete_os_disk_on_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#delete_os_disk_on_deletion AzurestackProvider#delete_os_disk_on_deletion}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.gracefulShutdown">graceful_shutdown</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#graceful_shutdown AzurestackProvider#graceful_shutdown}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.skipShutdownAndForceDelete">skip_shutdown_and_force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#skip_shutdown_and_force_delete AzurestackProvider#skip_shutdown_and_force_delete}. |
 
 ---
 
 ##### `delete_os_disk_on_deletion`<sup>Optional</sup> <a name="delete_os_disk_on_deletion" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.deleteOsDiskOnDeletion"></a>
 
 ```python
-delete_os_disk_on_deletion: typing.Union[bool, IResolvable]
+delete_os_disk_on_deletion: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#delete_os_disk_on_deletion AzurestackProvider#delete_os_disk_on_deletion}.
 
@@ -1430,10 +1430,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `graceful_shutdown`<sup>Optional</sup> <a name="graceful_shutdown" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.gracefulShutdown"></a>
 
 ```python
-graceful_shutdown: typing.Union[bool, IResolvable]
+graceful_shutdown: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#graceful_shutdown AzurestackProvider#graceful_shutdown}.
 
@@ -1442,10 +1442,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skip_shutdown_and_force_delete`<sup>Optional</sup> <a name="skip_shutdown_and_force_delete" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachine.property.skipShutdownAndForceDelete"></a>
 
 ```python
-skip_shutdown_and_force_delete: typing.Union[bool, IResolvable]
+skip_shutdown_and_force_delete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#skip_shutdown_and_force_delete AzurestackProvider#skip_shutdown_and_force_delete}.
 
@@ -1459,9 +1459,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_azurestack import provider
 
 provider.AzurestackProviderFeaturesVirtualMachineScaleSet(
-  roll_instances_when_required: typing.Union[bool, IResolvable],
-  force_delete: typing.Union[bool, IResolvable] = None,
-  scale_to_zero_before_deletion: typing.Union[bool, IResolvable] = None
+  roll_instances_when_required: bool | IResolvable,
+  force_delete: bool | IResolvable = None,
+  scale_to_zero_before_deletion: bool | IResolvable = None
 )
 ```
 
@@ -1469,19 +1469,19 @@ provider.AzurestackProviderFeaturesVirtualMachineScaleSet(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.rollInstancesWhenRequired">roll_instances_when_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#roll_instances_when_required AzurestackProvider#roll_instances_when_required}. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.forceDelete">force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#force_delete AzurestackProvider#force_delete}. |
-| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.scaleToZeroBeforeDeletion">scale_to_zero_before_deletion</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#scale_to_zero_before_deletion AzurestackProvider#scale_to_zero_before_deletion}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.rollInstancesWhenRequired">roll_instances_when_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#roll_instances_when_required AzurestackProvider#roll_instances_when_required}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#force_delete AzurestackProvider#force_delete}. |
+| <code><a href="#@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.scaleToZeroBeforeDeletion">scale_to_zero_before_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#scale_to_zero_before_deletion AzurestackProvider#scale_to_zero_before_deletion}. |
 
 ---
 
 ##### `roll_instances_when_required`<sup>Required</sup> <a name="roll_instances_when_required" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.rollInstancesWhenRequired"></a>
 
 ```python
-roll_instances_when_required: typing.Union[bool, IResolvable]
+roll_instances_when_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#roll_instances_when_required AzurestackProvider#roll_instances_when_required}.
 
@@ -1490,10 +1490,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `force_delete`<sup>Optional</sup> <a name="force_delete" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.forceDelete"></a>
 
 ```python
-force_delete: typing.Union[bool, IResolvable]
+force_delete: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#force_delete AzurestackProvider#force_delete}.
 
@@ -1502,10 +1502,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `scale_to_zero_before_deletion`<sup>Optional</sup> <a name="scale_to_zero_before_deletion" id="@cdktf/provider-azurestack.provider.AzurestackProviderFeaturesVirtualMachineScaleSet.property.scaleToZeroBeforeDeletion"></a>
 
 ```python
-scale_to_zero_before_deletion: typing.Union[bool, IResolvable]
+scale_to_zero_before_deletion: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs#scale_to_zero_before_deletion AzurestackProvider#scale_to_zero_before_deletion}.
 
